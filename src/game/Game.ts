@@ -330,6 +330,8 @@ export class Game {
       this.audio.playLevelUp()
       this.camera?.triggerPulse()
       if (this.settings.cameraShake) this.camera?.triggerShake(0.35)
+      const label = LEVEL_LABELS[this.player.level] ?? '街头小洞'
+      this.showToast(`升级！L${this.player.level} · ${label}`)
     }
 
     if (this.objectsEaten === 8) this.showToast('再长大一点就能吞轿车了')

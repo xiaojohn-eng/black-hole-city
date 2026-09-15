@@ -73,7 +73,7 @@ export class UIManager {
           <div class="hole-icon">●</div>
           <h1>黑洞吞噬城市</h1>
           <p class="subtitle">从汽车吃到摩天楼</p>
-          <p class="version">v0.1 · 星湾市·中央区</p>
+          <p class="version">v0.2 · 星湾市·中央区</p>
         </div>
         <div class="btn-col">
           <button class="btn primary" id="btn-start">开始游戏</button>
@@ -222,9 +222,19 @@ export class UIManager {
     })
   }
 
+  private lastHudLevel = 0
+
   private updateHud(h: HudSnapshot): void {
     if (this.game.screen !== 'playing') return
     const lv = document.getElementById('hud-level')
+    if (lv && h.level !== this.lastHudLevel) {
+      if (this.lastHudLevel > 0 && h.level > this.lastHudLevel) {
+        lv.classList.remove('level-flash')
+        void lv.offsetWidth // restart the CSS animation
+        lv.classList.add('level-flash')
+      }
+      this.lastHudLevel = h.level
+    }
     const bar = document.getElementById('hud-bar')
     const score = document.getElementById('hud-score')
     const timer = document.getElementById('hud-timer')
@@ -275,7 +285,20 @@ export class UIManager {
       this.game.openSettings()
     })
     this.bind('btn-quit', () => {
-      if (confirm('确定要放弃吗？当前分数仍会记录。')) this.game.abandon()
+      // Two-step inline confirm — native confirm() blocks the render loop
+      const btn = document.getElementById('btn-quit')
+      if (!btn) return
+      if (btn.dataset.armed === '1') {
+        this.game.abandon()
+        return
+      }
+      btn.dataset.armed = '1'
+      btn.textContent = '确认放弃？'
+      window.setTimeout(() => {
+        if (!document.getElementById('btn-quit')) return
+        btn.dataset.armed = '0'
+        btn.textContent = '放弃本局'
+      }, 3000)
     })
   }
 

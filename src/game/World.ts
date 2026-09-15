@@ -13,14 +13,14 @@ function pickReward(tier: TierDef): number {
   return rand(tier.massRewardMin, tier.massRewardMax)
 }
 
-/** Scaled MVP quotas (~35–45% of PRD) but zones recognizable */
+/** Object quotas: ~65% of PRD 4.3 (within the 60–80% target band) */
 const QUOTAS: Record<string, [number, number, number, number, number]> = {
-  // L1-2, L3-4, L5-6, L7-8, L9-10
-  S: [36, 16, 2, 0, 0],
-  W: [18, 22, 12, 6, 0],
-  E: [14, 20, 14, 8, 3],
-  N: [12, 18, 12, 5, 1],
-  L: [8, 6, 4, 2, 2],
+  // L1-2, L3-4, L5-6, L7-8, L9-10   (PRD: S 80/35/4/0/0 · W 40/50/25/12/0 · E 30/45/30/18/6 · N 25/40/28/10/2 · L 15/10/8/4/2)
+  S: [52, 23, 3, 0, 0],
+  W: [26, 33, 16, 8, 0],
+  E: [20, 29, 20, 12, 4],
+  N: [16, 26, 18, 7, 1],
+  L: [10, 7, 5, 3, 2],
 }
 
 export class World {
@@ -111,16 +111,27 @@ export class World {
     this.scatterDecor()
   }
 
+  /** Park trees: pure decoration, kept off roads and the spawn clearing */
   private scatterDecor(): void {
-    const decorMat = new THREE.MeshLambertMaterial({ color: 0x475569 })
-    for (let i = 0; i < 40; i++) {
-      const x = rand(-110, 110)
-      const z = rand(-110, 110)
+    const trunkMat = new THREE.MeshLambertMaterial({ color: 0x6b4a2f })
+    const leafMat = new THREE.MeshLambertMaterial({ color: 0x2f6b3a })
+    let placed = 0
+    for (let i = 0; i < 400 && placed < 90; i++) {
+      const x = rand(-112, 112)
+      const z = rand(-112, 112)
       if (Math.hypot(x, z + 90) < 18) continue // keep spawn clear
-      const h = rand(1, 3)
-      const box = new THREE.Mesh(new THREE.BoxGeometry(rand(1, 2), h, rand(1, 2)), decorMat)
-      box.position.set(x, h / 2, z)
-      this.group.add(box)
+      if (Math.abs(x % 40) < 8 || Math.abs(z % 40) < 8) continue // keep roads clear
+      const h = rand(1.6, 2.6)
+      const tree = new THREE.Group()
+      const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.24, h, 6), trunkMat)
+      trunk.position.y = h / 2
+      tree.add(trunk)
+      const crown = new THREE.Mesh(new THREE.ConeGeometry(rand(0.9, 1.4), h * 1.6, 7), leafMat)
+      crown.position.y = h + h * 0.7
+      tree.add(crown)
+      tree.position.set(x, 0, z)
+      this.group.add(tree)
+      placed++
     }
   }
 
@@ -164,6 +175,14 @@ export class World {
     // Ensure main landmark (TV tower)
     this.spawnOne('L', 10, true)
 
+    // Guaranteed starter cluster: first swallows within seconds of spawning
+    for (let i = 0; i < 14; i++) {
+      const ang = (i / 14) * Math.PI * 2
+      const r = 7 + (i % 3) * 3
+      const tier = i % 3 === 2 ? 2 : 1
+      this.spawnOneAt(Math.cos(ang) * r, -90 + Math.sin(ang) * r, tier)
+    }
+
     // Clear spawn area of >L4
     for (const o of this.objects) {
       if (Math.hypot(o.x - 0, o.z - -90) < 15 && o.tier.level > 4) {
@@ -174,19 +193,50 @@ export class World {
     this.objects = this.objects.filter((o) => o.state !== 'digested')
   }
 
-  private spawnOne(zone: string, tierLevel: number, forceLandmark: boolean): void {
+  private spawnOneAt(x: number, z: number, tierLevel: number): void {
+    this.spawnOne('S', tierLevel, false, x, z)
+  }
+
+  private spawnOne(zone: string, tierLevel: number, forceLandmark: boolean, fixedX?: number, fixedZ?: number): void {
     const tier = TIERS[tierLevel - 1]
     const b = this.zoneBounds(zone)
-    let x = rand(b.x0, b.x1)
-    let z = rand(b.z0, b.z1)
-    if (forceLandmark) {
+    let x = fixedX ?? rand(b.x0, b.x1)
+    let z = fixedZ ?? rand(b.z0, b.z1)
+    if (fixedX !== undefined) {
+      // fixed-position spawn: skip separation sampling
+    } else if (forceLandmark) {
       x = 75
       z = 85
+    } else {
+      // Rejection sampling: keep objects from stacking inside each other
+      const dims = this.dimsFor(tier, false)
+      const myR = Math.max(dims.hw, dims.hd)
+      for (let attempt = 0; attempt < 12; attempt++) {
+        const cx = rand(b.x0, b.x1)
+        const cz = rand(b.z0, b.z1)
+        let ok = true
+        for (const o of this.objects) {
+          const oR = Math.max(o.hw, o.hd)
+          if (Math.hypot(cx - o.x, cz - o.z) < (myR + oR) * 0.9 + 0.4) {
+            ok = false
+            break
+          }
+        }
+        x = cx
+        z = cz
+        if (ok) break
+      }
     }
     // Avoid roads center slightly
     const mesh = this.createMesh(tier, forceLandmark)
+    // Clone materials per object: highlight/emissive effects must not leak
+    // between objects that would otherwise share a cached material.
+    mesh.traverse((c) => {
+      const m = c as THREE.Mesh
+      if (m.isMesh) m.material = (m.material as THREE.Material).clone()
+    })
     const { hw, hd, height, isCircle } = this.dimsFor(tier, forceLandmark)
-    mesh.position.set(x, isCircle ? height / 2 : height / 2, z)
+    mesh.position.set(x, height / 2, z)
     this.group.add(mesh)
 
     const obj: Eatable = {
@@ -313,7 +363,10 @@ export class World {
     for (const o of this.objects) {
       this.group.remove(o.mesh)
       o.mesh.traverse((c) => {
-        if ((c as THREE.Mesh).geometry) (c as THREE.Mesh).geometry.dispose()
+        const m = c as THREE.Mesh
+        if (m.geometry) m.geometry.dispose()
+        const mat = m.material as THREE.Material | undefined
+        if (mat) mat.dispose()
       })
     }
     this.objects = []

@@ -7,6 +7,8 @@ if (!app) throw new Error('#app missing')
 
 const game = new Game(app)
 new UIManager(app, game)
+// Debug/testing handle (not part of the UI)
+;(window as unknown as { __game?: Game }).__game = game
 game.boot().catch((err) => {
   console.error(err)
   app.innerHTML = `<div style="color:#fff;padding:2rem;font-family:sans-serif">
