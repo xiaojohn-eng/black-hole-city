@@ -1,4 +1,6 @@
 import type { Game, Screen, HudSnapshot } from '../game/Game'
+import { Fallback2D } from '../fallback/Fallback2D'
+import { OFFICIAL_URL } from '../game/constants'
 import type { Settings, Quality, Difficulty, Duration } from '../persistence/storage'
 import { levelFromMass } from '../game/constants'
 
@@ -36,7 +38,7 @@ export class UIManager {
         this.layer.innerHTML = `<div class="panel center"><div class="spinner"></div><p>正在铺开星湾市…</p></div>`
         break
       case 'nowebgl':
-        this.layer.innerHTML = `<div class="panel center"><h2>无法运行</h2><p>当前浏览器无法运行本游戏，请升级浏览器或关闭硬件加速限制。</p></div>`
+        this.renderNowebgl()
         break
       case 'title':
         this.renderTitle()
@@ -56,6 +58,95 @@ export class UIManager {
       case 'result':
         this.renderResult()
         break
+    }
+  }
+
+  private fallback2d: Fallback2D | null = null
+
+  private renderNowebgl(): void {
+    const isAppleMobile = /iPhone|iPad|iPod/.test(navigator.userAgent)
+    this.layer.innerHTML = `
+      <div class="overlay modal-wrap" data-ui="1">
+        <div class="modal nowebgl-modal">
+          <h2>无法运行 3D 版</h2>
+          <p>本游戏需要 <b>WebGL</b> 图形支持，<br>当前浏览器没有启用 WebGL，或被系统限制。</p>
+          ${isAppleMobile ? `
+          <div class="tip-box">
+            <b>iPhone / iPad 用户请尝试：</b><br>
+            1. 关闭「锁定模式」：设置 → 隐私与安全性 → 锁定模式 → 关闭<br>
+            2. 用系统 <b>Safari</b> 或 <b>Chrome</b> 打开本页面<br>
+            3. 不要用 App 内置浏览器（如某些 App 的网页容器）
+          </div>` : `
+          <div class="tip-box">
+            请换用最新版 Chrome / Edge / Safari，<br>并确认浏览器设置中没有禁用「硬件加速」。
+          </div>`}
+          <p>推荐从正式链接进入：</p>
+          <div class="link-row">
+            <code class="link-box">${OFFICIAL_URL}</code>
+            <button class="btn secondary" id="btn-copy-link">复制链接</button>
+          </div>
+          <p class="copy-tip" id="copy-tip" style="display:none">已复制到剪贴板 ✓</p>
+          <div class="btn-col" style="margin:1rem auto 0;">
+            <button class="btn primary" id="btn-try2d">试用 2D 简化版</button>
+          </div>
+          <p class="hint">2D 版不需要 WebGL，可直接玩一局（俯视视角，触控拖动）。</p>
+        </div>
+      </div>`
+    this.bind('btn-copy-link', () => this.copyOfficialLink())
+    this.bind('btn-try2d', () => this.startFallback2D())
+  }
+
+  private copyOfficialLink(): void {
+    const done = () => {
+      const t = document.getElementById('copy-tip')
+      if (!t) return
+      t.style.display = 'block'
+      window.setTimeout(() => {
+        t.style.display = 'none'
+      }, 2000)
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(OFFICIAL_URL).then(done, () => this.copyFallback(done))
+    } else {
+      this.copyFallback(done)
+    }
+  }
+
+  private copyFallback(done: () => void): void {
+    const ta = document.createElement('textarea')
+    ta.value = OFFICIAL_URL
+    ta.style.cssText = 'position:fixed;opacity:0;'
+    document.body.appendChild(ta)
+    ta.select()
+    try {
+      document.execCommand('copy')
+      done()
+    } catch {
+      // 复制失败时用户可长按链接手动复制
+    }
+    ta.remove()
+  }
+
+  private startFallback2D(): void {
+    if (this.fallback2d) return
+    this.layer.style.display = 'none'
+    this.game.setInputEnabled(false)
+    try {
+      this.fallback2d = new Fallback2D(this.root, {
+        onQuit: () => {
+          this.fallback2d?.destroy()
+          this.fallback2d = null
+          this.game.setInputEnabled(true)
+          this.layer.style.display = ''
+          this.render('nowebgl')
+        },
+      })
+      this.fallback2d.start()
+    } catch {
+      this.fallback2d = null
+      this.game.setInputEnabled(true)
+      this.layer.style.display = ''
+      this.render('nowebgl')
     }
   }
 

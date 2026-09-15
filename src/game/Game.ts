@@ -117,34 +117,81 @@ export class Game {
     this.input.mouseSteer = this.settings.mouseSteer
   }
 
+  setInputEnabled(v: boolean): void {
+    this.input.enabled = v
+  }
+
   async boot(): Promise<void> {
-    if (!this.checkWebGL()) {
+    if (!this.detectWebGL()) {
       this.setScreen('nowebgl')
       return
     }
     this.setScreen('loading')
     await new Promise((r) => setTimeout(r, 150))
-    this.initThree()
+    if (!this.initThree()) {
+      this.setScreen('nowebgl')
+      return
+    }
     this.setScreen('title')
     this.startLoop()
   }
 
-  private checkWebGL(): boolean {
-    try {
-      const c = document.createElement('canvas')
-      return !!(c.getContext('webgl') || c.getContext('experimental-webgl'))
-    } catch {
-      return false
+  private detectWebGL(): boolean {
+    const variants: Array<{ type: string; attrs: WebGLContextAttributes }> = [
+      { type: 'webgl2', attrs: { failIfMajorPerformanceCaveat: false, alpha: true } },
+      { type: 'webgl2', attrs: { failIfMajorPerformanceCaveat: false, alpha: false } },
+      { type: 'webgl', attrs: { failIfMajorPerformanceCaveat: false, alpha: true } },
+      { type: 'webgl', attrs: { failIfMajorPerformanceCaveat: false, alpha: false } },
+      { type: 'webgl', attrs: { failIfMajorPerformanceCaveat: false, depth: false, stencil: false } },
+      { type: 'experimental-webgl', attrs: { failIfMajorPerformanceCaveat: false } },
+    ]
+    for (const v of variants) {
+      try {
+        const c = document.createElement('canvas')
+        const gl = c.getContext(v.type as 'webgl', v.attrs) as
+          | WebGLRenderingContext
+          | WebGL2RenderingContext
+          | null
+        if (gl) return true
+      } catch {
+        // 换一组 context 属性重试
+      }
     }
+    return false
   }
 
-  private initThree(): void {
+  private initThree(): boolean {
     const canvasHost = document.createElement('div')
     canvasHost.id = 'canvas-host'
     canvasHost.style.cssText = 'position:absolute;inset:0;z-index:0;'
     this.root.appendChild(canvasHost)
 
-    this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' })
+    const attempts: THREE.WebGLRendererParameters[] = [
+      { antialias: true, powerPreference: 'high-performance', failIfMajorPerformanceCaveat: false },
+      { antialias: false, powerPreference: 'high-performance', failIfMajorPerformanceCaveat: false },
+      { antialias: false, powerPreference: 'default', failIfMajorPerformanceCaveat: false },
+      { antialias: false, powerPreference: 'default', failIfMajorPerformanceCaveat: false, alpha: true },
+      {
+        antialias: false,
+        powerPreference: 'default',
+        failIfMajorPerformanceCaveat: false,
+        preserveDrawingBuffer: true,
+      },
+    ]
+    for (const params of attempts) {
+      try {
+        const renderer = new THREE.WebGLRenderer(params)
+        renderer.render(new THREE.Scene(), new THREE.PerspectiveCamera())
+        this.renderer = renderer
+        break
+      } catch {
+        // 换一组渲染参数重试
+      }
+    }
+    if (!this.renderer) {
+      canvasHost.remove()
+      return false
+    }
     this.applyQuality()
     this.renderer.setSize(window.innerWidth, window.innerHeight)
     this.renderer.shadowMap.enabled = false
@@ -174,6 +221,7 @@ export class Game {
 
     window.addEventListener('resize', this.onResize)
     document.addEventListener('visibilitychange', this.onVisibility)
+    return true
   }
 
   private applyQuality(): void {

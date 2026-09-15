@@ -128,3 +128,5 @@ export function zoneAt(x: number, z: number): ZoneId {
   if (z > 40) return x >= 20 ? 'L' : 'N'
   return x < 0 ? 'W' : 'E'
 }
+
+export const OFFICIAL_URL = 'https://xiaojohn-eng.github.io/black-hole-city/'
