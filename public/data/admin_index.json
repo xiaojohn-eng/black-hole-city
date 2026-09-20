@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。333 地级行为占位名录，仅北京市主城 3D 可玩。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场、北京、上海、哈尔滨。其余为占位名录与灰壳。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -124,9 +124,9 @@
       "region7": "东北",
       "region4": "北方地区",
       "capital": "哈尔滨",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "harbin",
+      "playable": true,
       "aliases": [
         "黑"
       ]
@@ -139,9 +139,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "上海",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "shanghai",
+      "playable": true,
       "aliases": [
         "沪",
         "申"
@@ -1113,9 +1113,9 @@
       "unitType": "prefecture_city",
       "parentAdcode": "230000",
       "provinceName": "黑龙江省",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false
+      "status": "live",
+      "packId": "harbin",
+      "playable_3d": true
     },
     {
       "adcode": "230200",
@@ -3875,6 +3875,16 @@
       "provinceName": "北京市",
       "status": "live",
       "packId": "beijing",
+      "playable_3d": true
+    },
+    {
+      "adcode": "310100",
+      "name": "上海主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "310000",
+      "provinceName": "上海市",
+      "status": "live",
+      "packId": "shanghai",
       "playable_3d": true
     },
     {

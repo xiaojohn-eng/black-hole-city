@@ -103,6 +103,20 @@ export class World {
       this.buildBeijingRoads(roadMat)
       this.buildHutongCompounds()
       this.buildAxisRibbon()
+    } else if (style === 'jiangnan_water') {
+      this.buildGridRoads(roadMat)
+      this.buildCanal()
+      this.scatterWhiteWalls()
+    } else if (style === 'qilou_street') {
+      this.buildGridRoads(roadMat)
+      this.scatterQilou()
+    } else if (style === 'oasis_court') {
+      this.buildSparseRoads(roadMat)
+      this.scatterFlatRoofs()
+    } else if (style === 'northeast_grid') {
+      this.buildGridRoads(roadMat)
+      this.buildRiverBand(0x7aa0b8, -70)
+      this.scatterDecor()
     } else {
       this.buildGridRoads(roadMat)
       this.scatterDecor()
@@ -234,6 +248,94 @@ export class World {
     }
   }
 
+  private buildCanal(): void {
+    const water = new THREE.Mesh(new THREE.PlaneGeometry(22, this.mapSize - 20), this.mat(0x3b82a8))
+    water.rotation.x = -Math.PI / 2
+    water.position.set(18, 0.04, 0)
+    this.staticRoot.add(water)
+    for (const z of [-60, 0, 60]) {
+      const bridge = new THREE.Mesh(new THREE.BoxGeometry(26, 0.6, 8), this.mat(0xa8a29e))
+      bridge.position.set(18, 0.4, z)
+      this.staticRoot.add(bridge)
+    }
+  }
+
+  private buildRiverBand(color: number, z: number): void {
+    const water = new THREE.Mesh(new THREE.PlaneGeometry(this.mapSize - 24, 28), this.mat(color))
+    water.rotation.x = -Math.PI / 2
+    water.position.set(0, 0.04, z)
+    this.staticRoot.add(water)
+  }
+
+  private scatterWhiteWalls(): void {
+    const wall = this.mat(0xf4f1ea)
+    const roof = this.mat(0x1f2937)
+    for (const x of [-90, -74, -58, -42]) {
+      for (const z of [-20, -4, 12, 28, 44]) {
+        const body = new THREE.Mesh(new THREE.BoxGeometry(10, 4, 8), wall)
+        body.position.set(x, 2, z)
+        this.staticRoot.add(body)
+        const r = new THREE.Mesh(new THREE.BoxGeometry(11, 0.7, 9), roof)
+        r.position.set(x, 4.4, z)
+        this.staticRoot.add(r)
+      }
+    }
+  }
+
+  private scatterQilou(): void {
+    const wall = this.mat(0xe8d5b5)
+    const col = this.mat(0xd6b48a)
+    for (let x = -80; x <= 80; x += 12) {
+      const body = new THREE.Mesh(new THREE.BoxGeometry(10, 7, 6), wall)
+      body.position.set(x, 3.5, -8)
+      this.staticRoot.add(body)
+      const pillar = new THREE.Mesh(new THREE.BoxGeometry(0.6, 3.2, 0.6), col)
+      pillar.position.set(x - 4, 1.6, -4.2)
+      this.staticRoot.add(pillar)
+      const pillar2 = pillar.clone()
+      pillar2.position.set(x + 4, 1.6, -4.2)
+      this.staticRoot.add(pillar2)
+    }
+  }
+
+  private buildSparseRoads(roadMat: THREE.MeshLambertMaterial): void {
+    const roadW = this.layout.roads.width
+    const spacing = Math.max(this.layout.roads.spacing, 48)
+    for (let i = -this.mapHalf + 28; i <= this.mapHalf - 28; i += spacing) {
+      const ns = new THREE.Mesh(new THREE.PlaneGeometry(roadW, this.mapSize - 24), roadMat)
+      ns.rotation.x = -Math.PI / 2
+      ns.position.set(i, 0.02, 0)
+      this.staticRoot.add(ns)
+    }
+    const canal = new THREE.Mesh(new THREE.PlaneGeometry(this.mapSize - 40, 10), this.mat(0x0e7490))
+    canal.rotation.x = -Math.PI / 2
+    canal.position.set(0, 0.03, 20)
+    this.staticRoot.add(canal)
+  }
+
+  private scatterFlatRoofs(): void {
+    const wall = this.mat(0xd6c0a0)
+    const roof = this.mat(0xb08968)
+    for (const x of [-70, -40, 40, 70]) {
+      for (const z of [-30, 0, 40]) {
+        const body = new THREE.Mesh(new THREE.BoxGeometry(14, 3.2, 12), wall)
+        body.position.set(x, 1.6, z)
+        this.staticRoot.add(body)
+        const r = new THREE.Mesh(new THREE.BoxGeometry(14.4, 0.35, 12.4), roof)
+        r.position.set(x, 3.35, z)
+        this.staticRoot.add(r)
+      }
+    }
+  }
+
+  private blockedByCivicAxis(x: number, z: number): boolean {
+    const style = this.layout.roads.style
+    if (style === 'hutong_axis' && Math.abs(x) < 12) return true
+    if (style === 'jiangnan_water' && Math.abs(x - 18) < 12) return true
+    if (style === 'northeast_grid' && Math.abs(z + 70) < 14) return true
+    return false
+  }
+
   private zoneBounds(zone: ZoneDef): { x0: number; x1: number; z0: number; z1: number } {
     return {
       x0: zone.x - zone.w / 2 + 4,
@@ -305,7 +407,7 @@ export class World {
     for (let attempt = 0; attempt < 12; attempt++) {
       const cx = rand(b.x0, b.x1)
       const cz = rand(b.z0, b.z1)
-      if (Math.abs(cx) < 12 && this.layout.roads.style === 'hutong_axis') continue
+      if (this.blockedByCivicAxis(cx, cz)) continue
       let ok = true
       for (const o of this.objects) {
         const oR = Math.max(o.hw, o.hd)
@@ -318,7 +420,7 @@ export class World {
       z = cz
       if (ok) break
     }
-    if (Math.abs(x) < 12 && this.layout.roads.style === 'hutong_axis') return
+    if (this.blockedByCivicAxis(x, z)) return
     const mesh = this.createFillMesh(tier)
     this.cloneMeshMaterials(mesh)
     mesh.position.set(x, dims.height / 2, z)

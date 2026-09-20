@@ -14,6 +14,7 @@ export interface CityDef {
   packId: string
   name: string
   alias: string[]
+  shortName?: string
   unitType: string
   parentProvince: string
   region7: string
@@ -34,6 +35,8 @@ export interface CityDef {
   mapSize: number
   mode: PlayMode
   fictional?: boolean
+  kitId?: string
+  startCards?: string[]
   briefing: string[]
 }
 
@@ -76,12 +79,21 @@ export interface LandmarkDef {
   silhouette: string
 }
 
+export type RoadStyle =
+  | 'grid'
+  | 'hutong_axis'
+  | 'jiangnan_water'
+  | 'qilou_street'
+  | 'oasis_court'
+  | 'northeast_grid'
+
 export interface LayoutDef {
   mapSize: number
-  roads: { style: 'grid' | 'hutong_axis'; spacing: number; width: number }
+  roads: { style: RoadStyle; spacing: number; width: number }
   zones: ZoneDef[]
   landmarks: LandmarkDef[]
   variants: string[]
+  kitId?: string
 }
 
 export interface KnowledgeCard {
@@ -101,6 +113,9 @@ export interface QuizQuestion {
   answer: number
   explain: string
   curriculumTag?: string
+  provinceAdcode?: string
+  provinceName?: string
+  shortName?: string
 }
 
 export interface LoadedPack {

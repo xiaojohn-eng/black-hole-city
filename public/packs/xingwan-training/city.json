@@ -33,6 +33,8 @@
   "mapSize": 240,
   "mode": "timed",
   "fictional": true,
+  "kitId": "north-brick-hutong",
+  "startCards": [],
   "briefing": [
     "这里是虚构训练场·星湾，不是北京，也不是任何一座真城。",
     "练习双阈值：洞口够大、质量够沉，才能把记忆归档。",

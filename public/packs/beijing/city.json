@@ -3,6 +3,7 @@
   "packId": "beijing",
   "name": "北京市",
   "alias": ["北京", "京", "首都"],
+  "shortName": "京",
   "unitType": "municipality_city",
   "parentProvince": "北京市",
   "region7": "华北",
@@ -33,6 +34,8 @@
   "mapSize": 240,
   "mode": "career",
   "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": ["card-bj-capital", "card-bj-short"],
   "briefing": [
     "我们在首都北京。南边是公园，中间是中轴线，西边是胡同。",
     "天安门是国家象征，不能归档进洞。请绕着它走完一圈，完成守护致敬。",

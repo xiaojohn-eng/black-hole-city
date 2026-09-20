@@ -1,6 +1,8 @@
 {
-  "version": "m1-capital",
-  "disclaimer": "本切片不宣称全国地级已收录可玩。可玩 3D 包仅训练场与北京。",
+  "version": "m2-province-factory",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场、北京、上海、哈尔滨。其余省入口为灰壳。",
+  "liveCityPacks": ["beijing", "shanghai", "harbin"],
+  "sharedQuiz": "packs/_shared/province-abbr-quiz.json",
   "packs": [
     {
       "id": "xingwan-training",
@@ -14,6 +16,22 @@
       "kind": "city",
       "adcode": "110100",
       "name": "北京市",
+      "fictional": false,
+      "mode": "career"
+    },
+    {
+      "id": "shanghai",
+      "kind": "city",
+      "adcode": "310100",
+      "name": "上海市",
+      "fictional": false,
+      "mode": "career"
+    },
+    {
+      "id": "harbin",
+      "kind": "city",
+      "adcode": "230100",
+      "name": "哈尔滨市",
       "fictional": false,
       "mode": "career"
     }

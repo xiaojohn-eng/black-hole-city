@@ -183,7 +183,7 @@ export class UIManager {
           <div class="hole-icon">●</div>
           <h1>记忆黑洞</h1>
           <p class="subtitle">中国城市博物馆</p>
-          <p class="version">M1 首都课切片 · 收回散落的城市记忆</p>
+          <p class="version">M2 省级工厂起步 · 收回散落的城市记忆</p>
         </div>
         <div class="btn-col wide">
           <button class="btn secondary" id="btn-train">训练场·星湾（虚构）</button>
@@ -192,7 +192,7 @@ export class UIManager {
           <button class="btn ghost" id="btn-howto">如何游玩</button>
         </div>
         <div class="stats-line">最高分：${high}　最大体型：L${maxLv}　身份：${p.nickname}</div>
-        <p class="footnote">不宣称全国地级已收录 · 本切片可玩训练场与北京</p>
+        <p class="footnote">不宣称全国地级已收录 · live：训练场 / 北京 / 上海 / 哈尔滨</p>
       </div>`
     this.bind('btn-train', () => this.game.openBriefing('xingwan-training'))
     this.bind('btn-beijing', () => this.game.openBriefing('beijing'))
@@ -217,8 +217,8 @@ export class UIManager {
           <ol class="howto-list">
             <li>你是记忆守护员。吸入碎片 = 把记忆归档进博物馆。</li>
             <li>洞口够大、质量够沉，才能归档（双阈值）。</li>
-            <li>训练场·星湾是虚构练习；真城课请选北京。</li>
-            <li>天安门不可归档，请绕行一周完成守护致敬。</li>
+            <li>训练场·星湾是虚构练习；真城课请从大厅选北京、上海或哈尔滨。</li>
+            <li>纪念空间不可归档，请绕行一周完成守护致敬。</li>
             <li>局后有 3 道小测验，可跳过，但跳过不会点亮「小博士」。</li>
           </ol>
           <p class="hint">桌面：WASD　移动端：左侧拖动摇杆　P/Esc 暂停</p>
@@ -236,7 +236,7 @@ export class UIManager {
           <h2>${b.title}</h2>
           ${b.lines.map((l) => `<p class="brief-line">${l}</p>`).join('')}
           <div class="btn-row" style="margin-top:1.2rem">
-            <button class="btn primary" id="btn-go">${b.packId === 'beijing' ? '开始守护' : '开始练习'}</button>
+            <button class="btn primary" id="btn-go">${b.packId === 'xingwan-training' ? '开始练习' : '开始守护'}</button>
             <button class="btn secondary" id="btn-back">返回</button>
           </div>
         </div>
@@ -286,7 +286,7 @@ export class UIManager {
                 <option value="240" ${s.duration === 240 ? 'selected' : ''}>240 秒</option>
               </select>
             </label>
-            <p class="hint">生涯模式（北京）不使用倒计时，只看裂隙稳定度。</p>
+            <p class="hint">生涯模式（真城课）不使用倒计时，只看裂隙稳定度。</p>
             <label><input type="checkbox" id="s-shake" ${s.cameraShake ? 'checked' : ''}/> 镜头震动</label>
             <label><input type="checkbox" id="s-outline" ${s.outlineHint ? 'checked' : ''}/> 可归档物体描边</label>
             <label><input type="checkbox" id="s-lock" ${s.lockIcon ? 'checked' : ''}/> 门槛提示</label>
@@ -362,12 +362,13 @@ export class UIManager {
       .map((r) => {
         const cards = grouped.get(r)!
           .map((p) => {
-            const playable = p.playable
+            const n = this.liveCitiesOf(p.adcode).length
+            const playable = n > 0 || p.playable
             return `<button class="prov-card ${playable ? 'live' : 'repair'}" data-adcode="${p.adcode}">
               <span class="prov-name">${p.name}</span>
               <span class="prov-short">${p.shortName}</span>
               <span class="prov-cap">行政中心 ${p.capital}</span>
-              <span class="prov-st">${playable ? '可玩 · 首都课' : '记忆修复中'}</span>
+              <span class="prov-st">${playable ? `可玩 · ${n} 座` : '记忆修复中'}</span>
             </button>`
           })
           .join('')
@@ -381,19 +382,28 @@ export class UIManager {
       const prov = this.admin.provinces.find((p) => p.adcode === open)
       const children: AdminPrefecture[] = this.admin.prefectures.filter((c) => c.parentAdcode === open)
       if (prov) {
+        const live = this.liveCitiesOf(open)
         const rows = children
-          .map(
-            (c) =>
-              `<li class="${c.playable_3d ? 'live' : ''}">${c.name}${c.playable_3d ? ' · 可玩' : ' · 记忆修复中'}</li>`,
-          )
+          .map((c) => {
+            const openable = c.playable_3d && c.packId
+            return `<li class="${openable ? 'live' : ''}">
+              ${c.name}${openable ? ' · 可玩' : ' · 记忆修复中'}
+              ${openable ? `<button class="btn tiny" data-pack="${c.packId}">进入</button>` : ''}
+            </li>`
+          })
           .join('')
+        const enterBtns = live
+          .map((c) => `<button class="btn primary" data-pack="${c.packId}">进入 ${c.name.replace(/主城$/, '')}</button>`)
+          .join('')
+        const first = live[0]
         detail = `<div class="prov-detail">
           <h3>${prov.name}（${prov.shortName}）</h3>
           <p>${prov.region7} / ${prov.region4} · 行政中心 ${prov.capital}</p>
-          <p class="hint">${prov.playable ? '首都课可进入 3D。' : '本切片尚未制作 3D 包，仅占位名录。不宣称全国地级已收录。'}</p>
-          ${rows ? `<ul class="city-mini">${rows}</ul>` : '<p class="hint">省级单位，无地级列表（或见主城入口）。</p>'}
-          <div class="btn-row">
-            ${prov.playable ? '<button class="btn primary" id="btn-play-bj">进入北京 3D</button><button class="btn secondary" id="btn-codex">本城图鉴</button>' : ''}
+          <p class="hint">${live.length ? '本省已开放行政中心或代表城 3D。未列城仍是灰壳。' : '本省入口可点，城包尚未制作，显示「记忆修复中」。不宣称全国地级已收录。'}</p>
+          ${rows ? `<ul class="city-mini">${rows}</ul>` : '<p class="hint">省级单位，见主城入口。</p>'}
+          <div class="btn-row wrap">
+            ${enterBtns}
+            ${first ? `<button class="btn secondary" id="btn-codex" data-pack="${first.packId}">本城图鉴</button>` : ''}
           </div>
         </div>`
       }
@@ -405,15 +415,16 @@ export class UIManager {
           <button class="icon-btn" id="btn-back" title="返回">←</button>
           <div>
             <h2>全国大厅</h2>
-            <p class="hint">34 省可浏览 · 非北京显示「记忆修复中」· 不上未审中国全图</p>
+            <p class="hint">34 省可点 · 省内仅行政中心与已做代表城可进 · 其余「记忆修复中」· 不上未审中国全图</p>
           </div>
         </div>
-        <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」或「北京」）" value="${q}"/>
+        <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」「沪」「黑」）" value="${q}"/>
         <p class="footnote">${this.admin.disclaimer}</p>
         <div class="lobby-body">
           <div class="lobby-list">${sections || '<p>没有匹配的省。</p>'}</div>
           ${detail}
         </div>
+        ${this.game.hasSharedQuiz() ? '<div class="btn-row" style="margin:0.8rem 1rem 1.2rem"><button class="btn secondary" id="btn-prov-quiz">抽 3 道 34 省简称题</button></div>' : ''}
       </div>`
 
     this.bind('btn-back', () => this.game.goTitle())
@@ -432,8 +443,21 @@ export class UIManager {
         void this.renderLobby()
       })
     })
-    this.bind('btn-play-bj', () => this.game.openBriefing('beijing'))
-    this.bind('btn-codex', () => this.game.openCodex('beijing'))
+    this.layer.querySelectorAll<HTMLButtonElement>('[data-pack]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation()
+        const packId = btn.dataset.pack
+        if (!packId) return
+        if (btn.id === 'btn-codex') this.game.openCodex(packId)
+        else this.game.openBriefing(packId)
+      })
+    })
+    this.bind('btn-prov-quiz', () => this.game.beginProvinceQuiz())
+  }
+
+  private liveCitiesOf(provinceAdcode: string): AdminPrefecture[] {
+    if (!this.admin) return []
+    return this.admin.prefectures.filter((c) => c.parentAdcode === provinceAdcode && c.playable_3d && c.packId)
   }
 
   private renderCodex(): void {
@@ -447,32 +471,32 @@ export class UIManager {
       <div class="overlay lobby-screen" data-ui="1">
         <div class="lobby-head">
           <button class="icon-btn" id="btn-back">←</button>
-          <h2>图鉴 · 北京市</h2>
+          <h2>图鉴 · ${c.capital || c.provinceName}</h2>
         </div>
         <div class="codex">
           <section class="prov-hero">
             <h3>${c.provinceName}</h3>
-            <p>简称 <b>${c.shortName}</b> · 行政中心 ${c.capital}</p>
+            <p>简称 <b>${c.shortName}</b> · ${c.capital}</p>
             <p>${c.region7} / ${c.region4} · ${c.climate}</p>
             <p>${c.blurb}</p>
             <p class="doctor">${doctor}</p>
           </section>
           <section>
             <h3>本城地标</h3>
-            <ul>${lms || '<li>去 3D 课里点亮天安门、故宫等。</li>'}</ul>
+            <ul>${lms || '<li>去 3D 课里点亮 GUARD / VISIT 地标。</li>'}</ul>
           </section>
           <section>
             <h3>已收知识卡 ${c.cards.length}</h3>
-            ${cards || '<p class="hint">玩一局首都课，归档或守护后会点亮卡片。也可从大厅直接打开本页。</p>'}
+            ${cards || '<p class="hint">玩一局真城课，归档或守护后会点亮卡片。也可从大厅直接打开本页。</p>'}
           </section>
         </div>
         <div class="btn-row" style="margin:1rem">
-          <button class="btn primary" id="btn-play">进入北京</button>
+          <button class="btn primary" id="btn-play">进入 3D</button>
           <button class="btn secondary" id="btn-lobby">回大厅</button>
         </div>
       </div>`
     this.bind('btn-back', () => this.game.goTitle())
-    this.bind('btn-play', () => this.game.openBriefing('beijing'))
+    this.bind('btn-play', () => this.game.openBriefing(c.packId))
     this.bind('btn-lobby', () => this.game.openLobby())
   }
 
@@ -673,10 +697,13 @@ export class UIManager {
           <div class="modal">
             <h2>测验结束</h2>
             <p>${msg}</p>
-            <button class="btn primary" id="btn-codex">查看图鉴</button>
+            <button class="btn primary" id="btn-codex">${this.game.quizReturn === 'lobby' ? '回大厅' : '查看图鉴'}</button>
           </div>
         </div>`
-      this.bind('btn-codex', () => this.game.openCodex('beijing'))
+      this.bind('btn-codex', () => {
+        if (this.game.quizReturn === 'lobby') this.game.openLobby()
+        else this.game.openCodex(this.game.codexFocus)
+      })
       return
     }
     const q = v.q

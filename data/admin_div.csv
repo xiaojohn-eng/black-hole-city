@@ -6,8 +6,8 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 150000,内蒙古自治区,内蒙古,autonomous_region,,内蒙古自治区,华北,北方地区,呼和浩特,false,B,,placeholder,"内蒙古,内蒙"
 210000,辽宁省,辽,province,,辽宁省,东北,北方地区,沈阳,false,B,,placeholder,辽
 220000,吉林省,吉,province,,吉林省,东北,北方地区,长春,false,B,,placeholder,吉
-230000,黑龙江省,黑,province,,黑龙江省,东北,北方地区,哈尔滨,false,B,,placeholder,黑
-310000,上海市,沪,municipality,,上海市,华东,南方地区,上海,false,S,,placeholder,"沪,申"
+230000,黑龙江省,黑,province,,黑龙江省,东北,北方地区,哈尔滨,false,A,harbin,live,黑
+310000,上海市,沪,municipality,,上海市,华东,南方地区,上海,false,S,shanghai,live,"沪,申"
 320000,江苏省,苏,province,,江苏省,华东,南方地区,南京,false,B,,placeholder,苏
 330000,浙江省,浙,province,,浙江省,华东,南方地区,杭州,false,B,,placeholder,浙
 340000,安徽省,皖,province,,安徽省,华东,南方地区,合肥,false,B,,placeholder,皖
@@ -90,7 +90,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 220700,松原市,,prefecture_city,220000,吉林省,东北,北方地区,松原,false,B,,placeholder,
 220800,白城市,,prefecture_city,220000,吉林省,东北,北方地区,白城,false,B,,placeholder,
 222400,延边朝鲜族自治州,,autonomous_prefecture,220000,吉林省,东北,北方地区,延边朝鲜,false,C,,placeholder,
-230100,哈尔滨市,,prefecture_city,230000,黑龙江省,东北,北方地区,哈尔滨,false,S,,placeholder,
+230100,哈尔滨市,,prefecture_city,230000,黑龙江省,东北,北方地区,哈尔滨,true,A,harbin,live,
 230200,齐齐哈尔市,,prefecture_city,230000,黑龙江省,东北,北方地区,齐齐哈尔,false,B,,placeholder,
 230300,鸡西市,,prefecture_city,230000,黑龙江省,东北,北方地区,鸡西,false,B,,placeholder,
 230400,鹤岗市,,prefecture_city,230000,黑龙江省,东北,北方地区,鹤岗,false,B,,placeholder,
@@ -367,6 +367,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 654200,塔城地区,,prefecture,650000,新疆维吾尔自治区,西北,西北地区,塔城,false,C,,placeholder,
 654300,阿勒泰地区,,prefecture,650000,新疆维吾尔自治区,西北,西北地区,阿勒泰,false,C,,placeholder,
 110100,北京主城,京,municipality_city,110000,北京市,华北,北方地区,北京,true,S,beijing,live,"北京,首都,京"
+310100,上海主城,沪,municipality_city,310000,上海市,华东,南方地区,上海,true,A,shanghai,live,"上海,沪,申"
 419001,济源市,,province_directly,410000,河南省,华中,北方地区,济源,false,D,,placeholder,
 429004,仙桃市,,province_directly,420000,湖北省,华中,南方地区,仙桃,false,D,,placeholder,
 429005,潜江市,,province_directly,420000,湖北省,华中,南方地区,潜江,false,D,,placeholder,

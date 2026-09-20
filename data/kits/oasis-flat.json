@@ -1,0 +1,34 @@
+{
+  "id": "oasis-flat",
+  "name": "绿洲平顶",
+  "batch": 0,
+  "regions": ["西北", "西北地区"],
+  "climateHint": ["温带大陆性", "干旱"],
+  "palette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62",
+    "wall": "#d6c0a0",
+    "roof": "#b08968",
+    "accent": "#0e7490"
+  },
+  "roads": { "style": "oasis_court", "spacing": 48, "width": 7 },
+  "fill": {
+    "L6": "flat_adobe",
+    "L7": "courtyard_flat",
+    "notes": "平顶土/砖、庭院稀疏；绿洲水线是辨识关键，不是沙丘卡通。"
+  },
+  "landmarks": ["minaret_visit_only", "bazaar_arcade", "poplar_row"],
+  "decor": "poplar, irrigation channel, sparse courts",
+  "doNot": ["qilou", "stilt_house", "snow_castle_as_default", "cartoon_camel_gag"],
+  "exportDraft": {
+    "command": "npm run scaffold:city -- --adcode=<地级> --kit=oasis-flat",
+    "steps": [
+      "新疆绿洲城、河西走廊城优先",
+      "宗教建筑外观只做 VISIT，禁止崩塌与滑稽音",
+      "民族、在世人物、版图边界不得半自动写入 knowledge/quiz",
+      "导出 B 级草稿后必须人工四审才可 live"
+    ]
+  }
+}

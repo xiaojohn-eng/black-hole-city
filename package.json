@@ -1,7 +1,7 @@
 {
   "name": "black-hole-city",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,8 +11,11 @@
     "validate:packs": "node tools/validate-packs.mjs",
     "validate:lexicon": "node tools/check-lexicon.mjs",
     "validate:coords": "node tools/check-client-coords.mjs",
+    "validate:province-quiz": "node tools/validate-province-quiz.mjs",
+    "validate:kits": "node tools/validate-kits.mjs",
     "test:logic": "node tools/logic-selftest.mjs",
-    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run test:logic",
+    "scaffold:city": "node tools/pack-scaffold.mjs",
+    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run test:logic",
     "test": "npm run validate"
   },
   "devDependencies": {
@@ -23,5 +26,5 @@
   "dependencies": {
     "three": "^0.186.0"
   },
-  "description": "记忆黑洞 · 中国城市博物馆 — M1 首都课切片（训练场 + 北京）"
+  "description": "记忆黑洞 · 中国城市博物馆 — M2 省级工厂起步（训练场 + 北京/上海/哈尔滨）"
 }

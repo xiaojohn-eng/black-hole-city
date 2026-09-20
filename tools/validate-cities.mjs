@@ -68,6 +68,14 @@ const beijing = allRows().find((r) => r.adcode === '110100')
 if (!beijing || beijing.status !== 'live' || beijing.packId !== 'beijing' || !beijing.playable_3d) {
   fail('110100 北京主城 must be live / packId=beijing / playable_3d')
 }
+const shanghai = allRows().find((r) => r.adcode === '310100')
+if (!shanghai || shanghai.status !== 'live' || shanghai.packId !== 'shanghai' || !shanghai.playable_3d) {
+  fail('310100 上海主城 must be live / packId=shanghai / playable_3d')
+}
+const harbin = allRows().find((r) => r.adcode === '230100')
+if (!harbin || harbin.status !== 'live' || harbin.packId !== 'harbin' || !harbin.playable_3d) {
+  fail('230100 哈尔滨 must be live / packId=harbin / playable_3d')
+}
 
 const sansha = prefectures.find((r) => r.adcode === '460300')
 if (!sansha || sansha.playable_3d) fail('三沙市 must exist and playable_3d=false')
@@ -103,7 +111,7 @@ if (csvPref.filter((r) => r.unitType === 'league').length !== 3) fail('CSV meng 
 const publicDir = path.join(root, 'public', 'data')
 fs.mkdirSync(publicDir, { recursive: true })
 const index = {
-  disclaimer: '本切片不宣称全国地级已收录可玩。333 地级行为占位名录，仅北京市主城 3D 可玩。',
+  disclaimer: '本切片不宣称全国地级已收录可玩。live 3D：训练场、北京、上海、哈尔滨。其余为占位名录与灰壳。',
   counts: {
     provincial: 34,
     prefectureTotal: 333,
@@ -122,7 +130,7 @@ const index = {
     capital: p.capital,
     status: p.status,
     packId: p.packId,
-    playable: p.status === 'live' && p.packId === 'beijing',
+    playable: p.status === 'live' && Boolean(p.packId),
     aliases: p.aliases ? p.aliases.split(',') : [],
   })),
   prefectures: prefectures.concat(EXTRAS).map((c) => ({

@@ -87,6 +87,18 @@ h1 {
   gap: 0.7rem;
   justify-content: center;
 }
+.btn.tiny {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  min-height: 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(251, 191, 36, 0.5);
+  background: rgba(120, 53, 15, 0.55);
+  color: #fde68a;
+  cursor: pointer;
+}
 
 .btn {
   border: none;

@@ -34,6 +34,7 @@ import {
   emptyCityProgress,
 } from '../persistence/storage'
 import { loadPack, pickQuiz, cardById } from '../content/loadPack'
+import { loadSharedQuiz, pickSharedQuiz, type SharedQuizBank } from '../content/loadShared'
 import type { KnowledgeCard, LoadedPack, QuizQuestion } from '../content/types'
 
 export type Screen =
@@ -101,7 +102,9 @@ export class Game {
   profile: Profile
   pack: LoadedPack | null = null
   private currentPackId: string | null = null
-  private beijingCatalog: LoadedPack | null = null
+  private catalogs = new Map<string, LoadedPack>()
+  private sharedQuiz: SharedQuizBank | null = null
+  quizReturn: Screen = 'result'
 
   screen: Screen = 'loading'
   private lastT = 0
@@ -137,6 +140,7 @@ export class Game {
   quizIndex = 0
   quizAnswers: { id: string; correct: boolean }[] = []
   quizSkipped = false
+  private quizSink: 'city' | 'province-abbr' = 'city'
   private briefingPackId: string | null = null
   codexFocus = 'beijing'
   private hemi: THREE.HemisphereLight | null = null
@@ -174,6 +178,11 @@ export class Game {
     if (!this.initThree()) {
       this.setScreen('nowebgl')
       return
+    }
+    try {
+      this.sharedQuiz = await loadSharedQuiz()
+    } catch (err) {
+      console.warn('shared quiz unavailable', err)
     }
     this.setScreen('title')
     this.startLoop()
@@ -376,7 +385,7 @@ export class Game {
   }
 
   private cityProg(): CityProgress {
-    const id = this.pack?.city.packId ?? 'beijing'
+    const id = this.quizSink === 'province-abbr' ? 'province-abbr' : (this.pack?.city.packId ?? this.codexFocus)
     if (!this.profile.encyclopedia[id]) this.profile.encyclopedia[id] = emptyCityProgress()
     return this.profile.encyclopedia[id]
   }
@@ -469,15 +478,17 @@ export class Game {
     }
 
     this.unlockCard(obj.knowledgeCardId, true)
-    if (this.objectsEaten === 1 && this.pack?.city.packId === 'beijing') {
-      this.unlockCard('card-bj-capital', true)
+    if (this.objectsEaten === 1) {
+      const intro = this.pack?.city.startCards?.[0]
+      if (intro) this.unlockCard(intro, true)
     }
     if (this.objectsEaten === 8) this.showToast('再长大一点就能归档轿车了')
-    if (this.player.level === 4 && this.pack?.city.packId === 'xingwan-training') {
+    if (this.player.level === 4 && this.pack?.city.fictional) {
       this.showToast('西侧是生活区，东北有训练地标')
     }
-    if (this.player.level >= 3 && this.pack?.city.packId === 'beijing' && this.guarded === 0) {
-      this.showToast('沿石板中轴往北，去环绕天安门致敬')
+    if (this.player.level >= 3 && this.guarded === 0) {
+      const guard = this.world?.objects.find((o) => o.interact === 'guard')
+      this.showToast(guard ? `去环绕${guard.name}致敬` : '去环绕纪念地标致敬')
     }
   }
 
@@ -493,8 +504,8 @@ export class Game {
       saveProfile(this.profile)
     }
     this.unlockCard(obj.knowledgeCardId, true)
-    this.unlockCard('card-bj-capital', true)
-    this.unlockCard('card-bj-axis', false)
+    const intro = this.pack?.city.startCards?.[0]
+    if (intro) this.unlockCard(intro, false)
   }
 
   private handleVisit(obj: Eatable): void {
@@ -546,15 +557,16 @@ export class Game {
   }
 
   private tutorialText(): string {
-    const bj = this.pack?.city.packId === 'beijing'
+    const real = Boolean(this.pack && !this.pack.city.fictional)
+    const beat = this.pack?.city.storyBeats?.[0]
     switch (this.tutorialStep) {
       case 1:
-        return bj ? '推动黑洞，去南城公园收集小记忆' : '推动黑洞，去碰比你小的碎片'
+        return real && beat ? `推动黑洞，${beat}` : '推动黑洞，去碰比你小的碎片'
       case 2:
         return '把碎片归档进博物馆入口，让洞变大'
       case 3:
-        return bj
-          ? '天安门请绕行一周致敬，不要往里冲。故宫走近即可参观。'
+        return real
+          ? '纪念空间请绕行一周致敬，不要往里冲。文保建筑走近即可参观。'
           : '洞口和质量都够了，才能归档更大的记忆。'
       default:
         return ''
@@ -599,6 +611,7 @@ export class Game {
     })
     this.swallow.setThreshScale(this.threshScale)
     this.currentPackId = packId
+    this.catalogs.set(packId, this.pack)
     this.profile.packSwitchCount = (this.profile.packSwitchCount ?? 0) + 1
     saveProfile(this.profile)
   }
@@ -619,29 +632,36 @@ export class Game {
   openBriefing(packId: string): void {
     this.briefingPackId = packId
     this.audio.playUi()
-    this.setScreen('briefing')
+    if (this.catalogs.has(packId)) {
+      this.setScreen('briefing')
+      return
+    }
+    this.setScreen('loading')
+    void this.prefetchPack(packId).then(() => this.setScreen('briefing'))
   }
 
   getBriefing(): { title: string; lines: string[]; packId: string } {
-    if (this.briefingPackId === 'xingwan-training') {
+    const id = this.briefingPackId ?? 'xingwan-training'
+    const city = this.catalogs.get(id)?.city
+    if (city) {
+      const title = city.fictional ? `训练场·${city.name.replace(/训练场$/, '')}（虚构）` : `记忆博物馆·${city.name.replace(/市$/, '')}`
+      return { title, lines: city.briefing, packId: id }
+    }
+    if (id === 'xingwan-training') {
       return {
         title: '训练场·星湾（虚构）',
         lines: [
           '这里是虚构训练场，不是中国任何一座真城。',
           '限时冲分，练习双阈值手感。',
-          '练好了，再去记忆博物馆·北京上首都课。',
+          '练好了，再去记忆博物馆上真城课。',
         ],
         packId: 'xingwan-training',
       }
     }
     return {
-      title: '记忆博物馆·北京',
-      lines: [
-        '我们在首都北京。南边是公园，中间是中轴线，西边是胡同。',
-        '天安门是国家象征，不能归档进洞。请绕着它走完一圈，完成守护致敬。',
-        '故宫走近即可参观。生涯模式不倒计时，看裂隙稳定度。',
-      ],
-      packId: 'beijing',
+      title: '记忆博物馆',
+      lines: ['正在打开这座城的课前说明。'],
+      packId: id,
     }
   }
 
@@ -681,16 +701,16 @@ export class Game {
     this.quizIndex = 0
     this.quizAnswers = []
     this.quizSkipped = false
+    this.quizSink = 'city'
+    this.quizReturn = 'codex'
 
     const spawn = this.pack?.city.spawn ?? { x: 0, z: -90 }
     this.player?.reset(spawn.x, spawn.z)
     this.world?.reset()
 
     this.tutorialStep = this.profile.tutorialDone ? 0 : 1
-    if (id === 'beijing') {
-      this.unlockCard('card-bj-capital', true)
-      this.unlockCard('card-bj-short', false)
-    }
+    const start = this.pack?.city.startCards ?? []
+    start.forEach((cid, i) => this.unlockCard(cid, i === 0))
     this.setScreen('playing')
     this.emitHud()
   }
@@ -731,7 +751,9 @@ export class Game {
     this.profile.gamesPlayed++
     saveProfile(this.profile)
 
-    const hasQuiz = (this.pack?.quiz.questions.length ?? 0) >= 3 && this.pack?.city.packId === 'beijing'
+    const cityQs = this.pack?.quiz.questions.length ?? 0
+    const sharedQs = this.sharedQuiz?.questions.length ?? 0
+    const hasQuiz = !this.pack?.city.fictional && cityQs + sharedQs >= 3
     this.resultData = {
       score: this.score,
       highScore: this.profile.highScore,
@@ -756,14 +778,35 @@ export class Game {
   }
 
   beginQuiz(): void {
-    if (!this.pack) {
+    if (!this.pack && !this.sharedQuiz) {
       this.goTitle()
       return
     }
-    this.quizSet = pickQuiz(this.pack, this.settings.ageBand, 3)
+    this.quizReturn = 'codex'
+    this.quizSink = 'city'
+    const cityPart = this.pack && !this.pack.city.fictional ? pickQuiz(this.pack, this.settings.ageBand, 2) : []
+    const sharedPart = this.sharedQuiz ? pickSharedQuiz(this.sharedQuiz, this.settings.ageBand, 3 - cityPart.length) : []
+    this.quizSet = [...cityPart, ...sharedPart].slice(0, 3)
+    if (this.quizSet.length === 0) {
+      this.goTitle()
+      return
+    }
     this.quizIndex = 0
     this.quizAnswers = []
     this.quizSkipped = false
+    this.audio.playUi()
+    this.setScreen('quiz')
+  }
+
+  beginProvinceQuiz(): void {
+    if (!this.sharedQuiz) return
+    this.quizReturn = 'lobby'
+    this.quizSink = 'province-abbr'
+    this.quizSet = pickSharedQuiz(this.sharedQuiz, this.settings.ageBand, 3)
+    this.quizIndex = 0
+    this.quizAnswers = []
+    this.quizSkipped = false
+    this.briefingPackId = null
     this.audio.playUi()
     this.setScreen('quiz')
   }
@@ -794,7 +837,11 @@ export class Game {
       prog.quizSkipped = false
     }
     saveProfile(this.profile)
-    this.codexFocus = this.pack?.city.packId ?? 'beijing'
+    if (this.quizReturn === 'lobby') {
+      this.codexFocus = this.pack?.city.packId ?? 'beijing'
+    } else {
+      this.codexFocus = this.pack?.city.packId ?? this.codexFocus
+    }
     if (this.screen === 'quiz') this.onScreenChange?.('quiz')
     else this.setScreen('quiz')
   }
@@ -821,23 +868,33 @@ export class Game {
 
   openLobby(): void {
     this.audio.playUi()
-    void this.prefetchBeijingCatalog()
+    void this.prefetchPack('beijing')
     this.setScreen('lobby')
   }
 
-  openCodex(focus = 'beijing'): void {
-    this.codexFocus = focus
+  openCodex(focus?: string): void {
+    this.codexFocus = focus ?? this.pack?.city.packId ?? 'beijing'
     this.audio.playUi()
-    void this.prefetchBeijingCatalog().then(() => this.setScreen('codex'))
-    this.setScreen('codex')
+    if (this.catalogs.has(this.codexFocus)) {
+      this.setScreen('codex')
+      return
+    }
+    this.setScreen('loading')
+    void this.prefetchPack(this.codexFocus).then(() => this.setScreen('codex'))
   }
 
-  private async prefetchBeijingCatalog(): Promise<void> {
-    if (this.beijingCatalog) return
-    this.beijingCatalog = await loadPack('beijing')
+  async prefetchPack(packId: string): Promise<void> {
+    if (this.catalogs.has(packId)) return
+    try {
+      const pack = await loadPack(packId)
+      this.catalogs.set(packId, pack)
+    } catch (err) {
+      console.warn('pack prefetch failed', packId, err)
+    }
   }
 
   getCodex(): {
+    packId: string
     provinceName: string
     shortName: string
     capital: string
@@ -849,18 +906,21 @@ export class Game {
     cards: KnowledgeCard[]
     landmarks: { id: string; name: string; mark: string }[]
   } {
-    const prog = this.profile.encyclopedia.beijing ?? emptyCityProgress()
-    const cat = this.beijingCatalog ?? (this.pack?.city.packId === 'beijing' ? this.pack : null)
+    const id = this.codexFocus
+    const cat = this.catalogs.get(id) ?? (this.pack?.city.packId === id ? this.pack : null)
+    const prog = this.profile.encyclopedia[id] ?? emptyCityProgress()
     const cards = cat?.knowledge.cards ?? []
     const lms = cat?.layout.landmarks ?? []
+    const city = cat?.city
     return {
-      provinceName: '北京市',
-      shortName: '京',
-      capital: '北京',
-      region7: '华北',
-      region4: '北方地区',
-      climate: '温带季风',
-      blurb: '中华人民共和国首都。国家的心脏与书房。本切片可玩首都课，不宣称全国地级已收录。',
+      packId: id,
+      provinceName: city?.parentProvince ?? city?.name ?? id,
+      shortName: city?.shortName ?? city?.alias?.find((a) => a.length <= 2) ?? city?.alias?.[0] ?? '',
+      capital: city?.name ?? '',
+      region7: city?.region7 ?? '',
+      region4: city?.region4 ?? '',
+      climate: city?.climateBand ?? '',
+      blurb: city?.storyLogline ?? '本切片不宣称全国地级已收录。',
       progress: prog,
       cards: cards.filter((c) => prog.cards.includes(c.id)),
       landmarks: lms.map((l) => ({
@@ -869,6 +929,10 @@ export class Game {
         mark: prog.landmarks[l.id] ?? '未点亮',
       })),
     }
+  }
+
+  hasSharedQuiz(): boolean {
+    return (this.sharedQuiz?.questions.length ?? 0) >= 3
   }
 
   openSettings(from?: Screen): void {

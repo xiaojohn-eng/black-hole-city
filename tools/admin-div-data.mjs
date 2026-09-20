@@ -57,8 +57,8 @@ export const PROVINCES = [
   r({ adcode: '150000', name: '内蒙古自治区', shortName: '内蒙古', unitType: 'autonomous_region', region7: '华北', region4: '北方地区', capital: '呼和浩特', aliases: '内蒙古,内蒙' }),
   r({ adcode: '210000', name: '辽宁省', shortName: '辽', unitType: 'province', region7: '东北', region4: '北方地区', capital: '沈阳', aliases: '辽' }),
   r({ adcode: '220000', name: '吉林省', shortName: '吉', unitType: 'province', region7: '东北', region4: '北方地区', capital: '长春', aliases: '吉' }),
-  r({ adcode: '230000', name: '黑龙江省', shortName: '黑', unitType: 'province', region7: '东北', region4: '北方地区', capital: '哈尔滨', aliases: '黑' }),
-  r({ adcode: '310000', name: '上海市', shortName: '沪', unitType: 'municipality', region7: '华东', region4: '南方地区', capital: '上海', contentTier: 'S', aliases: '沪,申' }),
+  r({ adcode: '230000', name: '黑龙江省', shortName: '黑', unitType: 'province', region7: '东北', region4: '北方地区', capital: '哈尔滨', contentTier: 'A', packId: 'harbin', status: 'live', aliases: '黑' }),
+  r({ adcode: '310000', name: '上海市', shortName: '沪', unitType: 'municipality', region7: '华东', region4: '南方地区', capital: '上海', contentTier: 'S', packId: 'shanghai', status: 'live', aliases: '沪,申' }),
   r({ adcode: '320000', name: '江苏省', shortName: '苏', unitType: 'province', region7: '华东', region4: '南方地区', capital: '南京', aliases: '苏' }),
   r({ adcode: '330000', name: '浙江省', shortName: '浙', unitType: 'province', region7: '华东', region4: '南方地区', capital: '杭州', aliases: '浙' }),
   r({ adcode: '340000', name: '安徽省', shortName: '皖', unitType: 'province', region7: '华东', region4: '南方地区', capital: '合肥', aliases: '皖' }),
@@ -176,7 +176,7 @@ export const PREFECTURES = [
   child('220000', 'prefecture_city', '220800', '白城市'),
   child('220000', 'autonomous_prefecture', '222400', '延边朝鲜族自治州'),
   // 黑龙江 12 市 + 1 地区
-  child('230000', 'prefecture_city', '230100', '哈尔滨市', 'S'),
+  child('230000', 'prefecture_city', '230100', '哈尔滨市', 'A'),
   child('230000', 'prefecture_city', '230200', '齐齐哈尔市'),
   child('230000', 'prefecture_city', '230300', '鸡西市'),
   child('230000', 'prefecture_city', '230400', '鹤岗市'),
@@ -475,6 +475,17 @@ export const PREFECTURES = [
   child('650000', 'prefecture', '654300', '阿勒泰地区'),
 ]
 
+function markLiveCity(adcode, packId, tier = 'A') {
+  const row = PREFECTURES.find((x) => x.adcode === adcode)
+  if (!row) throw new Error(`missing prefecture ${adcode}`)
+  row.playable_3d = true
+  row.packId = packId
+  row.status = 'live'
+  row.contentTier = tier
+}
+
+markLiveCity('230100', 'harbin', 'A')
+
 /** Extra rows (not in 333). Beijing city pack uses 110100. */
 export const EXTRAS = [
   r({
@@ -492,6 +503,22 @@ export const EXTRAS = [
     packId: 'beijing',
     status: 'live',
     aliases: '北京,首都,京',
+  }),
+  r({
+    adcode: '310100',
+    name: '上海主城',
+    shortName: '沪',
+    unitType: 'municipality_city',
+    parentAdcode: '310000',
+    provinceName: '上海市',
+    region7: '华东',
+    region4: '南方地区',
+    capital: '上海',
+    playable_3d: true,
+    contentTier: 'A',
+    packId: 'shanghai',
+    status: 'live',
+    aliases: '上海,沪,申',
   }),
   r({ adcode: '419001', name: '济源市', unitType: 'province_directly', parentAdcode: '410000', provinceName: '河南省', region7: '华中', region4: '北方地区', capital: '济源', contentTier: 'D' }),
   r({ adcode: '429004', name: '仙桃市', unitType: 'province_directly', parentAdcode: '420000', provinceName: '湖北省', region7: '华中', region4: '南方地区', capital: '仙桃', contentTier: 'D' }),

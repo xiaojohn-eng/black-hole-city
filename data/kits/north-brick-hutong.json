@@ -1,0 +1,34 @@
+{
+  "id": "north-brick-hutong",
+  "name": "北方砖 + 胡同",
+  "batch": 0,
+  "regions": ["华北", "北方地区"],
+  "climateHint": ["温带季风"],
+  "palette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550",
+    "wall": "#9a7560",
+    "roof": "#7f1d1d",
+    "accent": "#c4a574"
+  },
+  "roads": { "style": "hutong_axis", "spacing": 36, "width": 8 },
+  "fill": {
+    "L6": "brick_slope_roof",
+    "L7": "siheyuan_compound",
+    "notes": "多层砖楼坡屋顶；胡同用四合院模块，窄巷不可被大洞一口气吞完。"
+  },
+  "landmarks": ["gate_tower", "siheyuan_cluster", "brick_pagoda"],
+  "decor": "sparse locust / cypress, grey brick yards",
+  "doNot": ["cliff_terrace", "stilt_house", "qilou"],
+  "exportDraft": {
+    "command": "npm run scaffold:city -- --adcode=<地级> --kit=north-brick-hutong",
+    "steps": [
+      "从 admin_div.csv 取名称、简称、行政中心、七大区",
+      "套本套件 palette 与 hutong_axis 路网",
+      "地标先放 1 个 GUARD 纪念空间 + 1 个 VISIT 文保剪影 + 3 个可归档天际线",
+      "知识卡 8 张草稿、9–12 测验 5 道，标 draft，不写入 manifest live"
+    ]
+  }
+}
