@@ -4,3 +4,6 @@ dist
 *.local
 .vscode
 .idea
+
+# Grok Build local prompts/logs
+.grok-prompts/*.log

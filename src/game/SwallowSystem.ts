@@ -5,15 +5,18 @@ import {
   ATTRACT_TIMEOUT,
   MAX_SWALLOWING,
   SWALLOW_RADIUS_FACTOR,
-  canSwallow,
 } from './constants'
 import type { Player } from './Player'
 import type { World } from './World'
-import type { Eatable } from './types'
+import type { AimHint, Eatable } from './types'
+import { missingHint, swallowBreakdown } from './swallowCheck'
+import { GUARD_NEED, guardRing, updateGuardOrbit } from './guardOrbit'
 
 export interface SwallowEvents {
   onDigested: (obj: Eatable) => void
-  onBump: (obj: Eatable) => void
+  onBump: (obj: Eatable, hint: AimHint) => void
+  onGuardComplete: (obj: Eatable) => void
+  onVisit: (obj: Eatable) => void
 }
 
 export class SwallowSystem {
@@ -26,6 +29,7 @@ export class SwallowSystem {
   private lockSprites = new Map<number, { sprite: THREE.Sprite; ttl: number }>()
   private rings: { mesh: THREE.Mesh; ttl: number; dur: number }[] = []
   private scene: THREE.Scene
+  aimHint: AimHint | null = null
 
   constructor(scene: THREE.Scene, events: SwallowEvents, threshScale = 1) {
     this.scene = scene
@@ -43,21 +47,30 @@ export class SwallowSystem {
     if (this.bumpCooldown > 0) this.bumpCooldown -= dt
     this.updateFx(dt)
 
-    // Minimum reach so the early game never feels like pixel-hunting;
-    // at higher tiers the radius-scaled term dominates.
     const attractR = Math.max(player.radius * ATTRACT_FACTOR, player.radius + 0.6)
-    const nearby = world.hash.query(player.x, player.z, Math.max(attractR, player.radius) + 8)
+    const nearby = world.hash.query(player.x, player.z, Math.max(attractR, player.radius) + 16)
+
+    this.aimHint = this.pickAim(player, nearby)
 
     for (const obj of nearby) {
       if (obj.state === 'digested') continue
+
+      if (obj.interact === 'guard') {
+        this.updateGuard(dt, obj, player, world)
+        continue
+      }
+      if (obj.interact === 'visit' || obj.interact === 'eco') {
+        this.updateVisit(obj, player, world)
+        continue
+      }
 
       const dx = obj.x - player.x
       const dz = obj.z - player.z
       const dist = Math.hypot(dx, dz)
       const edgeDist = dist - (obj.isCircle ? obj.hw : Math.min(obj.hw, obj.hd) * 0.7)
-      const can = canSwallow(player.radius, player.mass, obj.tier, this.threshScale)
+      const br = swallowBreakdown(player.radius, player.mass, obj.tier, this.threshScale)
+      const can = br.can
 
-      // Highlight
       obj.highlight = can && this.outlineHint
       this.applyHighlight(obj)
 
@@ -71,7 +84,6 @@ export class SwallowSystem {
         continue
       }
 
-      // Idle
       if (can) {
         if (edgeDist < attractR) {
           if (edgeDist < player.radius * 0.15 || dist < player.radius * SWALLOW_RADIUS_FACTOR) {
@@ -82,32 +94,13 @@ export class SwallowSystem {
           }
         }
       } else {
-        // Block collision
-        const hit =
-          dist < player.radius + (obj.isCircle ? obj.hw : 0) ||
-          (!obj.isCircle &&
-            player.x + player.radius > obj.x - obj.hw &&
-            player.x - player.radius < obj.x + obj.hw &&
-            player.z + player.radius > obj.z - obj.hd &&
-            player.z - player.radius < obj.z + obj.hd)
-
+        const hit = this.hitsPlayer(player, obj, dist)
         if (hit) {
-          const pushed = world.resolveBlock(player.x, player.z, player.radius, obj)
-          if (pushed) {
-            player.x = pushed.x
-            player.z = pushed.z
-            player.mesh.position.set(player.x, 0, player.z)
-          }
-          if (this.bumpCooldown <= 0) {
-            this.bumpCooldown = 0.15
-            this.events.onBump(obj)
-            if (this.lockIcon) this.showLock(obj)
-          }
+          this.blockAndBump(player, obj, world, br)
         }
       }
     }
 
-    // Continue swallowing for objects not in nearby (edge case)
     for (const obj of world.objects) {
       if (obj.state === 'swallowing' && !nearby.includes(obj)) {
         this.updateSwallowing(dt, obj, player)
@@ -124,6 +117,137 @@ export class SwallowSystem {
     }
   }
 
+  private pickAim(player: Player, nearby: Eatable[]): AimHint | null {
+    let best: Eatable | null = null
+    let bestD = 1e9
+    for (const obj of nearby) {
+      if (obj.state === 'digested') continue
+      const d = Math.hypot(obj.x - player.x, obj.z - player.z)
+      if (d < bestD) {
+        bestD = d
+        best = obj
+      }
+    }
+    if (!best || bestD > player.radius * ATTRACT_FACTOR + 14) return null
+    const br = swallowBreakdown(player.radius, player.mass, best.tier, this.threshScale)
+    return {
+      name: best.name || best.tier.name,
+      interact: best.interact,
+      sizeOk: br.sizeOk,
+      massOk: br.massOk,
+      can: best.interact === 'swallow' ? br.can : false,
+      sizeHave: br.sizeHave,
+      sizeNeed: br.sizeNeed,
+      massHave: br.massHave,
+      massNeed: br.massNeed,
+      missing:
+        best.interact === 'guard'
+          ? best.guardDone
+            ? '守护已完成'
+            : '请绕行一周致敬（不可归档）'
+          : best.interact === 'visit' || best.interact === 'eco'
+            ? best.visitDone
+              ? '参观记忆已点亮'
+              : '走近即可参观（不可归档）'
+            : missingHint(br),
+      guardProgress: best.interact === 'guard' ? Math.min(1, best.guardAcc / GUARD_NEED) : 0,
+    }
+  }
+
+  private hitsPlayer(player: Player, obj: Eatable, dist: number): boolean {
+    return (
+      dist < player.radius + (obj.isCircle ? obj.hw : 0) ||
+      (!obj.isCircle &&
+        player.x + player.radius > obj.x - obj.hw &&
+        player.x - player.radius < obj.x + obj.hw &&
+        player.z + player.radius > obj.z - obj.hd &&
+        player.z - player.radius < obj.z + obj.hd)
+    )
+  }
+
+  private blockAndBump(player: Player, obj: Eatable, world: World, br: ReturnType<typeof swallowBreakdown>): void {
+    const pushed = world.resolveBlock(player.x, player.z, player.radius, obj)
+    if (pushed) {
+      player.x = pushed.x
+      player.z = pushed.z
+      player.mesh.position.set(player.x, 0, player.z)
+    }
+    if (this.bumpCooldown <= 0) {
+      this.bumpCooldown = 0.18
+      const hint: AimHint = {
+        name: obj.name || obj.tier.name,
+        interact: obj.interact,
+        sizeOk: br.sizeOk,
+        massOk: br.massOk,
+        can: false,
+        sizeHave: br.sizeHave,
+        sizeNeed: br.sizeNeed,
+        massHave: br.massHave,
+        massNeed: br.massNeed,
+        missing:
+          obj.interact === 'guard'
+            ? '这里不能归档，请绕行守护'
+            : obj.interact === 'visit'
+              ? '这里请参观，不要冲进去'
+              : missingHint(br),
+        guardProgress: obj.guardAcc / GUARD_NEED,
+      }
+      this.events.onBump(obj, hint)
+      if (this.lockIcon && obj.interact === 'swallow') this.showLock(obj)
+    }
+  }
+
+  private updateGuard(dt: number, obj: Eatable, player: Player, world: World): void {
+    void dt
+    obj.highlight = false
+    this.applyHighlight(obj)
+    const ring = guardRing(obj.hw, obj.hd)
+    const prev = obj.lastGuardAngle ?? Math.atan2(player.z - obj.z, player.x - obj.x)
+    const orbit = updateGuardOrbit(prev, player.x, player.z, obj.x, obj.z, ring.inner, ring.outer)
+    obj.lastGuardAngle = orbit.angle
+    if (!obj.guardDone && orbit.inRing) {
+      obj.guardAcc += orbit.delta
+      this.tintGuardRing(obj, Math.min(1, obj.guardAcc / GUARD_NEED))
+      if (obj.guardAcc >= GUARD_NEED) {
+        obj.guardDone = true
+        obj.guardAcc = GUARD_NEED
+        this.events.onGuardComplete(obj)
+      }
+    }
+    const dist = Math.hypot(obj.x - player.x, obj.z - obj.z)
+    if (this.hitsPlayer(player, obj, dist)) {
+      const br = swallowBreakdown(player.radius, player.mass, obj.tier, this.threshScale)
+      this.blockAndBump(player, obj, world, br)
+    }
+  }
+
+  private tintGuardRing(obj: Eatable, t: number): void {
+    obj.mesh.traverse((c) => {
+      if (c.name !== '__guardRing') return
+      const mesh = c as THREE.Mesh
+      const mat = mesh.material as THREE.MeshBasicMaterial
+      if (mat.color) {
+        mat.opacity = 0.35 + t * 0.5
+        mat.color.setHex(t >= 1 ? 0xfde68a : 0xfbbf24)
+      }
+    })
+  }
+
+  private updateVisit(obj: Eatable, player: Player, world: World): void {
+    obj.highlight = !obj.visitDone && this.outlineHint
+    this.applyHighlight(obj)
+    const dist = Math.hypot(obj.x - player.x, obj.z - player.z)
+    const near = dist < player.radius + Math.max(obj.hw, obj.hd) + 6
+    if (near && !obj.visitDone) {
+      obj.visitDone = true
+      this.events.onVisit(obj)
+    }
+    if (this.hitsPlayer(player, obj, dist)) {
+      const br = swallowBreakdown(player.radius, player.mass, obj.tier, this.threshScale)
+      this.blockAndBump(player, obj, world, br)
+    }
+  }
+
   private applyHighlight(obj: Eatable): void {
     obj.mesh.traverse((c) => {
       const m = c as THREE.Mesh
@@ -136,18 +260,17 @@ export class SwallowSystem {
   }
 
   private showLock(obj: Eatable): void {
-    // Simple canvas sprite
     let entry = this.lockSprites.get(obj.id)
     if (!entry) {
       const canvas = document.createElement('canvas')
       canvas.width = 64
       canvas.height = 64
       const ctx = canvas.getContext('2d')!
-      ctx.fillStyle = '#ef4444'
-      ctx.font = 'bold 48px sans-serif'
+      ctx.fillStyle = '#fb923c'
+      ctx.font = 'bold 42px sans-serif'
       ctx.textAlign = 'center'
       ctx.textBaseline = 'middle'
-      ctx.fillText('🔒', 32, 34)
+      ctx.fillText('!', 32, 34)
       const tex = new THREE.CanvasTexture(canvas)
       const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false })
       const sprite = new THREE.Sprite(mat)
@@ -161,7 +284,6 @@ export class SwallowSystem {
     entry.ttl = 0.6
   }
 
-  /** Expanding digest ring — juice for every swallowed object */
   private spawnRing(x: number, z: number, radius: number): void {
     let ring = this.rings.find((r) => r.ttl <= 0)?.mesh
     if (!ring) {
@@ -180,10 +302,10 @@ export class SwallowSystem {
     }
     ring.position.set(x, 0.09, z)
     ring.visible = true
-    const r = this.rings.find((r) => r.mesh === ring)!
-    r.ttl = 0.45
-    r.dur = 0.45
-    r.mesh.userData.maxR = Math.max(1.5, radius * 2.2)
+    const rec = this.rings.find((r) => r.mesh === ring)!
+    rec.ttl = 0.45
+    rec.dur = 0.45
+    rec.mesh.userData.maxR = Math.max(1.5, radius * 2.2)
   }
 
   private updateFx(dt: number): void {
@@ -208,6 +330,7 @@ export class SwallowSystem {
   }
 
   private beginSwallow(obj: Eatable): void {
+    if (obj.interact !== 'swallow') return
     if (this.swallowing >= MAX_SWALLOWING) return
     obj.state = 'swallowing'
     obj.swallowTimer = 0
@@ -266,14 +389,13 @@ export class SwallowSystem {
     obj.z += (player.z - obj.z) * Math.min(1, 10 * dt)
     obj.mesh.position.x = obj.x
     obj.mesh.position.z = obj.z
-    obj.mesh.position.y = obj.height / 2 * (1 - t)
+    obj.mesh.position.y = (obj.height / 2) * (1 - t)
 
     if (t >= 1) {
       obj.state = 'digested'
       obj.mesh.visible = false
       this.swallowing = Math.max(0, this.swallowing - 1)
       this.spawnRing(obj.x, obj.z, player.radius)
-      // mass applied by Game via onDigested
       this.events.onDigested(obj)
     }
   }
@@ -281,6 +403,8 @@ export class SwallowSystem {
   dispose(): void {
     for (const entry of this.lockSprites.values()) {
       this.scene.remove(entry.sprite)
+      entry.sprite.material.map?.dispose()
+      entry.sprite.material.dispose()
     }
     this.lockSprites.clear()
     for (const r of this.rings) {
@@ -289,5 +413,7 @@ export class SwallowSystem {
       ;(r.mesh.material as THREE.Material).dispose()
     }
     this.rings = []
+    this.swallowing = 0
+    this.aimHint = null
   }
 }

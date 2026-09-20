@@ -13,7 +13,7 @@ export class CameraRig {
 
   constructor(aspect: number) {
     this.camera = new THREE.PerspectiveCamera(CAM_FOV, aspect, 0.5, 500)
-    this.current.set(0, 30, 20)
+    this.current.set(0, 30, -20)
     this.camera.position.copy(this.current)
   }
 
@@ -44,7 +44,8 @@ export class CameraRig {
     this.look.x += (player.x + vx - this.look.x) * (1 - Math.exp(-9 * dt))
     this.look.z += (player.z + vz - this.look.z) * (1 - Math.exp(-9 * dt))
     this.look.y = 0
-    this.desired.set(this.look.x, height, this.look.z + back)
+    // Camera stays south of the player (spawn is south, play goes north)
+    this.desired.set(this.look.x, height, this.look.z - back)
 
     // Frame-rate independent exponential smoothing — same feel at any FPS
     const k = 1 - Math.exp(-5.5 * dt)

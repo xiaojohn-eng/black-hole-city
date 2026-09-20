@@ -1,0 +1,34 @@
+{
+  "id": "lingnan-qilou",
+  "name": "岭南骑楼",
+  "batch": 0,
+  "regions": ["华南", "南方地区"],
+  "climateHint": ["亚热带季风", "热带季风"],
+  "palette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560",
+    "wall": "#e8d5b5",
+    "roof": "#b45309",
+    "accent": "#0f766e"
+  },
+  "roads": { "style": "qilou_street", "spacing": 28, "width": 8 },
+  "fill": {
+    "L6": "arcade_shopfront",
+    "L7": "qilou_row",
+    "notes": "底层骑楼走廊连续，二层外挑；湿热气候的遮阳避雨。"
+  },
+  "landmarks": ["arcade_street", "clock_tower", "banyan_plaza"],
+  "decor": "banyan, arcade colonnade",
+  "doNot": ["ice_palace", "siheyuan", "loess_cave"],
+  "exportDraft": {
+    "command": "npm run scaffold:city -- --adcode=<地级> --kit=lingnan-qilou",
+    "steps": [
+      "粤桂琼等湿热城市默认本套件，不要套星湾灰绿正交网格",
+      "骑楼沿一条主街连续布置，鸟瞰 3 秒应能猜「岭南」",
+      "GUARD 用纪念广场，祠堂/寺庙 VISIT",
+      "草稿不自动 live"
+    ]
+  }
+}

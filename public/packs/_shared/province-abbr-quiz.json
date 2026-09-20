@@ -1,0 +1,1429 @@
+{
+  "id": "province-abbr-quiz",
+  "title": "34 省简称与行政中心公共题库",
+  "disclaimer": "这是省级厅公共题，不是 333 座地级城可玩清单。港澳台按课标教学口径出题。",
+  "questions": [
+    {
+      "id": "q-prov-110000-short",
+      "provinceAdcode": "110000",
+      "provinceName": "北京市",
+      "shortName": "京",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "北京市的简称是？",
+      "choices": [
+        "港",
+        "津",
+        "吉",
+        "京"
+      ],
+      "answer": 3,
+      "explain": "北京市简称「京」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-110000-capital",
+      "provinceAdcode": "110000",
+      "provinceName": "北京市",
+      "shortName": "京",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "北京市的行政中心是？",
+      "choices": [
+        "杭州",
+        "天津",
+        "石家庄",
+        "北京"
+      ],
+      "answer": 3,
+      "explain": "北京市的行政中心是北京。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-120000-short",
+      "provinceAdcode": "120000",
+      "provinceName": "天津市",
+      "shortName": "津",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "天津市的简称是？",
+      "choices": [
+        "冀",
+        "桂",
+        "津",
+        "京"
+      ],
+      "answer": 2,
+      "explain": "天津市简称「津」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-120000-capital",
+      "provinceAdcode": "120000",
+      "provinceName": "天津市",
+      "shortName": "津",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "天津市的行政中心是？",
+      "choices": [
+        "天津",
+        "昆明",
+        "北京",
+        "西安"
+      ],
+      "answer": 0,
+      "explain": "天津市的行政中心是天津。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-130000-short",
+      "provinceAdcode": "130000",
+      "provinceName": "河北省",
+      "shortName": "冀",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河北省的简称是？",
+      "choices": [
+        "澳",
+        "冀",
+        "黑",
+        "京"
+      ],
+      "answer": 1,
+      "explain": "河北省简称「冀」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-130000-capital",
+      "provinceAdcode": "130000",
+      "provinceName": "河北省",
+      "shortName": "冀",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河北省的行政中心是？",
+      "choices": [
+        "南昌",
+        "石家庄",
+        "杭州",
+        "北京"
+      ],
+      "answer": 1,
+      "explain": "河北省的行政中心是石家庄。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-140000-short",
+      "provinceAdcode": "140000",
+      "provinceName": "山西省",
+      "shortName": "晋",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "山西省的简称是？",
+      "choices": [
+        "京",
+        "青",
+        "晋",
+        "粤"
+      ],
+      "answer": 2,
+      "explain": "山西省简称「晋」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-140000-capital",
+      "provinceAdcode": "140000",
+      "provinceName": "山西省",
+      "shortName": "晋",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "山西省的行政中心是？",
+      "choices": [
+        "北京",
+        "银川",
+        "太原",
+        "天津"
+      ],
+      "answer": 2,
+      "explain": "山西省的行政中心是太原。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-150000-short",
+      "provinceAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "shortName": "内蒙古",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "内蒙古自治区的简称是？",
+      "choices": [
+        "甘",
+        "京",
+        "鄂",
+        "内蒙古"
+      ],
+      "answer": 3,
+      "explain": "内蒙古自治区简称「内蒙古」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-150000-capital",
+      "provinceAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "shortName": "内蒙古",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "内蒙古自治区的行政中心是？",
+      "choices": [
+        "昆明",
+        "合肥",
+        "北京",
+        "呼和浩特"
+      ],
+      "answer": 3,
+      "explain": "内蒙古自治区的行政中心是呼和浩特。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-210000-short",
+      "provinceAdcode": "210000",
+      "provinceName": "辽宁省",
+      "shortName": "辽",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "辽宁省的简称是？",
+      "choices": [
+        "京",
+        "辽",
+        "鲁",
+        "陕"
+      ],
+      "answer": 1,
+      "explain": "辽宁省简称「辽」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-210000-capital",
+      "provinceAdcode": "210000",
+      "provinceName": "辽宁省",
+      "shortName": "辽",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "辽宁省的行政中心是？",
+      "choices": [
+        "北京",
+        "南昌",
+        "沈阳",
+        "上海"
+      ],
+      "answer": 2,
+      "explain": "辽宁省的行政中心是沈阳。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-220000-short",
+      "provinceAdcode": "220000",
+      "provinceName": "吉林省",
+      "shortName": "吉",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "吉林省的简称是？",
+      "choices": [
+        "渝",
+        "吉",
+        "赣",
+        "京"
+      ],
+      "answer": 1,
+      "explain": "吉林省简称「吉」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-220000-capital",
+      "provinceAdcode": "220000",
+      "provinceName": "吉林省",
+      "shortName": "吉",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "吉林省的行政中心是？",
+      "choices": [
+        "南宁",
+        "长春",
+        "天津",
+        "北京"
+      ],
+      "answer": 1,
+      "explain": "吉林省的行政中心是长春。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-230000-short",
+      "provinceAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "shortName": "黑",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "黑龙江省的简称是？",
+      "choices": [
+        "京",
+        "琼",
+        "黑",
+        "云"
+      ],
+      "answer": 2,
+      "explain": "黑龙江省简称「黑」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-230000-capital",
+      "provinceAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "shortName": "黑",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "黑龙江省的行政中心是？",
+      "choices": [
+        "昆明",
+        "哈尔滨",
+        "北京",
+        "西宁"
+      ],
+      "answer": 1,
+      "explain": "黑龙江省的行政中心是哈尔滨。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-310000-short",
+      "provinceAdcode": "310000",
+      "provinceName": "上海市",
+      "shortName": "沪",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "上海市的简称是？",
+      "choices": [
+        "桂",
+        "吉",
+        "京",
+        "沪"
+      ],
+      "answer": 3,
+      "explain": "上海市简称「沪」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-310000-capital",
+      "provinceAdcode": "310000",
+      "provinceName": "上海市",
+      "shortName": "沪",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "上海市的行政中心是？",
+      "choices": [
+        "长沙",
+        "北京",
+        "南京",
+        "上海"
+      ],
+      "answer": 3,
+      "explain": "上海市的行政中心是上海。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-320000-short",
+      "provinceAdcode": "320000",
+      "provinceName": "江苏省",
+      "shortName": "苏",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "江苏省的简称是？",
+      "choices": [
+        "新",
+        "苏",
+        "京",
+        "鲁"
+      ],
+      "answer": 1,
+      "explain": "江苏省简称「苏」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-320000-capital",
+      "provinceAdcode": "320000",
+      "provinceName": "江苏省",
+      "shortName": "苏",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "江苏省的行政中心是？",
+      "choices": [
+        "北京",
+        "南京",
+        "沈阳",
+        "哈尔滨"
+      ],
+      "answer": 1,
+      "explain": "江苏省的行政中心是南京。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-330000-short",
+      "provinceAdcode": "330000",
+      "provinceName": "浙江省",
+      "shortName": "浙",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "浙江省的简称是？",
+      "choices": [
+        "赣",
+        "湘",
+        "浙",
+        "京"
+      ],
+      "answer": 2,
+      "explain": "浙江省简称「浙」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-330000-capital",
+      "provinceAdcode": "330000",
+      "provinceName": "浙江省",
+      "shortName": "浙",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "浙江省的行政中心是？",
+      "choices": [
+        "西宁",
+        "贵阳",
+        "杭州",
+        "北京"
+      ],
+      "answer": 2,
+      "explain": "浙江省的行政中心是杭州。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-340000-short",
+      "provinceAdcode": "340000",
+      "provinceName": "安徽省",
+      "shortName": "皖",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "安徽省的简称是？",
+      "choices": [
+        "皖",
+        "闽",
+        "京",
+        "豫"
+      ],
+      "answer": 0,
+      "explain": "安徽省简称「皖」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-340000-capital",
+      "provinceAdcode": "340000",
+      "provinceName": "安徽省",
+      "shortName": "皖",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "安徽省的行政中心是？",
+      "choices": [
+        "北京",
+        "合肥",
+        "哈尔滨",
+        "长沙"
+      ],
+      "answer": 1,
+      "explain": "安徽省的行政中心是合肥。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-350000-short",
+      "provinceAdcode": "350000",
+      "provinceName": "福建省",
+      "shortName": "闽",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "福建省的简称是？",
+      "choices": [
+        "吉",
+        "新",
+        "京",
+        "闽"
+      ],
+      "answer": 3,
+      "explain": "福建省简称「闽」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-350000-capital",
+      "provinceAdcode": "350000",
+      "provinceName": "福建省",
+      "shortName": "闽",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "福建省的行政中心是？",
+      "choices": [
+        "兰州",
+        "北京",
+        "沈阳",
+        "福州"
+      ],
+      "answer": 3,
+      "explain": "福建省的行政中心是福州。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-360000-short",
+      "provinceAdcode": "360000",
+      "provinceName": "江西省",
+      "shortName": "赣",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "江西省的简称是？",
+      "choices": [
+        "京",
+        "青",
+        "赣",
+        "辽"
+      ],
+      "answer": 2,
+      "explain": "江西省简称「赣」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-360000-capital",
+      "provinceAdcode": "360000",
+      "provinceName": "江西省",
+      "shortName": "赣",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "江西省的行政中心是？",
+      "choices": [
+        "南昌",
+        "西宁",
+        "北京",
+        "上海"
+      ],
+      "answer": 0,
+      "explain": "江西省的行政中心是南昌。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-370000-short",
+      "provinceAdcode": "370000",
+      "provinceName": "山东省",
+      "shortName": "鲁",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "山东省的简称是？",
+      "choices": [
+        "辽",
+        "鲁",
+        "京",
+        "津"
+      ],
+      "answer": 1,
+      "explain": "山东省简称「鲁」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-370000-capital",
+      "provinceAdcode": "370000",
+      "provinceName": "山东省",
+      "shortName": "鲁",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "山东省的行政中心是？",
+      "choices": [
+        "长沙",
+        "济南",
+        "西安",
+        "北京"
+      ],
+      "answer": 1,
+      "explain": "山东省的行政中心是济南。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-410000-short",
+      "provinceAdcode": "410000",
+      "provinceName": "河南省",
+      "shortName": "豫",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河南省的简称是？",
+      "choices": [
+        "京",
+        "豫",
+        "澳",
+        "辽"
+      ],
+      "answer": 1,
+      "explain": "河南省简称「豫」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-410000-capital",
+      "provinceAdcode": "410000",
+      "provinceName": "河南省",
+      "shortName": "豫",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河南省的行政中心是？",
+      "choices": [
+        "北京",
+        "南京",
+        "郑州",
+        "沈阳"
+      ],
+      "answer": 2,
+      "explain": "河南省的行政中心是郑州。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-420000-short",
+      "provinceAdcode": "420000",
+      "provinceName": "湖北省",
+      "shortName": "鄂",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "湖北省的简称是？",
+      "choices": [
+        "豫",
+        "京",
+        "港",
+        "鄂"
+      ],
+      "answer": 3,
+      "explain": "湖北省简称「鄂」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-420000-capital",
+      "provinceAdcode": "420000",
+      "provinceName": "湖北省",
+      "shortName": "鄂",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "湖北省的行政中心是？",
+      "choices": [
+        "香港",
+        "成都",
+        "北京",
+        "武汉"
+      ],
+      "answer": 3,
+      "explain": "湖北省的行政中心是武汉。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-430000-short",
+      "provinceAdcode": "430000",
+      "provinceName": "湖南省",
+      "shortName": "湘",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "湖南省的简称是？",
+      "choices": [
+        "京",
+        "台",
+        "湘",
+        "甘"
+      ],
+      "answer": 2,
+      "explain": "湖南省简称「湘」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-430000-capital",
+      "provinceAdcode": "430000",
+      "provinceName": "湖南省",
+      "shortName": "湘",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "湖南省的行政中心是？",
+      "choices": [
+        "北京",
+        "重庆",
+        "长沙",
+        "长春"
+      ],
+      "answer": 2,
+      "explain": "湖南省的行政中心是长沙。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-440000-short",
+      "provinceAdcode": "440000",
+      "provinceName": "广东省",
+      "shortName": "粤",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广东省的简称是？",
+      "choices": [
+        "新",
+        "粤",
+        "陕",
+        "京"
+      ],
+      "answer": 1,
+      "explain": "广东省简称「粤」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-440000-capital",
+      "provinceAdcode": "440000",
+      "provinceName": "广东省",
+      "shortName": "粤",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广东省的行政中心是？",
+      "choices": [
+        "昆明",
+        "广州",
+        "南京",
+        "北京"
+      ],
+      "answer": 1,
+      "explain": "广东省的行政中心是广州。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-450000-short",
+      "provinceAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "shortName": "桂",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广西壮族自治区的简称是？",
+      "choices": [
+        "京",
+        "藏",
+        "桂",
+        "沪"
+      ],
+      "answer": 2,
+      "explain": "广西壮族自治区简称「桂」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-450000-capital",
+      "provinceAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "shortName": "桂",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广西壮族自治区的行政中心是？",
+      "choices": [
+        "重庆",
+        "南宁",
+        "北京",
+        "香港"
+      ],
+      "answer": 1,
+      "explain": "广西壮族自治区的行政中心是南宁。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-460000-short",
+      "provinceAdcode": "460000",
+      "provinceName": "海南省",
+      "shortName": "琼",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "海南省的简称是？",
+      "choices": [
+        "桂",
+        "京",
+        "吉",
+        "琼"
+      ],
+      "answer": 3,
+      "explain": "海南省简称「琼」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-460000-capital",
+      "provinceAdcode": "460000",
+      "provinceName": "海南省",
+      "shortName": "琼",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "海南省的行政中心是？",
+      "choices": [
+        "重庆",
+        "北京",
+        "上海",
+        "海口"
+      ],
+      "answer": 3,
+      "explain": "海南省的行政中心是海口。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-500000-short",
+      "provinceAdcode": "500000",
+      "provinceName": "重庆市",
+      "shortName": "渝",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "重庆市的简称是？",
+      "choices": [
+        "京",
+        "渝",
+        "湘",
+        "粤"
+      ],
+      "answer": 1,
+      "explain": "重庆市简称「渝」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-500000-capital",
+      "provinceAdcode": "500000",
+      "provinceName": "重庆市",
+      "shortName": "渝",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "重庆市的行政中心是？",
+      "choices": [
+        "北京",
+        "重庆",
+        "南京",
+        "拉萨"
+      ],
+      "answer": 1,
+      "explain": "重庆市的行政中心是重庆。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-510000-short",
+      "provinceAdcode": "510000",
+      "provinceName": "四川省",
+      "shortName": "川",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "四川省的简称是？",
+      "choices": [
+        "赣",
+        "川",
+        "澳",
+        "湘"
+      ],
+      "answer": 1,
+      "explain": "四川省简称「川」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-510000-capital",
+      "provinceAdcode": "510000",
+      "provinceName": "四川省",
+      "shortName": "川",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "四川省的行政中心是？",
+      "choices": [
+        "香港",
+        "长春",
+        "成都",
+        "北京"
+      ],
+      "answer": 2,
+      "explain": "四川省的行政中心是成都。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-520000-short",
+      "provinceAdcode": "520000",
+      "provinceName": "贵州省",
+      "shortName": "贵",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "贵州省的简称是？",
+      "choices": [
+        "京",
+        "闽",
+        "贵",
+        "吉"
+      ],
+      "answer": 2,
+      "explain": "贵州省简称「贵」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-520000-capital",
+      "provinceAdcode": "520000",
+      "provinceName": "贵州省",
+      "shortName": "贵",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "贵州省的行政中心是？",
+      "choices": [
+        "北京",
+        "贵阳",
+        "重庆",
+        "海口"
+      ],
+      "answer": 1,
+      "explain": "贵州省的行政中心是贵阳。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-530000-short",
+      "provinceAdcode": "530000",
+      "provinceName": "云南省",
+      "shortName": "云",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "云南省的简称是？",
+      "choices": [
+        "皖",
+        "京",
+        "新",
+        "云"
+      ],
+      "answer": 3,
+      "explain": "云南省简称「云」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-530000-capital",
+      "provinceAdcode": "530000",
+      "provinceName": "云南省",
+      "shortName": "云",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "云南省的行政中心是？",
+      "choices": [
+        "哈尔滨",
+        "北京",
+        "南昌",
+        "昆明"
+      ],
+      "answer": 3,
+      "explain": "云南省的行政中心是昆明。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-540000-short",
+      "provinceAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "shortName": "藏",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "西藏自治区的简称是？",
+      "choices": [
+        "云",
+        "藏",
+        "京",
+        "吉"
+      ],
+      "answer": 1,
+      "explain": "西藏自治区简称「藏」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-540000-capital",
+      "provinceAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "shortName": "藏",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "西藏自治区的行政中心是？",
+      "choices": [
+        "拉萨",
+        "石家庄",
+        "北京",
+        "昆明"
+      ],
+      "answer": 0,
+      "explain": "西藏自治区的行政中心是拉萨。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-610000-short",
+      "provinceAdcode": "610000",
+      "provinceName": "陕西省",
+      "shortName": "陕",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "陕西省的简称是？",
+      "choices": [
+        "辽",
+        "黑",
+        "陕",
+        "京"
+      ],
+      "answer": 2,
+      "explain": "陕西省简称「陕」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-610000-capital",
+      "provinceAdcode": "610000",
+      "provinceName": "陕西省",
+      "shortName": "陕",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "陕西省的行政中心是？",
+      "choices": [
+        "昆明",
+        "西安",
+        "呼和浩特",
+        "北京"
+      ],
+      "answer": 1,
+      "explain": "陕西省的行政中心是西安。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-620000-short",
+      "provinceAdcode": "620000",
+      "provinceName": "甘肃省",
+      "shortName": "甘",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "甘肃省的简称是？",
+      "choices": [
+        "甘",
+        "内蒙古",
+        "京",
+        "琼"
+      ],
+      "answer": 0,
+      "explain": "甘肃省简称「甘」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-620000-capital",
+      "provinceAdcode": "620000",
+      "provinceName": "甘肃省",
+      "shortName": "甘",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "甘肃省的行政中心是？",
+      "choices": [
+        "北京",
+        "重庆",
+        "兰州",
+        "南昌"
+      ],
+      "answer": 2,
+      "explain": "甘肃省的行政中心是兰州。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-630000-short",
+      "provinceAdcode": "630000",
+      "provinceName": "青海省",
+      "shortName": "青",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青海省的简称是？",
+      "choices": [
+        "澳",
+        "新",
+        "京",
+        "青"
+      ],
+      "answer": 3,
+      "explain": "青海省简称「青」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-630000-capital",
+      "provinceAdcode": "630000",
+      "provinceName": "青海省",
+      "shortName": "青",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青海省的行政中心是？",
+      "choices": [
+        "石家庄",
+        "台北",
+        "北京",
+        "西宁"
+      ],
+      "answer": 3,
+      "explain": "青海省的行政中心是西宁。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-640000-short",
+      "provinceAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "shortName": "宁",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "宁夏回族自治区的简称是？",
+      "choices": [
+        "台",
+        "宁",
+        "京",
+        "港"
+      ],
+      "answer": 1,
+      "explain": "宁夏回族自治区简称「宁」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-640000-capital",
+      "provinceAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "shortName": "宁",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "宁夏回族自治区的行政中心是？",
+      "choices": [
+        "北京",
+        "昆明",
+        "银川",
+        "长春"
+      ],
+      "answer": 2,
+      "explain": "宁夏回族自治区的行政中心是银川。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-650000-short",
+      "provinceAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "shortName": "新",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "新疆维吾尔自治区的简称是？",
+      "choices": [
+        "青",
+        "新",
+        "台",
+        "京"
+      ],
+      "answer": 1,
+      "explain": "新疆维吾尔自治区简称「新」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-650000-capital",
+      "provinceAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "shortName": "新",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "新疆维吾尔自治区的行政中心是？",
+      "choices": [
+        "天津",
+        "乌鲁木齐",
+        "南昌",
+        "北京"
+      ],
+      "answer": 1,
+      "explain": "新疆维吾尔自治区的行政中心是乌鲁木齐。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-710000-short",
+      "provinceAdcode": "710000",
+      "provinceName": "台湾省",
+      "shortName": "台",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "台湾省的简称是？",
+      "choices": [
+        "京",
+        "台",
+        "藏",
+        "贵"
+      ],
+      "answer": 1,
+      "explain": "台湾省简称「台」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-710000-capital",
+      "provinceAdcode": "710000",
+      "provinceName": "台湾省",
+      "shortName": "台",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "台湾省的行政中心是？",
+      "choices": [
+        "海口",
+        "台北",
+        "北京",
+        "石家庄"
+      ],
+      "answer": 1,
+      "explain": "台湾省的行政中心是台北。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-810000-short",
+      "provinceAdcode": "810000",
+      "provinceName": "香港特别行政区",
+      "shortName": "港",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "香港特别行政区的简称是？",
+      "choices": [
+        "吉",
+        "京",
+        "云",
+        "港"
+      ],
+      "answer": 3,
+      "explain": "香港特别行政区简称「港」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-810000-capital",
+      "provinceAdcode": "810000",
+      "provinceName": "香港特别行政区",
+      "shortName": "港",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "香港特别行政区的行政中心是？",
+      "choices": [
+        "昆明",
+        "拉萨",
+        "长春",
+        "香港"
+      ],
+      "answer": 3,
+      "explain": "香港特别行政区的行政中心是香港。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-820000-short",
+      "provinceAdcode": "820000",
+      "provinceName": "澳门特别行政区",
+      "shortName": "澳",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "澳门特别行政区的简称是？",
+      "choices": [
+        "京",
+        "晋",
+        "澳",
+        "桂"
+      ],
+      "answer": 2,
+      "explain": "澳门特别行政区简称「澳」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-820000-capital",
+      "provinceAdcode": "820000",
+      "provinceName": "澳门特别行政区",
+      "shortName": "澳",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "澳门特别行政区的行政中心是？",
+      "choices": [
+        "北京",
+        "澳门",
+        "长沙",
+        "沈阳"
+      ],
+      "answer": 1,
+      "explain": "澳门特别行政区的行政中心是澳门。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-bj",
+      "provinceAdcode": "110000",
+      "provinceName": "北京市",
+      "shortName": "京",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "北京市的简称是？",
+      "choices": [
+        "沪",
+        "京",
+        "粤",
+        "川"
+      ],
+      "answer": 1,
+      "explain": "北京简称「京」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-sh",
+      "provinceAdcode": "310000",
+      "provinceName": "上海市",
+      "shortName": "沪",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "上海市的简称是？",
+      "choices": [
+        "京",
+        "沪",
+        "渝",
+        "津"
+      ],
+      "answer": 1,
+      "explain": "上海简称「沪」，也有人说「申」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-hlj",
+      "provinceAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "shortName": "黑",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "黑龙江省的简称是？",
+      "choices": [
+        "吉",
+        "辽",
+        "黑",
+        "蒙"
+      ],
+      "answer": 2,
+      "explain": "黑龙江简称「黑」，行政中心哈尔滨。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-gd",
+      "provinceAdcode": "440000",
+      "provinceName": "广东省",
+      "shortName": "粤",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "广东省的简称是？",
+      "choices": [
+        "闽",
+        "桂",
+        "琼",
+        "粤"
+      ],
+      "answer": 3,
+      "explain": "广东简称「粤」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-sc",
+      "provinceAdcode": "510000",
+      "provinceName": "四川省",
+      "shortName": "川",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "四川省的简称是？",
+      "choices": [
+        "滇",
+        "黔",
+        "川",
+        "藏"
+      ],
+      "answer": 2,
+      "explain": "四川简称「川」，也常说「蜀」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-capital",
+      "provinceAdcode": "110000",
+      "provinceName": "北京市",
+      "shortName": "京",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "中国的首都在哪个省级行政区？",
+      "choices": [
+        "上海市",
+        "广东省",
+        "北京市",
+        "黑龙江省"
+      ],
+      "answer": 2,
+      "explain": "首都在北京市。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-tw",
+      "provinceAdcode": "710000",
+      "provinceName": "台湾省",
+      "shortName": "台",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "台湾省在教学包里按什么表示？",
+      "choices": [
+        "国家",
+        "省",
+        "特别行政区",
+        "直辖市"
+      ],
+      "answer": 1,
+      "explain": "台湾按省表示；台北是省级行政中心教学点。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-easy-hk",
+      "provinceAdcode": "810000",
+      "provinceName": "香港特别行政区",
+      "shortName": "港",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "香港是？",
+      "choices": [
+        "广东省的市",
+        "特别行政区",
+        "自治区",
+        "省"
+      ],
+      "answer": 1,
+      "explain": "香港是省级特别行政区，不并入广东。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-13-regions",
+      "provinceAdcode": "110000",
+      "provinceName": "北京市",
+      "shortName": "京",
+      "ageBand": "13+",
+      "type": "mc",
+      "prompt": "课标四大地理区域不包括？",
+      "choices": [
+        "北方地区",
+        "南方地区",
+        "西北地区",
+        "南极地区"
+      ],
+      "answer": 3,
+      "explain": "课标四大区域是北方、南方、西北、青藏，没有「南极地区」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-13-sh-climate",
+      "provinceAdcode": "310000",
+      "provinceName": "上海市",
+      "shortName": "沪",
+      "ageBand": "13+",
+      "type": "mc",
+      "prompt": "上海市主要气候更接近？",
+      "choices": [
+        "温带季风",
+        "亚热带季风",
+        "高原山地",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "上海在南方沿海，属亚热带季风气候，和北京的温带季风不同。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-prov-13-hrb-climate",
+      "provinceAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "shortName": "黑",
+      "ageBand": "13+",
+      "type": "mc",
+      "prompt": "哈尔滨的冬天以什么著称？",
+      "choices": [
+        "炎热多雨",
+        "终年无冬",
+        "寒冷漫长",
+        "热带气旋"
+      ],
+      "answer": 2,
+      "explain": "哈尔滨在东北，冬季寒冷漫长，常作为冰雪气候对照课。",
+      "curriculumTag": "geo.2022.cn.province"
+    }
+  ]
+}

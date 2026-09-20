@@ -1,0 +1,116 @@
+{
+  "mapSize": 240,
+  "roads": { "style": "jiangnan_water", "spacing": 32, "width": 7 },
+  "variants": ["river_front"],
+  "kitId": "jiangnan-water",
+  "zones": [
+    {
+      "id": "west_park",
+      "name": "浦江西岸公园",
+      "x": -50,
+      "z": -80,
+      "w": 140,
+      "d": 80,
+      "color": "#4d6a5a",
+      "spawn": true,
+      "quotas": { "L1": 18, "L2": 14, "L3": 8, "L4": 6, "L5": 2 }
+    },
+    {
+      "id": "shikumen",
+      "name": "石库门里弄",
+      "x": -72,
+      "z": 8,
+      "w": 96,
+      "d": 100,
+      "color": "#8a8074",
+      "quotas": { "L1": 8, "L2": 10, "L3": 8, "L4": 6, "L5": 4, "L6": 8, "L7": 2 }
+    },
+    {
+      "id": "bund",
+      "name": "外滩江岸",
+      "x": 8,
+      "z": 10,
+      "w": 48,
+      "d": 160,
+      "color": "#5d7a88",
+      "quotas": { "L1": 6, "L2": 4, "L3": 4, "L4": 2 }
+    },
+    {
+      "id": "pudong",
+      "name": "浦东天际",
+      "x": 78,
+      "z": 20,
+      "w": 84,
+      "d": 140,
+      "color": "#4a5568",
+      "quotas": { "L3": 6, "L4": 8, "L5": 6, "L6": 4, "L7": 5, "L8": 3, "L9": 2 }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "sh-monument",
+      "name": "人民英雄纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": -18,
+      "z": 36,
+      "tier": 10,
+      "zone": "bund",
+      "knowledgeCardId": "card-sh-monument",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "高耸方尖碑、庄重基座"
+    },
+    {
+      "id": "sh-bund",
+      "name": "外滩万国建筑",
+      "mesh": "bund_colonnade",
+      "interact": "visit",
+      "x": -6,
+      "z": 8,
+      "tier": 10,
+      "zone": "bund",
+      "knowledgeCardId": "card-sh-bund",
+      "whyHere": "江岸连排楼群，认识河口城市的开埠天际线。参观记忆，不崩塌。",
+      "silhouette": "连排柱廊与穹顶剪影"
+    },
+    {
+      "id": "sh-chenghuang",
+      "name": "城隍庙",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -70,
+      "z": -20,
+      "tier": 9,
+      "zone": "shikumen",
+      "knowledgeCardId": "card-sh-temple",
+      "whyHere": "传统祭祀与市井空间，只参观外观。",
+      "silhouette": "飞檐庙宇、围墙院子"
+    },
+    {
+      "id": "sh-pearl",
+      "name": "东方明珠剪影",
+      "mesh": "oriental_pearl",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "pudong",
+      "knowledgeCardId": "card-sh-pearl",
+      "whyHere": "浦东当代天际线符号，认识江海城市的另一岸。",
+      "silhouette": "细塔托着大小圆球"
+    },
+    {
+      "id": "sh-lujiazui",
+      "name": "陆家嘴塔楼",
+      "mesh": "lujiazui_tower",
+      "interact": "swallow",
+      "x": 96,
+      "z": -8,
+      "tier": 9,
+      "zone": "pudong",
+      "knowledgeCardId": "card-sh-port",
+      "whyHere": "当代超高层剪影，对照外滩的老楼群。",
+      "silhouette": "高瘦塔、顶部收分"
+    }
+  ]
+}

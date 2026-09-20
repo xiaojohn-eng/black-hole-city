@@ -1,0 +1,12 @@
+{
+  "title": "宗教 / 医院 / 学校 — 参观记忆（VISIT）",
+  "rule": "可识别外观，交互为 visit 或低威胁收集，不做崩塌。",
+  "entries": [
+    { "id": "forbidden_city", "name": "故宫博物院", "pack": "beijing", "interact": "visit" },
+    { "id": "temple_of_heaven", "name": "天坛祈年殿", "pack": "beijing", "interact": "visit" },
+    { "id": "sh-bund", "name": "外滩万国建筑", "pack": "shanghai", "interact": "visit" },
+    { "id": "sh-chenghuang", "name": "城隍庙", "pack": "shanghai", "interact": "visit" },
+    { "id": "hrb-sofia", "name": "圣索菲亚教堂外观", "pack": "harbin", "interact": "visit" },
+    { "id": "hrb-central", "name": "中央大街", "pack": "harbin", "interact": "visit" }
+  ]
+}

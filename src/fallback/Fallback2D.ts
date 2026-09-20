@@ -284,7 +284,7 @@ export class Fallback2D {
       <div class="modal" style="text-align:center;max-width:320px;padding:1.5rem;">
         <h2>时间到！</h2>
         <p style="font-size:1.2rem;margin:0.6rem 0;">分数：<b>${this.score}</b></p>
-        <p>体型：L${this.level()} · 吞噬 ${this.eaten} 个</p>
+        <p>体型：L${this.level()} · 归档 ${this.eaten} 件</p>
         <p style="opacity:0.7;font-size:0.85rem;">这是无 WebGL 环境下的 2D 简化版</p>
         <div class="btn-col" style="margin:1rem auto 0;">
           <button class="btn primary" id="f2-again">再来一局</button>
@@ -407,6 +407,6 @@ export class Fallback2D {
     ctx.fillStyle = this.timeLeft <= 20 ? '#f87171' : '#2dd4bf'
     ctx.fillText(`时间 ${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`, 22, 60)
     ctx.fillStyle = '#94a3b8'
-    ctx.fillText(`L${this.level()} · 吞噬 ${this.eaten}`, 130, 60)
+    ctx.fillText(`L${this.level()} · 归档 ${this.eaten}`, 130, 60)
   }
 }

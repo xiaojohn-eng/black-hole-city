@@ -1,0 +1,35 @@
+{
+  "id": "jiangnan-water",
+  "name": "江南水岸",
+  "batch": 0,
+  "regions": ["华东", "南方地区"],
+  "climateHint": ["亚热带季风"],
+  "palette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570",
+    "wall": "#f4f1ea",
+    "roof": "#1f2937",
+    "accent": "#3b82a8",
+    "water": "#3b82a8"
+  },
+  "roads": { "style": "jiangnan_water", "spacing": 32, "width": 7 },
+  "fill": {
+    "L6": "white_wall_grey_tile",
+    "L7": "canal_house",
+    "notes": "粉墙黛瓦沿河；一条可认的河/岸比精细贴图更重要。"
+  },
+  "landmarks": ["arch_bridge", "bund_colonnade", "water_tower"],
+  "decor": "willows, canal, stone bridges",
+  "doNot": ["hutong_siheyuan_as_default", "onion_dome", "desert_flat_roof"],
+  "exportDraft": {
+    "command": "npm run scaffold:city -- --adcode=<地级> --kit=jiangnan-water",
+    "steps": [
+      "行政中心或河港城优先用本套件",
+      "layout 必须有一条贯通的水面带（本地网格，不是 lat/lon）",
+      "GUARD 用纪念碑/外滩纪念空间，宗教场所 VISIT",
+      "导出 B 级草稿目录后人工补 3 个剪影地标"
+    ]
+  }
+}

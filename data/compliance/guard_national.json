@@ -1,0 +1,10 @@
+{
+  "title": "国家象征与纪念空间 — 禁止吞噬（GUARD）",
+  "rule": "interact 必须为 guard。环绕完成致敬卡，不可吸入。",
+  "entries": [
+    { "id": "tiananmen", "name": "天安门", "pack": "beijing", "required": true },
+    { "id": "monument_heroes", "name": "人民英雄纪念碑", "pack": "beijing", "required": false, "note": "北京包并入天安门守护场；上海包单独建模" },
+    { "id": "sh-monument", "name": "人民英雄纪念碑", "pack": "shanghai", "required": true },
+    { "id": "hrb-flood-tower", "name": "防洪纪念塔", "pack": "harbin", "required": true }
+  ]
+}

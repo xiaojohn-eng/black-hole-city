@@ -1,0 +1,3941 @@
+{
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场、北京、上海、哈尔滨。其余为占位名录与灰壳。",
+  "counts": {
+    "provincial": 34,
+    "prefectureTotal": 333,
+    "prefecture_city": 293,
+    "autonomous_prefecture": 30,
+    "diqu": 7,
+    "league": 3
+  },
+  "provinces": [
+    {
+      "adcode": "110000",
+      "name": "北京市",
+      "shortName": "京",
+      "unitType": "municipality",
+      "region7": "华北",
+      "region4": "北方地区",
+      "capital": "北京",
+      "status": "live",
+      "packId": "beijing",
+      "playable": true,
+      "aliases": [
+        "京",
+        "首都"
+      ]
+    },
+    {
+      "adcode": "120000",
+      "name": "天津市",
+      "shortName": "津",
+      "unitType": "municipality",
+      "region7": "华北",
+      "region4": "北方地区",
+      "capital": "天津",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "津"
+      ]
+    },
+    {
+      "adcode": "130000",
+      "name": "河北省",
+      "shortName": "冀",
+      "unitType": "province",
+      "region7": "华北",
+      "region4": "北方地区",
+      "capital": "石家庄",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "冀"
+      ]
+    },
+    {
+      "adcode": "140000",
+      "name": "山西省",
+      "shortName": "晋",
+      "unitType": "province",
+      "region7": "华北",
+      "region4": "北方地区",
+      "capital": "太原",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "晋"
+      ]
+    },
+    {
+      "adcode": "150000",
+      "name": "内蒙古自治区",
+      "shortName": "内蒙古",
+      "unitType": "autonomous_region",
+      "region7": "华北",
+      "region4": "北方地区",
+      "capital": "呼和浩特",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "内蒙古",
+        "内蒙"
+      ]
+    },
+    {
+      "adcode": "210000",
+      "name": "辽宁省",
+      "shortName": "辽",
+      "unitType": "province",
+      "region7": "东北",
+      "region4": "北方地区",
+      "capital": "沈阳",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "辽"
+      ]
+    },
+    {
+      "adcode": "220000",
+      "name": "吉林省",
+      "shortName": "吉",
+      "unitType": "province",
+      "region7": "东北",
+      "region4": "北方地区",
+      "capital": "长春",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "吉"
+      ]
+    },
+    {
+      "adcode": "230000",
+      "name": "黑龙江省",
+      "shortName": "黑",
+      "unitType": "province",
+      "region7": "东北",
+      "region4": "北方地区",
+      "capital": "哈尔滨",
+      "status": "live",
+      "packId": "harbin",
+      "playable": true,
+      "aliases": [
+        "黑"
+      ]
+    },
+    {
+      "adcode": "310000",
+      "name": "上海市",
+      "shortName": "沪",
+      "unitType": "municipality",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "上海",
+      "status": "live",
+      "packId": "shanghai",
+      "playable": true,
+      "aliases": [
+        "沪",
+        "申"
+      ]
+    },
+    {
+      "adcode": "320000",
+      "name": "江苏省",
+      "shortName": "苏",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "南京",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "苏"
+      ]
+    },
+    {
+      "adcode": "330000",
+      "name": "浙江省",
+      "shortName": "浙",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "杭州",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "浙"
+      ]
+    },
+    {
+      "adcode": "340000",
+      "name": "安徽省",
+      "shortName": "皖",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "合肥",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "皖"
+      ]
+    },
+    {
+      "adcode": "350000",
+      "name": "福建省",
+      "shortName": "闽",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "福州",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "闽"
+      ]
+    },
+    {
+      "adcode": "360000",
+      "name": "江西省",
+      "shortName": "赣",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "南昌",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "赣"
+      ]
+    },
+    {
+      "adcode": "370000",
+      "name": "山东省",
+      "shortName": "鲁",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "北方地区",
+      "capital": "济南",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "鲁"
+      ]
+    },
+    {
+      "adcode": "410000",
+      "name": "河南省",
+      "shortName": "豫",
+      "unitType": "province",
+      "region7": "华中",
+      "region4": "北方地区",
+      "capital": "郑州",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "豫"
+      ]
+    },
+    {
+      "adcode": "420000",
+      "name": "湖北省",
+      "shortName": "鄂",
+      "unitType": "province",
+      "region7": "华中",
+      "region4": "南方地区",
+      "capital": "武汉",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "鄂"
+      ]
+    },
+    {
+      "adcode": "430000",
+      "name": "湖南省",
+      "shortName": "湘",
+      "unitType": "province",
+      "region7": "华中",
+      "region4": "南方地区",
+      "capital": "长沙",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "湘"
+      ]
+    },
+    {
+      "adcode": "440000",
+      "name": "广东省",
+      "shortName": "粤",
+      "unitType": "province",
+      "region7": "华南",
+      "region4": "南方地区",
+      "capital": "广州",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "粤"
+      ]
+    },
+    {
+      "adcode": "450000",
+      "name": "广西壮族自治区",
+      "shortName": "桂",
+      "unitType": "autonomous_region",
+      "region7": "华南",
+      "region4": "南方地区",
+      "capital": "南宁",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "桂",
+        "广西"
+      ]
+    },
+    {
+      "adcode": "460000",
+      "name": "海南省",
+      "shortName": "琼",
+      "unitType": "province",
+      "region7": "华南",
+      "region4": "南方地区",
+      "capital": "海口",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "琼"
+      ]
+    },
+    {
+      "adcode": "500000",
+      "name": "重庆市",
+      "shortName": "渝",
+      "unitType": "municipality",
+      "region7": "西南",
+      "region4": "南方地区",
+      "capital": "重庆",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "渝",
+        "山城"
+      ]
+    },
+    {
+      "adcode": "510000",
+      "name": "四川省",
+      "shortName": "川",
+      "unitType": "province",
+      "region7": "西南",
+      "region4": "南方地区",
+      "capital": "成都",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "川",
+        "蜀"
+      ]
+    },
+    {
+      "adcode": "520000",
+      "name": "贵州省",
+      "shortName": "贵",
+      "unitType": "province",
+      "region7": "西南",
+      "region4": "南方地区",
+      "capital": "贵阳",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "贵",
+        "黔"
+      ]
+    },
+    {
+      "adcode": "530000",
+      "name": "云南省",
+      "shortName": "云",
+      "unitType": "province",
+      "region7": "西南",
+      "region4": "南方地区",
+      "capital": "昆明",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "云",
+        "滇"
+      ]
+    },
+    {
+      "adcode": "540000",
+      "name": "西藏自治区",
+      "shortName": "藏",
+      "unitType": "autonomous_region",
+      "region7": "西南",
+      "region4": "青藏地区",
+      "capital": "拉萨",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "藏",
+        "西藏"
+      ]
+    },
+    {
+      "adcode": "610000",
+      "name": "陕西省",
+      "shortName": "陕",
+      "unitType": "province",
+      "region7": "西北",
+      "region4": "北方地区",
+      "capital": "西安",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "陕",
+        "秦"
+      ]
+    },
+    {
+      "adcode": "620000",
+      "name": "甘肃省",
+      "shortName": "甘",
+      "unitType": "province",
+      "region7": "西北",
+      "region4": "西北地区",
+      "capital": "兰州",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "甘",
+        "陇"
+      ]
+    },
+    {
+      "adcode": "630000",
+      "name": "青海省",
+      "shortName": "青",
+      "unitType": "province",
+      "region7": "西北",
+      "region4": "青藏地区",
+      "capital": "西宁",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "青"
+      ]
+    },
+    {
+      "adcode": "640000",
+      "name": "宁夏回族自治区",
+      "shortName": "宁",
+      "unitType": "autonomous_region",
+      "region7": "西北",
+      "region4": "西北地区",
+      "capital": "银川",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "宁",
+        "宁夏"
+      ]
+    },
+    {
+      "adcode": "650000",
+      "name": "新疆维吾尔自治区",
+      "shortName": "新",
+      "unitType": "autonomous_region",
+      "region7": "西北",
+      "region4": "西北地区",
+      "capital": "乌鲁木齐",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "新",
+        "新疆"
+      ]
+    },
+    {
+      "adcode": "710000",
+      "name": "台湾省",
+      "shortName": "台",
+      "unitType": "province",
+      "region7": "华东",
+      "region4": "南方地区",
+      "capital": "台北",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "台",
+        "台湾"
+      ]
+    },
+    {
+      "adcode": "810000",
+      "name": "香港特别行政区",
+      "shortName": "港",
+      "unitType": "sar",
+      "region7": "华南",
+      "region4": "南方地区",
+      "capital": "香港",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "港",
+        "香港"
+      ]
+    },
+    {
+      "adcode": "820000",
+      "name": "澳门特别行政区",
+      "shortName": "澳",
+      "unitType": "sar",
+      "region7": "华南",
+      "region4": "南方地区",
+      "capital": "澳门",
+      "status": "placeholder",
+      "packId": "",
+      "playable": false,
+      "aliases": [
+        "澳",
+        "澳门"
+      ]
+    }
+  ],
+  "prefectures": [
+    {
+      "adcode": "130100",
+      "name": "石家庄市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130200",
+      "name": "唐山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130300",
+      "name": "秦皇岛市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130400",
+      "name": "邯郸市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130500",
+      "name": "邢台市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130600",
+      "name": "保定市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130700",
+      "name": "张家口市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130800",
+      "name": "承德市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "130900",
+      "name": "沧州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "131000",
+      "name": "廊坊市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "131100",
+      "name": "衡水市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "130000",
+      "provinceName": "河北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140100",
+      "name": "太原市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140200",
+      "name": "大同市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140300",
+      "name": "阳泉市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140400",
+      "name": "长治市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140500",
+      "name": "晋城市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140600",
+      "name": "朔州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140700",
+      "name": "晋中市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140800",
+      "name": "运城市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "140900",
+      "name": "忻州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "141000",
+      "name": "临汾市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "141100",
+      "name": "吕梁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "140000",
+      "provinceName": "山西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150100",
+      "name": "呼和浩特市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150200",
+      "name": "包头市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150300",
+      "name": "乌海市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150400",
+      "name": "赤峰市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150500",
+      "name": "通辽市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150600",
+      "name": "鄂尔多斯市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150700",
+      "name": "呼伦贝尔市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150800",
+      "name": "巴彦淖尔市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "150900",
+      "name": "乌兰察布市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "152200",
+      "name": "兴安盟",
+      "unitType": "league",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "152500",
+      "name": "锡林郭勒盟",
+      "unitType": "league",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "152900",
+      "name": "阿拉善盟",
+      "unitType": "league",
+      "parentAdcode": "150000",
+      "provinceName": "内蒙古自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210100",
+      "name": "沈阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210200",
+      "name": "大连市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210300",
+      "name": "鞍山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210400",
+      "name": "抚顺市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210500",
+      "name": "本溪市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210600",
+      "name": "丹东市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210700",
+      "name": "锦州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210800",
+      "name": "营口市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "210900",
+      "name": "阜新市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "211000",
+      "name": "辽阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "211100",
+      "name": "盘锦市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "211200",
+      "name": "铁岭市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "211300",
+      "name": "朝阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "211400",
+      "name": "葫芦岛市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "210000",
+      "provinceName": "辽宁省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220100",
+      "name": "长春市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220200",
+      "name": "吉林市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220300",
+      "name": "四平市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220400",
+      "name": "辽源市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220500",
+      "name": "通化市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220600",
+      "name": "白山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220700",
+      "name": "松原市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "220800",
+      "name": "白城市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "222400",
+      "name": "延边朝鲜族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "220000",
+      "provinceName": "吉林省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230100",
+      "name": "哈尔滨市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "live",
+      "packId": "harbin",
+      "playable_3d": true
+    },
+    {
+      "adcode": "230200",
+      "name": "齐齐哈尔市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230300",
+      "name": "鸡西市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230400",
+      "name": "鹤岗市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230500",
+      "name": "双鸭山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230600",
+      "name": "大庆市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230700",
+      "name": "伊春市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230800",
+      "name": "佳木斯市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "230900",
+      "name": "七台河市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "231000",
+      "name": "牡丹江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "231100",
+      "name": "黑河市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "231200",
+      "name": "绥化市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "232700",
+      "name": "大兴安岭地区",
+      "unitType": "prefecture",
+      "parentAdcode": "230000",
+      "provinceName": "黑龙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320100",
+      "name": "南京市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320200",
+      "name": "无锡市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320300",
+      "name": "徐州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320400",
+      "name": "常州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320500",
+      "name": "苏州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320600",
+      "name": "南通市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320700",
+      "name": "连云港市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320800",
+      "name": "淮安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "320900",
+      "name": "盐城市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "321000",
+      "name": "扬州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "321100",
+      "name": "镇江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "321200",
+      "name": "泰州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "321300",
+      "name": "宿迁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "320000",
+      "provinceName": "江苏省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330100",
+      "name": "杭州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330200",
+      "name": "宁波市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330300",
+      "name": "温州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330400",
+      "name": "嘉兴市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330500",
+      "name": "湖州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330600",
+      "name": "绍兴市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330700",
+      "name": "金华市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330800",
+      "name": "衢州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "330900",
+      "name": "舟山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "331000",
+      "name": "台州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "331100",
+      "name": "丽水市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "330000",
+      "provinceName": "浙江省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340100",
+      "name": "合肥市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340200",
+      "name": "芜湖市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340300",
+      "name": "蚌埠市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340400",
+      "name": "淮南市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340500",
+      "name": "马鞍山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340600",
+      "name": "淮北市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340700",
+      "name": "铜陵市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "340800",
+      "name": "安庆市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341000",
+      "name": "黄山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341100",
+      "name": "滁州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341200",
+      "name": "阜阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341300",
+      "name": "宿州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341500",
+      "name": "六安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341600",
+      "name": "亳州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341700",
+      "name": "池州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "341800",
+      "name": "宣城市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "340000",
+      "provinceName": "安徽省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350100",
+      "name": "福州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350200",
+      "name": "厦门市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350300",
+      "name": "莆田市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350400",
+      "name": "三明市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350500",
+      "name": "泉州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350600",
+      "name": "漳州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350700",
+      "name": "南平市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350800",
+      "name": "龙岩市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "350900",
+      "name": "宁德市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "350000",
+      "provinceName": "福建省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360100",
+      "name": "南昌市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360200",
+      "name": "景德镇市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360300",
+      "name": "萍乡市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360400",
+      "name": "九江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360500",
+      "name": "新余市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360600",
+      "name": "鹰潭市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360700",
+      "name": "赣州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360800",
+      "name": "吉安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "360900",
+      "name": "宜春市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "361000",
+      "name": "抚州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "361100",
+      "name": "上饶市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "360000",
+      "provinceName": "江西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370100",
+      "name": "济南市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370200",
+      "name": "青岛市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370300",
+      "name": "淄博市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370400",
+      "name": "枣庄市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370500",
+      "name": "东营市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370600",
+      "name": "烟台市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370700",
+      "name": "潍坊市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370800",
+      "name": "济宁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "370900",
+      "name": "泰安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371000",
+      "name": "威海市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371100",
+      "name": "日照市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371300",
+      "name": "临沂市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371400",
+      "name": "德州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371500",
+      "name": "聊城市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371600",
+      "name": "滨州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "371700",
+      "name": "菏泽市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "370000",
+      "provinceName": "山东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410100",
+      "name": "郑州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410200",
+      "name": "开封市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410300",
+      "name": "洛阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410400",
+      "name": "平顶山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410500",
+      "name": "安阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410600",
+      "name": "鹤壁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410700",
+      "name": "新乡市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410800",
+      "name": "焦作市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "410900",
+      "name": "濮阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411000",
+      "name": "许昌市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411100",
+      "name": "漯河市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411200",
+      "name": "三门峡市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411300",
+      "name": "南阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411400",
+      "name": "商丘市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411500",
+      "name": "信阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411600",
+      "name": "周口市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "411700",
+      "name": "驻马店市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420100",
+      "name": "武汉市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420200",
+      "name": "黄石市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420300",
+      "name": "十堰市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420500",
+      "name": "宜昌市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420600",
+      "name": "襄阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420700",
+      "name": "鄂州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420800",
+      "name": "荆门市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "420900",
+      "name": "孝感市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "421000",
+      "name": "荆州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "421100",
+      "name": "黄冈市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "421200",
+      "name": "咸宁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "421300",
+      "name": "随州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "422800",
+      "name": "恩施土家族苗族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430100",
+      "name": "长沙市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430200",
+      "name": "株洲市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430300",
+      "name": "湘潭市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430400",
+      "name": "衡阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430500",
+      "name": "邵阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430600",
+      "name": "岳阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430700",
+      "name": "常德市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430800",
+      "name": "张家界市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "430900",
+      "name": "益阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "431000",
+      "name": "郴州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "431100",
+      "name": "永州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "431200",
+      "name": "怀化市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "431300",
+      "name": "娄底市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "433100",
+      "name": "湘西土家族苗族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "430000",
+      "provinceName": "湖南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440100",
+      "name": "广州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440200",
+      "name": "韶关市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440300",
+      "name": "深圳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440400",
+      "name": "珠海市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440500",
+      "name": "汕头市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440600",
+      "name": "佛山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440700",
+      "name": "江门市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440800",
+      "name": "湛江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "440900",
+      "name": "茂名市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441200",
+      "name": "肇庆市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441300",
+      "name": "惠州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441400",
+      "name": "梅州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441500",
+      "name": "汕尾市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441600",
+      "name": "河源市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441700",
+      "name": "阳江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441800",
+      "name": "清远市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "441900",
+      "name": "东莞市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "442000",
+      "name": "中山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "445100",
+      "name": "潮州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "445200",
+      "name": "揭阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "445300",
+      "name": "云浮市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "440000",
+      "provinceName": "广东省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450100",
+      "name": "南宁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450200",
+      "name": "柳州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450300",
+      "name": "桂林市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450400",
+      "name": "梧州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450500",
+      "name": "北海市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450600",
+      "name": "防城港市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450700",
+      "name": "钦州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450800",
+      "name": "贵港市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "450900",
+      "name": "玉林市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "451000",
+      "name": "百色市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "451100",
+      "name": "贺州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "451200",
+      "name": "河池市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "451300",
+      "name": "来宾市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "451400",
+      "name": "崇左市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "450000",
+      "provinceName": "广西壮族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "460100",
+      "name": "海口市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "460000",
+      "provinceName": "海南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "460200",
+      "name": "三亚市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "460000",
+      "provinceName": "海南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "460300",
+      "name": "三沙市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "460000",
+      "provinceName": "海南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "460400",
+      "name": "儋州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "460000",
+      "provinceName": "海南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510100",
+      "name": "成都市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510300",
+      "name": "自贡市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510400",
+      "name": "攀枝花市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510500",
+      "name": "泸州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510600",
+      "name": "德阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510700",
+      "name": "绵阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510800",
+      "name": "广元市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "510900",
+      "name": "遂宁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511000",
+      "name": "内江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511100",
+      "name": "乐山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511300",
+      "name": "南充市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511400",
+      "name": "眉山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511500",
+      "name": "宜宾市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511600",
+      "name": "广安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511700",
+      "name": "达州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511800",
+      "name": "雅安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "511900",
+      "name": "巴中市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "512000",
+      "name": "资阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "513200",
+      "name": "阿坝藏族羌族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "513300",
+      "name": "甘孜藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "513400",
+      "name": "凉山彝族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "510000",
+      "provinceName": "四川省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "520100",
+      "name": "贵阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "520200",
+      "name": "六盘水市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "520300",
+      "name": "遵义市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "520400",
+      "name": "安顺市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "520500",
+      "name": "毕节市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "520600",
+      "name": "铜仁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "522300",
+      "name": "黔西南布依族苗族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "522600",
+      "name": "黔东南苗族侗族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "522700",
+      "name": "黔南布依族苗族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "520000",
+      "provinceName": "贵州省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530100",
+      "name": "昆明市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530300",
+      "name": "曲靖市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530400",
+      "name": "玉溪市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530500",
+      "name": "保山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530600",
+      "name": "昭通市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530700",
+      "name": "丽江市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530800",
+      "name": "普洱市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "530900",
+      "name": "临沧市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "532300",
+      "name": "楚雄彝族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "532500",
+      "name": "红河哈尼族彝族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "532600",
+      "name": "文山壮族苗族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "532800",
+      "name": "西双版纳傣族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "532900",
+      "name": "大理白族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "533100",
+      "name": "德宏傣族景颇族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "533300",
+      "name": "怒江傈僳族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "533400",
+      "name": "迪庆藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "530000",
+      "provinceName": "云南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "540100",
+      "name": "拉萨市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "540200",
+      "name": "日喀则市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "540300",
+      "name": "昌都市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "540400",
+      "name": "林芝市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "540500",
+      "name": "山南市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "540600",
+      "name": "那曲市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "542500",
+      "name": "阿里地区",
+      "unitType": "prefecture",
+      "parentAdcode": "540000",
+      "provinceName": "西藏自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610100",
+      "name": "西安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610200",
+      "name": "铜川市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610300",
+      "name": "宝鸡市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610400",
+      "name": "咸阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610500",
+      "name": "渭南市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610600",
+      "name": "延安市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610700",
+      "name": "汉中市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610800",
+      "name": "榆林市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "610900",
+      "name": "安康市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "611000",
+      "name": "商洛市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "610000",
+      "provinceName": "陕西省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620100",
+      "name": "兰州市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620200",
+      "name": "嘉峪关市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620300",
+      "name": "金昌市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620400",
+      "name": "白银市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620500",
+      "name": "天水市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620600",
+      "name": "武威市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620700",
+      "name": "张掖市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620800",
+      "name": "平凉市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "620900",
+      "name": "酒泉市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "621000",
+      "name": "庆阳市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "621100",
+      "name": "定西市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "621200",
+      "name": "陇南市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "622900",
+      "name": "临夏回族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "623000",
+      "name": "甘南藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "620000",
+      "provinceName": "甘肃省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "630100",
+      "name": "西宁市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "630200",
+      "name": "海东市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "632200",
+      "name": "海北藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "632300",
+      "name": "黄南藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "632500",
+      "name": "海南藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "632600",
+      "name": "果洛藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "632700",
+      "name": "玉树藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "632800",
+      "name": "海西蒙古族藏族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "630000",
+      "provinceName": "青海省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "640100",
+      "name": "银川市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "640200",
+      "name": "石嘴山市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "640300",
+      "name": "吴忠市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "640400",
+      "name": "固原市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "640500",
+      "name": "中卫市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "640000",
+      "provinceName": "宁夏回族自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "650100",
+      "name": "乌鲁木齐市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "650200",
+      "name": "克拉玛依市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "650400",
+      "name": "吐鲁番市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "650500",
+      "name": "哈密市",
+      "unitType": "prefecture_city",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "652300",
+      "name": "昌吉回族自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "652700",
+      "name": "博尔塔拉蒙古自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "652800",
+      "name": "巴音郭楞蒙古自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "652900",
+      "name": "阿克苏地区",
+      "unitType": "prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "653000",
+      "name": "克孜勒苏柯尔克孜自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "653100",
+      "name": "喀什地区",
+      "unitType": "prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "653200",
+      "name": "和田地区",
+      "unitType": "prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "654000",
+      "name": "伊犁哈萨克自治州",
+      "unitType": "autonomous_prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "654200",
+      "name": "塔城地区",
+      "unitType": "prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "654300",
+      "name": "阿勒泰地区",
+      "unitType": "prefecture",
+      "parentAdcode": "650000",
+      "provinceName": "新疆维吾尔自治区",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "110100",
+      "name": "北京主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "110000",
+      "provinceName": "北京市",
+      "status": "live",
+      "packId": "beijing",
+      "playable_3d": true
+    },
+    {
+      "adcode": "310100",
+      "name": "上海主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "310000",
+      "provinceName": "上海市",
+      "status": "live",
+      "packId": "shanghai",
+      "playable_3d": true
+    },
+    {
+      "adcode": "419001",
+      "name": "济源市",
+      "unitType": "province_directly",
+      "parentAdcode": "410000",
+      "provinceName": "河南省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "429004",
+      "name": "仙桃市",
+      "unitType": "province_directly",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "429005",
+      "name": "潜江市",
+      "unitType": "province_directly",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "429006",
+      "name": "天门市",
+      "unitType": "province_directly",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    },
+    {
+      "adcode": "429021",
+      "name": "神农架林区",
+      "unitType": "province_directly",
+      "parentAdcode": "420000",
+      "provinceName": "湖北省",
+      "status": "placeholder",
+      "packId": "",
+      "playable_3d": false
+    }
+  ]
+}
