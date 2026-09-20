@@ -11,7 +11,7 @@ export const SPEED_A = 0.55
 
 export const ATTRACT_FACTOR = 1.35
 export const ATTRACT_ACCEL = 25
-export const SWALLOW_RADIUS_FACTOR = 0.35
+export const SWALLOW_RADIUS_FACTOR = 0.8
 export const ATTRACT_TIMEOUT = 1.2
 export const MAX_SWALLOWING = 8
 
@@ -120,3 +120,5 @@ export function canSwallow(
     playerMass >= tier.massThreshold * thresholdScale
   )
 }
+
+export const OFFICIAL_URL = 'https://xiaojohn-eng.github.io/black-hole-city/'

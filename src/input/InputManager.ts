@@ -16,6 +16,7 @@ export class InputManager {
   private mouseDown = false
   private mouseNX = 0
   private mouseNY = 0
+  enabled = true
 
   constructor(el: HTMLElement) {
     this.el = el
@@ -60,6 +61,7 @@ export class InputManager {
   }
 
   private onPointerDown = (e: PointerEvent): void => {
+    if (!this.enabled) return
     const target = e.target as HTMLElement
     if (target.closest('[data-ui]')) return
     if (this.isTouchLike(e) || (this.forceJoystick && e.pointerType === 'mouse')) {
@@ -83,6 +85,7 @@ export class InputManager {
   }
 
   private onPointerMove = (e: PointerEvent): void => {
+    if (!this.enabled) return
     if (this.joystickActive && e.pointerId === this.pointerId) {
       const dx = e.clientX - this.joyOrigin.x
       const dy = e.clientY - this.joyOrigin.y
@@ -118,6 +121,7 @@ export class InputManager {
   }
 
   private onPointerUp = (e: PointerEvent): void => {
+    if (!this.enabled) return
     if (e.pointerId === this.pointerId) {
       this.pointerId = null
       this.joystickActive = false

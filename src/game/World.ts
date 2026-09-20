@@ -212,15 +212,25 @@ export class World {
   }
 
   private scatterDecor(): void {
-    const decorMat = this.mat(0x475569)
-    for (let i = 0; i < 40; i++) {
-      const x = rand(-110, 110)
-      const z = rand(-110, 110)
+    const trunkMat = this.mat(0x6b4a2f)
+    const leafMat = this.mat(0x2f6b3a)
+    let placed = 0
+    for (let i = 0; i < 400 && placed < 90; i++) {
+      const x = rand(-112, 112)
+      const z = rand(-112, 112)
       if (Math.hypot(x, z + 90) < 18) continue
-      const h = rand(1, 3)
-      const box = new THREE.Mesh(new THREE.BoxGeometry(rand(1, 2), h, rand(1, 2)), decorMat)
-      box.position.set(x, h / 2, z)
-      this.staticRoot.add(box)
+      if (Math.abs(x % 40) < 8 || Math.abs(z % 40) < 8) continue
+      const h = rand(1.6, 2.6)
+      const tree = new THREE.Group()
+      const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.24, h, 6), trunkMat)
+      trunk.position.y = h / 2
+      tree.add(trunk)
+      const crown = new THREE.Mesh(new THREE.ConeGeometry(rand(0.9, 1.4), h * 1.6, 7), leafMat)
+      crown.position.y = h + h * 0.7
+      tree.add(crown)
+      tree.position.set(x, 0, z)
+      this.staticRoot.add(tree)
+      placed++
     }
   }
 
@@ -261,17 +271,14 @@ export class World {
   }
 
   private sprinkleNearSpawn(sx: number, sz: number): void {
-    const tier = TIERS[0]
-    const spots = [
-      [sx + 4, sz + 6],
-      [sx - 5, sz + 8],
-      [sx + 7, sz + 3],
-      [sx - 6, sz + 2],
-      [sx + 3, sz + 12],
-      [sx - 4, sz + 14],
-    ]
-    for (const [x, z] of spots) {
+    for (let i = 0; i < 14; i++) {
+      const ang = (i / 14) * Math.PI * 2
+      const r = 7 + (i % 3) * 3
+      const tier = TIERS[i % 3 === 2 ? 1 : 0]
+      const x = sx + Math.cos(ang) * r
+      const z = sz + Math.sin(ang) * r
       const mesh = this.createFillMesh(tier)
+      this.cloneMeshMaterials(mesh)
       const dims = this.dimsFor(tier, false)
       mesh.position.set(x, dims.height / 2, z)
       this.dynamicRoot.add(mesh)
@@ -279,14 +286,41 @@ export class World {
     }
   }
 
+  private cloneMeshMaterials(root: THREE.Object3D): void {
+    root.traverse((c) => {
+      const m = c as THREE.Mesh
+      if (m.isMesh && m.material) {
+        m.material = (m.material as THREE.Material).clone()
+      }
+    })
+  }
+
   private spawnFill(zone: ZoneDef, tierLevel: number): void {
     const tier = TIERS[Math.min(10, Math.max(1, tierLevel)) - 1]
     const b = this.zoneBounds(zone)
-    const x = rand(b.x0, b.x1)
-    const z = rand(b.z0, b.z1)
+    const dims = this.dimsFor(tier, false)
+    const myR = Math.max(dims.hw, dims.hd)
+    let x = rand(b.x0, b.x1)
+    let z = rand(b.z0, b.z1)
+    for (let attempt = 0; attempt < 12; attempt++) {
+      const cx = rand(b.x0, b.x1)
+      const cz = rand(b.z0, b.z1)
+      if (Math.abs(cx) < 12 && this.layout.roads.style === 'hutong_axis') continue
+      let ok = true
+      for (const o of this.objects) {
+        const oR = Math.max(o.hw, o.hd)
+        if (Math.hypot(cx - o.x, cz - o.z) < (myR + oR) * 0.9 + 0.4) {
+          ok = false
+          break
+        }
+      }
+      x = cx
+      z = cz
+      if (ok) break
+    }
     if (Math.abs(x) < 12 && this.layout.roads.style === 'hutong_axis') return
     const mesh = this.createFillMesh(tier)
-    const dims = this.dimsFor(tier, false)
+    this.cloneMeshMaterials(mesh)
     mesh.position.set(x, dims.height / 2, z)
     this.dynamicRoot.add(mesh)
     this.objects.push(this.makeEatable(tier, x, z, dims, mesh, false, 'swallow', zone.name, null, null))

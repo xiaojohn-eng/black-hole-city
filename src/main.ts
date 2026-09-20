@@ -7,6 +7,8 @@ if (!app) throw new Error('#app missing')
 
 const game = new Game(app)
 new UIManager(app, game)
+// Debug/testing handle (not part of the UI)
+;(window as unknown as { __game?: Game }).__game = game
 if (import.meta.env.DEV) {
   ;(window as unknown as { __bhc: Game }).__bhc = game
 }

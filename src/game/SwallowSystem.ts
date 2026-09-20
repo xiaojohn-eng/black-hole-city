@@ -26,7 +26,8 @@ export class SwallowSystem {
   private threshScale: number
   outlineHint: boolean
   lockIcon: boolean
-  private lockSprites = new Map<number, THREE.Sprite>()
+  private lockSprites = new Map<number, { sprite: THREE.Sprite; ttl: number }>()
+  private rings: { mesh: THREE.Mesh; ttl: number; dur: number }[] = []
   private scene: THREE.Scene
   aimHint: AimHint | null = null
 
@@ -44,8 +45,9 @@ export class SwallowSystem {
 
   update(dt: number, player: Player, world: World): void {
     if (this.bumpCooldown > 0) this.bumpCooldown -= dt
+    this.updateFx(dt)
 
-    const attractR = player.radius * ATTRACT_FACTOR
+    const attractR = Math.max(player.radius * ATTRACT_FACTOR, player.radius + 0.6)
     const nearby = world.hash.query(player.x, player.z, Math.max(attractR, player.radius) + 16)
 
     this.aimHint = this.pickAim(player, nearby)
@@ -212,7 +214,7 @@ export class SwallowSystem {
         this.events.onGuardComplete(obj)
       }
     }
-    const dist = Math.hypot(obj.x - player.x, obj.z - player.z)
+    const dist = Math.hypot(obj.x - player.x, obj.z - obj.z)
     if (this.hitsPlayer(player, obj, dist)) {
       const br = swallowBreakdown(player.radius, player.mass, obj.tier, this.threshScale)
       this.blockAndBump(player, obj, world, br)
@@ -258,8 +260,8 @@ export class SwallowSystem {
   }
 
   private showLock(obj: Eatable): void {
-    let spr = this.lockSprites.get(obj.id)
-    if (!spr) {
+    let entry = this.lockSprites.get(obj.id)
+    if (!entry) {
       const canvas = document.createElement('canvas')
       canvas.width = 64
       canvas.height = 64
@@ -271,18 +273,60 @@ export class SwallowSystem {
       ctx.fillText('!', 32, 34)
       const tex = new THREE.CanvasTexture(canvas)
       const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false })
-      spr = new THREE.Sprite(mat)
-      spr.scale.set(2.2, 2.2, 1)
-      this.lockSprites.set(obj.id, spr)
-      this.scene.add(spr)
+      const sprite = new THREE.Sprite(mat)
+      sprite.scale.set(2.5, 2.5, 1)
+      entry = { sprite, ttl: 0 }
+      this.lockSprites.set(obj.id, entry)
+      this.scene.add(sprite)
     }
-    spr.position.set(obj.x, obj.height + 2, obj.z)
-    spr.visible = true
-    const id = obj.id
-    window.setTimeout(() => {
-      const s = this.lockSprites.get(id)
-      if (s) s.visible = false
-    }, 600)
+    entry.sprite.position.set(obj.x, obj.height + 2, obj.z)
+    entry.sprite.visible = true
+    entry.ttl = 0.6
+  }
+
+  private spawnRing(x: number, z: number, radius: number): void {
+    let ring = this.rings.find((r) => r.ttl <= 0)?.mesh
+    if (!ring) {
+      const geo = new THREE.RingGeometry(0.85, 1, 40)
+      const mat = new THREE.MeshBasicMaterial({
+        color: 0x2dd4bf,
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.8,
+        depthWrite: false,
+      })
+      ring = new THREE.Mesh(geo, mat)
+      ring.rotation.x = -Math.PI / 2
+      this.scene.add(ring)
+      this.rings.push({ mesh: ring, ttl: 0, dur: 0 })
+    }
+    ring.position.set(x, 0.09, z)
+    ring.visible = true
+    const rec = this.rings.find((r) => r.mesh === ring)!
+    rec.ttl = 0.45
+    rec.dur = 0.45
+    rec.mesh.userData.maxR = Math.max(1.5, radius * 2.2)
+  }
+
+  private updateFx(dt: number): void {
+    for (const entry of this.lockSprites.values()) {
+      if (entry.ttl > 0) {
+        entry.ttl -= dt
+        if (entry.ttl <= 0) entry.sprite.visible = false
+      }
+    }
+    for (const r of this.rings) {
+      if (r.ttl <= 0) continue
+      r.ttl -= dt
+      if (r.ttl <= 0) {
+        r.mesh.visible = false
+        continue
+      }
+      const t = 1 - r.ttl / r.dur
+      const maxR = (r.mesh.userData.maxR as number) ?? 2
+      r.mesh.scale.setScalar(0.4 + t * maxR)
+      ;(r.mesh.material as THREE.MeshBasicMaterial).opacity = 0.8 * (1 - t)
+    }
   }
 
   private beginSwallow(obj: Eatable): void {
@@ -351,17 +395,24 @@ export class SwallowSystem {
       obj.state = 'digested'
       obj.mesh.visible = false
       this.swallowing = Math.max(0, this.swallowing - 1)
+      this.spawnRing(obj.x, obj.z, player.radius)
       this.events.onDigested(obj)
     }
   }
 
   dispose(): void {
-    for (const s of this.lockSprites.values()) {
-      this.scene.remove(s)
-      s.material.map?.dispose()
-      s.material.dispose()
+    for (const entry of this.lockSprites.values()) {
+      this.scene.remove(entry.sprite)
+      entry.sprite.material.map?.dispose()
+      entry.sprite.material.dispose()
     }
     this.lockSprites.clear()
+    for (const r of this.rings) {
+      this.scene.remove(r.mesh)
+      r.mesh.geometry.dispose()
+      ;(r.mesh.material as THREE.Material).dispose()
+    }
+    this.rings = []
     this.swallowing = 0
     this.aimHint = null
   }

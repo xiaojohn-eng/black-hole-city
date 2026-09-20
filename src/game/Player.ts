@@ -12,8 +12,12 @@ export class Player {
   mesh: THREE.Group
   private disc: THREE.Mesh
   private rim: THREE.Mesh
+  private rimMat: THREE.MeshBasicMaterial
   private speedBoost = 0
   private boostTimer = 0
+  private velX = 0
+  private velZ = 0
+  private rimFlash = 0
 
   constructor(scene: THREE.Scene) {
     this.mesh = new THREE.Group()
@@ -27,13 +31,13 @@ export class Player {
 
     // Teal rim ring
     const rimGeo = new THREE.RingGeometry(0.85, 1.05, 48)
-    const rimMat = new THREE.MeshBasicMaterial({
+    this.rimMat = new THREE.MeshBasicMaterial({
       color: 0x2dd4bf,
       side: THREE.DoubleSide,
       transparent: true,
       opacity: 0.9,
     })
-    this.rim = new THREE.Mesh(rimGeo, rimMat)
+    this.rim = new THREE.Mesh(rimGeo, this.rimMat)
     this.rim.rotation.x = -Math.PI / 2
     this.rim.position.y = 0.06
     this.mesh.add(this.rim)
@@ -64,6 +68,7 @@ export class Player {
     if (this.level > prev) {
       this.speedBoost = 0.15
       this.boostTimer = 0.4
+      this.rimFlash = 0.6
       return true
     }
     return false
@@ -79,19 +84,43 @@ export class Player {
       this.boostTimer -= dt
       if (this.boostTimer <= 0) this.speedBoost = 0
     }
-    if (moveX !== 0 || moveZ !== 0) {
-      this.dirX = moveX
-      this.dirZ = moveZ
-      this.x += moveX * this.speed * dt
-      this.z += moveZ * this.speed * dt
+
+    // Acceleration smoothing: velocity chases the target velocity so
+    // starts/stops feel soft while the hole stays glued to the ground.
+    const targetVX = moveX * this.speed
+    const targetVZ = moveZ * this.speed
+    const blend = 1 - Math.exp(-10 * dt)
+    this.velX += (targetVX - this.velX) * blend
+    this.velZ += (targetVZ - this.velZ) * blend
+    this.x += this.velX * dt
+    this.z += this.velZ * dt
+
+    const spd = Math.hypot(this.velX, this.velZ)
+    if (spd > 0.5) {
+      this.dirX = this.velX / spd
+      this.dirZ = this.velZ / spd
     }
+
     const lim = mapHalf - boundary - this.radius
     this.x = Math.max(-lim, Math.min(lim, this.x))
     this.z = Math.max(-lim, Math.min(lim, this.z))
     this.mesh.position.set(this.x, 0, this.z)
-    // Subtle rim pulse
-    const pulse = 0.85 + Math.sin(performance.now() * 0.006) * 0.08
-    this.rim.scale.setScalar(pulse)
+
+    // Subtle rim pulse + level-up flash
+    if (this.rimFlash > 0) {
+      this.rimFlash -= dt
+      const f = Math.max(0, this.rimFlash) / 0.6
+      this.rimMat.color.setHex(0xfbbf24)
+      this.rimMat.opacity = 0.5 + f * 0.5
+      this.rim.scale.setScalar(0.9 + (1 - f) * 0.8)
+      if (this.rimFlash <= 0) {
+        this.rimMat.color.setHex(0x2dd4bf)
+        this.rimMat.opacity = 0.9
+      }
+    } else {
+      const pulse = 0.85 + Math.sin(performance.now() * 0.006) * 0.08
+      this.rim.scale.setScalar(pulse)
+    }
   }
 
   reset(x = 0, z = -90): void {
@@ -104,6 +133,11 @@ export class Player {
     this.dirZ = 1
     this.speedBoost = 0
     this.boostTimer = 0
+    this.velX = 0
+    this.velZ = 0
+    this.rimFlash = 0
+    this.rimMat.color.setHex(0x2dd4bf)
+    this.rimMat.opacity = 0.9
     this.syncVisual()
   }
 }
