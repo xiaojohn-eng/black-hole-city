@@ -1,0 +1,8 @@
+{
+  "title": "宗教 / 医院 / 学校 — 参观记忆（VISIT）",
+  "rule": "可识别外观，交互为 visit 或低威胁收集，不做崩塌。",
+  "entries": [
+    { "id": "forbidden_city", "name": "故宫博物院", "pack": "beijing", "interact": "visit" },
+    { "id": "temple_of_heaven", "name": "天坛祈年殿", "pack": "beijing", "interact": "visit" }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "City pack city.json (M1 subset)",
+  "type": "object",
+  "required": ["adcode", "packId", "name", "mode", "colorPalette", "spawn"],
+  "properties": {
+    "adcode": { "type": "string" },
+    "packId": { "type": "string" },
+    "name": { "type": "string" },
+    "fictional": { "type": "boolean" },
+    "mode": { "enum": ["timed", "career"] },
+    "gameplayModifiers": { "type": "array", "items": { "type": "string" } },
+    "colorPalette": {
+      "type": "object",
+      "required": ["sky", "fog", "ground", "road"]
+    },
+    "spawn": {
+      "type": "object",
+      "required": ["x", "z"]
+    }
+  },
+  "not": {
+    "anyOf": [
+      { "required": ["lat"] },
+      { "required": ["lon"] },
+      { "required": ["latitude"] },
+      { "required": ["longitude"] }
+    ]
+  }
+}

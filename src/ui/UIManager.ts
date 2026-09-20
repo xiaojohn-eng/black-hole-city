@@ -1,6 +1,8 @@
 import type { Game, Screen, HudSnapshot } from '../game/Game'
-import type { Settings, Quality, Difficulty, Duration } from '../persistence/storage'
+import type { Settings, Quality, Difficulty, Duration, AgeBand } from '../persistence/storage'
 import { levelFromMass } from '../game/constants'
+import { loadAdminIndex, filterProvinces } from '../content/loadAdmin'
+import type { AdminIndex, AdminPrefecture } from '../content/types'
 
 function fmtScore(n: number): string {
   return Math.floor(n).toLocaleString('zh-CN')
@@ -12,11 +14,17 @@ function fmtTime(s: number): string {
   return `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`
 }
 
+const REGION_ORDER = ['华北', '东北', '华东', '华中', '华南', '西南', '西北']
+
 export class UIManager {
   private root: HTMLElement
   private game: Game
   private layer: HTMLElement
   private settingsBack: Screen = 'title'
+  private admin: AdminIndex | null = null
+  private searchQ = ''
+  private openProvince: string | null = '110000'
+  private lastHud: HudSnapshot | null = null
 
   constructor(root: HTMLElement, game: Game) {
     this.root = root
@@ -26,14 +34,14 @@ export class UIManager {
     this.layer.setAttribute('data-ui', '1')
     root.appendChild(this.layer)
 
-    game.onScreenChange = (s) => this.render(s)
+    game.onScreenChange = (s) => void this.render(s)
     game.onHud = (h) => this.updateHud(h)
   }
 
-  private render(screen: Screen): void {
+  private async render(screen: Screen): Promise<void> {
     switch (screen) {
       case 'loading':
-        this.layer.innerHTML = `<div class="panel center"><div class="spinner"></div><p>正在铺开星湾市…</p></div>`
+        this.layer.innerHTML = `<div class="panel center"><div class="spinner"></div><p>正在打开记忆博物馆…</p></div>`
         break
       case 'nowebgl':
         this.layer.innerHTML = `<div class="panel center"><h2>无法运行</h2><p>当前浏览器无法运行本游戏，请升级浏览器或关闭硬件加速限制。</p></div>`
@@ -47,6 +55,15 @@ export class UIManager {
       case 'settings':
         this.renderSettings()
         break
+      case 'lobby':
+        await this.renderLobby()
+        break
+      case 'codex':
+        this.renderCodex()
+        break
+      case 'briefing':
+        this.renderBriefing()
+        break
       case 'playing':
         this.renderHud()
         break
@@ -55,6 +72,9 @@ export class UIManager {
         break
       case 'result':
         this.renderResult()
+        break
+      case 'quiz':
+        this.renderQuiz()
         break
     }
   }
@@ -71,18 +91,22 @@ export class UIManager {
         </div>
         <div class="title-block">
           <div class="hole-icon">●</div>
-          <h1>黑洞吞噬城市</h1>
-          <p class="subtitle">从汽车吃到摩天楼</p>
-          <p class="version">v0.1 · 星湾市·中央区</p>
+          <h1>记忆黑洞</h1>
+          <p class="subtitle">中国城市博物馆</p>
+          <p class="version">M1 首都课切片 · 收回散落的城市记忆</p>
         </div>
-        <div class="btn-col">
-          <button class="btn primary" id="btn-start">开始游戏</button>
-          <button class="btn secondary" id="btn-howto">如何游玩</button>
+        <div class="btn-col wide">
+          <button class="btn secondary" id="btn-train">训练场·星湾（虚构）</button>
+          <button class="btn primary museum" id="btn-beijing">记忆博物馆·北京</button>
+          <button class="btn secondary" id="btn-lobby">打开 34 省大厅</button>
+          <button class="btn ghost" id="btn-howto">如何游玩</button>
         </div>
-        <div class="stats-line">最高分：${high}　最大体型：L${maxLv}</div>
-        <p class="footnote">一局约 3 分钟 · 无需安装</p>
+        <div class="stats-line">最高分：${high}　最大体型：L${maxLv}　身份：${p.nickname}</div>
+        <p class="footnote">不宣称全国地级已收录 · 本切片可玩训练场与北京</p>
       </div>`
-    this.bind('btn-start', () => this.game.startGame())
+    this.bind('btn-train', () => this.game.openBriefing('xingwan-training'))
+    this.bind('btn-beijing', () => this.game.openBriefing('beijing'))
+    this.bind('btn-lobby', () => this.game.openLobby())
     this.bind('btn-howto', () => this.game.openHowto())
     this.bind('btn-settings', () => {
       this.settingsBack = 'title'
@@ -101,15 +125,34 @@ export class UIManager {
         <div class="modal">
           <h2>如何游玩</h2>
           <ol class="howto-list">
-            <li>移动黑洞（WASD / 虚拟摇杆）</li>
-            <li>只吃体型够小的目标（够大才能吞）</li>
-            <li>变大，吃更大的，在时间结束前冲分或挑战地标</li>
+            <li>你是记忆守护员。吸入碎片 = 把记忆归档进博物馆。</li>
+            <li>洞口够大、质量够沉，才能归档（双阈值）。</li>
+            <li>训练场·星湾是虚构练习；真城课请选北京。</li>
+            <li>天安门不可归档，请绕行一周完成守护致敬。</li>
+            <li>局后有 3 道小测验，可跳过，但跳过不会点亮「小博士」。</li>
           </ol>
           <p class="hint">桌面：WASD　移动端：左侧拖动摇杆　P/Esc 暂停</p>
           <button class="btn primary" id="btn-ok">知道了</button>
         </div>
       </div>`
     this.bind('btn-ok', () => this.game.goTitle())
+  }
+
+  private renderBriefing(): void {
+    const b = this.game.getBriefing()
+    this.layer.innerHTML = `
+      <div class="overlay modal-wrap" data-ui="1">
+        <div class="modal">
+          <h2>${b.title}</h2>
+          ${b.lines.map((l) => `<p class="brief-line">${l}</p>`).join('')}
+          <div class="btn-row" style="margin-top:1.2rem">
+            <button class="btn primary" id="btn-go">${b.packId === 'beijing' ? '开始守护' : '开始练习'}</button>
+            <button class="btn secondary" id="btn-back">返回</button>
+          </div>
+        </div>
+      </div>`
+    this.bind('btn-go', () => void this.game.startGame(b.packId))
+    this.bind('btn-back', () => this.game.goTitle())
   }
 
   private renderSettings(): void {
@@ -119,6 +162,21 @@ export class UIManager {
         <div class="modal settings-modal">
           <h2>设置</h2>
           <div class="settings-grid">
+            <p class="hint">学习年龄决定测验题目；操作难度只改变归档门槛。</p>
+            <label>学习年龄
+              <select id="s-age">
+                <option value="6-8" ${s.ageBand === '6-8' ? 'selected' : ''}>6–8 岁</option>
+                <option value="9-12" ${s.ageBand === '9-12' ? 'selected' : ''}>9–12 岁（默认）</option>
+                <option value="13+" ${s.ageBand === '13+' ? 'selected' : ''}>13 岁以上</option>
+              </select>
+            </label>
+            <label>操作难度
+              <select id="s-diff">
+                <option value="easy" ${s.difficulty === 'easy' ? 'selected' : ''}>轻松</option>
+                <option value="normal" ${s.difficulty === 'normal' ? 'selected' : ''}>标准</option>
+                <option value="hard" ${s.difficulty === 'hard' ? 'selected' : ''}>困难</option>
+              </select>
+            </label>
             <label>主音量 <input type="range" id="s-master" min="0" max="100" value="${s.masterVolume}"/></label>
             <label>音乐 <input type="range" id="s-bgm" min="0" max="100" value="${s.bgmVolume}"/></label>
             <label>音效 <input type="range" id="s-sfx" min="0" max="100" value="${s.sfxVolume}"/></label>
@@ -131,23 +189,17 @@ export class UIManager {
               </select>
             </label>
             <label>灵敏度 <input type="range" id="s-sens" min="50" max="150" value="${Math.round(s.sensitivity * 100)}"/></label>
-            <label>每局时长
+            <label>训练场时长
               <select id="s-dur">
                 <option value="120" ${s.duration === 120 ? 'selected' : ''}>120 秒</option>
                 <option value="180" ${s.duration === 180 ? 'selected' : ''}>180 秒</option>
                 <option value="240" ${s.duration === 240 ? 'selected' : ''}>240 秒</option>
               </select>
             </label>
-            <label>难度
-              <select id="s-diff">
-                <option value="easy" ${s.difficulty === 'easy' ? 'selected' : ''}>轻松</option>
-                <option value="normal" ${s.difficulty === 'normal' ? 'selected' : ''}>标准</option>
-                <option value="hard" ${s.difficulty === 'hard' ? 'selected' : ''}>困难</option>
-              </select>
-            </label>
+            <p class="hint">生涯模式（北京）不使用倒计时，只看裂隙稳定度。</p>
             <label><input type="checkbox" id="s-shake" ${s.cameraShake ? 'checked' : ''}/> 镜头震动</label>
-            <label><input type="checkbox" id="s-outline" ${s.outlineHint ? 'checked' : ''}/> 可吞物体描边</label>
-            <label><input type="checkbox" id="s-lock" ${s.lockIcon ? 'checked' : ''}/> 吃不下提示</label>
+            <label><input type="checkbox" id="s-outline" ${s.outlineHint ? 'checked' : ''}/> 可归档物体描边</label>
+            <label><input type="checkbox" id="s-lock" ${s.lockIcon ? 'checked' : ''}/> 门槛提示</label>
             <label><input type="checkbox" id="s-mouse" ${s.mouseSteer ? 'checked' : ''}/> 鼠标指向移动</label>
             <label><input type="checkbox" id="s-joy" ${s.forceJoystick ? 'checked' : ''}/> 始终显示摇杆</label>
           </div>
@@ -168,6 +220,7 @@ export class UIManager {
         sensitivity: num('s-sens') / 100,
         duration: Number((document.getElementById('s-dur') as HTMLSelectElement).value) as Duration,
         difficulty: (document.getElementById('s-diff') as HTMLSelectElement).value as Difficulty,
+        ageBand: (document.getElementById('s-age') as HTMLSelectElement).value as AgeBand,
         cameraShake: checked('s-shake'),
         outlineHint: checked('s-outline'),
         lockIcon: checked('s-lock'),
@@ -189,11 +242,148 @@ export class UIManager {
       else this.game.goTitle()
     })
     this.bind('btn-reset', () => {
-      if (confirm('将清除最高分与设置，且不可恢复。确定吗？')) {
+      if (confirm('将清除最高分、图鉴与设置，且不可恢复。确定吗？')) {
         this.game.resetData()
         this.renderSettings()
       }
     })
+  }
+
+  private async renderLobby(): Promise<void> {
+    if (!this.admin) {
+      this.layer.innerHTML = `<div class="panel center"><div class="spinner"></div><p>正在展开 34 省大厅…</p></div>`
+      try {
+        this.admin = await loadAdminIndex()
+      } catch {
+        this.layer.innerHTML = `<div class="panel center"><p>名录加载失败。</p><button class="btn" id="btn-back">返回</button></div>`
+        this.bind('btn-back', () => this.game.goTitle())
+        return
+      }
+    }
+    const q = this.searchQ
+    const list = filterProvinces(this.admin, q)
+    const grouped = new Map<string, typeof list>()
+    for (const p of list) {
+      const g = grouped.get(p.region7) ?? []
+      g.push(p)
+      grouped.set(p.region7, g)
+    }
+    const sections = REGION_ORDER.filter((r) => grouped.has(r))
+      .map((r) => {
+        const cards = grouped.get(r)!
+          .map((p) => {
+            const playable = p.playable
+            return `<button class="prov-card ${playable ? 'live' : 'repair'}" data-adcode="${p.adcode}">
+              <span class="prov-name">${p.name}</span>
+              <span class="prov-short">${p.shortName}</span>
+              <span class="prov-cap">行政中心 ${p.capital}</span>
+              <span class="prov-st">${playable ? '可玩 · 首都课' : '记忆修复中'}</span>
+            </button>`
+          })
+          .join('')
+        return `<h3 class="region-h">${r}</h3><div class="prov-grid">${cards}</div>`
+      })
+      .join('')
+
+    const open = this.openProvince
+    let detail = ''
+    if (open) {
+      const prov = this.admin.provinces.find((p) => p.adcode === open)
+      const children: AdminPrefecture[] = this.admin.prefectures.filter((c) => c.parentAdcode === open)
+      if (prov) {
+        const rows = children
+          .map(
+            (c) =>
+              `<li class="${c.playable_3d ? 'live' : ''}">${c.name}${c.playable_3d ? ' · 可玩' : ' · 记忆修复中'}</li>`,
+          )
+          .join('')
+        detail = `<div class="prov-detail">
+          <h3>${prov.name}（${prov.shortName}）</h3>
+          <p>${prov.region7} / ${prov.region4} · 行政中心 ${prov.capital}</p>
+          <p class="hint">${prov.playable ? '首都课可进入 3D。' : '本切片尚未制作 3D 包，仅占位名录。不宣称全国地级已收录。'}</p>
+          ${rows ? `<ul class="city-mini">${rows}</ul>` : '<p class="hint">省级单位，无地级列表（或见主城入口）。</p>'}
+          <div class="btn-row">
+            ${prov.playable ? '<button class="btn primary" id="btn-play-bj">进入北京 3D</button><button class="btn secondary" id="btn-codex">本城图鉴</button>' : ''}
+          </div>
+        </div>`
+      }
+    }
+
+    this.layer.innerHTML = `
+      <div class="overlay lobby-screen" data-ui="1">
+        <div class="lobby-head">
+          <button class="icon-btn" id="btn-back" title="返回">←</button>
+          <div>
+            <h2>全国大厅</h2>
+            <p class="hint">34 省可浏览 · 非北京显示「记忆修复中」· 不上未审中国全图</p>
+          </div>
+        </div>
+        <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」或「北京」）" value="${q}"/>
+        <p class="footnote">${this.admin.disclaimer}</p>
+        <div class="lobby-body">
+          <div class="lobby-list">${sections || '<p>没有匹配的省。</p>'}</div>
+          ${detail}
+        </div>
+      </div>`
+
+    this.bind('btn-back', () => this.game.goTitle())
+    const search = document.getElementById('lobby-search') as HTMLInputElement | null
+    search?.addEventListener('input', () => {
+      this.searchQ = search.value
+      void this.renderLobby()
+    })
+    if (search && q) {
+      search.focus()
+      search.setSelectionRange(q.length, q.length)
+    }
+    this.layer.querySelectorAll<HTMLButtonElement>('.prov-card').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        this.openProvince = btn.dataset.adcode ?? null
+        void this.renderLobby()
+      })
+    })
+    this.bind('btn-play-bj', () => this.game.openBriefing('beijing'))
+    this.bind('btn-codex', () => this.game.openCodex('beijing'))
+  }
+
+  private renderCodex(): void {
+    const c = this.game.getCodex()
+    const doctor = c.progress.doctorStar ? '★ 小博士已点亮' : '小博士未点亮（完成局后 3 题且答对至少 2 题）'
+    const cards = c.cards.map((k) => `<article class="kcard"><h4>${k.title}</h4><p>${k.body}</p></article>`).join('')
+    const lms = c.landmarks
+      .map((l) => `<li>${l.name} · ${l.mark === '未点亮' ? '未点亮' : l.mark === 'guarded' ? '已守护' : l.mark === 'visited' ? '已参观' : '已入库'}</li>`)
+      .join('')
+    this.layer.innerHTML = `
+      <div class="overlay lobby-screen" data-ui="1">
+        <div class="lobby-head">
+          <button class="icon-btn" id="btn-back">←</button>
+          <h2>图鉴 · 北京市</h2>
+        </div>
+        <div class="codex">
+          <section class="prov-hero">
+            <h3>${c.provinceName}</h3>
+            <p>简称 <b>${c.shortName}</b> · 行政中心 ${c.capital}</p>
+            <p>${c.region7} / ${c.region4} · ${c.climate}</p>
+            <p>${c.blurb}</p>
+            <p class="doctor">${doctor}</p>
+          </section>
+          <section>
+            <h3>本城地标</h3>
+            <ul>${lms || '<li>去 3D 课里点亮天安门、故宫等。</li>'}</ul>
+          </section>
+          <section>
+            <h3>已收知识卡 ${c.cards.length}</h3>
+            ${cards || '<p class="hint">玩一局首都课，归档或守护后会点亮卡片。也可从大厅直接打开本页。</p>'}
+          </section>
+        </div>
+        <div class="btn-row" style="margin:1rem">
+          <button class="btn primary" id="btn-play">进入北京</button>
+          <button class="btn secondary" id="btn-lobby">回大厅</button>
+        </div>
+      </div>`
+    this.bind('btn-back', () => this.game.goTitle())
+    this.bind('btn-play', () => this.game.openBriefing('beijing'))
+    this.bind('btn-lobby', () => this.game.openLobby())
   }
 
   private renderHud(): void {
@@ -201,9 +391,15 @@ export class UIManager {
       <div class="hud" data-ui="1">
         <div class="hud-top">
           <div class="hud-left">
-            <div class="level-line"><span id="hud-level">L1 街头小洞</span></div>
+            <div class="level-line"><span id="hud-city"></span> · <span id="hud-level">L1</span></div>
             <div class="bar"><div class="bar-fill" id="hud-bar" style="width:0%"></div></div>
-            <div class="score-line">分数 <span id="hud-score">0</span></div>
+            <div class="score-line">博物馆能量 <span id="hud-score">0</span></div>
+            <div class="dual" id="hud-dual" style="display:none">
+              <div class="dual-name" id="dual-name"></div>
+              <div class="dual-row">洞口 <div class="bar mini"><div class="bar-fill" id="bar-size"></div></div></div>
+              <div class="dual-row">质量 <div class="bar mini"><div class="bar-fill mass" id="bar-mass"></div></div></div>
+              <div class="dual-miss" id="dual-miss"></div>
+            </div>
           </div>
           <div class="hud-right">
             <div class="timer" id="hud-timer">03:00</div>
@@ -213,6 +409,16 @@ export class UIManager {
         <div class="combo" id="hud-combo" style="display:none">连击 x2</div>
         <div class="toast" id="hud-toast" style="display:none"></div>
         <button class="skip-tut" id="btn-skip-tut" style="display:none">跳过引导</button>
+        <div class="kmodal" id="kmodal" style="display:none">
+          <div class="kmodal-card">
+            <h3 id="k-title"></h3>
+            <p id="k-body"></p>
+            <div class="btn-row">
+              <button class="btn primary" id="k-ok">知道了</button>
+              <button class="btn secondary" id="k-later">稍后再读</button>
+            </div>
+          </div>
+        </div>
       </div>`
     this.bind('btn-pause', () => this.game.pause())
     this.bind('btn-skip-tut', () => {
@@ -220,24 +426,36 @@ export class UIManager {
       const t = document.getElementById('btn-skip-tut')
       if (t) t.style.display = 'none'
     })
+    this.bind('k-ok', () => this.game.acknowledgeCard(false))
+    this.bind('k-later', () => this.game.acknowledgeCard(true))
+    if (this.lastHud) this.updateHud(this.lastHud)
   }
 
   private updateHud(h: HudSnapshot): void {
+    this.lastHud = h
     if (this.game.screen !== 'playing') return
     const lv = document.getElementById('hud-level')
+    const city = document.getElementById('hud-city')
     const bar = document.getElementById('hud-bar')
     const score = document.getElementById('hud-score')
     const timer = document.getElementById('hud-timer')
     const combo = document.getElementById('hud-combo')
     const toast = document.getElementById('hud-toast')
     const skip = document.getElementById('btn-skip-tut')
+    if (city) city.textContent = h.cityName
     if (lv) lv.textContent = `L${h.level} ${h.levelLabel}`
     if (bar) bar.style.width = `${Math.round(h.progress * 100)}%`
     if (score) score.textContent = fmtScore(h.score)
     if (timer) {
-      timer.textContent = fmtTime(h.timeLeft)
-      timer.classList.toggle('warn', h.timeLeft <= 30)
-      timer.classList.toggle('danger', h.timeLeft <= 10)
+      if (h.mode === 'career') {
+        timer.textContent = `裂隙 ${Math.round(h.rift)}`
+        timer.classList.toggle('warn', h.rift <= 30)
+        timer.classList.toggle('danger', h.rift <= 12)
+      } else {
+        timer.textContent = fmtTime(h.timeLeft)
+        timer.classList.toggle('warn', h.timeLeft <= 30)
+        timer.classList.toggle('danger', h.timeLeft <= 10)
+      }
     }
     if (combo) {
       if (h.combo >= 2) {
@@ -246,14 +464,38 @@ export class UIManager {
       } else combo.style.display = 'none'
     }
     if (toast) {
-      if (h.toast) {
+      if (h.toast && !h.card) {
         toast.style.display = 'block'
         toast.textContent = h.toast
-        if (skip) skip.style.display = h.toast.includes('推动') || h.toast.includes('吸入') || h.toast.includes('洞够大') ? 'block' : 'none'
+        if (skip) skip.style.display = h.tutorial ? 'block' : 'none'
       } else {
         toast.style.display = 'none'
         if (skip) skip.style.display = 'none'
       }
+    }
+    const dual = document.getElementById('hud-dual')
+    if (dual) {
+      if (h.aim) {
+        dual.style.display = 'block'
+        const dn = document.getElementById('dual-name')
+        const dm = document.getElementById('dual-miss')
+        const bs = document.getElementById('bar-size')
+        const bm = document.getElementById('bar-mass')
+        if (dn) dn.textContent = `瞄准：${h.aim.name}`
+        if (dm) dm.textContent = h.aim.missing
+        if (bs) bs.style.width = `${Math.min(100, Math.round((h.aim.sizeHave / Math.max(h.aim.sizeNeed, 0.01)) * 100))}%`
+        if (bm) bm.style.width = `${Math.min(100, Math.round((h.aim.massHave / Math.max(h.aim.massNeed, 0.01)) * 100))}%`
+      } else dual.style.display = 'none'
+    }
+    const modal = document.getElementById('kmodal')
+    if (modal) {
+      if (h.card) {
+        modal.style.display = 'flex'
+        const t = document.getElementById('k-title')
+        const b = document.getElementById('k-body')
+        if (t) t.textContent = h.card.title
+        if (b) b.textContent = h.card.body
+      } else modal.style.display = 'none'
     }
   }
 
@@ -262,10 +504,11 @@ export class UIManager {
       <div class="overlay modal-wrap dim" data-ui="1">
         <div class="modal">
           <h2>暂停</h2>
+          <p class="hint">记忆还在口袋里，不会消失。</p>
           <div class="btn-col">
-            <button class="btn primary" id="btn-resume">继续游戏</button>
+            <button class="btn primary" id="btn-resume">继续</button>
             <button class="btn secondary" id="btn-set">设置</button>
-            <button class="btn danger" id="btn-quit">放弃本局</button>
+            <button class="btn danger" id="btn-quit">先离开（记忆暂存）</button>
           </div>
         </div>
       </div>`
@@ -274,31 +517,72 @@ export class UIManager {
       this.settingsBack = 'paused'
       this.game.openSettings()
     })
-    this.bind('btn-quit', () => {
-      if (confirm('确定要放弃吗？当前分数仍会记录。')) this.game.abandon()
-    })
+    this.bind('btn-quit', () => this.game.abandon())
   }
 
   private renderResult(): void {
     const r = this.game.getResult()
     if (!r) return
+    const deferred = r.deferredCards
+      .map((c) => `<p class="k-sum"><b>${c.title}</b>：${c.body}</p>`)
+      .join('')
     this.layer.innerHTML = `
       <div class="overlay modal-wrap dim" data-ui="1">
         <div class="modal">
-          <h2>本局结束</h2>
+          <h2>${r.mode === 'career' ? '裂隙暂合拢，记忆已入库' : '训练场结算'}</h2>
           <p class="result-title">${r.title}</p>
-          <p class="result-score">分数：${fmtScore(r.score)}${r.isNewRecord ? ' <span class="new-rec">新纪录！</span>' : ''}</p>
-          <p>最终体型：L${r.level} · 质量 ${r.mass}</p>
-          <p>吞噬数量：${r.eaten}</p>
-          <p>${r.landmarkEaten ? '地标：星湾塔已入洞 ★' : '地标：尚未吞噬'}</p>
+          <p class="result-score">博物馆能量：${fmtScore(r.score)}${r.isNewRecord ? ' <span class="new-rec">新纪录！</span>' : ''}</p>
+          <p>本局入库件数：${r.archived}　参观：${r.visited}　守护：${r.guarded}</p>
+          <p>最终体型：L${r.level} · 质量 ${r.mass}${r.mode === 'career' ? ` · 裂隙 ${r.rift}` : ''}</p>
+          ${deferred ? `<div class="deferred"><h3>稍后再读</h3>${deferred}</div>` : ''}
           <div class="btn-row" style="margin-top:1.2rem">
-            <button class="btn primary" id="btn-again">再来一局</button>
+            ${r.hasQuiz ? '<button class="btn primary" id="btn-quiz">局后 3 题</button>' : ''}
+            <button class="btn ${r.hasQuiz ? 'secondary' : 'primary'}" id="btn-again">再来一局</button>
             <button class="btn secondary" id="btn-home">返回标题</button>
           </div>
         </div>
       </div>`
-    this.bind('btn-again', () => this.game.startGame())
+    this.bind('btn-quiz', () => this.game.beginQuiz())
+    this.bind('btn-again', () => void this.game.startGame())
     this.bind('btn-home', () => this.game.goTitle())
+  }
+
+  private renderQuiz(): void {
+    const v = this.game.getQuizView()
+    if (v.done) {
+      const right = this.game.quizAnswers.filter((a) => a.correct).length
+      const msg = v.skipped
+        ? '已跳过测验，本局不点亮小博士星。作答记录未写入。'
+        : `答对 ${right} / ${v.total}。${v.doctor ? '点亮小博士星！' : '再试一次也许能点亮小博士。'}`
+      this.layer.innerHTML = `
+        <div class="overlay modal-wrap" data-ui="1">
+          <div class="modal">
+            <h2>测验结束</h2>
+            <p>${msg}</p>
+            <button class="btn primary" id="btn-codex">查看图鉴</button>
+          </div>
+        </div>`
+      this.bind('btn-codex', () => this.game.openCodex('beijing'))
+      return
+    }
+    const q = v.q
+    if (!q) return
+    const choices = q.choices
+      .map((c, i) => `<button class="btn secondary quiz-choice" data-i="${i}">${c}</button>`)
+      .join('')
+    this.layer.innerHTML = `
+      <div class="overlay modal-wrap" data-ui="1">
+        <div class="modal">
+          <p class="hint">第 ${v.index + 1} / ${v.total} 题 · 可跳过（不点亮小博士）</p>
+          <h2>${q.prompt}</h2>
+          <div class="btn-col">${choices}</div>
+          <button class="btn ghost" id="btn-skip" style="margin-top:1rem">稍后再答（不点亮小博士）</button>
+        </div>
+      </div>`
+    this.layer.querySelectorAll<HTMLButtonElement>('.quiz-choice').forEach((btn) => {
+      btn.addEventListener('click', () => this.game.answerQuiz(Number(btn.dataset.i)))
+    })
+    this.bind('btn-skip', () => this.game.skipQuiz())
   }
 
   private bind(id: string, fn: () => void): void {

@@ -1,0 +1,41 @@
+{
+  "adcode": "000000",
+  "packId": "xingwan-training",
+  "name": "星湾训练场",
+  "alias": ["星湾", "训练场"],
+  "unitType": "training",
+  "parentProvince": "虚构",
+  "region7": "训练",
+  "region4": "虚构",
+  "locationDesc": "这是一座虚构城市，用来练习记忆黑洞的手感，不是中国任何一座真城。",
+  "climateBand": "温和练习气候",
+  "landform": ["平原网格"],
+  "riversLakes": [],
+  "neighbors": [],
+  "cityFunction": ["训练场"],
+  "storyTitle": "手感热身",
+  "storyLogline": "在虚构的星湾练习归档：先小后大，双阈值都要够。",
+  "storyBeats": [
+    "从南边公园出发收集小碎片",
+    "向西进入生活区",
+    "向东看到更高的楼",
+    "东北方向有一座训练用地标塔"
+  ],
+  "gameplayModifiers": [],
+  "bgmPalette": ["练习和弦"],
+  "colorPalette": {
+    "sky": "#87b5d4",
+    "fog": "#87b5d4",
+    "ground": "#3d4a3a",
+    "road": "#3a3f4a"
+  },
+  "spawn": { "x": 0, "z": -90 },
+  "mapSize": 240,
+  "mode": "timed",
+  "fictional": true,
+  "briefing": [
+    "这里是虚构训练场·星湾，不是北京，也不是任何一座真城。",
+    "练习双阈值：洞口够大、质量够沉，才能把记忆归档。",
+    "限时冲分，熟悉手感后再去首都课。"
+  ]
+}

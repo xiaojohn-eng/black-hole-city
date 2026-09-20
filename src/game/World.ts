@@ -1,9 +1,9 @@
 import * as THREE from 'three'
-import { TIERS, MAP_HALF, MAP_SIZE, type TierDef } from './constants'
-import type { Eatable } from './types'
+import { TIERS, type TierDef } from './constants'
+import type { Eatable, InteractType } from './types'
 import { SpatialHash } from './SpatialHash'
-
-let nextId = 1
+import type { LandmarkDef, LayoutDef, LoadedPack, ZoneDef } from '../content/types'
+import { createLandmarkMesh, createSiheyuan, landmarkDims } from './LandmarkMeshes'
 
 function rand(a: number, b: number): number {
   return a + Math.random() * (b - a)
@@ -13,29 +13,59 @@ function pickReward(tier: TierDef): number {
   return rand(tier.massRewardMin, tier.massRewardMax)
 }
 
-/** Scaled MVP quotas (~35–45% of PRD) but zones recognizable */
-const QUOTAS: Record<string, [number, number, number, number, number]> = {
-  // L1-2, L3-4, L5-6, L7-8, L9-10
-  S: [36, 16, 2, 0, 0],
-  W: [18, 22, 12, 6, 0],
-  E: [14, 20, 14, 8, 3],
-  N: [12, 18, 12, 5, 1],
-  L: [8, 6, 4, 2, 2],
+function hexColor(s: string): number {
+  return Number.parseInt(s.replace('#', ''), 16)
+}
+
+function disposeObject3D(root: THREE.Object3D, disposeMat: boolean): void {
+  root.traverse((c) => {
+    const mesh = c as THREE.Mesh
+    if (mesh.isMesh) {
+      mesh.geometry?.dispose()
+      if (disposeMat && mesh.material) {
+        const mats = Array.isArray(mesh.material) ? mesh.material : [mesh.material]
+        for (const m of mats) {
+          const bm = m as THREE.MeshBasicMaterial
+          if (bm.map) bm.map.dispose()
+          m.dispose()
+        }
+      }
+    }
+    const spr = c as THREE.Sprite
+    if (spr.isSprite) {
+      spr.material.map?.dispose()
+      if (disposeMat) spr.material.dispose()
+    }
+  })
 }
 
 export class World {
   group = new THREE.Group()
   objects: Eatable[] = []
   hash = new SpatialHash(12)
+  layout: LayoutDef
+  mapSize: number
+  mapHalf: number
+  packId: string
+  private scene: THREE.Scene
   private mats: Record<string, THREE.MeshLambertMaterial> = {}
-  private groundMat: THREE.MeshLambertMaterial
-  private roadMat: THREE.MeshLambertMaterial
+  private staticRoot = new THREE.Group()
+  private dynamicRoot = new THREE.Group()
+  private spotsRoot = new THREE.Group()
+  private nextId = 1
+  private disposed = false
 
-  constructor(scene: THREE.Scene) {
-    this.groundMat = new THREE.MeshLambertMaterial({ color: 0x3d4a3a })
-    this.roadMat = new THREE.MeshLambertMaterial({ color: 0x3a3f4a })
+  constructor(scene: THREE.Scene, pack: LoadedPack) {
+    this.scene = scene
+    this.layout = pack.layout
+    this.packId = pack.city.packId
+    this.mapSize = pack.layout.mapSize || pack.city.mapSize || 240
+    this.mapHalf = this.mapSize / 2
+    this.group.add(this.staticRoot)
+    this.group.add(this.dynamicRoot)
+    this.group.add(this.spotsRoot)
     scene.add(this.group)
-    this.buildStaticCity()
+    this.buildStaticCity(pack)
     this.spawnObjects()
     this.hash.rebuild(this.objects)
   }
@@ -48,125 +78,181 @@ export class World {
     return this.mats[key]
   }
 
-  private buildStaticCity(): void {
-    // Ground
+  private buildStaticCity(pack: LoadedPack): void {
+    const pal = pack.city.colorPalette
     const ground = new THREE.Mesh(
-      new THREE.PlaneGeometry(MAP_SIZE + 16, MAP_SIZE + 16),
-      this.groundMat,
+      new THREE.PlaneGeometry(this.mapSize + 16, this.mapSize + 16),
+      new THREE.MeshLambertMaterial({ color: hexColor(pal.ground) }),
     )
     ground.rotation.x = -Math.PI / 2
-    ground.position.y = 0
-    this.group.add(ground)
+    this.staticRoot.add(ground)
 
-    // Zone tint patches
-    const zones: { x: number; z: number; w: number; d: number; c: number }[] = [
-      { x: 0, z: -80, w: 240, d: 80, c: 0x4a5c3a }, // S park-ish
-      { x: -60, z: 0, w: 120, d: 80, c: 0x4a6b4a }, // W residential green
-      { x: 60, z: 0, w: 120, d: 80, c: 0x3a4555 }, // E commercial
-      { x: -50, z: 80, w: 140, d: 80, c: 0x555045 }, // N industrial
-      { x: 70, z: 80, w: 100, d: 80, c: 0x3a5548 }, // Landmark park
-    ]
-    for (const z of zones) {
+    for (const z of this.layout.zones) {
       const m = new THREE.Mesh(
         new THREE.PlaneGeometry(z.w, z.d),
-        new THREE.MeshLambertMaterial({ color: z.c }),
+        new THREE.MeshLambertMaterial({ color: hexColor(z.color) }),
       )
       m.rotation.x = -Math.PI / 2
       m.position.set(z.x, 0.01, z.z)
-      this.group.add(m)
+      this.staticRoot.add(m)
     }
 
-    // Road grid
-    const roadW = 10
-    const spacing = 40
-    for (let i = -MAP_HALF + 20; i <= MAP_HALF - 20; i += spacing) {
-      // NS roads
-      const ns = new THREE.Mesh(new THREE.PlaneGeometry(roadW, MAP_SIZE - 16), this.roadMat)
-      ns.rotation.x = -Math.PI / 2
-      ns.position.set(i, 0.02, 0)
-      this.group.add(ns)
-      // EW roads
-      const ew = new THREE.Mesh(new THREE.PlaneGeometry(MAP_SIZE - 16, roadW), this.roadMat)
-      ew.rotation.x = -Math.PI / 2
-      ew.position.set(0, 0.02, i)
-      this.group.add(ew)
+    const roadMat = new THREE.MeshLambertMaterial({ color: hexColor(pal.road) })
+    const style = this.layout.roads.style
+    if (style === 'hutong_axis') {
+      this.buildBeijingRoads(roadMat)
+      this.buildHutongCompounds()
+      this.buildAxisRibbon()
+    } else {
+      this.buildGridRoads(roadMat)
+      this.scatterDecor()
     }
 
-    // Boundary walls (visual)
     const wallMat = new THREE.MeshLambertMaterial({ color: 0x1e293b })
     const wallH = 4
+    const h = this.mapHalf
     const edges = [
-      { x: 0, z: -MAP_HALF - 2, w: MAP_SIZE + 20, d: 4 },
-      { x: 0, z: MAP_HALF + 2, w: MAP_SIZE + 20, d: 4 },
-      { x: -MAP_HALF - 2, z: 0, w: 4, d: MAP_SIZE + 20 },
-      { x: MAP_HALF + 2, z: 0, w: 4, d: MAP_SIZE + 20 },
+      { x: 0, z: -h - 2, w: this.mapSize + 20, d: 4 },
+      { x: 0, z: h + 2, w: this.mapSize + 20, d: 4 },
+      { x: -h - 2, z: 0, w: 4, d: this.mapSize + 20 },
+      { x: h + 2, z: 0, w: 4, d: this.mapSize + 20 },
     ]
     for (const e of edges) {
       const w = new THREE.Mesh(new THREE.BoxGeometry(e.w, wallH, e.d), wallMat)
       w.position.set(e.x, wallH / 2, e.z)
-      this.group.add(w)
+      this.staticRoot.add(w)
+    }
+  }
+
+  private buildGridRoads(roadMat: THREE.MeshLambertMaterial): void {
+    const roadW = this.layout.roads.width
+    const spacing = this.layout.roads.spacing
+    for (let i = -this.mapHalf + 20; i <= this.mapHalf - 20; i += spacing) {
+      const ns = new THREE.Mesh(new THREE.PlaneGeometry(roadW, this.mapSize - 16), roadMat)
+      ns.rotation.x = -Math.PI / 2
+      ns.position.set(i, 0.02, 0)
+      this.staticRoot.add(ns)
+      const ew = new THREE.Mesh(new THREE.PlaneGeometry(this.mapSize - 16, roadW), roadMat)
+      ew.rotation.x = -Math.PI / 2
+      ew.position.set(0, 0.02, i)
+      this.staticRoot.add(ew)
+    }
+  }
+
+  private buildBeijingRoads(roadMat: THREE.MeshLambertMaterial): void {
+    const wide = new THREE.Mesh(new THREE.PlaneGeometry(18, this.mapSize - 24), this.mat(0xc4b49a))
+    wide.rotation.x = -Math.PI / 2
+    wide.position.set(0, 0.03, 10)
+    this.staticRoot.add(wide)
+    const redL = new THREE.Mesh(new THREE.PlaneGeometry(1.2, this.mapSize - 28), this.mat(0x9f1239))
+    redL.rotation.x = -Math.PI / 2
+    redL.position.set(-8.5, 0.04, 10)
+    this.staticRoot.add(redL)
+    const redR = redL.clone()
+    redR.position.set(8.5, 0.04, 10)
+    this.staticRoot.add(redR)
+
+    for (const x of [-90, -50, 50, 90]) {
+      const ns = new THREE.Mesh(new THREE.PlaneGeometry(8, this.mapSize - 16), roadMat)
+      ns.rotation.x = -Math.PI / 2
+      ns.position.set(x, 0.02, 0)
+      this.staticRoot.add(ns)
+    }
+    for (const z of [-90, -50, 10, 50, 90]) {
+      const ew = new THREE.Mesh(new THREE.PlaneGeometry(this.mapSize - 16, 8), roadMat)
+      ew.rotation.x = -Math.PI / 2
+      ew.position.set(0, 0.02, z)
+      this.staticRoot.add(ew)
     }
 
-    // Decorative static blocks (non-eatable scenery fillers in background density)
-    this.scatterDecor()
+    const hutong = this.layout.zones.find((z) => z.id === 'hutong')
+    if (hutong) {
+      for (let x = hutong.x - hutong.w / 2 + 8; x < hutong.x + hutong.w / 2 - 8; x += 16) {
+        const alley = new THREE.Mesh(new THREE.PlaneGeometry(3.2, hutong.d - 8), this.mat(0x57534e))
+        alley.rotation.x = -Math.PI / 2
+        alley.position.set(x, 0.025, hutong.z)
+        this.staticRoot.add(alley)
+      }
+      for (let z = hutong.z - hutong.d / 2 + 8; z < hutong.z + hutong.d / 2 - 8; z += 16) {
+        const alley = new THREE.Mesh(new THREE.PlaneGeometry(hutong.w - 8, 3.2), this.mat(0x57534e))
+        alley.rotation.x = -Math.PI / 2
+        alley.position.set(hutong.x, 0.025, z)
+        this.staticRoot.add(alley)
+      }
+    }
+
+    const plaza = new THREE.Mesh(new THREE.CircleGeometry(16, 24), this.mat(0x6d7f52))
+    plaza.rotation.x = -Math.PI / 2
+    plaza.position.set(28, 0.03, -82)
+    this.staticRoot.add(plaza)
+  }
+
+  private buildAxisRibbon(): void {
+    const stone = this.mat(0xd6c4a8)
+    for (let z = -20; z <= 110; z += 18) {
+      const slab = new THREE.Mesh(new THREE.BoxGeometry(12, 0.25, 14), stone)
+      slab.position.set(0, 0.12, z)
+      this.staticRoot.add(slab)
+    }
+  }
+
+  private buildHutongCompounds(): void {
+    const hutong = this.layout.zones.find((z) => z.id === 'hutong')
+    if (!hutong) return
+    const xs = [hutong.x - 28, hutong.x - 10, hutong.x + 10]
+    const zs = [hutong.z - 28, hutong.z - 10, hutong.z + 12, hutong.z + 30]
+    for (const x of xs) {
+      for (const z of zs) {
+        if (Math.abs(x) < 22) continue
+        const yard = createSiheyuan((hex) => this.mat(hex))
+        yard.position.set(x, 0, z)
+        this.staticRoot.add(yard)
+      }
+    }
   }
 
   private scatterDecor(): void {
-    const decorMat = new THREE.MeshLambertMaterial({ color: 0x475569 })
+    const decorMat = this.mat(0x475569)
     for (let i = 0; i < 40; i++) {
       const x = rand(-110, 110)
       const z = rand(-110, 110)
-      if (Math.hypot(x, z + 90) < 18) continue // keep spawn clear
+      if (Math.hypot(x, z + 90) < 18) continue
       const h = rand(1, 3)
       const box = new THREE.Mesh(new THREE.BoxGeometry(rand(1, 2), h, rand(1, 2)), decorMat)
       box.position.set(x, h / 2, z)
-      this.group.add(box)
+      this.staticRoot.add(box)
     }
   }
 
-  private zoneBounds(zone: string): { x0: number; x1: number; z0: number; z1: number } {
-    switch (zone) {
-      case 'S':
-        return { x0: -110, x1: 110, z0: -115, z1: -42 }
-      case 'W':
-        return { x0: -115, x1: -5, z0: -38, z1: 38 }
-      case 'E':
-        return { x0: 5, x1: 115, z0: -38, z1: 38 }
-      case 'N':
-        return { x0: -115, x1: 15, z0: 42, z1: 115 }
-      case 'L':
-        return { x0: 25, x1: 115, z0: 42, z1: 115 }
-      default:
-        return { x0: -50, x1: 50, z0: -50, z1: 50 }
+  private zoneBounds(zone: ZoneDef): { x0: number; x1: number; z0: number; z1: number } {
+    return {
+      x0: zone.x - zone.w / 2 + 4,
+      x1: zone.x + zone.w / 2 - 4,
+      z0: zone.z - zone.d / 2 + 4,
+      z1: zone.z + zone.d / 2 - 4,
     }
   }
 
   private spawnObjects(): void {
-    for (const zone of Object.keys(QUOTAS)) {
-      const q = QUOTAS[zone]
-      const pairs: [number, number][] = [
-        [1, q[0]],
-        [3, q[1]],
-        [5, q[2]],
-        [7, q[3]],
-        [9, q[4]],
-      ]
-      for (const [baseLv, count] of pairs) {
-        for (let i = 0; i < count; i++) {
-          // Split pair into two adjacent tiers roughly
-          const tierLv = baseLv + (i % 2 === 0 ? 0 : 1)
-          const clamped = Math.min(10, Math.max(1, tierLv))
-          // For odd counts of L9-10 in landmark, ensure one true L10 landmark
-          this.spawnOne(zone, clamped, false)
-        }
+    const spawnZone = this.layout.zones.find((z) => z.spawn)
+    const sx = spawnZone?.x ?? 0
+    const sz = spawnZone ? spawnZone.z - spawnZone.d / 2 + 16 : -90
+
+    for (const zone of this.layout.zones) {
+      const quotas = zone.quotas
+      for (const key of Object.keys(quotas) as (keyof typeof quotas)[]) {
+        const count = quotas[key] ?? 0
+        const lv = Number(String(key).slice(1))
+        if (!lv || count <= 0) continue
+        for (let i = 0; i < count; i++) this.spawnFill(zone, lv)
       }
     }
-    // Ensure main landmark (TV tower)
-    this.spawnOne('L', 10, true)
 
-    // Clear spawn area of >L4
+    for (const lm of this.layout.landmarks) this.spawnLandmark(lm)
+    this.sprinkleNearSpawn(sx, sz)
+
     for (const o of this.objects) {
-      if (Math.hypot(o.x - 0, o.z - -90) < 15 && o.tier.level > 4) {
+      if (Math.hypot(o.x - sx, o.z - sz) < 16 && o.tier.level > 4 && o.interact === 'swallow' && !o.isLandmark) {
         o.state = 'digested'
         o.mesh.visible = false
       }
@@ -174,32 +260,83 @@ export class World {
     this.objects = this.objects.filter((o) => o.state !== 'digested')
   }
 
-  private spawnOne(zone: string, tierLevel: number, forceLandmark: boolean): void {
-    const tier = TIERS[tierLevel - 1]
-    const b = this.zoneBounds(zone)
-    let x = rand(b.x0, b.x1)
-    let z = rand(b.z0, b.z1)
-    if (forceLandmark) {
-      x = 75
-      z = 85
+  private sprinkleNearSpawn(sx: number, sz: number): void {
+    const tier = TIERS[0]
+    const spots = [
+      [sx + 4, sz + 6],
+      [sx - 5, sz + 8],
+      [sx + 7, sz + 3],
+      [sx - 6, sz + 2],
+      [sx + 3, sz + 12],
+      [sx - 4, sz + 14],
+    ]
+    for (const [x, z] of spots) {
+      const mesh = this.createFillMesh(tier)
+      const dims = this.dimsFor(tier, false)
+      mesh.position.set(x, dims.height / 2, z)
+      this.dynamicRoot.add(mesh)
+      this.objects.push(this.makeEatable(tier, x, z, dims, mesh, false, 'swallow', '记忆碎片', null, null))
     }
-    // Avoid roads center slightly
-    const mesh = this.createMesh(tier, forceLandmark)
-    const { hw, hd, height, isCircle } = this.dimsFor(tier, forceLandmark)
-    mesh.position.set(x, isCircle ? height / 2 : height / 2, z)
-    this.group.add(mesh)
+  }
 
-    const obj: Eatable = {
-      id: nextId++,
+  private spawnFill(zone: ZoneDef, tierLevel: number): void {
+    const tier = TIERS[Math.min(10, Math.max(1, tierLevel)) - 1]
+    const b = this.zoneBounds(zone)
+    const x = rand(b.x0, b.x1)
+    const z = rand(b.z0, b.z1)
+    if (Math.abs(x) < 12 && this.layout.roads.style === 'hutong_axis') return
+    const mesh = this.createFillMesh(tier)
+    const dims = this.dimsFor(tier, false)
+    mesh.position.set(x, dims.height / 2, z)
+    this.dynamicRoot.add(mesh)
+    this.objects.push(this.makeEatable(tier, x, z, dims, mesh, false, 'swallow', zone.name, null, null))
+  }
+
+  private spawnLandmark(lm: LandmarkDef): void {
+    const tier = TIERS[Math.min(10, Math.max(1, lm.tier)) - 1]
+    const mesh = createLandmarkMesh(lm.mesh, (hex) => this.mat(hex))
+    const dims = landmarkDims(lm.mesh)
+    mesh.position.set(lm.x, 0, lm.z)
+    this.dynamicRoot.add(mesh)
+    const obj = this.makeEatable(
+      tier,
+      lm.x,
+      lm.z,
+      dims,
+      mesh,
+      true,
+      lm.interact,
+      lm.name,
+      lm.knowledgeCardId ?? null,
+      lm.id,
+    )
+    if (lm.interact === 'swallow' && lm.tier >= 10) obj.rewardMass = 6500
+    this.objects.push(obj)
+  }
+
+  private makeEatable(
+    tier: TierDef,
+    x: number,
+    z: number,
+    dims: { hw: number; hd: number; height: number; isCircle: boolean },
+    mesh: THREE.Object3D,
+    isLandmark: boolean,
+    interact: InteractType,
+    name: string,
+    knowledgeCardId: string | null,
+    landmarkId: string | null,
+  ): Eatable {
+    return {
+      id: this.nextId++,
       tier,
       x,
       z,
-      hw,
-      hd,
-      height,
-      isCircle,
-      isLandmark: forceLandmark || tier.level === 10,
-      rewardMass: forceLandmark ? 6500 : pickReward(tier),
+      hw: dims.hw,
+      hd: dims.hd,
+      height: dims.height,
+      isCircle: dims.isCircle,
+      isLandmark,
+      rewardMass: isLandmark && interact === 'swallow' ? 6500 : pickReward(tier),
       state: 'idle',
       attractTimer: 0,
       swallowTimer: 0,
@@ -211,8 +348,15 @@ export class World {
       velX: 0,
       velZ: 0,
       highlight: false,
+      interact,
+      name,
+      knowledgeCardId,
+      landmarkId,
+      guardAcc: 0,
+      lastGuardAngle: null,
+      visitDone: false,
+      guardDone: false,
     }
-    this.objects.push(obj)
   }
 
   private dimsFor(tier: TierDef, landmark: boolean): { hw: number; hd: number; height: number; isCircle: boolean } {
@@ -243,61 +387,25 @@ export class World {
     }
   }
 
-  private createMesh(tier: TierDef, landmark: boolean): THREE.Object3D {
+  private createFillMesh(tier: TierDef): THREE.Object3D {
     const g = new THREE.Group()
-    const color = landmark ? 0xfbbf24 : tier.color
-    const mat = this.mat(color)
-    const d = this.dimsFor(tier, landmark)
-
-    if (landmark) {
-      // TV tower: shaft + observation + tip
-      const shaft = new THREE.Mesh(new THREE.CylinderGeometry(1.2, 2.2, 36, 8), mat)
-      shaft.position.y = 18
-      g.add(shaft)
-      const pod = new THREE.Mesh(new THREE.CylinderGeometry(3.5, 3.5, 3, 8), this.mat(0xf59e0b))
-      pod.position.y = 30
-      g.add(pod)
-      const tip = new THREE.Mesh(new THREE.ConeGeometry(0.6, 10, 6), this.mat(0xe2e8f0))
-      tip.position.y = 40
-      g.add(tip)
-      return g
-    }
-
+    const mat = this.mat(tier.color)
+    const d = this.dimsFor(tier, false)
     if (tier.level <= 2) {
-      const m = new THREE.Mesh(
-        new THREE.BoxGeometry(d.hw * 2, d.height, d.hd * 2),
-        mat,
-      )
-      m.position.y = 0
+      const m = new THREE.Mesh(new THREE.BoxGeometry(d.hw * 2, d.height, d.hd * 2), mat)
       g.add(m)
     } else if (tier.level <= 5) {
-      // Vehicles
-      const body = new THREE.Mesh(
-        new THREE.BoxGeometry(d.hw * 2, d.height * 0.7, d.hd * 2),
-        mat,
-      )
+      const body = new THREE.Mesh(new THREE.BoxGeometry(d.hw * 2, d.height * 0.7, d.hd * 2), mat)
       body.position.y = d.height * 0.15
       g.add(body)
-      const cabin = new THREE.Mesh(
-        new THREE.BoxGeometry(d.hw * 1.6, d.height * 0.5, d.hd * 0.8),
-        this.mat(0x94a3b8),
-      )
+      const cabin = new THREE.Mesh(new THREE.BoxGeometry(d.hw * 1.6, d.height * 0.5, d.hd * 0.8), this.mat(0x94a3b8))
       cabin.position.set(0, d.height * 0.55, -d.hd * 0.2)
       g.add(cabin)
     } else {
-      // Buildings
-      const b = new THREE.Mesh(
-        new THREE.BoxGeometry(d.hw * 2, d.height, d.hd * 2),
-        mat,
-      )
-      b.position.y = 0
+      const b = new THREE.Mesh(new THREE.BoxGeometry(d.hw * 2, d.height, d.hd * 2), mat)
       g.add(b)
-      // Window strips
       if (tier.level >= 7) {
-        const win = new THREE.Mesh(
-          new THREE.BoxGeometry(d.hw * 1.7, d.height * 0.85, 0.15),
-          this.mat(0x93c5fd),
-        )
+        const win = new THREE.Mesh(new THREE.BoxGeometry(d.hw * 1.7, d.height * 0.85, 0.15), this.mat(0x93c5fd))
         win.position.set(0, 0, d.hd + 0.05)
         g.add(win)
       }
@@ -305,38 +413,76 @@ export class World {
     return g
   }
 
+  leaveSpot(obj: Eatable, color = 0x5eead4): void {
+    const r = Math.max(0.7, Math.min(obj.hw, obj.hd) * 0.45)
+    const disc = new THREE.Mesh(
+      new THREE.CircleGeometry(r, 16),
+      new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.4, side: THREE.DoubleSide }),
+    )
+    disc.rotation.x = -Math.PI / 2
+    disc.position.set(obj.origX, 0.05, obj.origZ)
+    this.spotsRoot.add(disc)
+  }
+
   rebuildHash(): void {
     this.hash.rebuild(this.objects)
   }
 
   reset(): void {
+    if (this.disposed) return
     for (const o of this.objects) {
-      this.group.remove(o.mesh)
+      this.dynamicRoot.remove(o.mesh)
+      disposeObject3D(o.mesh, false)
       o.mesh.traverse((c) => {
-        if ((c as THREE.Mesh).geometry) (c as THREE.Mesh).geometry.dispose()
+        const mesh = c as THREE.Mesh
+        if (!mesh.isMesh || !mesh.material) return
+        const mats = Array.isArray(mesh.material) ? mesh.material : [mesh.material]
+        for (const m of mats) {
+          if (m.type === 'MeshBasicMaterial') {
+            const bm = m as THREE.MeshBasicMaterial
+            bm.map?.dispose()
+            bm.dispose()
+          }
+        }
       })
     }
     this.objects = []
-    nextId = 1
+    while (this.spotsRoot.children.length) {
+      const c = this.spotsRoot.children[0]
+      this.spotsRoot.remove(c)
+      disposeObject3D(c, true)
+    }
+    this.nextId = 1
     this.spawnObjects()
     this.hash.rebuild(this.objects)
   }
 
-  /** Separate player circle from blocking AABB */
-  resolveBlock(
-    px: number,
-    pz: number,
-    pr: number,
-    obj: Eatable,
-  ): { x: number; z: number } | null {
-    // Closest point on AABB to circle center
+  meshCount(): number {
+    let n = 0
+    this.group.traverse((c) => {
+      if ((c as THREE.Mesh).isMesh) n++
+    })
+    return n
+  }
+
+  dispose(): void {
+    if (this.disposed) return
+    this.disposed = true
+    this.scene.remove(this.group)
+    disposeObject3D(this.group, true)
+    this.mats = {}
+    this.objects = []
+    this.hash.clear()
+    this.group.clear()
+  }
+
+  resolveBlock(px: number, pz: number, pr: number, obj: Eatable): { x: number; z: number } | null {
     const cx = Math.max(obj.x - obj.hw, Math.min(px, obj.x + obj.hw))
     const cz = Math.max(obj.z - obj.hd, Math.min(pz, obj.z + obj.hd))
     let dx = px - cx
     let dz = pz - cz
     const dist = Math.hypot(dx, dz)
     if (dist >= pr || dist < 1e-6) {
-      // If center inside AABB
       if (px >= obj.x - obj.hw && px <= obj.x + obj.hw && pz >= obj.z - obj.hd && pz <= obj.z + obj.hd) {
         const left = px - (obj.x - obj.hw)
         const right = obj.x + obj.hw - px

@@ -94,9 +94,26 @@ export class AudioEngine {
   }
 
   playLandmark(): void {
-    ;[220, 330, 440, 660, 880].forEach((f, i) => {
+    ;[220, 330, 440, 554, 740].forEach((f, i) => {
       setTimeout(() => this.tone(f, 0.35, 'triangle', 0.14), i * 90)
     })
+  }
+
+  playGuard(): void {
+    ;[196, 247, 294, 392].forEach((f, i) => {
+      setTimeout(() => this.tone(f, 0.45, 'sine', 0.16), i * 140)
+    })
+  }
+
+  playVisit(): void {
+    ;[392, 494, 587].forEach((f, i) => {
+      setTimeout(() => this.tone(f, 0.28, 'sine', 0.12), i * 80)
+    })
+  }
+
+  playArchive(): void {
+    this.tone(262, 0.18, 'sine', 0.12)
+    this.tone(392, 0.22, 'triangle', 0.08)
   }
 
   private startBgm(): void {

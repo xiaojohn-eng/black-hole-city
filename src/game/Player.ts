@@ -8,7 +8,7 @@ export class Player {
   x = 0
   z = -90 // south park spawn
   dirX = 0
-  dirZ = -1
+  dirZ = 1
   mesh: THREE.Group
   private disc: THREE.Mesh
   private rim: THREE.Mesh
@@ -94,12 +94,14 @@ export class Player {
     this.rim.scale.setScalar(pulse)
   }
 
-  reset(): void {
+  reset(x = 0, z = -90): void {
     this.mass = M0
     this.radius = radiusFromMass(M0)
     this.level = 1
-    this.x = 0
-    this.z = -90
+    this.x = x
+    this.z = z
+    this.dirX = 0
+    this.dirZ = 1
     this.speedBoost = 0
     this.boostTimer = 0
     this.syncVisual()

@@ -1,0 +1,21 @@
+{
+  "version": "m1-capital",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。可玩 3D 包仅训练场与北京。",
+  "packs": [
+    {
+      "id": "xingwan-training",
+      "kind": "training",
+      "name": "星湾训练场",
+      "fictional": true,
+      "mode": "timed"
+    },
+    {
+      "id": "beijing",
+      "kind": "city",
+      "adcode": "110100",
+      "name": "北京市",
+      "fictional": false,
+      "mode": "career"
+    }
+  ]
+}

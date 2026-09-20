@@ -12,7 +12,7 @@ export class CameraRig {
 
   constructor(aspect: number) {
     this.camera = new THREE.PerspectiveCamera(CAM_FOV, aspect, 0.5, 500)
-    this.current.set(0, 30, 20)
+    this.current.set(0, 30, -20)
     this.camera.position.copy(this.current)
   }
 
@@ -38,7 +38,7 @@ export class CameraRig {
       0,
       player.z + player.dirZ * lookAhead,
     )
-    this.desired.set(this.look.x, height, this.look.z + back)
+    this.desired.set(this.look.x, height, this.look.z - back)
 
     // Spring follow
     const stiff = 8

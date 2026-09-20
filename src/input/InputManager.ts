@@ -139,17 +139,17 @@ export class InputManager {
   update(): void {
     let x = 0
     let z = 0
-    if (this.keys.has('KeyW') || this.keys.has('ArrowUp')) z -= 1
-    if (this.keys.has('KeyS') || this.keys.has('ArrowDown')) z += 1
+    if (this.keys.has('KeyW') || this.keys.has('ArrowUp')) z += 1
+    if (this.keys.has('KeyS') || this.keys.has('ArrowDown')) z -= 1
     if (this.keys.has('KeyA') || this.keys.has('ArrowLeft')) x -= 1
     if (this.keys.has('KeyD') || this.keys.has('ArrowRight')) x += 1
 
     if (this.joystickActive) {
       x = this.joyVec.x
-      z = this.joyVec.y
+      z = -this.joyVec.y
     } else if (this.mouseDown && this.mouseSteer) {
       x = this.mouseNX
-      z = this.mouseNY
+      z = -this.mouseNY
     }
 
     const len = Math.hypot(x, z)
