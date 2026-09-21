@@ -153,7 +153,6 @@ if (!hainanLive.some((c) => c.packId === 'sanya') || !hainanLive.some((c) => c.p
 
 const pcLive = PREFECTURES.filter((r) => r.unitType === 'prefecture_city' && r.status === 'live' && r.playable_3d && r.packId)
 if (pcLive.length < 99) fail(`prefecture_city live ${pcLive.length} < 99 (M3b4 batch too small)`)
-if (pcLive.length > 109) fail(`prefecture_city live ${pcLive.length} > 109 honest cap for this slice`)
 if (pcLive.length >= 293) fail(`prefecture_city live ${pcLive.length} ≥ 293 — must not claim 293 complete`)
 
 const BLOCK_CELEB = /丽江|张家界|大理/

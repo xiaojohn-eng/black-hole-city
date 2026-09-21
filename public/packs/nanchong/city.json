@@ -1,0 +1,71 @@
+{
+  "adcode": "511300",
+  "packId": "nanchong",
+  "name": "南充市",
+  "alias": [
+    "南充"
+  ],
+  "shortName": "川",
+  "unitType": "prefecture_city",
+  "parentProvince": "四川省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在嘉陵江中游。四川省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带湿润",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "嘉陵江"
+  ],
+  "neighbors": [
+    "广安",
+    "遂宁",
+    "广元"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "嘉陵江中游教学点"
+  ],
+  "storyTitle": "嘉陵江记忆",
+  "storyLogline": "江风把万卷楼前的路牌藏起来。你沿嘉陵江把它们收回博物馆。",
+  "storyBeats": [
+    "从嘉陵江岸公园起步",
+    "旧街收集市井记忆",
+    "参观万卷楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-nch-river",
+    "card-nch-short"
+  ],
+  "briefing": [
+    "我们在南充，四川省的地级市，不是本省行政中心。成都才是四川省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "万卷楼只参观。本课讲嘉陵江，对照宜宾长江、乐山三江。不是山城毁城秀。"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "adcode": "621200",
+  "packId": "longnan",
+  "name": "陇南市",
+  "alias": [
+    "陇南"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在嘉陵江上游，甘肃东南。甘肃省的地级市，不是本省行政中心。气候比河西更湿润。",
+  "climateBand": "亚热带",
+  "landform": [
+    "河谷",
+    "山地"
+  ],
+  "riversLakes": [
+    "嘉陵江"
+  ],
+  "neighbors": [
+    "天水",
+    "汉中",
+    "广元"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "嘉陵江上游教学点"
+  ],
+  "storyTitle": "嘉陵江上游记忆",
+  "storyLogline": "谷地里的水汽把文庙前的路牌藏起来。你沿嘉陵江把它们收回博物馆。",
+  "storyBeats": [
+    "从嘉陵江岸公园起步",
+    "旧街收集市井记忆",
+    "参观陇南文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-lnn-river",
+    "card-lnn-short"
+  ],
+  "briefing": [
+    "我们在陇南，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲嘉陵江上游亚热带谷地，对照河西酒泉张掖绿洲、天水渭河。不是山城毁城秀。"
+  ]
+}

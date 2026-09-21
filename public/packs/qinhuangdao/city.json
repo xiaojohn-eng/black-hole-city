@@ -1,0 +1,71 @@
+{
+  "adcode": "130300",
+  "packId": "qinhuangdao",
+  "name": "秦皇岛市",
+  "alias": [
+    "秦皇岛"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在渤海西岸，燕山南麓。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "海岸",
+    "平原"
+  ],
+  "riversLakes": [
+    "渤海"
+  ],
+  "neighbors": [
+    "唐山",
+    "承德",
+    "葫芦岛"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "渤海西岸教学点"
+  ],
+  "storyTitle": "渤海西岸记忆",
+  "storyLogline": "海风把山海关前的路牌吹斜。你沿海岸把它们收回博物馆。",
+  "storyBeats": [
+    "从渤海岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观山海关",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "coastal_band",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "海风",
+    "城门"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-qhd-river",
+    "card-qhd-short"
+  ],
+  "briefing": [
+    "我们在秦皇岛，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "山海关只参观。本课讲渤海西岸，对照唐山工业海岸，不按网红度插队。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "341200",
+  "packId": "fuyang",
+  "name": "阜阳市",
+  "alias": [
+    "阜阳"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在淮北平原，颍河入淮一带。安徽省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原"
+  ],
+  "riversLakes": [
+    "颍河",
+    "淮河"
+  ],
+  "neighbors": [
+    "亳州",
+    "淮南",
+    "周口"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淮北平原教学点"
+  ],
+  "storyTitle": "颍河记忆",
+  "storyLogline": "平原上的风把文峰塔前的路牌吹斜。你沿颍河把它们收回博物馆。",
+  "storyBeats": [
+    "从颍河岸公园起步",
+    "旧街收集市井记忆",
+    "参观文峰塔",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-fya-river",
+    "card-fya-short"
+  ],
+  "briefing": [
+    "我们在阜阳，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文峰塔只参观。本课讲淮北平原和颍河，对照蚌埠淮河、芜湖安庆长江。"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "adcode": "440500",
+  "packId": "shantou",
+  "name": "汕头市",
+  "alias": [
+    "汕头"
+  ],
+  "shortName": "粤",
+  "unitType": "prefecture_city",
+  "parentProvince": "广东省",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在韩江口，南临南海。广东省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河口",
+    "海岸"
+  ],
+  "riversLakes": [
+    "韩江",
+    "南海"
+  ],
+  "neighbors": [
+    "潮州",
+    "揭阳",
+    "漳州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "韩江口教学点"
+  ],
+  "storyTitle": "韩江口记忆",
+  "storyLogline": "海风把小公园骑楼前的路牌吹斜。你沿韩江把它们收回博物馆。",
+  "storyBeats": [
+    "从韩江岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观小公园骑楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "海风",
+    "江声"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-sth-river",
+    "card-sth-short"
+  ],
+  "briefing": [
+    "我们在汕头，广东省的地级市，不是本省行政中心。广州才是广东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "小公园骑楼只参观。本课讲韩江口和南海，对照珠江口深圳佛山、雷州半岛湛江。"
+  ]
+}
