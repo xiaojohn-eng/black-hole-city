@@ -1,7 +1,31 @@
 {
-  "version": "m2-province-factory",
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场、北京、上海、哈尔滨。其余省入口为灰壳。",
-  "liveCityPacks": ["beijing", "shanghai", "harbin"],
+  "version": "m3a-seven-region",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区各 1 座真城（北京、上海、哈尔滨、武汉、广州、成都、西安）。其余为草稿或名录灰壳。不是 333 完成。",
+  "liveCityPacks": [
+    "beijing",
+    "shanghai",
+    "harbin",
+    "guangzhou",
+    "wuhan",
+    "chengdu",
+    "xian"
+  ],
+  "draftCityPacks": [
+    "shijiazhuang",
+    "baoding",
+    "shenyang",
+    "changchun",
+    "suzhou",
+    "qingdao",
+    "luoyang",
+    "changsha",
+    "shenzhen",
+    "guilin",
+    "kunming",
+    "guiyang",
+    "urumqi",
+    "jiuquan"
+  ],
   "sharedQuiz": "packs/_shared/province-abbr-quiz.json",
   "packs": [
     {
@@ -17,7 +41,9 @@
       "adcode": "110100",
       "name": "北京市",
       "fictional": false,
-      "mode": "career"
+      "mode": "career",
+      "status": "live",
+      "region7": "华北"
     },
     {
       "id": "shanghai",
@@ -25,7 +51,9 @@
       "adcode": "310100",
       "name": "上海市",
       "fictional": false,
-      "mode": "career"
+      "mode": "career",
+      "status": "live",
+      "region7": "华东"
     },
     {
       "id": "harbin",
@@ -33,7 +61,207 @@
       "adcode": "230100",
       "name": "哈尔滨市",
       "fictional": false,
-      "mode": "career"
+      "mode": "career",
+      "status": "live",
+      "region7": "东北"
+    },
+    {
+      "id": "guangzhou",
+      "kind": "city",
+      "adcode": "440100",
+      "name": "广州市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华南",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "wuhan",
+      "kind": "city",
+      "adcode": "420100",
+      "name": "武汉市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "chengdu",
+      "kind": "city",
+      "adcode": "510100",
+      "name": "成都市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "xian",
+      "kind": "city",
+      "adcode": "610100",
+      "name": "西安市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "shijiazhuang",
+      "kind": "city",
+      "adcode": "130100",
+      "name": "石家庄市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "baoding",
+      "kind": "city",
+      "adcode": "130600",
+      "name": "保定市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "shenyang",
+      "kind": "city",
+      "adcode": "210100",
+      "name": "沈阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "changchun",
+      "kind": "city",
+      "adcode": "220100",
+      "name": "长春市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "suzhou",
+      "kind": "city",
+      "adcode": "320500",
+      "name": "苏州市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "qingdao",
+      "kind": "city",
+      "adcode": "370200",
+      "name": "青岛市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "luoyang",
+      "kind": "city",
+      "adcode": "410300",
+      "name": "洛阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "changsha",
+      "kind": "city",
+      "adcode": "430100",
+      "name": "长沙市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "shenzhen",
+      "kind": "city",
+      "adcode": "440300",
+      "name": "深圳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华南",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "guilin",
+      "kind": "city",
+      "adcode": "450300",
+      "name": "桂林市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "华南",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "kunming",
+      "kind": "city",
+      "adcode": "530100",
+      "name": "昆明市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "guiyang",
+      "kind": "city",
+      "adcode": "520100",
+      "name": "贵阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "西南",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "urumqi",
+      "kind": "city",
+      "adcode": "650100",
+      "name": "乌鲁木齐市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "西北",
+      "kitId": "oasis-flat"
+    },
+    {
+      "id": "jiuquan",
+      "kind": "city",
+      "adcode": "620900",
+      "name": "酒泉市",
+      "fictional": false,
+      "mode": "career",
+      "status": "draft",
+      "region7": "西北",
+      "kitId": "oasis-flat"
     }
   ]
 }

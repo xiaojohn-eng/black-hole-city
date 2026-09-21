@@ -1,0 +1,44 @@
+{
+  "adcode": "510100",
+  "packId": "chengdu",
+  "name": "成都市",
+  "alias": ["成都", "蓉"],
+  "shortName": "川",
+  "unitType": "prefecture_city",
+  "parentProvince": "四川省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在四川盆地西部的成都平原，岷江水系灌溉。四川省行政中心，天府之国的核心。",
+  "climateBand": "亚热带湿润（盆地云雾）",
+  "landform": ["成都平原", "盆地", "岷江冲积"],
+  "riversLakes": ["岷江水系", "府河", "南河"],
+  "neighbors": ["德阳", "眉山", "资阳"],
+  "cityFunction": ["四川省行政中心", "天府之国核心", "历史文化名城"],
+  "storyTitle": "天府记忆",
+  "storyLogline": "盆地雾把路牌藏起来。你沿茶馆巷把灌溉与市井记忆送回博物馆。",
+  "storyBeats": [
+    "从南侧公园起步，雾气慢慢散开",
+    "宽窄巷子收集市井记忆",
+    "参观武侯祠，远望熊猫栖息地剪影",
+    "环绕人民英雄纪念碑致敬，再看见当代天际"
+  ],
+  "gameplayModifiers": ["basin_fog"],
+  "bgmPalette": ["盖碗茶", "竹笛"],
+  "colorPalette": {
+    "sky": "#9aaeb8",
+    "fog": "#b7c4c8",
+    "ground": "#6d7a62",
+    "road": "#5b6570"
+  },
+  "spawn": { "x": 0, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": ["card-cd-basin", "card-cd-short"],
+  "briefing": [
+    "我们在成都，四川省的行政中心。这是盆地里的平原城市，不是把山城皮肤套到全国。",
+    "人民英雄纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "武侯祠只参观。熊猫基地远景也只参观。生涯模式看裂隙稳定度。"
+  ]
+}

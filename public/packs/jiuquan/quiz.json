@@ -1,0 +1,131 @@
+{
+  "draft": true,
+  "questions": [
+    {
+      "id": "q-draft-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "酒泉市属于哪个省级行政区？",
+      "choices": [
+        "甘肃省",
+        "北京市",
+        "天津市",
+        "河北省"
+      ],
+      "answer": 0,
+      "explain": "酒泉市属于甘肃省。"
+    },
+    {
+      "id": "q-draft-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "甘肃省的简称是？",
+      "choices": [
+        "甘",
+        "京",
+        "津",
+        "冀"
+      ],
+      "answer": 0,
+      "explain": "简称「甘」。"
+    },
+    {
+      "id": "q-draft-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "纪念空间应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕行一周致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "GUARD：绕行致敬。"
+    },
+    {
+      "id": "q-draft-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "文保建筑的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "VISIT：只参观。"
+    },
+    {
+      "id": "q-draft-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "酒泉市在七大区中属于？",
+      "choices": [
+        "西北",
+        "华北",
+        "东北",
+        "华东"
+      ],
+      "answer": 0,
+      "explain": "七大区：西北。"
+    },
+    {
+      "id": "q-draft-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本草稿用的民居套件是？",
+      "choices": [
+        "绿洲平顶",
+        "北方砖 + 胡同",
+        "江南水岸",
+        "岭南骑楼"
+      ],
+      "answer": 0,
+      "explain": "套件 oasis-flat。"
+    },
+    {
+      "id": "q-draft-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "客户端为什么不能写 lat/lon？",
+      "choices": [
+        "好看",
+        "审图与隐私：关卡只用局部网格",
+        "Three.js 不支持",
+        "CSV 没有名字"
+      ],
+      "answer": 1,
+      "explain": "网格坐标不是地理坐标。"
+    },
+    {
+      "id": "q-draft-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "草稿能否宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能",
+        "做满 10 座就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "B 级草稿不是 live，更不是 333。"
+    },
+    {
+      "id": "q-draft-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "兰州是？",
+      "choices": [
+        "兰州",
+        "北京",
+        "上海",
+        "广州"
+      ],
+      "answer": 0,
+      "explain": "行政中心教学名：兰州。"
+    }
+  ]
+}

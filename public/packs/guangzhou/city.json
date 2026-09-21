@@ -1,0 +1,44 @@
+{
+  "adcode": "440100",
+  "packId": "guangzhou",
+  "name": "广州市",
+  "alias": ["广州", "穗", "羊城"],
+  "shortName": "粤",
+  "unitType": "prefecture_city",
+  "parentProvince": "广东省",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在珠江三角洲，珠江穿城。广东省行政中心，岭南湿热、骑楼遮阳。",
+  "climateBand": "亚热带季风",
+  "landform": ["河口平原", "珠江前航道", "北部丘陵"],
+  "riversLakes": ["珠江"],
+  "neighbors": ["佛山", "东莞", "清远"],
+  "cityFunction": ["广东省行政中心", "国家中心城市", "海上丝绸之路教学点"],
+  "storyTitle": "花城记忆",
+  "storyLogline": "龙舟水把骑楼招牌的记忆冲散。你沿珠江把它们收回博物馆。",
+  "storyBeats": [
+    "从珠江南岸公园起步，先看见一条河",
+    "骑楼廊下收集市井记忆",
+    "参观陈家祠与镇海楼",
+    "环绕解放纪念像致敬，再看见广州塔剪影"
+  ],
+  "gameplayModifiers": ["qilou_arcade", "pearl_river"],
+  "bgmPalette": ["粤语歌谣", "茶楼钢琴"],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": { "x": 0, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": ["card-gz-pearl", "card-gz-short"],
+  "briefing": [
+    "我们在广州，广东省的行政中心。先看见珠江，骑楼是为了遮阳避雨。",
+    "广州解放纪念像是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "陈家祠只参观外观。生涯模式看裂隙稳定度。"
+  ]
+}

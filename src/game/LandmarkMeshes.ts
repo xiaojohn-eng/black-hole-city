@@ -34,6 +34,24 @@ export function createLandmarkMesh(kind: string, mat: MatFn): THREE.Group {
       return iceCastle(mat)
     case 'dragon_tower':
       return dragonTower(mat)
+    case 'canton_tower':
+      return cantonTower(mat)
+    case 'yellow_crane_tower':
+      return yellowCraneTower(mat)
+    case 'yangtze_bridge':
+      return yangtzeBridge(mat)
+    case 'bell_tower':
+      return bellTower(mat)
+    case 'dayan_pagoda':
+      return dayanPagoda(mat)
+    case 'city_wall_gate':
+      return cityWallGate(mat)
+    case 'qilou_arcade':
+      return qilouArcade(mat)
+    case 'wide_alley':
+      return wideAlley(mat)
+    case 'panda_grove':
+      return pandaGrove(mat)
     case 'tv_tower':
     default:
       return tvTower(mat)
@@ -72,6 +90,24 @@ export function landmarkDims(kind: string): { hw: number; hd: number; height: nu
       return { hw: 10, hd: 10, height: 18, isCircle: false }
     case 'dragon_tower':
       return { hw: 4, hd: 4, height: 46, isCircle: true }
+    case 'canton_tower':
+      return { hw: 5, hd: 5, height: 50, isCircle: true }
+    case 'yellow_crane_tower':
+      return { hw: 8, hd: 8, height: 28, isCircle: false }
+    case 'yangtze_bridge':
+      return { hw: 22, hd: 6, height: 18, isCircle: false }
+    case 'bell_tower':
+      return { hw: 8, hd: 8, height: 22, isCircle: false }
+    case 'dayan_pagoda':
+      return { hw: 8, hd: 8, height: 32, isCircle: false }
+    case 'city_wall_gate':
+      return { hw: 14, hd: 6, height: 18, isCircle: false }
+    case 'qilou_arcade':
+      return { hw: 16, hd: 5, height: 12, isCircle: false }
+    case 'wide_alley':
+      return { hw: 16, hd: 6, height: 10, isCircle: false }
+    case 'panda_grove':
+      return { hw: 10, hd: 10, height: 8, isCircle: true }
     default:
       return { hw: 3, hd: 3, height: 48, isCircle: false }
   }
@@ -414,5 +450,170 @@ function dragonTower(mat: MatFn): THREE.Group {
   const tip = new THREE.Mesh(new THREE.ConeGeometry(0.5, 8, 6), mat(0xf8fafc))
   tip.position.y = 40
   g.add(tip)
+  return g
+}
+
+function cantonTower(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const shaft = new THREE.Mesh(new THREE.CylinderGeometry(0.9, 3.2, 40, 8), mat(0xd6d3d1))
+  shaft.position.y = 20
+  g.add(shaft)
+  const waist = new THREE.Mesh(new THREE.TorusGeometry(3.2, 0.55, 8, 16), mat(0xfbbf24))
+  waist.rotation.x = Math.PI / 2
+  waist.position.y = 22
+  g.add(waist)
+  const pod = new THREE.Mesh(new THREE.CylinderGeometry(3.6, 3.2, 3.2, 10), mat(0xf59e0b))
+  pod.position.y = 36
+  g.add(pod)
+  const tip = new THREE.Mesh(new THREE.ConeGeometry(0.5, 10, 6), mat(0xe2e8f0))
+  tip.position.y = 44
+  g.add(tip)
+  return g
+}
+
+function yellowCraneTower(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const base = new THREE.Mesh(new THREE.BoxGeometry(14, 2, 14), mat(0x9f1239))
+  base.position.y = 1
+  g.add(base)
+  const stories = [
+    { y: 5, w: 10, h: 5 },
+    { y: 11, w: 8, h: 4.5 },
+    { y: 16.2, w: 6, h: 4 },
+  ]
+  for (const s of stories) {
+    const body = new THREE.Mesh(new THREE.BoxGeometry(s.w, s.h, s.w), mat(0xb91c1c))
+    body.position.y = s.y
+    g.add(body)
+    const roof = new THREE.Mesh(new THREE.BoxGeometry(s.w + 3, 0.7, s.w + 3), mat(0xeab308))
+    roof.position.y = s.y + s.h / 2 + 0.2
+    g.add(roof)
+  }
+  const cap = new THREE.Mesh(new THREE.ConeGeometry(3.2, 4, 4), mat(0xfacc15))
+  cap.position.y = 21
+  g.add(cap)
+  return g
+}
+
+function yangtzeBridge(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const deck = new THREE.Mesh(new THREE.BoxGeometry(42, 0.8, 8), mat(0x78716c))
+  deck.position.y = 6
+  g.add(deck)
+  for (const ox of [-12, 12]) {
+    const tower = new THREE.Mesh(new THREE.BoxGeometry(2.2, 16, 2.2), mat(0xd6d3d1))
+    tower.position.set(ox, 8, 0)
+    g.add(tower)
+  }
+  const cable = new THREE.Mesh(new THREE.BoxGeometry(26, 0.25, 0.25), mat(0xe5e7eb))
+  cable.position.set(0, 14, 0)
+  g.add(cable)
+  return g
+}
+
+function bellTower(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const plinth = new THREE.Mesh(new THREE.BoxGeometry(14, 4, 14), mat(0xa8a29e))
+  plinth.position.y = 2
+  g.add(plinth)
+  const hall = new THREE.Mesh(new THREE.BoxGeometry(9, 7, 9), mat(0x9f1239))
+  hall.position.y = 8.5
+  g.add(hall)
+  const roof = new THREE.Mesh(new THREE.BoxGeometry(12, 1.2, 12), mat(0xeab308))
+  roof.position.y = 12.6
+  g.add(roof)
+  const cap = new THREE.Mesh(new THREE.ConeGeometry(3.4, 4, 4), mat(0xca8a04))
+  cap.position.y = 15.2
+  g.add(cap)
+  return g
+}
+
+function dayanPagoda(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const widths = [14, 12, 10, 8.2, 6.6, 5.2, 4]
+  let y = 0
+  for (let i = 0; i < widths.length; i++) {
+    const h = i === 0 ? 5 : 3.6
+    const body = new THREE.Mesh(new THREE.BoxGeometry(widths[i], h, widths[i]), mat(0xb7a07a))
+    body.position.y = y + h / 2
+    g.add(body)
+    y += h
+  }
+  const cap = new THREE.Mesh(new THREE.ConeGeometry(2.2, 3.2, 4), mat(0xa16207))
+  cap.position.y = y + 1.4
+  g.add(cap)
+  return g
+}
+
+function cityWallGate(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const wall = new THREE.Mesh(new THREE.BoxGeometry(28, 8, 6), mat(0x78716c))
+  wall.position.y = 4
+  g.add(wall)
+  const arch = new THREE.Mesh(new THREE.BoxGeometry(5, 5, 6.4), mat(0x1c1917))
+  arch.position.set(0, 2.6, 0)
+  g.add(arch)
+  const tower = new THREE.Mesh(new THREE.BoxGeometry(16, 6, 8), mat(0x9f1239))
+  tower.position.y = 11
+  g.add(tower)
+  const roof = new THREE.Mesh(new THREE.BoxGeometry(18, 1.2, 10), mat(0xeab308))
+  roof.position.y = 14.4
+  g.add(roof)
+  return g
+}
+
+function qilouArcade(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const walk = new THREE.Mesh(new THREE.BoxGeometry(32, 0.2, 6), mat(0xd6c7b0))
+  walk.position.y = 0.1
+  g.add(walk)
+  for (let i = -3; i <= 3; i++) {
+    const col = new THREE.Mesh(new THREE.BoxGeometry(0.7, 4.2, 0.7), mat(0xd6b48a))
+    col.position.set(i * 4.4, 2.1, 2.2)
+    g.add(col)
+    const bay = new THREE.Mesh(new THREE.BoxGeometry(4, 6, 4), mat(0xe8d5b5))
+    bay.position.set(i * 4.4, 7, 0)
+    g.add(bay)
+  }
+  return g
+}
+
+function wideAlley(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const path = new THREE.Mesh(new THREE.BoxGeometry(8, 0.15, 28), mat(0xa8a29e))
+  path.position.y = 0.08
+  g.add(path)
+  for (const side of [-5, 5]) {
+    for (let i = -2; i <= 2; i++) {
+      const shop = new THREE.Mesh(new THREE.BoxGeometry(4.2, 5.5, 4.5), mat(i % 2 ? 0xd6c7b0 : 0xb45309))
+      shop.position.set(side, 2.75, i * 5)
+      g.add(shop)
+      const roof = new THREE.Mesh(new THREE.BoxGeometry(4.6, 0.5, 4.8), mat(0x1f2937))
+      roof.position.set(side, 5.7, i * 5)
+      g.add(roof)
+    }
+  }
+  return g
+}
+
+function pandaGrove(mat: MatFn): THREE.Group {
+  const g = new THREE.Group()
+  const ground = new THREE.Mesh(new THREE.CylinderGeometry(9, 9, 0.4, 12), mat(0x3f6212))
+  ground.position.y = 0.2
+  g.add(ground)
+  for (const ox of [-3, 0, 3.5]) {
+    const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.3, 6, 6), mat(0x365314))
+    trunk.position.set(ox, 3, ox * 0.4)
+    g.add(trunk)
+  }
+  const body = new THREE.Mesh(new THREE.SphereGeometry(1.6, 10, 8), mat(0xf8fafc))
+  body.position.set(0, 1.8, 3)
+  g.add(body)
+  const earL = new THREE.Mesh(new THREE.SphereGeometry(0.55, 8, 6), mat(0x1c1917))
+  earL.position.set(-0.9, 3.1, 3)
+  g.add(earL)
+  const earR = earL.clone()
+  earR.position.set(0.9, 3.1, 3)
+  g.add(earR)
   return g
 }

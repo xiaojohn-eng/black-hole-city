@@ -623,21 +623,38 @@ export class Game {
     this.scene.background = sky
     if (this.fog) {
       this.fog.color.copy(fogC)
-      this.fog.near = 80
-      this.fog.far = 320
+      const mods = pack.city.gameplayModifiers ?? []
+      if (mods.includes('basin_fog')) {
+        this.fog.near = 36
+        this.fog.far = 160
+      } else if (mods.includes('loess_dust')) {
+        this.fog.near = 55
+        this.fog.far = 220
+      } else {
+        this.fog.near = 80
+        this.fog.far = 320
+      }
       this.scene.fog = this.fog
     }
   }
 
   openBriefing(packId: string): void {
-    this.briefingPackId = packId
     this.audio.playUi()
-    if (this.catalogs.has(packId)) {
+    const go = () => {
+      const city = this.catalogs.get(packId)?.city
+      if (city?.draft) {
+        this.setScreen('lobby')
+        return
+      }
+      this.briefingPackId = packId
       this.setScreen('briefing')
+    }
+    if (this.catalogs.has(packId)) {
+      go()
       return
     }
     this.setScreen('loading')
-    void this.prefetchPack(packId).then(() => this.setScreen('briefing'))
+    void this.prefetchPack(packId).then(go)
   }
 
   getBriefing(): { title: string; lines: string[]; packId: string } {
@@ -669,6 +686,11 @@ export class Game {
     const id = packId ?? this.briefingPackId ?? 'xingwan-training'
     await this.audio.unlock()
     this.audio.playUi()
+    await this.prefetchPack(id)
+    if (this.catalogs.get(id)?.city.draft) {
+      this.setScreen('lobby')
+      return
+    }
     const mul = difficultyMultipliers(this.settings.difficulty)
     this.massMul = mul.massMul
     this.threshScale = mul.threshScale

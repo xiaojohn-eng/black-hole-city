@@ -1,0 +1,96 @@
+{
+  "questions": [
+    {
+      "id": "q-wh-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "湖北省的简称是？",
+      "choices": ["湘", "鄂", "赣", "皖"],
+      "answer": 1,
+      "explain": "湖北简称「鄂」，行政中心是武汉。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-wh-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "在武汉交汇的两条著名的江是？",
+      "choices": ["黄河与渭河", "长江与汉江", "珠江与东江", "松花江与嫩江"],
+      "answer": 1,
+      "explain": "长江与汉江在武汉交汇，形成两江三镇。"
+    },
+    {
+      "id": "q-wh-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "防汛纪念碑应该怎么对待？",
+      "choices": ["吸入归档", "绕着它走一圈，完成守护致敬", "推倒", "忽略"],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-wh-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "黄鹤楼在本课里应该？",
+      "choices": ["吸入", "参观外观", "改造成游乐场", "搬走"],
+      "answer": 1,
+      "explain": "名楼只参观。"
+    },
+    {
+      "id": "q-wh-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "武汉主要属于哪种气候？",
+      "choices": ["温带季风", "亚热带季风", "高原山地", "寒温带"],
+      "answer": 1,
+      "explain": "武汉是亚热带季风气候，夏天湿热。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-wh-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "武汉在七大区中属于？",
+      "choices": ["华北", "华中", "西北", "东北"],
+      "answer": 1,
+      "explain": "湖北在华中。"
+    },
+    {
+      "id": "q-wh-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "「两江三镇」里的三镇是？",
+      "choices": ["武昌、汉口、汉阳", "浦东、浦西、崇明", "关厢、回坊、新城", "南岸、渝中、江北"],
+      "answer": 0,
+      "explain": "武昌、汉口、汉阳合称两江三镇。"
+    },
+    {
+      "id": "q-wh-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "「九省通衢」主要在说武汉的？",
+      "choices": ["滑雪场", "交通枢纽位置", "沙漠绿洲", "火山"],
+      "answer": 1,
+      "explain": "武汉是长江中游的交通枢纽。"
+    },
+    {
+      "id": "q-wh-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "汉江是哪条大河的支流？",
+      "choices": ["珠江", "黄河", "长江", "辽河"],
+      "answer": 2,
+      "explain": "汉江在武汉汇入长江。"
+    },
+    {
+      "id": "q-wh-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "下面哪一样常被当作武汉的味道？",
+      "choices": ["小笼包", "热干面", "过桥米线", "椰子鸡"],
+      "answer": 1,
+      "explain": "热干面是武汉常见的饮食符号。"
+    }
+  ]
+}

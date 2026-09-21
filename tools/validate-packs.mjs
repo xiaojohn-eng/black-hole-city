@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Pack contract: training + live city minimum sets (M2).
+ * Pack contract: training + live city minimum sets (M3a).
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -35,12 +35,15 @@ if (!fs.existsSync(manifestPath)) fail('missing public/packs/manifest.json')
 const manifest = readJson(manifestPath)
 const ids = (manifest.packs ?? []).map((p) => p.id)
 if (!ids.includes('xingwan-training')) fail('manifest missing xingwan-training')
-for (const need of ['beijing', 'shanghai', 'harbin']) {
+for (const need of ['beijing', 'shanghai', 'harbin', 'guangzhou', 'wuhan', 'chengdu', 'xian']) {
   if (!ids.includes(need)) fail(`manifest missing ${need}`)
 }
 
-const liveCity = (manifest.liveCityPacks ?? ['beijing', 'shanghai', 'harbin']).filter(Boolean)
-if (liveCity.length < 3) fail('liveCityPacks must include at least beijing, shanghai, harbin')
+const liveCity = (manifest.liveCityPacks ?? []).filter(Boolean)
+if (liveCity.length < 7) fail(`liveCityPacks ${liveCity.length} < 7`)
+for (const need of ['beijing', 'shanghai', 'harbin', 'guangzhou', 'wuhan', 'chengdu', 'xian']) {
+  if (!liveCity.includes(need)) fail(`liveCityPacks missing ${need}`)
+}
 
 const xwDir = packDir('xingwan-training')
 for (const f of ['city.json', 'layout.json', 'quiz.json', 'knowledge.json']) {
@@ -58,6 +61,7 @@ const cityRules = {
     themes: ['首都', '京', '温带季风', '胡同', '中轴'],
     modifiers: ['hutong_maze', 'axis_guard'],
     adcode: '110100',
+    region7: '华北',
   },
   shanghai: {
     minZones: 4,
@@ -67,6 +71,7 @@ const cityRules = {
     themes: ['沪', '黄浦江', '亚热带季风', '里弄'],
     modifiers: ['river_front'],
     adcode: '310100',
+    region7: '华东',
   },
   harbin: {
     minZones: 4,
@@ -76,6 +81,47 @@ const cityRules = {
     themes: ['黑', '松花江', '冰雪'],
     modifiers: ['cold_wide_street'],
     adcode: '230100',
+    region7: '东北',
+  },
+  guangzhou: {
+    minZones: 3,
+    minLandmarks: 5,
+    guardName: /纪念/,
+    visitName: /陈家祠|镇海|骑楼/,
+    themes: ['粤', '珠江', '骑楼', '亚热带'],
+    modifiers: ['qilou_arcade'],
+    adcode: '440100',
+    region7: '华南',
+  },
+  wuhan: {
+    minZones: 3,
+    minLandmarks: 5,
+    guardName: /防汛|纪念|抗洪/,
+    visitName: /黄鹤/,
+    themes: ['鄂', '长江', '汉江', '两江'],
+    modifiers: ['two_rivers_confluence'],
+    adcode: '420100',
+    region7: '华中',
+  },
+  chengdu: {
+    minZones: 3,
+    minLandmarks: 5,
+    guardName: /纪念/,
+    visitName: /武侯|宽窄/,
+    themes: ['川', '天府', '盆地', '都江堰'],
+    modifiers: ['basin_fog'],
+    adcode: '510100',
+    region7: '西南',
+  },
+  xian: {
+    minZones: 3,
+    minLandmarks: 5,
+    guardName: /纪念/,
+    visitName: /雁塔|城墙/,
+    themes: ['陕', '渭河', '古都', '丝路'],
+    modifiers: ['citywall_ring'],
+    adcode: '610100',
+    region7: '西北',
   },
 }
 
@@ -91,9 +137,12 @@ for (const id of liveCity) {
   const rule = cityRules[id]
 
   if (city.fictional) fail(`${id} must not be fictional`)
+  if (city.draft) fail(`${id} live pack must not set draft`)
   if (['lat', 'lon', 'latitude', 'longitude'].some((k) => k in city)) fail(`${id} city.json has coords`)
+  if (!city.region7) fail(`${id} missing region7`)
+  if (rule?.region7 && city.region7 !== rule.region7) fail(`${id} region7 ${city.region7} ≠ ${rule.region7}`)
   if (rule && city.adcode !== rule.adcode) fail(`${id} adcode ${city.adcode} ≠ ${rule.adcode}`)
-  if ((layout.zones ?? []).length < (rule?.minZones ?? 4)) fail(`${id} zones ${layout.zones?.length} < 4`)
+  if ((layout.zones ?? []).length < (rule?.minZones ?? 3)) fail(`${id} zones ${layout.zones?.length} < ${rule?.minZones ?? 3}`)
   const lms = layout.landmarks ?? city.landmarks ?? []
   if (lms.length < (rule?.minLandmarks ?? 5)) fail(`${id} landmarks ${lms.length} < 5`)
   const interacts = new Set(lms.map((l) => l.interact))

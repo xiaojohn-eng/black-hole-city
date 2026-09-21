@@ -47,6 +47,7 @@ export class World {
   mapSize: number
   mapHalf: number
   packId: string
+  private variants: string[] = []
   private scene: THREE.Scene
   private mats: Record<string, THREE.MeshLambertMaterial> = {}
   private staticRoot = new THREE.Group()
@@ -59,6 +60,7 @@ export class World {
     this.scene = scene
     this.layout = pack.layout
     this.packId = pack.city.packId
+    this.variants = [...(pack.layout.variants ?? []), ...(pack.city.gameplayModifiers ?? [])]
     this.mapSize = pack.layout.mapSize || pack.city.mapSize || 240
     this.mapHalf = this.mapSize / 2
     this.group.add(this.staticRoot)
@@ -121,6 +123,10 @@ export class World {
       this.buildGridRoads(roadMat)
       this.scatterDecor()
     }
+
+    if (this.hasVariant('two_rivers_confluence')) this.buildTwoRivers()
+    if (this.hasVariant('pearl_river') || this.hasVariant('qilou_arcade')) this.buildPearlRiver()
+    if (this.hasVariant('citywall_ring')) this.buildCityWallRing()
 
     const wallMat = new THREE.MeshLambertMaterial({ color: 0x1e293b })
     const wallH = 4
@@ -328,11 +334,46 @@ export class World {
     }
   }
 
+  private hasVariant(id: string): boolean {
+    return this.variants.includes(id)
+  }
+
+  private buildTwoRivers(): void {
+    this.buildRiverBand(0x3b82a8, -36)
+    const water = new THREE.Mesh(new THREE.PlaneGeometry(18, this.mapSize - 40), this.mat(0x4b9bb8))
+    water.rotation.x = -Math.PI / 2
+    water.position.set(-40, 0.045, 10)
+    this.staticRoot.add(water)
+  }
+
+  private buildPearlRiver(): void {
+    this.buildRiverBand(0x2f6f8a, 8)
+  }
+
+  private buildCityWallRing(): void {
+    const wallMat = this.mat(0x78716c)
+    const h = 5
+    const inner = 72
+    const segs = [
+      { x: 0, z: -inner, w: inner * 2 + 6, d: 4 },
+      { x: 0, z: inner, w: inner * 2 + 6, d: 4 },
+      { x: -inner, z: 0, w: 4, d: inner * 2 },
+      { x: inner, z: 0, w: 4, d: inner * 2 },
+    ]
+    for (const e of segs) {
+      const w = new THREE.Mesh(new THREE.BoxGeometry(e.w, h, e.d), wallMat)
+      w.position.set(e.x, h / 2, e.z)
+      this.staticRoot.add(w)
+    }
+  }
+
   private blockedByCivicAxis(x: number, z: number): boolean {
     const style = this.layout.roads.style
     if (style === 'hutong_axis' && Math.abs(x) < 12) return true
     if (style === 'jiangnan_water' && Math.abs(x - 18) < 12) return true
     if (style === 'northeast_grid' && Math.abs(z + 70) < 14) return true
+    if (this.hasVariant('two_rivers_confluence') && (Math.abs(z + 36) < 14 || Math.abs(x + 40) < 12)) return true
+    if ((this.hasVariant('pearl_river') || this.hasVariant('qilou_arcade')) && Math.abs(z - 8) < 12) return true
     return false
   }
 

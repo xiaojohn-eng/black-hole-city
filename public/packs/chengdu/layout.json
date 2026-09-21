@@ -1,0 +1,116 @@
+{
+  "mapSize": 240,
+  "roads": { "style": "jiangnan_water", "spacing": 32, "width": 7 },
+  "variants": ["basin_fog"],
+  "kitId": "jiangnan-water",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "锦江岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#5a6e58",
+      "spawn": true,
+      "quotas": { "L1": 16, "L2": 12, "L3": 8, "L4": 4 }
+    },
+    {
+      "id": "kuanzhai",
+      "name": "宽窄巷子",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#8a8074",
+      "quotas": { "L1": 8, "L2": 8, "L3": 8, "L4": 6, "L6": 6, "L7": 2 }
+    },
+    {
+      "id": "civic",
+      "name": "祠堂与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#6b7a58",
+      "quotas": { "L1": 4, "L2": 4, "L3": 2 }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": { "L4": 8, "L5": 6, "L7": 4, "L8": 2, "L9": 1 }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "cd-monument",
+      "name": "人民英雄纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-cd-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "高耸方尖碑"
+    },
+    {
+      "id": "cd-wuhou",
+      "name": "武侯祠",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -36,
+      "z": 24,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-cd-wuhou",
+      "whyHere": "祠庙教学空间，只参观外观。",
+      "silhouette": "红墙飞檐、庭院"
+    },
+    {
+      "id": "cd-kuanzhai",
+      "name": "宽窄巷子",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -70,
+      "z": -8,
+      "tier": 9,
+      "zone": "kuanzhai",
+      "knowledgeCardId": "card-cd-lane",
+      "whyHere": "茶馆巷市井，认识盆地城市的生活尺度。参观街区。",
+      "silhouette": "两排低矮店铺、巷道"
+    },
+    {
+      "id": "cd-panda",
+      "name": "熊猫栖息地远景",
+      "mesh": "panda_grove",
+      "interact": "visit",
+      "x": 40,
+      "z": -40,
+      "tier": 9,
+      "zone": "south_park",
+      "knowledgeCardId": "card-cd-panda",
+      "whyHere": "生态参观，不把动物作成障碍或玩笑。",
+      "silhouette": "竹林与圆耳剪影"
+    },
+    {
+      "id": "cd-sky",
+      "name": "当代天际线",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 90,
+      "z": 36,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-cd-plain",
+      "whyHere": "可归档的当代公共建筑剪影。成都是平原上的省会，不是全国默认山城皮肤。",
+      "silhouette": "高楼"
+    }
+  ]
+}
