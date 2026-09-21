@@ -16,6 +16,22 @@
     { "id": "szn-tianhou", "name": "赤湾天后宫", "pack": "shenzhen", "interact": "visit" },
     { "id": "km-jindian", "name": "金殿", "pack": "kunming", "interact": "visit" },
     { "id": "zy-site", "name": "遵义会议会址", "pack": "zunyi", "interact": "visit" },
-    { "id": "jq-mogao", "name": "莫高窟剪影", "pack": "jiuquan", "interact": "visit" }
+    { "id": "jq-mogao", "name": "莫高窟剪影", "pack": "jiuquan", "interact": "visit" },
+    { "id": "ts-kailuan", "name": "开滦矿山公园", "pack": "tangshan", "interact": "visit" },
+    { "id": "hd-congtai", "name": "丛台", "pack": "handan", "interact": "visit" },
+    { "id": "jl-beishan", "name": "北山古庙", "pack": "jilin", "interact": "visit" },
+    { "id": "qq-longsha", "name": "龙沙公园", "pack": "qiqihar", "interact": "visit" },
+    { "id": "qd-church", "name": "青岛天主教堂外观", "pack": "qingdao", "interact": "visit" },
+    { "id": "qd-pier", "name": "栈桥", "pack": "qingdao", "interact": "visit" },
+    { "id": "wx-nanchan", "name": "南禅寺", "pack": "wuxi", "interact": "visit" },
+    { "id": "kf-xiangguo", "name": "相国寺", "pack": "kaifeng", "interact": "visit" },
+    { "id": "kf-pagoda", "name": "开封铁塔", "pack": "kaifeng", "interact": "visit" },
+    { "id": "xyg-wall", "name": "襄阳古城墙", "pack": "xiangyang", "interact": "visit" },
+    { "id": "gl-wangcheng", "name": "靖江王城", "pack": "guilin", "interact": "visit" },
+    { "id": "fs-zumiao", "name": "佛山祖庙", "pack": "foshan", "interact": "visit" },
+    { "id": "ls-buddha", "name": "乐山大佛", "pack": "leshan", "interact": "visit" },
+    { "id": "my-ziyun", "name": "子云亭", "pack": "mianyang", "interact": "visit" },
+    { "id": "bj-jintai", "name": "金台观", "pack": "baoji", "interact": "visit" },
+    { "id": "xya-wall", "name": "咸阳城墙剪影", "pack": "xianyang", "interact": "visit" }
   ]
 }

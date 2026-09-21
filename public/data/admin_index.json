@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区非省会可玩。其余为草稿或名录灰壳。不是 333 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余为草稿或名录灰壳。不是 333 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -556,10 +556,10 @@
       "parentAdcode": "130000",
       "provinceName": "河北省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "tangshan",
+      "playable_3d": true,
+      "preview": "海风把厂区路牌吹散。你沿陡河把它们收回博物馆。"
     },
     {
       "adcode": "130300",
@@ -580,10 +580,10 @@
       "parentAdcode": "130000",
       "provinceName": "河北省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "handan",
+      "playable_3d": true,
+      "preview": "河风把丛台牌匾吹散。你沿滏阳河把它们收回博物馆。"
     },
     {
       "adcode": "130500",
@@ -1132,10 +1132,10 @@
       "parentAdcode": "220000",
       "provinceName": "吉林省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jilin",
+      "playable_3d": true,
+      "preview": "江风把北山牌匾吹散。你沿松花江把它们收回博物馆。"
     },
     {
       "adcode": "220300",
@@ -1240,10 +1240,10 @@
       "parentAdcode": "230000",
       "provinceName": "黑龙江省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "qiqihar",
+      "playable_3d": true,
+      "preview": "江风把龙沙牌匾吹散。你沿嫩江把它们收回博物馆。"
     },
     {
       "adcode": "230300",
@@ -1396,10 +1396,10 @@
       "parentAdcode": "320000",
       "provinceName": "江苏省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "wuxi",
+      "playable_3d": true,
+      "preview": "湖风把园林门匾冲散。你沿运河把它们收回博物馆。"
     },
     {
       "adcode": "320300",
@@ -2116,10 +2116,10 @@
       "parentAdcode": "370000",
       "provinceName": "山东省",
       "region7": "华东",
-      "status": "draft",
+      "status": "live",
       "packId": "qingdao",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "海风把栈桥牌匾吹散。你沿海湾把它们收回博物馆。"
     },
     {
       "adcode": "370300",
@@ -2308,10 +2308,10 @@
       "parentAdcode": "410000",
       "provinceName": "河南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "kaifeng",
+      "playable_3d": true,
+      "preview": "河风把铁塔檐铃吹散。你沿汴河把古都记忆送回博物馆。"
     },
     {
       "adcode": "410300",
@@ -2548,10 +2548,10 @@
       "parentAdcode": "420000",
       "provinceName": "湖北省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xiangyang",
+      "playable_3d": true,
+      "preview": "江风把城墙垛口的记忆吹散。你沿汉江把它们收回博物馆。"
     },
     {
       "adcode": "420700",
@@ -2884,10 +2884,10 @@
       "parentAdcode": "440000",
       "provinceName": "广东省",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "foshan",
+      "playable_3d": true,
+      "preview": "湿热的风把骑楼牌匾吹斜。你沿水道把它们收回博物馆。"
     },
     {
       "adcode": "440700",
@@ -3100,10 +3100,10 @@
       "parentAdcode": "450000",
       "provinceName": "广西壮族自治区",
       "region7": "华南",
-      "status": "draft",
+      "status": "live",
       "packId": "guilin",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「岭南骑楼」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "江风把王城牌匾藏进峰林。你沿漓江把它们收回博物馆。"
     },
     {
       "adcode": "450400",
@@ -3352,10 +3352,10 @@
       "parentAdcode": "510000",
       "provinceName": "四川省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "mianyang",
+      "playable_3d": true,
+      "preview": "江雾把子云亭的牌匾藏起来。你沿涪江把它们收回博物馆。"
     },
     {
       "adcode": "510800",
@@ -3400,10 +3400,10 @@
       "parentAdcode": "510000",
       "provinceName": "四川省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "leshan",
+      "playable_3d": true,
+      "preview": "江雾把大佛的轮廓藏起来。你沿江岸把它们送回博物馆。"
     },
     {
       "adcode": "511300",
@@ -3952,10 +3952,10 @@
       "parentAdcode": "610000",
       "provinceName": "陕西省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "baoji",
+      "playable_3d": true,
+      "preview": "河风把金台观的牌匾吹斜。你沿渭河把它们收回博物馆。"
     },
     {
       "adcode": "610400",
@@ -3964,10 +3964,10 @@
       "parentAdcode": "610000",
       "provinceName": "陕西省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xianyang",
+      "playable_3d": true,
+      "preview": "河风把城墙垛口的记忆吹散。你沿渭河把它们收回博物馆。"
     },
     {
       "adcode": "610500",
@@ -4621,19 +4621,33 @@
   "liveCityPacks": [
     "beijing",
     "baoding",
+    "tangshan",
+    "handan",
     "harbin",
     "shenyang",
     "dalian",
+    "jilin",
+    "qiqihar",
     "shanghai",
     "suzhou",
+    "qingdao",
+    "wuxi",
     "wuhan",
     "luoyang",
+    "kaifeng",
+    "xiangyang",
     "guangzhou",
     "shenzhen",
+    "guilin",
+    "foshan",
     "chengdu",
     "kunming",
     "zunyi",
+    "leshan",
+    "mianyang",
     "xian",
-    "jiuquan"
+    "jiuquan",
+    "baoji",
+    "xianyang"
   ]
 }

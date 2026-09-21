@@ -1,0 +1,144 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "jiangnan_water",
+    "spacing": 32,
+    "width": 7
+  },
+  "variants": [
+    "river_front"
+  ],
+  "kitId": "jiangnan-water",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "运河岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#4d6a5a",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "水巷民居",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#f4f1ea",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "园林与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#5d7a88",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "wx-guard",
+      "name": "无锡革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-wx-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "wx-garden",
+      "name": "寄畅园",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-wx-garden",
+      "whyHere": "园林水庭剪影。走近参观。",
+      "silhouette": "廊、桥、粉墙"
+    },
+    {
+      "id": "wx-nanchan",
+      "name": "南禅寺",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -70,
+      "z": -10,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-wx-nanchan",
+      "whyHere": "寺庙外观只参观。",
+      "silhouette": "飞檐殿宇"
+    },
+    {
+      "id": "wx-canal",
+      "name": "运河桥剪影",
+      "mesh": "yangtze_bridge",
+      "interact": "swallow",
+      "x": 40,
+      "z": -8,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-wx-lake",
+      "whyHere": "可归档的当代桥梁剪影，不是纪念碑。",
+      "silhouette": "运河桥"
+    },
+    {
+      "id": "wx-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 96,
+      "z": -8,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-wx-plain",
+      "whyHere": "当代天际线，对照园林的旧尺度。",
+      "silhouette": "高楼"
+    }
+  ]
+}

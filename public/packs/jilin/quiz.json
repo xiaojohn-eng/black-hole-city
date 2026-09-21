@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-jl-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "吉林省的简称是？",
+      "choices": [
+        "辽",
+        "吉",
+        "黑",
+        "冀"
+      ],
+      "answer": 1,
+      "explain": "吉林简称「吉」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-jl-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过吉林市的著名江是？",
+      "choices": [
+        "珠江",
+        "松花江",
+        "黄浦江",
+        "漓江"
+      ],
+      "answer": 1,
+      "explain": "松花江穿过吉林市。"
+    },
+    {
+      "id": "q-jl-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-jl-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "北山古庙在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "寺庙只参观。"
+    },
+    {
+      "id": "q-jl-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "吉林省的行政中心是？",
+      "choices": [
+        "吉林市",
+        "长春",
+        "哈尔滨",
+        "沈阳"
+      ],
+      "answer": 1,
+      "explain": "行政中心是长春，吉林市是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-jl-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "吉林市在七大区中属于？",
+      "choices": [
+        "华北",
+        "东北",
+        "西北",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "吉林在东北。"
+    },
+    {
+      "id": "q-jl-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "吉林市主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风（偏冷）",
+        "热带雨林",
+        "温带大陆性干旱"
+      ],
+      "answer": 1,
+      "explain": "偏冷的温带季风。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-jl-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "雾凇在本课里提醒我们？",
+      "choices": [
+        "这是沙漠绿洲",
+        "江城冬天很冷、江岸有雾凇",
+        "这是热带海岛",
+        "这是首都中轴"
+      ],
+      "answer": 1,
+      "explain": "气候教学点。"
+    },
+    {
+      "id": "q-jl-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "吉林市和长春的关系是？",
+      "choices": [
+        "吉林市是省会",
+        "长春是省会，吉林市是非省会",
+        "两座都是首都",
+        "吉林市在华南"
+      ],
+      "answer": 1,
+      "explain": "名字容易混，行政中心是长春。"
+    },
+    {
+      "id": "q-jl-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "吉林市是不是吉林省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是长春",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "吉林市是非省会。"
+    }
+  ]
+}

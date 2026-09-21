@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-kf-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "河南省的简称是？",
+      "choices": [
+        "冀",
+        "豫",
+        "皖",
+        "鄂"
+      ],
+      "answer": 1,
+      "explain": "河南简称「豫」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-kf-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "开封北面不远的大河是？",
+      "choices": [
+        "珠江",
+        "长江",
+        "黄河",
+        "松花江"
+      ],
+      "answer": 2,
+      "explain": "开封北近黄河。"
+    },
+    {
+      "id": "q-kf-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-kf-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "开封铁塔在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "砖塔只参观。"
+    },
+    {
+      "id": "q-kf-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河南省的行政中心是？",
+      "choices": [
+        "开封",
+        "郑州",
+        "洛阳",
+        "武汉"
+      ],
+      "answer": 1,
+      "explain": "行政中心是郑州，开封是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-kf-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "开封在七大区中属于？",
+      "choices": [
+        "华北",
+        "华中",
+        "西北",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "河南在华中。"
+    },
+    {
+      "id": "q-kf-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "开封主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风",
+        "热带雨林",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "温带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-kf-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "相国寺的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "寺庙 VISIT。"
+    },
+    {
+      "id": "q-kf-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "开封和洛阳在本课里共同提醒我们？",
+      "choices": [
+        "它们都是今天的省会",
+        "它们都是古都教学点，今天省会是郑州",
+        "它们都在海边",
+        "它们都在华南"
+      ],
+      "answer": 1,
+      "explain": "古都不是今天的行政中心。"
+    },
+    {
+      "id": "q-kf-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "开封是不是河南省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是郑州",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "开封是非省会。"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-xya-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "陕西省的简称是？",
+      "choices": [
+        "晋",
+        "陕",
+        "甘",
+        "宁"
+      ],
+      "answer": 1,
+      "explain": "陕西简称「陕」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-xya-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "咸阳南边著名的河是？",
+      "choices": [
+        "珠江",
+        "渭河",
+        "松花江",
+        "漓江"
+      ],
+      "answer": 1,
+      "explain": "咸阳在渭河北岸。"
+    },
+    {
+      "id": "q-xya-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-xya-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "咸阳城墙剪影在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "城墙只参观。"
+    },
+    {
+      "id": "q-xya-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "陕西省的行政中心是？",
+      "choices": [
+        "咸阳",
+        "西安",
+        "宝鸡",
+        "兰州"
+      ],
+      "answer": 1,
+      "explain": "行政中心是西安，咸阳是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-xya-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "咸阳在七大区中属于？",
+      "choices": [
+        "华北",
+        "西南",
+        "西北",
+        "东北"
+      ],
+      "answer": 2,
+      "explain": "陕西在西北。"
+    },
+    {
+      "id": "q-xya-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "咸阳主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风",
+        "热带雨林",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "温带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-xya-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "兵马俑在本课里？",
+      "choices": [
+        "放在咸阳关卡里吸入",
+        "属于西安临潼，不搬来充数",
+        "是训练场道具",
+        "是绿洲庭院"
+      ],
+      "answer": 1,
+      "explain": "不把邻城地标搬过来。"
+    },
+    {
+      "id": "q-xya-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "乌鲁木齐是？",
+      "choices": [
+        "陕西省会",
+        "新疆维吾尔自治区首府，不能算非省会",
+        "咸阳的一个区",
+        "甘肃省会"
+      ],
+      "answer": 1,
+      "explain": "首府不算非省会，本切片仍为草稿。"
+    },
+    {
+      "id": "q-xya-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "咸阳是不是陕西省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是西安",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "咸阳是非省会。"
+    }
+  ]
+}

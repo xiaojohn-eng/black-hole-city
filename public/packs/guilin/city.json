@@ -3,37 +3,46 @@
   "packId": "guilin",
   "name": "桂林市",
   "alias": [
-    "桂林",
-    "桂"
+    "桂林"
   ],
   "shortName": "桂",
   "unitType": "prefecture_city",
   "parentProvince": "广西壮族自治区",
   "region7": "华南",
   "region4": "南方地区",
-  "locationDesc": "位于华南，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
+  "locationDesc": "在广西东北，漓江穿过喀斯特峰林。广西壮族自治区的地级市，不是本区行政中心。",
   "climateBand": "亚热带季风",
   "landform": [
-    "待补"
+    "喀斯特峰林",
+    "河谷"
   ],
   "riversLakes": [
-    "待补"
+    "漓江"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "柳州",
+    "贺州"
+  ],
   "cityFunction": [
-    "地级市"
+    "漓江城市",
+    "喀斯特教学点",
+    "非省会"
   ],
-  "storyTitle": "桂林市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「岭南骑楼」铺底，尚未四审，不可 live。",
+  "storyTitle": "漓江记忆",
+  "storyLogline": "江风把王城牌匾藏进峰林。你沿漓江把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从漓江岸公园起步",
+    "旧街收集市井记忆",
+    "参观靖江王城",
+    "环绕革命烈士纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "named_river",
+    "qilou_arcade"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "江声",
+    "南音回退"
   ],
   "colorPalette": {
     "sky": "#7eb8d4",
@@ -50,12 +59,12 @@
   "fictional": false,
   "kitId": "lingnan-qilou",
   "startCards": [
-    "card-draft-place"
+    "card-gl-river",
+    "card-gl-short"
   ],
   "briefing": [
-    "这是 桂林市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在桂林，广西壮族自治区的地级市，不是本区行政中心。南宁才是广西行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "靖江王城只参观。这是博物馆课，不是山水明信片关卡。生涯模式看裂隙稳定度。"
+  ]
 }

@@ -1,0 +1,144 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "hutong_axis",
+    "spacing": 36,
+    "width": 8
+  },
+  "variants": [
+    "coastal_band"
+  ],
+  "kitId": "north-brick-hutong",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "渤海岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#5d7a88",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "旧街砖巷",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#9a7560",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "矿山与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#c4a574",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "ts-guard",
+      "name": "唐山抗震纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-ts-guard",
+      "whyHere": "抗震纪念空间。环绕守护一周，把重建记忆留在地面。",
+      "silhouette": "纪念碑与广场"
+    },
+    {
+      "id": "ts-kailuan",
+      "name": "开滦矿山公园",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-ts-kailuan",
+      "whyHere": "工业遗产剪影。走近参观，认识港口工业城市。",
+      "silhouette": "矿井井架轮廓"
+    },
+    {
+      "id": "ts-nanhu",
+      "name": "南湖岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-ts-sea",
+      "whyHere": "湖岸栈桥剪影。参观，对照渤海。",
+      "silhouette": "长堤与水面"
+    },
+    {
+      "id": "ts-clock",
+      "name": "唐山钟楼剪影",
+      "mesh": "bell_tower",
+      "interact": "swallow",
+      "x": 40,
+      "z": -8,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-ts-place",
+      "whyHere": "可归档的公共钟楼剪影，不是纪念碑。",
+      "silhouette": "砖塔钟楼"
+    },
+    {
+      "id": "ts-sky",
+      "name": "港区楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 92,
+      "z": 36,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-ts-plain",
+      "whyHere": "当代天际线，对照矿山旧轮廓。",
+      "silhouette": "高楼"
+    }
+  ]
+}

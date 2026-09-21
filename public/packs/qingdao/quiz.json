@@ -1,131 +1,147 @@
 {
-  "draft": true,
   "questions": [
     {
-      "id": "q-draft-01",
-      "ageBand": "6-8",
-      "type": "mc",
-      "prompt": "青岛市属于哪个省级行政区？",
-      "choices": [
-        "山东省",
-        "北京市",
-        "天津市",
-        "河北省"
-      ],
-      "answer": 0,
-      "explain": "青岛市属于山东省。"
-    },
-    {
-      "id": "q-draft-02",
+      "id": "q-qd-01",
       "ageBand": "6-8",
       "type": "mc",
       "prompt": "山东省的简称是？",
       "choices": [
+        "冀",
         "鲁",
-        "京",
-        "津",
-        "冀"
+        "豫",
+        "苏"
       ],
-      "answer": 0,
-      "explain": "简称「鲁」。"
+      "answer": 1,
+      "explain": "山东简称「鲁」。",
+      "curriculumTag": "geo.2022.cn.province"
     },
     {
-      "id": "q-draft-03",
+      "id": "q-qd-02",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "纪念空间应该怎么对待？",
+      "prompt": "青岛旁边最大的海是？",
+      "choices": [
+        "黄海",
+        "南海",
+        "洱海",
+        "青海湖"
+      ],
+      "answer": 0,
+      "explain": "青岛在黄海之滨。"
+    },
+    {
+      "id": "q-qd-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
       "choices": [
         "吸入归档",
-        "绕行一周致敬",
+        "绕着它走一圈，完成守护致敬",
         "推倒",
         "忽略"
       ],
       "answer": 1,
-      "explain": "GUARD：绕行致敬。"
+      "explain": "纪念空间只可守护。"
     },
     {
-      "id": "q-draft-04",
+      "id": "q-qd-04",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "文保建筑的正确交互是？",
+      "prompt": "栈桥在本课里应该？",
       "choices": [
         "吸入",
         "参观外观",
         "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "栈桥只参观。"
+    },
+    {
+      "id": "q-qd-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "山东省的行政中心是？",
+      "choices": [
+        "青岛",
+        "济南",
+        "烟台",
+        "上海"
+      ],
+      "answer": 1,
+      "explain": "行政中心是济南，青岛是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-qd-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青岛在七大区中属于？",
+      "choices": [
+        "华北",
+        "华东",
+        "华南",
+        "东北"
+      ],
+      "answer": 1,
+      "explain": "山东在华东。"
+    },
+    {
+      "id": "q-qd-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青岛主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风（滨海）",
+        "热带雨林",
+        "高原山地"
+      ],
+      "answer": 1,
+      "explain": "滨海温带季风，不是江南湿热。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-qd-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "天主教堂的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
         "删除"
       ],
       "answer": 1,
-      "explain": "VISIT：只参观。"
+      "explain": "宗教外观 VISIT。"
     },
     {
-      "id": "q-draft-05",
+      "id": "q-qd-09",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "青岛市在七大区中属于？",
+      "prompt": "青岛主要的城市职能教学点是？",
       "choices": [
-        "华东",
-        "华北",
-        "东北",
-        "华中"
-      ],
-      "answer": 0,
-      "explain": "七大区：华东。"
-    },
-    {
-      "id": "q-draft-06",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "本草稿用的民居套件是？",
-      "choices": [
-        "江南水岸",
-        "北方砖 + 胡同",
-        "岭南骑楼",
-        "绿洲平顶"
-      ],
-      "answer": 0,
-      "explain": "套件 jiangnan-water。"
-    },
-    {
-      "id": "q-draft-07",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "客户端为什么不能写 lat/lon？",
-      "choices": [
-        "好看",
-        "审图与隐私：关卡只用局部网格",
-        "Three.js 不支持",
-        "CSV 没有名字"
+        "沙漠绿洲",
+        "港口",
+        "都城中轴",
+        "火山监测"
       ],
       "answer": 1,
-      "explain": "网格坐标不是地理坐标。"
+      "explain": "青岛是港口城市。"
     },
     {
-      "id": "q-draft-08",
-      "ageBand": "9-12",
+      "id": "q-qd-10",
+      "ageBand": "6-8",
       "type": "mc",
-      "prompt": "草稿能否宣称全国地级已收录？",
+      "prompt": "青岛是不是山东省的行政中心？",
       "choices": [
-        "能",
-        "不能",
-        "做满 10 座就能",
-        "看心情"
+        "是",
+        "不是，行政中心是济南",
+        "是首都",
+        "是直辖市"
       ],
       "answer": 1,
-      "explain": "B 级草稿不是 live，更不是 333。"
-    },
-    {
-      "id": "q-draft-09",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "济南是？",
-      "choices": [
-        "济南",
-        "北京",
-        "上海",
-        "广州"
-      ],
-      "answer": 0,
-      "explain": "行政中心教学名：济南。"
+      "explain": "青岛是非省会。"
     }
   ]
 }

@@ -185,7 +185,7 @@ export class UIManager {
           <div class="hole-icon">●</div>
           <h1>记忆黑洞</h1>
           <p class="subtitle">中国城市博物馆</p>
-          <p class="version">M3a2 七大区非省会可玩 · 收回散落的城市记忆</p>
+          <p class="version">M3a3 七大区非省会×3 · 收回散落的城市记忆</p>
         </div>
         <div class="btn-col wide">
           <button class="btn secondary" id="btn-train">训练场·星湾（虚构）</button>
@@ -194,7 +194,7 @@ export class UIManager {
           <button class="btn ghost" id="btn-howto">如何游玩</button>
         </div>
         <div class="stats-line">最高分：${high}　最大体型：L${maxLv}　身份：${p.nickname}</div>
-        <p class="footnote">不宣称全国地级已收录 · live：训练场 + 七大区代表城 + 非省会可玩 · 不是 333 完成</p>
+        <p class="footnote">不宣称全国地级已收录 · 七大区可玩 / 非省会 live≥21 / 管线 · 不是 333 完成</p>
       </div>`
     this.bind('btn-train', () => this.game.openBriefing('xingwan-training'))
     this.bind('btn-beijing', () => this.game.openBriefing('beijing'))
@@ -219,7 +219,7 @@ export class UIManager {
           <ol class="howto-list">
             <li>你是记忆守护员。吸入碎片 = 把记忆归档进博物馆。</li>
             <li>洞口够大、质量够沉，才能归档（双阈值）。</li>
-            <li>训练场·星湾是虚构练习；真城课请从大厅选七大区代表城或非省会 live。未 live 城显示「记忆修复中」，不可进 3D。</li>
+            <li>训练场·星湾是虚构练习；真城课请从大厅选七大区代表城或非省会 live（每区 ≥3 座）。未 live 城显示「记忆修复中」，不可进 3D。不是 333 完成。</li>
             <li>纪念空间不可归档，请绕行一周完成守护致敬。</li>
             <li>局后有 3 道小测验，可跳过，但跳过不会点亮「小博士」。</li>
           </ol>
@@ -362,8 +362,8 @@ export class UIManager {
       ...REGION_ORDER.map((r) => {
         const slot = cov.find((c) => c.region === r)
         const has = (slot?.live ?? 0) > 0
-        const nc = (slot?.nonCapitalLive ?? 0) > 0
-        const tag = nc ? ' · 非省会' : has ? ' · 可玩' : ' · 修复中'
+        const nc = slot?.nonCapitalLive ?? 0
+        const tag = nc > 0 ? ` · 非省会${nc}` : has ? ' · 可玩' : ' · 修复中'
         return `<button class="r7-chip ${this.regionFilter === r ? 'on' : ''} ${has ? 'has-live' : ''}" data-region="${r}">${r}${tag}</button>`
       }),
     ].join('')
@@ -454,11 +454,11 @@ export class UIManager {
           <button class="icon-btn" id="btn-back" title="返回">←</button>
           <div>
             <h2>全国大厅</h2>
-            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 非省会 live / 管线 · 不上未审中国全图</p>
+            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 七大区可玩 / 非省会 live≥21 / 管线 · 不上未审中国全图</p>
           </div>
         </div>
         <div class="region-progress">
-          <p>七大区可玩 ${liveRegions}/7 · 非省会 live ${nonCapLive} 座 · 管线 ${pipeline} 座 · <b>不是 333 完成</b></p>
+          <p>七大区可玩 ${liveRegions}/7 · 非省会 live ${nonCapLive}（≥21） · 管线 ${pipeline} 座 · <b>不是 333 完成</b></p>
           <div class="r7-chips">${chips}</div>
         </div>
         <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」「沪」「粤」「川」）" value="${q}"/>

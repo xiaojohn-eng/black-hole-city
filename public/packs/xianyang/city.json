@@ -1,0 +1,70 @@
+{
+  "adcode": "610400",
+  "packId": "xianyang",
+  "name": "咸阳市",
+  "alias": [
+    "咸阳"
+  ],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在关中平原中部，渭河北岸，紧邻西安。陕西省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "关中平原",
+    "渭河阶地"
+  ],
+  "riversLakes": [
+    "渭河"
+  ],
+  "neighbors": [
+    "西安",
+    "铜川",
+    "宝鸡"
+  ],
+  "cityFunction": [
+    "秦都教学点",
+    "非省会"
+  ],
+  "storyTitle": "渭北记忆",
+  "storyLogline": "河风把城墙垛口的记忆吹散。你沿渭河把它们收回博物馆。",
+  "storyBeats": [
+    "从渭河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观城墙剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "citywall_ring"
+  ],
+  "bgmPalette": [
+    "秦腔回退",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-xya-river",
+    "card-xya-short"
+  ],
+  "briefing": [
+    "我们在咸阳，陕西省的地级市，不是本省行政中心。西安才是陕西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "城墙只参观。兵马俑在西安临潼，不搬进本课。生涯模式看裂隙稳定度。"
+  ]
+}

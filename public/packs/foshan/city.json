@@ -1,0 +1,72 @@
+{
+  "adcode": "440600",
+  "packId": "foshan",
+  "name": "佛山市",
+  "alias": [
+    "佛山"
+  ],
+  "shortName": "粤",
+  "unitType": "prefecture_city",
+  "parentProvince": "广东省",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在珠江三角洲西北，西江、北江水道穿过。广东省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "珠江三角洲",
+    "河网"
+  ],
+  "riversLakes": [
+    "西江",
+    "东平水道"
+  ],
+  "neighbors": [
+    "广州",
+    "中山",
+    "肇庆"
+  ],
+  "cityFunction": [
+    "岭南城市",
+    "祖庙教学点",
+    "非省会"
+  ],
+  "storyTitle": "岭南记忆",
+  "storyLogline": "湿热的风把骑楼牌匾吹斜。你沿水道把它们收回博物馆。",
+  "storyBeats": [
+    "从水道公园起步",
+    "骑楼街收集市井记忆",
+    "参观祖庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "pearl_river"
+  ],
+  "bgmPalette": [
+    "南音",
+    "水道"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-fs-delta",
+    "card-fs-short"
+  ],
+  "briefing": [
+    "我们在佛山，广东省的地级市，不是本省行政中心。广州才是广东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "祖庙只参观。这是博物馆课，不把武术做成对打游戏。生涯模式看裂隙稳定度。"
+  ]
+}
