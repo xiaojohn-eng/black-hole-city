@@ -1,0 +1,70 @@
+{
+  "adcode": "410500",
+  "packId": "anyang",
+  "name": "安阳市",
+  "alias": [
+    "安阳"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在豫北，洹河一带。河南省的地级市，不是本省行政中心。课标常见的殷墟教学点。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "洹河"
+  ],
+  "neighbors": [
+    "鹤壁",
+    "邯郸",
+    "濮阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "殷墟教学点"
+  ],
+  "storyTitle": "洹河记忆",
+  "storyLogline": "干风把殷墟路牌吹斜。你沿洹河把它们收回博物馆。",
+  "storyBeats": [
+    "从洹河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观殷墟遗址剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "平原鼓"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-ay-river",
+    "card-ay-short"
+  ],
+  "briefing": [
+    "我们在安阳，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "殷墟遗址剪影只参观。本课讲洹河和甲骨文教学点，不是网红打卡秀。"
+  ]
+}

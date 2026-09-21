@@ -1,0 +1,71 @@
+{
+  "adcode": "640500",
+  "packId": "zhongwei",
+  "name": "中卫市",
+  "alias": [
+    "中卫"
+  ],
+  "shortName": "宁",
+  "unitType": "prefecture_city",
+  "parentProvince": "宁夏回族自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在宁夏平原西南，黄河岸。宁夏回族自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原",
+    "河岸"
+  ],
+  "riversLakes": [
+    "黄河"
+  ],
+  "neighbors": [
+    "吴忠",
+    "白银",
+    "阿拉善"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黄河岸城市"
+  ],
+  "storyTitle": "黄河记忆",
+  "storyLogline": "河风把高庙前的路牌吹斜。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸公园起步",
+    "绿洲旧街收集市井记忆",
+    "参观高庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "渠水"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-zw-river",
+    "card-zw-short"
+  ],
+  "briefing": [
+    "我们在中卫，宁夏回族自治区的地级市，不是自治区首府。银川才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "高庙外观只参观。本课讲黄河，不是沙漠旅游秀。强调中华民族共同体。"
+  ]
+}

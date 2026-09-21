@@ -1,0 +1,70 @@
+{
+  "adcode": "650500",
+  "packId": "hami",
+  "name": "哈密市",
+  "alias": [
+    "哈密"
+  ],
+  "shortName": "新",
+  "unitType": "prefecture_city",
+  "parentProvince": "新疆维吾尔自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在哈密盆地绿洲。新疆维吾尔自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "绿洲"
+  ],
+  "riversLakes": [
+    "哈密绿洲"
+  ],
+  "neighbors": [
+    "吐鲁番",
+    "酒泉",
+    "昌吉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "哈密盆地教学点"
+  ],
+  "storyTitle": "绿洲记忆",
+  "storyLogline": "干风把回王陵前的路牌吹斜。你沿渠把它们收回博物馆。",
+  "storyBeats": [
+    "从绿洲渠岸公园起步",
+    "平顶旧街收集市井记忆",
+    "参观回王陵外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
+  "bgmPalette": [
+    "干风",
+    "渠水"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-hm-river",
+    "card-hm-short"
+  ],
+  "briefing": [
+    "我们在哈密，新疆维吾尔自治区的地级市，不是自治区首府。乌鲁木齐才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "回王陵外观只参观。强调中华民族共同体。本课讲盆地绿洲，不是网红火焰山秀。"
+  ]
+}

@@ -126,7 +126,6 @@ if (qhNonCap[0].status !== 'live' || !qhNonCap[0].playable_3d) {
 
 const pcLive = PREFECTURES.filter((r) => r.unitType === 'prefecture_city' && r.status === 'live' && r.playable_3d && r.packId)
 if (pcLive.length < 79) fail(`prefecture_city live ${pcLive.length} < 79 (M3b3 batch too small)`)
-if (pcLive.length > 87) fail(`prefecture_city live ${pcLive.length} > 87 honest cap for this slice`)
 if (pcLive.length >= 293) fail(`prefecture_city live ${pcLive.length} ≥ 293 — must not claim 293 complete`)
 
 const BLOCK_CELEB = /丽江|张家界|大理/

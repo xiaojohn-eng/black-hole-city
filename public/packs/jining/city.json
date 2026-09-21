@@ -1,0 +1,71 @@
+{
+  "adcode": "370800",
+  "packId": "jining",
+  "name": "济宁市",
+  "alias": [
+    "济宁"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在鲁西南，京杭运河与南四湖一带。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "湖区"
+  ],
+  "riversLakes": [
+    "京杭运河",
+    "微山湖"
+  ],
+  "neighbors": [
+    "枣庄",
+    "菏泽",
+    "徐州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "南四湖教学点"
+  ],
+  "storyTitle": "南四湖记忆",
+  "storyLogline": "湖风把孔庙前的路牌吹斜。你沿运河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸公园起步",
+    "旧街收集市井记忆",
+    "参观孔庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "湖风",
+    "运河声"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-jn-river",
+    "card-jn-short"
+  ],
+  "briefing": [
+    "我们在济宁，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "孔庙外观只参观。本课讲运河和南四湖，对照青岛黄海、东营黄河口。"
+  ]
+}
