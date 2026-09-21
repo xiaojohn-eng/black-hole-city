@@ -1,0 +1,71 @@
+{
+  "adcode": "640300",
+  "packId": "wuzhong",
+  "name": "吴忠市",
+  "alias": [
+    "吴忠"
+  ],
+  "shortName": "宁",
+  "unitType": "prefecture_city",
+  "parentProvince": "宁夏回族自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在宁夏平原，黄河与秦渠一带。宁夏回族自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河套平原"
+  ],
+  "riversLakes": [
+    "黄河",
+    "秦渠"
+  ],
+  "neighbors": [
+    "银川",
+    "中卫",
+    "固原"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黄河灌区城市"
+  ],
+  "storyTitle": "秦渠记忆",
+  "storyLogline": "干风把渠边路牌吹向黄河。你沿灌渠把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸公园起步",
+    "庭院街巷收集市井记忆",
+    "参观董府外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "渠水",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-wz-river",
+    "card-wz-short"
+  ],
+  "briefing": [
+    "我们在吴忠，宁夏回族自治区的地级市，不是自治区首府。银川才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "董府外观只参观。强调中华民族共同体。"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "adcode": "350500",
+  "packId": "quanzhou",
+  "name": "泉州市",
+  "alias": [
+    "泉州"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在晋江入海处，面对台湾海峡。福建省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河口",
+    "海岸"
+  ],
+  "riversLakes": [
+    "晋江",
+    "台湾海峡"
+  ],
+  "neighbors": [
+    "厦门",
+    "莆田",
+    "漳州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "海丝港口教学点"
+  ],
+  "storyTitle": "晋江记忆",
+  "storyLogline": "海风把开元寺的牌匾吹斜。你沿晋江把它们收回博物馆。",
+  "storyBeats": [
+    "从晋江岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观开元寺外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "南音回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-qz-river",
+    "card-qz-short"
+  ],
+  "briefing": [
+    "我们在泉州，福建省的地级市，不是本省行政中心。福州才是福建省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "开元寺外观只参观。这是海峡港口博物馆课，不是网红岛秀。"
+  ]
+}

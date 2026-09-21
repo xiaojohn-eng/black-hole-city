@@ -185,7 +185,7 @@ export class UIManager {
           <div class="hole-icon">●</div>
           <h1>记忆黑洞</h1>
           <p class="subtitle">中国城市博物馆</p>
-          <p class="version">M3b2 每省非省会地级市 · 收回散落的城市记忆</p>
+          <p class="version">M3b3 每省非省会×2 · 收回散落的城市记忆</p>
         </div>
         <div class="btn-col wide">
           <button class="btn secondary" id="btn-train">训练场·星湾（虚构）</button>
@@ -194,7 +194,7 @@ export class UIManager {
           <button class="btn ghost" id="btn-howto">如何游玩</button>
         </div>
         <div class="stats-line">最高分：${high}　最大体型：L${maxLv}　身份：${p.nickname}</div>
-        <p class="footnote">不宣称全国地级已收录 · 34 省行政中心可玩 + 每省 ≥1 非省会地级市 / 管线 / prefecture 约 61/293 · 不是 333 完成 · 不是 293 完成</p>
+        <p class="footnote">不宣称全国地级已收录 · 34 省行政中心可玩 + 有地级市的省非省会 ≥2/省（豁免青海） / 管线 / prefecture 约 81/293 · 不是 333 完成 · 不是 293 完成</p>
       </div>`
     this.bind('btn-train', () => this.game.openBriefing('xingwan-training'))
     this.bind('btn-beijing', () => this.game.openBriefing('beijing'))
@@ -456,11 +456,11 @@ export class UIManager {
           <button class="icon-btn" id="btn-back" title="返回">←</button>
           <div>
             <h2>全国大厅</h2>
-            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 34 省行政中心可玩 + 每省 ≥1 非省会地级市 / prefecture 约 ${pc.prefectureCityLive}/293 / 管线 · 不上未审中国全图</p>
+            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 34 省行政中心可玩 + 有地级市的省非省会 ≥2/省（豁免青海） / prefecture 约 ${pc.prefectureCityLive}/293 / 管线 · 不上未审中国全图</p>
           </div>
         </div>
         <div class="region-progress">
-          <p>34 省行政中心可玩 ${capitalLive}/34 · 有地级市的省非省会 ${pc.covered}/${pc.need} · prefecture_city live ${pc.prefectureCityLive}/293 · 七大区可玩 ${liveRegions}/7 · 非省会 live ${nonCapLive}（≥21） · 管线 ${pipeline} 座 · <b>不是 333 完成 · 不是 293 完成</b></p>
+          <p>34 省行政中心可玩 ${capitalLive}/34 · 有地级市的省非省会 ≥2/省 ${pc.covered2}/${pc.need2}（豁免青海） · prefecture_city live ${pc.prefectureCityLive}/293 · 七大区可玩 ${liveRegions}/7 · 非省会 live ${nonCapLive}（≥21） · 管线 ${pipeline} 座 · <b>不是 333 完成 · 不是 293 完成</b></p>
           <div class="r7-chips">${chips}</div>
         </div>
         <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」「沪」「粤」「川」）" value="${q}"/>
@@ -549,24 +549,37 @@ export class UIManager {
     })
   }
 
-  private prefectureCoverage(): { need: number; covered: number; prefectureCityLive: number } {
-    if (!this.admin) return { need: 0, covered: 0, prefectureCityLive: 0 }
+  private prefectureCoverage(): {
+    need: number
+    covered: number
+    need2: number
+    covered2: number
+    prefectureCityLive: number
+  } {
+    if (!this.admin) return { need: 0, covered: 0, need2: 0, covered2: 0, prefectureCityLive: 0 }
     const skip = new Set(['municipality', 'sar'])
     let need = 0
     let covered = 0
+    let need2 = 0
+    let covered2 = 0
     for (const p of this.admin.provinces) {
       if (skip.has(p.unitType)) continue
       const children = this.admin.prefectures.filter((c) => c.parentAdcode === p.adcode && c.unitType === 'prefecture_city')
       if (children.length === 0) continue
       const nonCap = children.filter((c) => this.isNonCapitalCity(c))
       if (nonCap.length === 0) continue
+      const liveNonCap = nonCap.filter((c) => c.playable_3d && c.packId)
       need += 1
-      if (nonCap.some((c) => c.playable_3d && c.packId)) covered += 1
+      if (liveNonCap.length >= 1) covered += 1
+      if (nonCap.length >= 2) {
+        need2 += 1
+        if (liveNonCap.length >= 2) covered2 += 1
+      }
     }
     const prefectureCityLive = this.admin.prefectures.filter(
       (c) => c.unitType === 'prefecture_city' && c.playable_3d && c.packId,
     ).length
-    return { need, covered, prefectureCityLive }
+    return { need, covered, need2, covered2, prefectureCityLive }
   }
 
   private regionCoverage(): { region: string; live: number; nonCapitalLive: number; pipeline: number }[] {
