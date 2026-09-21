@@ -1,92 +1,122 @@
 {
-  "draft": true,
   "questions": [
     {
-      "id": "q-draft-01",
+      "id": "q-cc-01",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "长春市属于哪个省级行政区？",
+      "prompt": "本省级行政区的简称是？",
       "choices": [
-        "吉林省",
-        "北京市",
-        "天津市",
-        "河北省"
-      ],
-      "answer": 0,
-      "explain": "长春市属于吉林省。"
-    },
-    {
-      "id": "q-draft-02",
-      "ageBand": "6-8",
-      "type": "mc",
-      "prompt": "吉林省的简称是？",
-      "choices": [
+        "辽",
         "吉",
-        "京",
-        "津",
+        "黑",
         "冀"
       ],
-      "answer": 0,
-      "explain": "简称「吉」。"
+      "answer": 1,
+      "explain": "吉林简称「吉」。",
+      "curriculumTag": "geo.2022.cn.province"
     },
     {
-      "id": "q-draft-03",
+      "id": "q-cc-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "长春城里著名的河/湖包括？",
+      "choices": [
+        "珠江",
+        "伊通河和南湖",
+        "滇池",
+        "漓江"
+      ],
+      "answer": 1,
+      "explain": "伊通河和南湖。"
+    },
+    {
+      "id": "q-cc-03",
       "ageBand": "6-8",
       "type": "mc",
       "prompt": "纪念空间应该怎么对待？",
       "choices": [
         "吸入归档",
-        "绕行一周致敬",
+        "绕着它走一圈，完成守护致敬",
         "推倒",
         "忽略"
       ],
       "answer": 1,
-      "explain": "GUARD：绕行致敬。"
+      "explain": "纪念空间只可守护。"
     },
     {
-      "id": "q-draft-04",
+      "id": "q-cc-04",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "文保建筑的正确交互是？",
+      "prompt": "长春文庙在本课里应该？",
       "choices": [
         "吸入",
         "参观外观",
         "改造成游乐场",
-        "删除"
+        "搬走"
       ],
       "answer": 1,
-      "explain": "VISIT：只参观。"
+      "explain": "文保只参观。"
     },
     {
-      "id": "q-draft-05",
+      "id": "q-cc-05",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "长春市在七大区中属于？",
+      "prompt": "吉林省的行政中心是？",
       "choices": [
-        "东北",
-        "华北",
-        "华东",
-        "华中"
+        "吉林市",
+        "长春",
+        "哈尔滨",
+        "沈阳"
       ],
-      "answer": 0,
+      "answer": 1,
+      "explain": "长春。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-cc-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "这座城在七大区中属于？",
+      "choices": [
+        "华北",
+        "东北",
+        "西北",
+        "华南"
+      ],
+      "answer": 1,
       "explain": "七大区：东北。"
     },
     {
-      "id": "q-draft-06",
+      "id": "q-cc-07",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "本草稿用的民居套件是？",
+      "prompt": "长春主要属于哪种气候？",
       "choices": [
-        "北方砖 + 胡同",
-        "江南水岸",
-        "岭南骑楼",
-        "绿洲平顶"
+        "热带雨林",
+        "温带季风",
+        "亚热带季风",
+        "高原山地"
       ],
-      "answer": 0,
-      "explain": "套件 north-brick-hutong。"
+      "answer": 1,
+      "explain": "温带季风。",
+      "curriculumTag": "geo.2022.cn.climate"
     },
     {
-      "id": "q-draft-07",
+      "id": "q-cc-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本切片能不能宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能，不是 333 也不是 293 完成",
+        "做满省会就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "本刀只做 34 省行政中心。"
+    },
+    {
+      "id": "q-cc-09",
       "ageBand": "9-12",
       "type": "mc",
       "prompt": "客户端为什么不能写 lat/lon？",
@@ -100,32 +130,18 @@
       "explain": "网格坐标不是地理坐标。"
     },
     {
-      "id": "q-draft-08",
-      "ageBand": "9-12",
+      "id": "q-cc-10",
+      "ageBand": "6-8",
       "type": "mc",
-      "prompt": "草稿能否宣称全国地级已收录？",
+      "prompt": "长春是不是吉林省的行政中心？",
       "choices": [
-        "能",
-        "不能",
-        "做满 10 座就能",
-        "看心情"
+        "不是",
+        "是，它是吉林省行政中心",
+        "是首都北京",
+        "是训练场"
       ],
       "answer": 1,
-      "explain": "B 级草稿不是 live，更不是 333。"
-    },
-    {
-      "id": "q-draft-09",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "长春是？",
-      "choices": [
-        "长春",
-        "北京",
-        "上海",
-        "广州"
-      ],
-      "answer": 0,
-      "explain": "行政中心教学名：长春。"
+      "explain": "是，它是吉林省行政中心。"
     }
   ]
 }

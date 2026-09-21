@@ -1,38 +1,39 @@
 {
   "mapSize": 240,
   "roads": {
-    "style": "hutong_axis",
-    "spacing": 36,
-    "width": 8
+    "style": "jiangnan_water",
+    "spacing": 32,
+    "width": 7
   },
-  "variants": [],
-  "kitId": "north-brick-hutong",
-  "draft": true,
+  "variants": [
+    "named_river"
+  ],
+  "kitId": "jiangnan-water",
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "南明河岸公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
-      "color": "#5c584e",
+      "color": "#4d6a5a",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "旧街民居",
       "x": -70,
       "z": 8,
       "w": 100,
       "d": 96,
-      "color": "#9a7560",
+      "color": "#f4f1ea",
       "quotas": {
         "L1": 8,
         "L2": 8,
@@ -44,12 +45,12 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "甲秀与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
-      "color": "#c4a574",
+      "color": "#5d7a88",
       "quotas": {
         "L1": 4,
         "L2": 4,
@@ -57,7 +58,7 @@
       }
     },
     {
-      "id": "new_town",
+      "id": "modern",
       "name": "当代楼宇",
       "x": 78,
       "z": 12,
@@ -75,69 +76,69 @@
   ],
   "landmarks": [
     {
-      "id": "guiyang-guard",
-      "name": "贵阳市纪念空间（草稿）",
+      "id": "gy-guard",
+      "name": "贵阳革命烈士纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-gy-guard",
+      "whyHere": "纪念空间。环绕守护一周。",
+      "silhouette": "纪念碑"
     },
     {
-      "id": "guiyang-visit-a",
-      "name": "贵阳市文保剪影（草稿）",
-      "mesh": "city_god_temple",
+      "id": "gy-jiaxiu",
+      "name": "甲秀楼",
+      "mesh": "yellow_crane_tower",
       "interact": "visit",
-      "x": -40,
-      "z": 20,
+      "x": 18,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-gy-jiaxiu",
+      "whyHere": "河心阁楼剪影。走近参观。",
+      "silhouette": "水上楼阁"
+    },
+    {
+      "id": "gy-river",
+      "name": "南明河岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-gy-river",
+      "whyHere": "河桥剪影。参观。",
+      "silhouette": "河桥"
+    },
+    {
+      "id": "gy-street",
+      "name": "贵阳旧街",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "knowledgeCardId": "card-gy-place",
+      "whyHere": "旧巷参观。",
+      "silhouette": "两排店铺"
     },
     {
-      "id": "guiyang-visit-b",
-      "name": "贵阳市街道（草稿）",
-      "mesh": "central_street",
-      "interact": "visit",
-      "x": -70,
-      "z": -10,
-      "tier": 9,
-      "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
-    },
-    {
-      "id": "guiyang-sky-a",
-      "name": "贵阳市塔楼剪影（草稿）",
+      "id": "gy-sky",
+      "name": "当代楼宇",
       "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-gy-cap",
+      "whyHere": "可归档的当代公共建筑。贵阳不是山城毁城秀。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "guiyang-sky-b",
-      "name": "贵阳市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }

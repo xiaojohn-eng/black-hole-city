@@ -3,37 +3,44 @@
   "packId": "changsha",
   "name": "长沙市",
   "alias": [
-    "长沙",
-    "湘"
+    "长沙"
   ],
   "shortName": "湘",
   "unitType": "prefecture_city",
   "parentProvince": "湖南省",
   "region7": "华中",
   "region4": "南方地区",
-  "locationDesc": "位于华中，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
+  "locationDesc": "在湘江下游，岳麓山隔江相望。湖南省行政中心。",
   "climateBand": "亚热带季风",
   "landform": [
-    "待补"
+    "河谷丘陵"
   ],
   "riversLakes": [
-    "待补"
+    "湘江",
+    "橘子洲"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "株洲",
+    "湘潭",
+    "岳阳"
+  ],
   "cityFunction": [
-    "地级市"
+    "湖南省行政中心"
   ],
-  "storyTitle": "长沙市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。",
+  "storyTitle": "湘江记忆",
+  "storyLogline": "江雾把岳麓书院的牌匾藏起来。你沿湘江把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从湘江岸公园起步",
+    "旧街收集市井记忆",
+    "参观岳麓书院",
+    "环绕湖南烈士纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "named_river"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "湘水",
+    "竹笛"
   ],
   "colorPalette": {
     "sky": "#9ec9d8",
@@ -50,12 +57,12 @@
   "fictional": false,
   "kitId": "jiangnan-water",
   "startCards": [
-    "card-draft-place"
+    "card-cs-river",
+    "card-cs-short"
   ],
   "briefing": [
-    "这是 长沙市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在长沙，湖南省的行政中心。襄阳是湖北非省会，不能拿来充湖南。",
+    "湖南烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "岳麓书院只参观。生涯模式看裂隙稳定度。"
+  ]
 }

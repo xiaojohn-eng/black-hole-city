@@ -1,0 +1,71 @@
+{
+  "adcode": "120100",
+  "packId": "tianjin",
+  "name": "天津市",
+  "alias": [
+    "天津",
+    "津"
+  ],
+  "shortName": "津",
+  "unitType": "municipality_city",
+  "parentProvince": "天津市",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在华北平原东北部，海河入渤海。直辖市主城包。",
+  "climateBand": "温带季风",
+  "landform": [
+    "华北平原",
+    "河口"
+  ],
+  "riversLakes": [
+    "海河",
+    "渤海"
+  ],
+  "neighbors": [
+    "北京",
+    "河北"
+  ],
+  "cityFunction": [
+    "直辖市",
+    "港口城市"
+  ],
+  "storyTitle": "海河记忆",
+  "storyLogline": "河口的风把五大道的门牌吹斜。你沿海河把它们收回博物馆。",
+  "storyBeats": [
+    "从海河岸公园起步",
+    "五大道砖巷收集市井记忆",
+    "参观古文化街",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "coastal_band",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河口",
+    "汽笛回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-tj-river",
+    "card-tj-short"
+  ],
+  "briefing": [
+    "我们在天津，直辖市主城。行政中心就是天津本身。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "五大道和古文化街只参观。生涯模式看裂隙稳定度。"
+  ]
+}

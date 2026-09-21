@@ -1,0 +1,69 @@
+{
+  "adcode": "360100",
+  "packId": "nanchang",
+  "name": "南昌市",
+  "alias": [
+    "南昌"
+  ],
+  "shortName": "赣",
+  "unitType": "prefecture_city",
+  "parentProvince": "江西省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在赣江下游、鄱阳湖平原。江西省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "平原",
+    "河湖"
+  ],
+  "riversLakes": [
+    "赣江",
+    "鄱阳湖"
+  ],
+  "neighbors": [
+    "九江",
+    "抚州",
+    "宜春"
+  ],
+  "cityFunction": [
+    "江西省行政中心"
+  ],
+  "storyTitle": "赣江记忆",
+  "storyLogline": "江风把滕王阁的轮廓吹进雾里。你沿赣江把它们收回博物馆。",
+  "storyBeats": [
+    "从赣江岸公园起步",
+    "旧街收集市井记忆",
+    "参观滕王阁",
+    "环绕八一起义纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "鼓"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-nc-river",
+    "card-nc-short"
+  ],
+  "briefing": [
+    "我们在南昌，江西省的行政中心。",
+    "八一起义纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "滕王阁只参观。生涯模式看裂隙稳定度。"
+  ]
+}

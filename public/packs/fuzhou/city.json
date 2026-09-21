@@ -1,0 +1,67 @@
+{
+  "adcode": "350100",
+  "packId": "fuzhou",
+  "name": "福州市",
+  "alias": [
+    "福州"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在闽江下游入海处。福建省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河口盆地"
+  ],
+  "riversLakes": [
+    "闽江"
+  ],
+  "neighbors": [
+    "宁德",
+    "莆田",
+    "南平"
+  ],
+  "cityFunction": [
+    "福建省行政中心"
+  ],
+  "storyTitle": "闽江记忆",
+  "storyLogline": "湿热的风把三坊七巷的门牌吹斜。你沿闽江把它们收回博物馆。",
+  "storyBeats": [
+    "从闽江岸公园起步",
+    "三坊七巷收集市井记忆",
+    "参观旧坊巷",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "南音回退"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-fz-river",
+    "card-fz-short"
+  ],
+  "briefing": [
+    "我们在福州，福建省的行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "三坊七巷只参观。生涯模式看裂隙稳定度。"
+  ]
+}

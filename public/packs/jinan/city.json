@@ -1,0 +1,71 @@
+{
+  "adcode": "370100",
+  "packId": "jinan",
+  "name": "济南市",
+  "alias": [
+    "济南"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在泰山北、黄河以南。山东省行政中心。青岛是非省会 live。",
+  "climateBand": "温带季风",
+  "landform": [
+    "山前平原",
+    "泉城"
+  ],
+  "riversLakes": [
+    "黄河",
+    "大明湖",
+    "趵突泉"
+  ],
+  "neighbors": [
+    "泰安",
+    "德州",
+    "淄博"
+  ],
+  "cityFunction": [
+    "山东省行政中心",
+    "泉城"
+  ],
+  "storyTitle": "泉城记忆",
+  "storyLogline": "泉眼把牌匾润湿。你沿大明湖把它们收回博物馆。",
+  "storyBeats": [
+    "从湖岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观趵突泉",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "泉声",
+    "湖风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-jn-spring",
+    "card-jn-short"
+  ],
+  "briefing": [
+    "我们在济南，山东省的行政中心。青岛是本省非省会 live。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "趵突泉和大明湖只参观。生涯模式看裂隙稳定度。"
+  ]
+}

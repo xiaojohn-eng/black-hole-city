@@ -1,0 +1,144 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "jiangnan_water",
+    "spacing": 32,
+    "width": 7
+  },
+  "variants": [
+    "named_river"
+  ],
+  "kitId": "jiangnan-water",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "赣江岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#4d6a5a",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "旧街民居",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#f4f1ea",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "滕王阁与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#5d7a88",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "nc-guard",
+      "name": "八一起义纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-nc-guard",
+      "whyHere": "纪念空间。环绕守护一周。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "nc-tengwang",
+      "name": "滕王阁",
+      "mesh": "yellow_crane_tower",
+      "interact": "visit",
+      "x": 18,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-nc-tengwang",
+      "whyHere": "江阁剪影。走近参观。",
+      "silhouette": "高阁"
+    },
+    {
+      "id": "nc-river",
+      "name": "赣江岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-nc-river",
+      "whyHere": "江桥剪影。参观。",
+      "silhouette": "江桥"
+    },
+    {
+      "id": "nc-street",
+      "name": "南昌旧街",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-nc-place",
+      "whyHere": "旧巷参观。",
+      "silhouette": "店铺"
+    },
+    {
+      "id": "nc-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-nc-cap",
+      "whyHere": "可归档的当代公共建筑。",
+      "silhouette": "高楼"
+    }
+  ]
+}

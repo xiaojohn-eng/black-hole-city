@@ -1,0 +1,67 @@
+{
+  "adcode": "410100",
+  "packId": "zhengzhou",
+  "name": "郑州市",
+  "alias": [
+    "郑州"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在黄河以南的华北平原。河南省行政中心。洛阳、开封是非省会 live。",
+  "climateBand": "温带季风",
+  "landform": [
+    "华北平原"
+  ],
+  "riversLakes": [
+    "黄河"
+  ],
+  "neighbors": [
+    "开封",
+    "洛阳",
+    "新乡"
+  ],
+  "cityFunction": [
+    "河南省行政中心"
+  ],
+  "storyTitle": "黄河记忆",
+  "storyLogline": "河风把商都的陶片记忆吹散。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观商都遗址剪影",
+    "环绕河南革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "中原鼓",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-zz-river",
+    "card-zz-short"
+  ],
+  "briefing": [
+    "我们在郑州，河南省的行政中心。洛阳、开封是本省非省会 live。",
+    "河南革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "商都遗址剪影只参观。生涯模式看裂隙稳定度。"
+  ]
+}

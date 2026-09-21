@@ -3,43 +3,51 @@
   "packId": "changchun",
   "name": "长春市",
   "alias": [
-    "长春",
-    "吉"
+    "长春"
   ],
   "shortName": "吉",
   "unitType": "prefecture_city",
   "parentProvince": "吉林省",
   "region7": "东北",
   "region4": "北方地区",
-  "locationDesc": "位于东北，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
+  "locationDesc": "在东北平原中部，伊通河穿过。吉林省行政中心。吉林市是另一座非省会。",
   "climateBand": "温带季风",
   "landform": [
-    "待补"
+    "东北平原"
   ],
   "riversLakes": [
-    "待补"
+    "伊通河",
+    "南湖"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "吉林市",
+    "四平",
+    "松原"
+  ],
   "cityFunction": [
-    "地级市"
+    "吉林省行政中心"
   ],
-  "storyTitle": "长春市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「北方砖 + 胡同」铺底，尚未四审，不可 live。",
+  "storyTitle": "伊通记忆",
+  "storyLogline": "冷风把南湖的牌匾吹斜。你沿伊通河把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从南湖岸公园起步",
+    "旧街收集市井记忆",
+    "参观长春文庙",
+    "环绕苏联红军烈士纪念塔致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "cold_wide_street",
+    "named_river"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "东北鼓",
+    "湖面风"
   ],
   "colorPalette": {
-    "sky": "#8ec0e0",
-    "fog": "#9ec6d8",
-    "ground": "#5c584e",
-    "road": "#4b4550"
+    "sky": "#b7c9dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8f86",
+    "road": "#5b6570"
   },
   "spawn": {
     "x": 0,
@@ -50,12 +58,12 @@
   "fictional": false,
   "kitId": "north-brick-hutong",
   "startCards": [
-    "card-draft-place"
+    "card-cc-river",
+    "card-cc-short"
   ],
   "briefing": [
-    "这是 长春市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在长春，吉林省的行政中心。名字容易和「吉林市」搞混：吉林市是非省会。",
+    "苏联红军烈士纪念塔是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "长春文庙只参观。生涯模式看裂隙稳定度。"
+  ]
 }

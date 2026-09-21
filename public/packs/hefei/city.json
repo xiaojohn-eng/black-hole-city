@@ -1,0 +1,68 @@
+{
+  "adcode": "340100",
+  "packId": "hefei",
+  "name": "合肥市",
+  "alias": [
+    "合肥"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在江淮之间，巢湖在城东南。安徽省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江淮丘陵"
+  ],
+  "riversLakes": [
+    "巢湖",
+    "南淝河"
+  ],
+  "neighbors": [
+    "六安",
+    "淮南",
+    "芜湖"
+  ],
+  "cityFunction": [
+    "安徽省行政中心"
+  ],
+  "storyTitle": "巢湖记忆",
+  "storyLogline": "湖风把包公祠的牌匾吹斜。你沿南淝河把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "旧街收集市井记忆",
+    "参观包公祠",
+    "环绕渡江战役纪念馆致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江淮笛",
+    "湖声"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-hf-lake",
+    "card-hf-short"
+  ],
+  "briefing": [
+    "我们在合肥，安徽省的行政中心。",
+    "渡江战役纪念馆是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "包公祠只参观。生涯模式看裂隙稳定度。"
+  ]
+}

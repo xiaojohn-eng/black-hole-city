@@ -5,29 +5,31 @@
     "spacing": 36,
     "width": 8
   },
-  "variants": [],
+  "variants": [
+    "hutong_maze",
+    "named_river"
+  ],
   "kitId": "north-brick-hutong",
-  "draft": true,
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "滹沱河岸公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
       "color": "#5c584e",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "旧城砖巷",
       "x": -70,
       "z": 8,
       "w": 100,
@@ -44,10 +46,10 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "正定与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
       "color": "#c4a574",
       "quotas": {
@@ -57,7 +59,7 @@
       }
     },
     {
-      "id": "new_town",
+      "id": "modern",
       "name": "当代楼宇",
       "x": 78,
       "z": 12,
@@ -75,69 +77,69 @@
   ],
   "landmarks": [
     {
-      "id": "shijiazhuang-guard",
-      "name": "石家庄市纪念空间（草稿）",
+      "id": "sjz-guard",
+      "name": "石家庄革命烈士纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-sjz-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
     },
     {
-      "id": "shijiazhuang-visit-a",
-      "name": "石家庄市文保剪影（草稿）",
+      "id": "sjz-longxing",
+      "name": "正定隆兴寺",
       "mesh": "city_god_temple",
       "interact": "visit",
       "x": -40,
       "z": 20,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "knowledgeCardId": "card-sjz-longxing",
+      "whyHere": "古寺外观只参观。",
+      "silhouette": "高塔殿宇"
     },
     {
-      "id": "shijiazhuang-visit-b",
-      "name": "石家庄市街道（草稿）",
-      "mesh": "central_street",
+      "id": "sjz-river",
+      "name": "滹沱河岸",
+      "mesh": "yangtze_bridge",
       "interact": "visit",
-      "x": -70,
-      "z": -10,
-      "tier": 9,
-      "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-sjz-river",
+      "whyHere": "河桥剪影。参观，认识平原省会。",
+      "silhouette": "河桥"
     },
     {
-      "id": "shijiazhuang-sky-a",
-      "name": "石家庄市塔楼剪影（草稿）",
+      "id": "sjz-street",
+      "name": "石家庄旧街",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-sjz-place",
+      "whyHere": "砖巷参观。",
+      "silhouette": "砖巷店铺"
+    },
+    {
+      "id": "sjz-sky",
+      "name": "当代楼宇",
       "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-sjz-cap",
+      "whyHere": "可归档的当代公共建筑。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "shijiazhuang-sky-b",
-      "name": "石家庄市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }
