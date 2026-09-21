@@ -1,0 +1,71 @@
+{
+  "adcode": "350200",
+  "packId": "xiamen",
+  "name": "厦门市",
+  "alias": [
+    "厦门"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在台湾海峡西岸，是海岛与海岸组成的港口城。福建省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "海岛",
+    "海岸"
+  ],
+  "riversLakes": [
+    "台湾海峡",
+    "筼筜湖"
+  ],
+  "neighbors": [
+    "泉州",
+    "漳州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "海峡港口城市"
+  ],
+  "storyTitle": "海峡记忆",
+  "storyLogline": "海风把骑楼的牌匾吹斜。你沿岸把它们收回博物馆。",
+  "storyBeats": [
+    "从海岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观南普陀寺外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "南音回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-xm-river",
+    "card-xm-short"
+  ],
+  "briefing": [
+    "我们在厦门，福建省的地级市，不是本省行政中心。福州才是福建省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "南普陀寺外观只参观。这是海峡博物馆课，不是网红岛秀。"
+  ]
+}

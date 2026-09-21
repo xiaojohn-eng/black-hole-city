@@ -69,6 +69,19 @@ export const PACK_SLUGS = {
   香港特别行政区: 'hongkong',
   澳门主城: 'macau',
   澳门特别行政区: 'macau',
+  大同市: 'datong',
+  包头市: 'baotou',
+  宁波市: 'ningbo',
+  芜湖市: 'wuhu',
+  厦门市: 'xiamen',
+  景德镇市: 'jingdezhen',
+  株洲市: 'zhuzhou',
+  三亚市: 'sanya',
+  曲靖市: 'qujing',
+  日喀则市: 'shigatse',
+  海东市: 'haidong',
+  石嘴山市: 'shizuishan',
+  克拉玛依市: 'kelamayi',
 }
 
 /**
@@ -77,6 +90,7 @@ export const PACK_SLUGS = {
  * 直辖市 / 自治区首府 / 本省行政中心都不算非省会。
  * M3a3：七大区各 ≥3 座真正非省会 live，全国 ≥21。不是 333 完成。
  * M3b1：34 省各 ≥1 座行政中心 live。不是 293 / 333 完成。
+ * M3b2：凡有地级市的省各 ≥1 座非省会 prefecture_city live。本刀批次，不是 293 / 333 完成。
  * @type {{ adcode: string, packId: string, region7: string, status: 'live'|'draft', kit: string }[]}
  */
 export const M3A_PIPELINE = [
@@ -135,6 +149,19 @@ export const M3A_PIPELINE = [
   { adcode: '710100', packId: 'taipei', region7: '华东', status: 'live', kit: 'jiangnan-water' },
   { adcode: '810100', packId: 'hongkong', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
   { adcode: '820100', packId: 'macau', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '140200', packId: 'datong', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '150200', packId: 'baotou', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '330200', packId: 'ningbo', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '340200', packId: 'wuhu', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '350200', packId: 'xiamen', region7: '华东', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '360200', packId: 'jingdezhen', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '430200', packId: 'zhuzhou', region7: '华中', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '460200', packId: 'sanya', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '530300', packId: 'qujing', region7: '西南', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '540200', packId: 'shigatse', region7: '西南', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '630200', packId: 'haidong', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '640200', packId: 'shizuishan', region7: '西北', status: 'live', kit: 'oasis-flat' },
+  { adcode: '650200', packId: 'kelamayi', region7: '西北', status: 'live', kit: 'oasis-flat' },
 ]
 
 /** Task-named promotions (沈阳/昆明 are provincial capitals of other provinces). */
@@ -246,6 +273,28 @@ export const M3B1_NEW_LIVE = [
   'macau',
 ]
 
+/**
+ * M3b2: first prefecture-city expansion batch.
+ * One non-capital prefecture_city live in every province/AR that has prefecture_city rows.
+ * Municipalities / SARs / Taiwan teaching packs are exempt.
+ * 12–20 new live this slice — not 293 complete, not 333 complete.
+ */
+export const M3B2_NEW_LIVE = [
+  'datong',
+  'baotou',
+  'ningbo',
+  'wuhu',
+  'xiamen',
+  'jingdezhen',
+  'zhuzhou',
+  'sanya',
+  'qujing',
+  'shigatse',
+  'haidong',
+  'shizuishan',
+  'kelamayi',
+]
+
 export const M3A_LIVE_PACKS = M3A_PIPELINE.filter((p) => p.status === 'live').map((p) => p.packId)
 
 export const M3A_DRAFT_PACKS = M3A_PIPELINE.filter((p) => p.status === 'draft').map((p) => p.packId)
@@ -280,4 +329,4 @@ export function isProvincialCapital(row, provinces) {
 }
 
 export const DISCLAIMER =
-  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。'
+  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 61/293（M3b2 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。'

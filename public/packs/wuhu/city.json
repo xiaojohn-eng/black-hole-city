@@ -1,0 +1,72 @@
+{
+  "adcode": "340200",
+  "packId": "wuhu",
+  "name": "芜湖市",
+  "alias": [
+    "芜湖"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江下游南岸，青弋江汇入。安徽省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江岸",
+    "平原"
+  ],
+  "riversLakes": [
+    "长江",
+    "青弋江"
+  ],
+  "neighbors": [
+    "马鞍山",
+    "宣城",
+    "铜陵"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "长江港口城市"
+  ],
+  "storyTitle": "江岸记忆",
+  "storyLogline": "江雾把鸠兹旧街的牌匾藏起来。你沿长江把它们收回博物馆。",
+  "storyBeats": [
+    "从长江岸公园起步",
+    "旧街收集市井记忆",
+    "参观广济寺",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "river_front",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "竹笛"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-wh-river",
+    "card-wh-short"
+  ],
+  "briefing": [
+    "我们在芜湖，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "广济寺只参观。生涯模式看裂隙稳定度。"
+  ]
+}
