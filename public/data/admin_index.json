@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区各 1 座真城（北京、上海、哈尔滨、武汉、广州、成都、西安）。其余为草稿或名录灰壳。不是 333 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区非省会可玩。其余为草稿或名录灰壳。不是 333 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -604,10 +604,10 @@
       "parentAdcode": "130000",
       "provinceName": "河北省",
       "region7": "华北",
-      "status": "draft",
+      "status": "live",
       "packId": "baoding",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「北方砖 + 胡同」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "府河把直隶招牌冲散。你沿总督署把京畿记忆送回博物馆。"
     },
     {
       "adcode": "130700",
@@ -952,10 +952,10 @@
       "parentAdcode": "210000",
       "provinceName": "辽宁省",
       "region7": "东北",
-      "status": "draft",
+      "status": "live",
       "packId": "shenyang",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「北方砖 + 胡同」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "浑河风把故宫屋脊的记忆吹散。你沿江岸把它们收回博物馆。"
     },
     {
       "adcode": "210200",
@@ -964,10 +964,10 @@
       "parentAdcode": "210000",
       "provinceName": "辽宁省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "dalian",
+      "playable_3d": true,
+      "preview": "海风把栈桥牌匾吹散。你沿港湾把它们收回博物馆。"
     },
     {
       "adcode": "210300",
@@ -1432,10 +1432,10 @@
       "parentAdcode": "320000",
       "provinceName": "江苏省",
       "region7": "华东",
-      "status": "draft",
+      "status": "live",
       "packId": "suzhou",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "运河把园林门匾冲散。你沿水巷把它们收回博物馆。"
     },
     {
       "adcode": "320600",
@@ -2320,10 +2320,10 @@
       "parentAdcode": "410000",
       "provinceName": "河南省",
       "region7": "华中",
-      "status": "draft",
+      "status": "live",
       "packId": "luoyang",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "洛河把龙门石纹冲散。你沿河岸把古都记忆送回博物馆。"
     },
     {
       "adcode": "410400",
@@ -2848,10 +2848,10 @@
       "parentAdcode": "440000",
       "provinceName": "广东省",
       "region7": "华南",
-      "status": "draft",
+      "status": "live",
       "packId": "shenzhen",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「岭南骑楼」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "海风把口岸路牌吹散。你沿骑楼与海湾把它们收回博物馆。"
     },
     {
       "adcode": "440400",
@@ -3568,10 +3568,10 @@
       "parentAdcode": "520000",
       "provinceName": "贵州省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zunyi",
+      "playable_3d": true,
+      "preview": "河谷雾把会址门牌藏起来。你沿江岸把它们送回博物馆。"
     },
     {
       "adcode": "520400",
@@ -3652,10 +3652,10 @@
       "parentAdcode": "530000",
       "provinceName": "云南省",
       "region7": "西南",
-      "status": "draft",
+      "status": "live",
       "packId": "kunming",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "高原风把金马牌坊的记忆吹散。你沿滇池把它们收回博物馆。"
     },
     {
       "adcode": "530300",
@@ -4144,10 +4144,10 @@
       "parentAdcode": "620000",
       "provinceName": "甘肃省",
       "region7": "西北",
-      "status": "draft",
+      "status": "live",
       "packId": "jiuquan",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「绿洲平顶」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "风沙把鼓楼牌匾盖住。你沿灌溉渠把它们收回博物馆。"
     },
     {
       "adcode": "621000",
@@ -4620,11 +4620,20 @@
   ],
   "liveCityPacks": [
     "beijing",
+    "baoding",
     "harbin",
+    "shenyang",
+    "dalian",
     "shanghai",
+    "suzhou",
     "wuhan",
+    "luoyang",
     "guangzhou",
+    "shenzhen",
     "chengdu",
-    "xian"
+    "kunming",
+    "zunyi",
+    "xian",
+    "jiuquan"
   ]
 }

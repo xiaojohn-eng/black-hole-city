@@ -7,6 +7,15 @@
     { "id": "sh-bund", "name": "外滩万国建筑", "pack": "shanghai", "interact": "visit" },
     { "id": "sh-chenghuang", "name": "城隍庙", "pack": "shanghai", "interact": "visit" },
     { "id": "hrb-sofia", "name": "圣索菲亚教堂外观", "pack": "harbin", "interact": "visit" },
-    { "id": "hrb-central", "name": "中央大街", "pack": "harbin", "interact": "visit" }
+    { "id": "hrb-central", "name": "中央大街", "pack": "harbin", "interact": "visit" },
+    { "id": "bd-viceroy", "name": "直隶总督署", "pack": "baoding", "interact": "visit" },
+    { "id": "sy-palace", "name": "沈阳故宫", "pack": "shenyang", "interact": "visit" },
+    { "id": "sz-hanshan", "name": "寒山寺", "pack": "suzhou", "interact": "visit" },
+    { "id": "ly-baima", "name": "白马寺", "pack": "luoyang", "interact": "visit" },
+    { "id": "ly-longmen", "name": "龙门石窟", "pack": "luoyang", "interact": "visit" },
+    { "id": "szn-tianhou", "name": "赤湾天后宫", "pack": "shenzhen", "interact": "visit" },
+    { "id": "km-jindian", "name": "金殿", "pack": "kunming", "interact": "visit" },
+    { "id": "zy-site", "name": "遵义会议会址", "pack": "zunyi", "interact": "visit" },
+    { "id": "jq-mogao", "name": "莫高窟剪影", "pack": "jiuquan", "interact": "visit" }
   ]
 }

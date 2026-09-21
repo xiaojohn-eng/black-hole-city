@@ -185,7 +185,7 @@ export class UIManager {
           <div class="hole-icon">●</div>
           <h1>记忆黑洞</h1>
           <p class="subtitle">中国城市博物馆</p>
-          <p class="version">M3a 七大区产能打穿 · 收回散落的城市记忆</p>
+          <p class="version">M3a2 七大区非省会可玩 · 收回散落的城市记忆</p>
         </div>
         <div class="btn-col wide">
           <button class="btn secondary" id="btn-train">训练场·星湾（虚构）</button>
@@ -194,7 +194,7 @@ export class UIManager {
           <button class="btn ghost" id="btn-howto">如何游玩</button>
         </div>
         <div class="stats-line">最高分：${high}　最大体型：L${maxLv}　身份：${p.nickname}</div>
-        <p class="footnote">不宣称全国地级已收录 · live：训练场 + 七大区各 1 座真城 · 不是 333 完成</p>
+        <p class="footnote">不宣称全国地级已收录 · live：训练场 + 七大区代表城 + 非省会可玩 · 不是 333 完成</p>
       </div>`
     this.bind('btn-train', () => this.game.openBriefing('xingwan-training'))
     this.bind('btn-beijing', () => this.game.openBriefing('beijing'))
@@ -219,7 +219,7 @@ export class UIManager {
           <ol class="howto-list">
             <li>你是记忆守护员。吸入碎片 = 把记忆归档进博物馆。</li>
             <li>洞口够大、质量够沉，才能归档（双阈值）。</li>
-            <li>训练场·星湾是虚构练习；真城课请从大厅选七大区代表城。未 live 城显示「记忆修复中」，不可进 3D。</li>
+            <li>训练场·星湾是虚构练习；真城课请从大厅选七大区代表城或非省会 live。未 live 城显示「记忆修复中」，不可进 3D。</li>
             <li>纪念空间不可归档，请绕行一周完成守护致敬。</li>
             <li>局后有 3 道小测验，可跳过，但跳过不会点亮「小博士」。</li>
           </ol>
@@ -355,13 +355,16 @@ export class UIManager {
     const q = this.searchQ
     const cov = this.regionCoverage()
     const liveRegions = cov.filter((c) => c.live > 0).length
+    const nonCapLive = cov.reduce((n, c) => n + c.nonCapitalLive, 0)
     const pipeline = cov.reduce((n, c) => n + c.pipeline, 0)
     const chips = [
       `<button class="r7-chip ${this.regionFilter === '' ? 'on' : ''}" data-region="">全部</button>`,
       ...REGION_ORDER.map((r) => {
         const slot = cov.find((c) => c.region === r)
         const has = (slot?.live ?? 0) > 0
-        return `<button class="r7-chip ${this.regionFilter === r ? 'on' : ''} ${has ? 'has-live' : ''}" data-region="${r}">${r}${has ? ' · 可玩' : ' · 修复中'}</button>`
+        const nc = (slot?.nonCapitalLive ?? 0) > 0
+        const tag = nc ? ' · 非省会' : has ? ' · 可玩' : ' · 修复中'
+        return `<button class="r7-chip ${this.regionFilter === r ? 'on' : ''} ${has ? 'has-live' : ''}" data-region="${r}">${r}${tag}</button>`
       }),
     ].join('')
 
@@ -451,11 +454,11 @@ export class UIManager {
           <button class="icon-btn" id="btn-back" title="返回">←</button>
           <div>
             <h2>全国大厅</h2>
-            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 不上未审中国全图</p>
+            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 非省会 live / 管线 · 不上未审中国全图</p>
           </div>
         </div>
         <div class="region-progress">
-          <p>七大区可玩 ${liveRegions}/7 · 管线 ${pipeline} 座 · <b>不是 333 完成</b></p>
+          <p>七大区可玩 ${liveRegions}/7 · 非省会 live ${nonCapLive} 座 · 管线 ${pipeline} 座 · <b>不是 333 完成</b></p>
           <div class="r7-chips">${chips}</div>
         </div>
         <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」「沪」「粤」「川」）" value="${q}"/>
@@ -526,13 +529,25 @@ export class UIManager {
     )
   }
 
-  private regionCoverage(): { region: string; live: number; pipeline: number }[] {
-    if (!this.admin) return REGION_ORDER.map((region) => ({ region, live: 0, pipeline: 0 }))
+  /** 非省会 = 地级且不是本省行政中心；直辖市/特区主城不算非省会。 */
+  private isNonCapitalCity(c: AdminPrefecture): boolean {
+    const prov = this.admin?.provinces.find((p) => p.adcode === c.parentAdcode)
+    if (!prov) return false
+    if (prov.unitType === 'municipality' || prov.unitType === 'sar') return false
+    const name = String(c.name || '').replace(/主城$/, '')
+    const cap = prov.capital
+    return !(name === cap || name === `${cap}市` || name.startsWith(cap))
+  }
+
+  private regionCoverage(): { region: string; live: number; nonCapitalLive: number; pipeline: number }[] {
+    if (!this.admin) return REGION_ORDER.map((region) => ({ region, live: 0, nonCapitalLive: 0, pipeline: 0 }))
     return REGION_ORDER.map((region) => {
       const cities = this.admin!.prefectures.filter((c) => c.region7 === region)
-      const live = cities.filter((c) => c.playable_3d && c.packId).length
+      const liveCities = cities.filter((c) => c.playable_3d && c.packId)
+      const live = liveCities.length
+      const nonCapitalLive = liveCities.filter((c) => this.isNonCapitalCity(c)).length
       const pipeline = cities.filter((c) => c.packId && (c.status === 'live' || c.status === 'draft' || c.playable_3d)).length
-      return { region, live, pipeline }
+      return { region, live, nonCapitalLive, pipeline }
     })
   }
 

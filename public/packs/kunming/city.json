@@ -4,41 +4,51 @@
   "name": "昆明市",
   "alias": [
     "昆明",
-    "云"
+    "春城"
   ],
   "shortName": "云",
   "unitType": "prefecture_city",
   "parentProvince": "云南省",
   "region7": "西南",
   "region4": "南方地区",
-  "locationDesc": "位于西南，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
-  "climateBand": "亚热带季风",
+  "locationDesc": "在云贵高原的坝子上，滇池在城南。云南省行政中心。",
+  "climateBand": "亚热带高原（四季如春）",
   "landform": [
-    "待补"
+    "云贵高原",
+    "坝子",
+    "滇池岸"
   ],
   "riversLakes": [
-    "待补"
+    "滇池",
+    "盘龙江"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "曲靖",
+    "玉溪"
+  ],
   "cityFunction": [
-    "地级市"
+    "云南省行政中心",
+    "春城教学点"
   ],
-  "storyTitle": "昆明市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。",
+  "storyTitle": "春城记忆",
+  "storyLogline": "高原风把金马牌坊的记忆吹散。你沿滇池把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从滇池岸公园起步",
+    "旧街收集市井记忆",
+    "参观金马碧鸡坊",
+    "环绕人民英雄纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "plateau_lake"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "竹笛",
+    "湖风"
   ],
   "colorPalette": {
     "sky": "#9ec9d8",
     "fog": "#b7d4dc",
-    "ground": "#6b7a68",
+    "ground": "#6d7a62",
     "road": "#5b6570"
   },
   "spawn": {
@@ -50,12 +60,12 @@
   "fictional": false,
   "kitId": "jiangnan-water",
   "startCards": [
-    "card-draft-place"
+    "card-km-lake",
+    "card-km-short"
   ],
   "briefing": [
-    "这是 昆明市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在昆明，云南省的行政中心。先看见滇池。这是高原上的坝子城市，不是山城毁城秀。",
+    "人民英雄纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "金马碧鸡坊只参观。生涯模式看裂隙稳定度。"
+  ]
 }

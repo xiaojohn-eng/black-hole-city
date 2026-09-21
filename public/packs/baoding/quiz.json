@@ -1,131 +1,146 @@
 {
-  "draft": true,
   "questions": [
     {
-      "id": "q-draft-01",
-      "ageBand": "6-8",
-      "type": "mc",
-      "prompt": "保定市属于哪个省级行政区？",
-      "choices": [
-        "河北省",
-        "北京市",
-        "天津市",
-        "山西省"
-      ],
-      "answer": 0,
-      "explain": "保定市属于河北省。"
-    },
-    {
-      "id": "q-draft-02",
+      "id": "q-bd-01",
       "ageBand": "6-8",
       "type": "mc",
       "prompt": "河北省的简称是？",
       "choices": [
+        "晋",
         "冀",
-        "京",
-        "津",
-        "晋"
+        "鲁",
+        "豫"
       ],
-      "answer": 0,
-      "explain": "简称「冀」。"
+      "answer": 1,
+      "explain": "河北简称「冀」。",
+      "curriculumTag": "geo.2022.cn.province"
     },
     {
-      "id": "q-draft-03",
+      "id": "q-bd-02",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "纪念空间应该怎么对待？",
+      "prompt": "保定主要属于哪种气候？",
+      "choices": [
+        "热带雨林",
+        "温带季风",
+        "高原山地",
+        "寒带冰原"
+      ],
+      "answer": 1,
+      "explain": "保定是温带季风气候。"
+    },
+    {
+      "id": "q-bd-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
       "choices": [
         "吸入归档",
-        "绕行一周致敬",
+        "绕着它走一圈，完成守护致敬",
         "推倒",
         "忽略"
       ],
       "answer": 1,
-      "explain": "GUARD：绕行致敬。"
+      "explain": "纪念空间只可守护。"
     },
     {
-      "id": "q-draft-04",
+      "id": "q-bd-04",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "文保建筑的正确交互是？",
+      "prompt": "直隶总督署在本课里应该？",
       "choices": [
         "吸入",
         "参观外观",
         "改造成游乐场",
-        "删除"
+        "搬走"
       ],
       "answer": 1,
-      "explain": "VISIT：只参观。"
+      "explain": "衙署文保只参观。"
     },
     {
-      "id": "q-draft-05",
+      "id": "q-bd-05",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "保定市在七大区中属于？",
+      "prompt": "河北省的行政中心是？",
       "choices": [
-        "华北",
-        "东北",
-        "华东",
-        "华中"
-      ],
-      "answer": 0,
-      "explain": "七大区：华北。"
-    },
-    {
-      "id": "q-draft-06",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "本草稿用的民居套件是？",
-      "choices": [
-        "北方砖 + 胡同",
-        "江南水岸",
-        "岭南骑楼",
-        "绿洲平顶"
-      ],
-      "answer": 0,
-      "explain": "套件 north-brick-hutong。"
-    },
-    {
-      "id": "q-draft-07",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "客户端为什么不能写 lat/lon？",
-      "choices": [
-        "好看",
-        "审图与隐私：关卡只用局部网格",
-        "Three.js 不支持",
-        "CSV 没有名字"
-      ],
-      "answer": 1,
-      "explain": "网格坐标不是地理坐标。"
-    },
-    {
-      "id": "q-draft-08",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "草稿能否宣称全国地级已收录？",
-      "choices": [
-        "能",
-        "不能",
-        "做满 10 座就能",
-        "看心情"
-      ],
-      "answer": 1,
-      "explain": "B 级草稿不是 live，更不是 333。"
-    },
-    {
-      "id": "q-draft-09",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "石家庄是？",
-      "choices": [
+        "保定",
         "石家庄",
-        "北京",
-        "上海",
-        "广州"
+        "唐山",
+        "邯郸"
       ],
-      "answer": 0,
-      "explain": "行政中心教学名：石家庄。"
+      "answer": 1,
+      "explain": "行政中心是石家庄，保定是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-bd-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "保定在七大区中属于？",
+      "choices": [
+        "东北",
+        "华北",
+        "西北",
+        "华南"
+      ],
+      "answer": 1,
+      "explain": "河北在华北。"
+    },
+    {
+      "id": "q-bd-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "和保定关系最近的淀是？",
+      "choices": [
+        "鄱阳湖",
+        "白洋淀",
+        "滇池",
+        "青海湖"
+      ],
+      "answer": 1,
+      "explain": "府河流向白洋淀。"
+    },
+    {
+      "id": "q-bd-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "保定北面紧挨的直辖市是？",
+      "choices": [
+        "上海",
+        "北京",
+        "重庆",
+        "天津和北京都近"
+      ],
+      "answer": 3,
+      "explain": "保定北望北京，东近天津。"
+    },
+    {
+      "id": "q-bd-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "「直隶」在本课里主要提醒我们？",
+      "choices": [
+        "这是海边渔村",
+        "这里曾是京畿行政重镇",
+        "这里是沙漠绿洲",
+        "这里是火山岛"
+      ],
+      "answer": 1,
+      "explain": "直隶总督署是京畿行政记忆。"
+    },
+    {
+      "id": "q-bd-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "保定是不是河北省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是石家庄",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "保定是非省会地级市。"
     }
   ]
 }

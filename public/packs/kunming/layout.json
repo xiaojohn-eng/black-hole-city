@@ -5,29 +5,30 @@
     "spacing": 32,
     "width": 7
   },
-  "variants": [],
+  "variants": [
+    "plateau_lake"
+  ],
   "kitId": "jiangnan-water",
-  "draft": true,
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "滇池岸公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
-      "color": "#6b7a68",
+      "color": "#4d6a5a",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "旧街民居",
       "x": -70,
       "z": 8,
       "w": 100,
@@ -44,12 +45,12 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "牌坊与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
-      "color": "#3b82a8",
+      "color": "#5d7a88",
       "quotas": {
         "L1": 4,
         "L2": 4,
@@ -57,7 +58,7 @@
       }
     },
     {
-      "id": "new_town",
+      "id": "modern",
       "name": "当代楼宇",
       "x": 78,
       "z": 12,
@@ -75,69 +76,69 @@
   ],
   "landmarks": [
     {
-      "id": "kunming-guard",
-      "name": "昆明市纪念空间（草稿）",
+      "id": "km-guard",
+      "name": "昆明人民英雄纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-km-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
     },
     {
-      "id": "kunming-visit-a",
-      "name": "昆明市文保剪影（草稿）",
-      "mesh": "bund_colonnade",
+      "id": "km-jinma",
+      "name": "金马碧鸡坊",
+      "mesh": "city_wall_gate",
       "interact": "visit",
-      "x": -40,
+      "x": -36,
       "z": 20,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "knowledgeCardId": "card-km-jinma",
+      "whyHere": "街巷牌坊剪影。走近参观。",
+      "silhouette": "跨街牌坊"
     },
     {
-      "id": "kunming-visit-b",
-      "name": "昆明市街道（草稿）",
-      "mesh": "central_street",
+      "id": "km-dianchi",
+      "name": "滇池岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-km-lake",
+      "whyHere": "湖岸栈桥剪影。参观，认识高原湖泊。",
+      "silhouette": "长堤与水面"
+    },
+    {
+      "id": "km-jindian",
+      "name": "金殿",
+      "mesh": "city_god_temple",
       "interact": "visit",
       "x": -70,
       "z": -10,
-      "tier": 9,
+      "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
+      "knowledgeCardId": "card-km-jindian",
+      "whyHere": "铜殿外观只参观。",
+      "silhouette": "殿宇轮廓"
     },
     {
-      "id": "kunming-sky-a",
-      "name": "昆明市塔楼剪影（草稿）",
+      "id": "km-sky",
+      "name": "当代楼宇",
       "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-km-spring",
+      "whyHere": "可归档的当代公共建筑。昆明是坝子春城，不是全国默认山城皮肤。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "kunming-sky-b",
-      "name": "昆明市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }

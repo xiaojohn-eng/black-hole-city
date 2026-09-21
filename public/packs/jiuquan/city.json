@@ -3,37 +3,46 @@
   "packId": "jiuquan",
   "name": "酒泉市",
   "alias": [
-    "酒泉",
-    "甘"
+    "酒泉"
   ],
   "shortName": "甘",
   "unitType": "prefecture_city",
   "parentProvince": "甘肃省",
   "region7": "西北",
   "region4": "西北地区",
-  "locationDesc": "位于西北，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
-  "climateBand": "温带大陆性",
+  "locationDesc": "在河西走廊西段的绿洲上，讨赖河流过。甘肃省的地级市，不是本省行政中心。敦煌在本市辖区内。",
+  "climateBand": "温带大陆性（干旱）",
   "landform": [
-    "待补"
+    "河西走廊",
+    "绿洲"
   ],
   "riversLakes": [
-    "待补"
+    "讨赖河",
+    "疏勒河"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "嘉峪关",
+    "张掖"
+  ],
   "cityFunction": [
-    "地级市"
+    "河西走廊绿洲城",
+    "丝路教学点",
+    "非省会"
   ],
-  "storyTitle": "酒泉市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「绿洲平顶」铺底，尚未四审，不可 live。",
+  "storyTitle": "绿洲记忆",
+  "storyLogline": "风沙把鼓楼牌匾盖住。你沿灌溉渠把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从绿洲公园起步",
+    "平顶庭院收集市井记忆",
+    "参观鼓楼与莫高窟剪影",
+    "环绕革命烈士纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "驼铃回退",
+    "渠水"
   ],
   "colorPalette": {
     "sky": "#d4c4a8",
@@ -50,12 +59,12 @@
   "fictional": false,
   "kitId": "oasis-flat",
   "startCards": [
-    "card-draft-place"
+    "card-jq-oasis",
+    "card-jq-short"
   ],
   "briefing": [
-    "这是 酒泉市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在酒泉，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "鼓楼和莫高窟剪影只参观。生涯模式看裂隙稳定度。"
+  ]
 }

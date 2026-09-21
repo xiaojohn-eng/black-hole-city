@@ -1,23 +1,24 @@
 {
   "mapSize": 240,
   "roads": {
-    "style": "jiangnan_water",
-    "spacing": 32,
-    "width": 7
+    "style": "northeast_grid",
+    "spacing": 44,
+    "width": 12
   },
   "variants": [
-    "river_front"
+    "coastal_band",
+    "cold_wide_street"
   ],
-  "kitId": "jiangnan-water",
+  "kitId": "north-brick-hutong",
   "zones": [
     {
       "id": "south_park",
-      "name": "运河岸公园",
+      "name": "海滨公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
-      "color": "#4d6a5a",
+      "color": "#5d7a88",
       "spawn": true,
       "quotas": {
         "L1": 16,
@@ -28,12 +29,12 @@
     },
     {
       "id": "old_town",
-      "name": "水巷民居",
+      "name": "旧街街区",
       "x": -70,
       "z": 8,
       "w": 100,
       "d": 96,
-      "color": "#f4f1ea",
+      "color": "#8a8074",
       "quotas": {
         "L1": 8,
         "L2": 8,
@@ -45,12 +46,12 @@
     },
     {
       "id": "civic",
-      "name": "园林与纪念",
+      "name": "广场与纪念",
       "x": 0,
       "z": 40,
       "w": 56,
       "d": 120,
-      "color": "#5d7a88",
+      "color": "#c5d4e0",
       "quotas": {
         "L1": 4,
         "L2": 4,
@@ -59,7 +60,7 @@
     },
     {
       "id": "modern",
-      "name": "当代楼宇",
+      "name": "港区楼宇",
       "x": 78,
       "z": 12,
       "w": 84,
@@ -76,69 +77,69 @@
   ],
   "landmarks": [
     {
-      "id": "sz-guard",
-      "name": "苏州革命烈士纪念碑",
+      "id": "dl-guard",
+      "name": "大连人民英雄纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-sz-guard",
+      "knowledgeCardId": "card-dl-guard",
       "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
-      "silhouette": "纪念碑"
+      "silhouette": "高耸方尖碑"
     },
     {
-      "id": "sz-garden",
-      "name": "拙政园",
-      "mesh": "wide_alley",
+      "id": "dl-plaza",
+      "name": "中山广场欧式建筑",
+      "mesh": "bund_colonnade",
       "interact": "visit",
       "x": -40,
-      "z": 20,
+      "z": 16,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-sz-garden",
-      "whyHere": "园林水庭剪影。走近参观，不把园子做成可吞物。",
-      "silhouette": "廊、桥、粉墙"
+      "knowledgeCardId": "card-dl-plaza",
+      "whyHere": "圆形广场周边的立面剪影。走近参观。",
+      "silhouette": "柱廊与穹顶轮廓"
     },
     {
-      "id": "sz-hanshan",
-      "name": "寒山寺",
-      "mesh": "city_god_temple",
+      "id": "dl-pier",
+      "name": "滨海栈桥",
+      "mesh": "yangtze_bridge",
       "interact": "visit",
-      "x": -70,
-      "z": -10,
+      "x": 12,
+      "z": -28,
       "tier": 10,
-      "zone": "old_town",
-      "knowledgeCardId": "card-sz-hanshan",
-      "whyHere": "寺庙外观只参观。",
-      "silhouette": "飞檐殿宇"
+      "zone": "south_park",
+      "knowledgeCardId": "card-dl-sea",
+      "whyHere": "伸向海里的栈桥剪影。参观，认识半岛港城。",
+      "silhouette": "长堤伸入水面"
     },
     {
-      "id": "sz-gate",
-      "name": "东方之门剪影",
-      "mesh": "lujiazui_tower",
+      "id": "dl-port",
+      "name": "港区塔楼",
+      "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
       "zone": "modern",
-      "knowledgeCardId": "card-sz-sky",
-      "whyHere": "可归档的当代公共建筑剪影。",
-      "silhouette": "门字形高楼"
+      "knowledgeCardId": "card-dl-port",
+      "whyHere": "可归档的当代港区公共建筑。",
+      "silhouette": "高楼"
     },
     {
-      "id": "sz-sky",
+      "id": "dl-sky",
       "name": "当代楼宇",
-      "mesh": "cbd_tower",
+      "mesh": "tv_tower",
       "interact": "swallow",
       "x": 96,
       "z": -8,
       "tier": 10,
       "zone": "modern",
-      "knowledgeCardId": "card-sz-plain",
-      "whyHere": "当代天际线，对照园林的旧尺度。",
-      "silhouette": "高楼"
+      "knowledgeCardId": "card-dl-plain",
+      "whyHere": "当代天际线，对照广场旧立面。",
+      "silhouette": "细塔"
     }
   ]
 }

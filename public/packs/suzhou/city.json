@@ -4,36 +4,47 @@
   "name": "苏州市",
   "alias": [
     "苏州",
-    "苏"
+    "姑苏"
   ],
   "shortName": "苏",
   "unitType": "prefecture_city",
   "parentProvince": "江苏省",
   "region7": "华东",
   "region4": "南方地区",
-  "locationDesc": "位于华东，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
+  "locationDesc": "在长江三角洲，太湖东岸，京杭大运河穿过。江苏省的地级市，不是本省行政中心。",
   "climateBand": "亚热带季风",
   "landform": [
-    "待补"
+    "长江三角洲平原",
+    "水网"
   ],
   "riversLakes": [
-    "待补"
+    "京杭大运河",
+    "太湖"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "上海",
+    "无锡",
+    "嘉兴"
+  ],
   "cityFunction": [
-    "地级市"
+    "园林城市",
+    "运河城市",
+    "非省会"
   ],
-  "storyTitle": "苏州市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。",
+  "storyTitle": "水巷记忆",
+  "storyLogline": "运河把园林门匾冲散。你沿水巷把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从运河岸公园起步",
+    "水巷收集市井记忆",
+    "参观拙政园与寒山寺",
+    "环绕革命烈士纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "river_front"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "评弹",
+    "桨声"
   ],
   "colorPalette": {
     "sky": "#9ec9d8",
@@ -42,7 +53,7 @@
     "road": "#5b6570"
   },
   "spawn": {
-    "x": 0,
+    "x": 20,
     "z": -96
   },
   "mapSize": 240,
@@ -50,12 +61,12 @@
   "fictional": false,
   "kitId": "jiangnan-water",
   "startCards": [
-    "card-draft-place"
+    "card-sz-canal",
+    "card-sz-short"
   ],
   "briefing": [
-    "这是 苏州市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在苏州，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "拙政园和寒山寺只参观。生涯模式看裂隙稳定度。"
+  ]
 }

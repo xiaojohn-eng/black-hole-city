@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
- * M3a: seven-region coverage gate.
+ * M3a + M3a2: seven-region coverage gate.
  * Each region ≥1 live real city + ≥3 names in pipeline (live|draft).
- * National live ≥7; non-capital live|draft ≥3. Never claims 333 complete.
+ * M3a2: each region ≥1 true non-capital live; national non-capital live ≥7.
+ * Never claims 333 complete.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -12,6 +13,8 @@ import {
   DISCLAIMER,
   M3A_LIVE_PACKS,
   M3A_PIPELINE,
+  M3A2_NAMED_LIVE,
+  M3A2_NONCAPITAL_LIVE,
   REGION7,
   isProvincialCapital,
 } from './region7.mjs'
@@ -45,6 +48,12 @@ const liveIds = [...new Set(manifest.liveCityPacks ?? [])]
 if (liveIds.length < 7) fail(`liveCityPacks ${liveIds.length} < 7`)
 for (const id of M3A_LIVE_PACKS) {
   if (!liveIds.includes(id)) fail(`liveCityPacks missing ${id}`)
+}
+for (const id of M3A2_NAMED_LIVE) {
+  if (!liveIds.includes(id)) fail(`M3a2 named live missing ${id}`)
+}
+for (const id of M3A2_NONCAPITAL_LIVE) {
+  if (!liveIds.includes(id)) fail(`M3a2 non-capital live missing ${id}`)
 }
 
 const packById = new Map()
@@ -94,6 +103,7 @@ for (const r of REGION7) {
 
 const rows = allRows()
 const nonCap = []
+const nonCapLiveByRegion = new Map(REGION7.map((r) => [r, []]))
 for (const id of [...liveIds, ...draftSet]) {
   const cityPath = path.join(packDir(id), 'city.json')
   if (!fs.existsSync(cityPath)) continue
@@ -101,9 +111,20 @@ for (const id of [...liveIds, ...draftSet]) {
   if (city.fictional) continue
   const row = rows.find((x) => x.adcode === city.adcode) || rows.find((x) => x.packId === id)
   if (!row) continue
-  if (!isProvincialCapital(row, PROVINCES)) nonCap.push({ id, name: city.name, status: liveIds.includes(id) ? 'live' : 'draft' })
+  if (isProvincialCapital(row, PROVINCES)) continue
+  const status = liveIds.includes(id) ? 'live' : 'draft'
+  nonCap.push({ id, name: city.name, status, region7: city.region7 })
+  if (status === 'live' && REGION7.includes(city.region7)) {
+    nonCapLiveByRegion.get(city.region7).push(id)
+  }
 }
 if (nonCap.length < 3) fail(`non-capital live|draft ${nonCap.length} < 3`)
+const nonCapLive = nonCap.filter((x) => x.status === 'live')
+if (nonCapLive.length < 7) fail(`non-capital live ${nonCapLive.length} < 7`)
+for (const r of REGION7) {
+  const ids = nonCapLiveByRegion.get(r)
+  if (!ids.length) fail(`region ${r} has no non-capital live city`)
+}
 
 for (const spec of M3A_PIPELINE) {
   const dir = packDir(spec.packId)
@@ -134,6 +155,8 @@ for (const r of REGION7) {
   const slot = byRegion.get(r)
   const live = slot.live.map((x) => x.id).join(',')
   const rest = slot.pipeline.filter((x) => x.status !== 'live').map((x) => x.id)
-  console.log(`    ${r}  live=${live}  pipeline=${slot.pipeline.length}  drafts=${rest.join(',') || '—'}`)
+  const nc = nonCapLiveByRegion.get(r).join(',')
+  console.log(`    ${r}  live=${live}  noncap=${nc}  pipeline=${slot.pipeline.length}  drafts=${rest.join(',') || '—'}`)
 }
+console.log(`  non-capital live (${nonCapLive.length}): ${nonCapLive.map((x) => x.id).join(', ')}`)
 console.log(`  non-capital live|draft (${nonCap.length}): ${nonCap.map((x) => x.id).join(', ')}`)

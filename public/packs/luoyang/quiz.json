@@ -1,131 +1,147 @@
 {
-  "draft": true,
   "questions": [
     {
-      "id": "q-draft-01",
-      "ageBand": "6-8",
-      "type": "mc",
-      "prompt": "洛阳市属于哪个省级行政区？",
-      "choices": [
-        "河南省",
-        "北京市",
-        "天津市",
-        "河北省"
-      ],
-      "answer": 0,
-      "explain": "洛阳市属于河南省。"
-    },
-    {
-      "id": "q-draft-02",
+      "id": "q-ly-01",
       "ageBand": "6-8",
       "type": "mc",
       "prompt": "河南省的简称是？",
       "choices": [
+        "冀",
         "豫",
-        "京",
-        "津",
-        "冀"
+        "皖",
+        "鄂"
       ],
-      "answer": 0,
-      "explain": "简称「豫」。"
+      "answer": 1,
+      "explain": "河南简称「豫」。",
+      "curriculumTag": "geo.2022.cn.province"
     },
     {
-      "id": "q-draft-03",
+      "id": "q-ly-02",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "纪念空间应该怎么对待？",
+      "prompt": "穿过洛阳的著名河是？",
+      "choices": [
+        "珠江",
+        "洛河",
+        "松花江",
+        "黄浦江"
+      ],
+      "answer": 1,
+      "explain": "洛河穿过洛阳。"
+    },
+    {
+      "id": "q-ly-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
       "choices": [
         "吸入归档",
-        "绕行一周致敬",
+        "绕着它走一圈，完成守护致敬",
         "推倒",
         "忽略"
       ],
       "answer": 1,
-      "explain": "GUARD：绕行致敬。"
+      "explain": "纪念空间只可守护。"
     },
     {
-      "id": "q-draft-04",
+      "id": "q-ly-04",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "文保建筑的正确交互是？",
+      "prompt": "龙门石窟在本课里应该？",
       "choices": [
         "吸入",
         "参观外观",
         "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "石窟只参观。"
+    },
+    {
+      "id": "q-ly-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河南省的行政中心是？",
+      "choices": [
+        "洛阳",
+        "郑州",
+        "开封",
+        "武汉"
+      ],
+      "answer": 1,
+      "explain": "行政中心是郑州，洛阳是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-ly-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "洛阳在七大区中属于？",
+      "choices": [
+        "华北",
+        "华中",
+        "西北",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "河南在华中。"
+    },
+    {
+      "id": "q-ly-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "洛阳主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风",
+        "热带雨林",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "温带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-ly-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "白马寺的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
         "删除"
       ],
       "answer": 1,
-      "explain": "VISIT：只参观。"
+      "explain": "寺庙 VISIT。"
     },
     {
-      "id": "q-draft-05",
+      "id": "q-ly-09",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "洛阳市在七大区中属于？",
+      "prompt": "洛阳北面不远的大河是？",
       "choices": [
-        "华中",
-        "华北",
-        "东北",
-        "华东"
+        "珠江",
+        "长江",
+        "黄河",
+        "辽河"
       ],
-      "answer": 0,
-      "explain": "七大区：华中。"
+      "answer": 2,
+      "explain": "洛阳北近黄河。"
     },
     {
-      "id": "q-draft-06",
-      "ageBand": "9-12",
+      "id": "q-ly-10",
+      "ageBand": "6-8",
       "type": "mc",
-      "prompt": "本草稿用的民居套件是？",
+      "prompt": "洛阳是不是河南省的行政中心？",
       "choices": [
-        "江南水岸",
-        "北方砖 + 胡同",
-        "岭南骑楼",
-        "绿洲平顶"
-      ],
-      "answer": 0,
-      "explain": "套件 jiangnan-water。"
-    },
-    {
-      "id": "q-draft-07",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "客户端为什么不能写 lat/lon？",
-      "choices": [
-        "好看",
-        "审图与隐私：关卡只用局部网格",
-        "Three.js 不支持",
-        "CSV 没有名字"
+        "是",
+        "不是，行政中心是郑州",
+        "是首都",
+        "是直辖市"
       ],
       "answer": 1,
-      "explain": "网格坐标不是地理坐标。"
-    },
-    {
-      "id": "q-draft-08",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "草稿能否宣称全国地级已收录？",
-      "choices": [
-        "能",
-        "不能",
-        "做满 10 座就能",
-        "看心情"
-      ],
-      "answer": 1,
-      "explain": "B 级草稿不是 live，更不是 333。"
-    },
-    {
-      "id": "q-draft-09",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "郑州是？",
-      "choices": [
-        "郑州",
-        "北京",
-        "上海",
-        "广州"
-      ],
-      "answer": 0,
-      "explain": "行政中心教学名：郑州。"
+      "explain": "洛阳是非省会。"
     }
   ]
 }
