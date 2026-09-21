@@ -4,42 +4,52 @@
   "name": "洛阳市",
   "alias": [
     "洛阳",
-    "豫"
+    "洛邑"
   ],
   "shortName": "豫",
   "unitType": "prefecture_city",
   "parentProvince": "河南省",
   "region7": "华中",
   "region4": "北方地区",
-  "locationDesc": "位于华中，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
-  "climateBand": "亚热带季风",
+  "locationDesc": "在洛阳盆地，洛河与伊河穿城，北近黄河。河南省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
   "landform": [
-    "待补"
+    "洛阳盆地",
+    "中原"
   ],
   "riversLakes": [
-    "待补"
+    "洛河",
+    "伊河",
+    "黄河"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "郑州",
+    "三门峡"
+  ],
   "cityFunction": [
-    "地级市"
+    "十三朝古都教学点",
+    "非省会"
   ],
-  "storyTitle": "洛阳市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。",
+  "storyTitle": "洛邑记忆",
+  "storyLogline": "洛河把龙门石纹冲散。你沿河岸把古都记忆送回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从洛河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观龙门石窟与白马寺",
+    "环绕革命烈士纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "named_river"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "中原鼓",
+    "河风"
   ],
   "colorPalette": {
-    "sky": "#9ec9d8",
-    "fog": "#b7d4dc",
-    "ground": "#6b7a68",
-    "road": "#5b6570"
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
   },
   "spawn": {
     "x": 0,
@@ -48,14 +58,14 @@
   "mapSize": 240,
   "mode": "career",
   "fictional": false,
-  "kitId": "jiangnan-water",
+  "kitId": "north-brick-hutong",
   "startCards": [
-    "card-draft-place"
+    "card-ly-river",
+    "card-ly-short"
   ],
   "briefing": [
-    "这是 洛阳市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在洛阳，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "龙门石窟和白马寺只参观。生涯模式看裂隙稳定度。"
+  ]
 }

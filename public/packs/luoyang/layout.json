@@ -1,38 +1,39 @@
 {
   "mapSize": 240,
   "roads": {
-    "style": "jiangnan_water",
-    "spacing": 32,
-    "width": 7
+    "style": "hutong_axis",
+    "spacing": 36,
+    "width": 8
   },
-  "variants": [],
-  "kitId": "jiangnan-water",
-  "draft": true,
+  "variants": [
+    "named_river"
+  ],
+  "kitId": "north-brick-hutong",
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "洛河岸公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
-      "color": "#6b7a68",
+      "color": "#b89b6a",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "旧城砖巷",
       "x": -70,
       "z": 8,
       "w": 100,
       "d": 96,
-      "color": "#f4f1ea",
+      "color": "#a89070",
       "quotas": {
         "L1": 8,
         "L2": 8,
@@ -44,12 +45,12 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "石窟与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
-      "color": "#3b82a8",
+      "color": "#8a7048",
       "quotas": {
         "L1": 4,
         "L2": 4,
@@ -57,13 +58,13 @@
       }
     },
     {
-      "id": "new_town",
+      "id": "modern",
       "name": "当代楼宇",
       "x": 78,
       "z": 12,
       "w": 84,
       "d": 110,
-      "color": "#4a5568",
+      "color": "#6b6358",
       "quotas": {
         "L4": 8,
         "L5": 6,
@@ -75,69 +76,69 @@
   ],
   "landmarks": [
     {
-      "id": "luoyang-guard",
-      "name": "洛阳市纪念空间（草稿）",
+      "id": "ly-guard",
+      "name": "洛阳革命烈士纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-ly-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑与柏树"
     },
     {
-      "id": "luoyang-visit-a",
-      "name": "洛阳市文保剪影（草稿）",
-      "mesh": "bund_colonnade",
+      "id": "ly-longmen",
+      "name": "龙门石窟",
+      "mesh": "dayan_pagoda",
+      "interact": "visit",
+      "x": 18,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-ly-longmen",
+      "whyHere": "石窟寺剪影。走近参观，不崩塌。",
+      "silhouette": "崖壁佛龛轮廓"
+    },
+    {
+      "id": "ly-baima",
+      "name": "白马寺",
+      "mesh": "city_god_temple",
       "interact": "visit",
       "x": -40,
       "z": 20,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "knowledgeCardId": "card-ly-baima",
+      "whyHere": "寺庙外观只参观。",
+      "silhouette": "红墙飞檐"
     },
     {
-      "id": "luoyang-visit-b",
-      "name": "洛阳市街道（草稿）",
-      "mesh": "central_street",
+      "id": "ly-gate",
+      "name": "定鼎门剪影",
+      "mesh": "city_wall_gate",
       "interact": "visit",
-      "x": -70,
+      "x": -8,
       "z": -10,
-      "tier": 9,
+      "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
+      "knowledgeCardId": "card-ly-capital",
+      "whyHere": "隋唐城门剪影。参观，认识古都轴线。",
+      "silhouette": "城门楼"
     },
     {
-      "id": "luoyang-sky-a",
-      "name": "洛阳市塔楼剪影（草稿）",
+      "id": "ly-sky",
+      "name": "当代楼宇",
       "mesh": "cbd_tower",
       "interact": "swallow",
-      "x": 88,
-      "z": 40,
+      "x": 92,
+      "z": 36,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-ly-plain",
+      "whyHere": "可归档的当代公共建筑剪影。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "luoyang-sky-b",
-      "name": "洛阳市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }

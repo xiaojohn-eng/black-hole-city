@@ -4,36 +4,48 @@
   "name": "深圳市",
   "alias": [
     "深圳",
-    "粤"
+    "鹏城"
   ],
   "shortName": "粤",
   "unitType": "prefecture_city",
   "parentProvince": "广东省",
   "region7": "华南",
   "region4": "南方地区",
-  "locationDesc": "位于华南，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
+  "locationDesc": "在珠江口东岸，南边是香港。广东省的经济特区城市，不是本省行政中心。",
   "climateBand": "亚热带季风",
   "landform": [
-    "待补"
+    "沿海丘陵",
+    "港湾"
   ],
   "riversLakes": [
-    "待补"
+    "深圳河",
+    "珠江口"
   ],
-  "neighbors": [],
+  "neighbors": [
+    "香港",
+    "东莞",
+    "惠州"
+  ],
   "cityFunction": [
-    "地级市"
+    "经济特区",
+    "口岸城市",
+    "非省会"
   ],
-  "storyTitle": "深圳市记忆草稿",
-  "storyLogline": "B 级草稿：用套件「岭南骑楼」铺底，尚未四审，不可 live。",
+  "storyTitle": "口岸记忆",
+  "storyLogline": "海风把口岸路牌吹散。你沿骑楼与海湾把它们收回博物馆。",
   "storyBeats": [
-    "从南侧公园起步",
-    "沿套件街道收集",
-    "参观一处文保剪影",
-    "环绕纪念空间致敬"
+    "从海湾公园起步",
+    "骑楼街收集市井记忆",
+    "参观大鹏所城与天后宫",
+    "环绕革命烈士纪念碑致敬"
   ],
-  "gameplayModifiers": [],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "pearl_river"
+  ],
   "bgmPalette": [
-    "程序音回退"
+    "海风",
+    "南音"
   ],
   "colorPalette": {
     "sky": "#7eb8d4",
@@ -50,12 +62,12 @@
   "fictional": false,
   "kitId": "lingnan-qilou",
   "startCards": [
-    "card-draft-place"
+    "card-szn-port",
+    "card-szn-short"
   ],
   "briefing": [
-    "这是 深圳市 的 B 级草稿，尚未标成 live。",
-    "纪念空间请绕行，文保建筑只参观。",
-    "请按 data/kits/README.md 补地标与审校后再申请入库。"
-  ],
-  "draft": true
+    "我们在深圳，广东省的经济特区城市，不是本省行政中心。广州才是广东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "大鹏所城和天后宫只参观。生涯模式看裂隙稳定度。"
+  ]
 }

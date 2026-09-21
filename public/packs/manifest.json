@@ -1,6 +1,6 @@
 {
-  "version": "m3a-seven-region",
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区各 1 座真城（北京、上海、哈尔滨、武汉、广州、成都、西安）。其余为草稿或名录灰壳。不是 333 完成。",
+  "version": "m3a2-noncapital-live",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区非省会可玩。其余为草稿或名录灰壳。不是 333 完成。",
   "liveCityPacks": [
     "beijing",
     "shanghai",
@@ -8,23 +8,25 @@
     "guangzhou",
     "wuhan",
     "chengdu",
-    "xian"
+    "xian",
+    "baoding",
+    "shenyang",
+    "dalian",
+    "suzhou",
+    "luoyang",
+    "shenzhen",
+    "kunming",
+    "zunyi",
+    "jiuquan"
   ],
   "draftCityPacks": [
     "shijiazhuang",
-    "baoding",
-    "shenyang",
     "changchun",
-    "suzhou",
     "qingdao",
-    "luoyang",
     "changsha",
-    "shenzhen",
     "guilin",
-    "kunming",
     "guiyang",
-    "urumqi",
-    "jiuquan"
+    "urumqi"
   ],
   "sharedQuiz": "packs/_shared/province-abbr-quiz.json",
   "packs": [
@@ -127,7 +129,7 @@
       "name": "保定市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "华北",
       "kitId": "north-brick-hutong"
     },
@@ -138,7 +140,7 @@
       "name": "沈阳市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "东北",
       "kitId": "north-brick-hutong"
     },
@@ -160,7 +162,7 @@
       "name": "苏州市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "华东",
       "kitId": "jiangnan-water"
     },
@@ -182,9 +184,9 @@
       "name": "洛阳市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "华中",
-      "kitId": "jiangnan-water"
+      "kitId": "north-brick-hutong"
     },
     {
       "id": "changsha",
@@ -204,7 +206,7 @@
       "name": "深圳市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "华南",
       "kitId": "lingnan-qilou"
     },
@@ -226,7 +228,7 @@
       "name": "昆明市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "西南",
       "kitId": "jiangnan-water"
     },
@@ -259,9 +261,31 @@
       "name": "酒泉市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "西北",
       "kitId": "oasis-flat"
+    },
+    {
+      "id": "dalian",
+      "kind": "city",
+      "adcode": "210200",
+      "name": "大连市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "zunyi",
+      "kind": "city",
+      "adcode": "520300",
+      "name": "遵义市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
     }
   ]
 }

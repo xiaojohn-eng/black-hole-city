@@ -1,0 +1,71 @@
+{
+  "adcode": "210200",
+  "packId": "dalian",
+  "name": "大连市",
+  "alias": [
+    "大连"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽东半岛南端，一边是黄海、一边靠近渤海。辽宁省的港口城市，不是本省行政中心。",
+  "climateBand": "温带季风（滨海）",
+  "landform": [
+    "辽东半岛",
+    "港湾"
+  ],
+  "riversLakes": [
+    "黄海",
+    "渤海"
+  ],
+  "neighbors": [
+    "营口",
+    "丹东"
+  ],
+  "cityFunction": [
+    "港口城市",
+    "滨海地级市",
+    "非省会"
+  ],
+  "storyTitle": "半岛记忆",
+  "storyLogline": "海风把栈桥牌匾吹散。你沿港湾把它们收回博物馆。",
+  "storyBeats": [
+    "从海滨公园起步，先看见海",
+    "旧街收集市井记忆",
+    "参观中山广场欧式立面",
+    "环绕人民英雄纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "coastal_band",
+    "cold_wide_street"
+  ],
+  "bgmPalette": [
+    "海风",
+    "号角"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-dl-sea",
+    "card-dl-short"
+  ],
+  "briefing": [
+    "我们在大连，辽宁省的港口城市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "人民英雄纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "中山广场欧式建筑只参观外观。生涯模式看裂隙稳定度。"
+  ]
+}

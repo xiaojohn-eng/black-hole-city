@@ -5,29 +5,31 @@
     "spacing": 28,
     "width": 8
   },
-  "variants": [],
+  "variants": [
+    "qilou_arcade",
+    "pearl_river"
+  ],
   "kitId": "lingnan-qilou",
-  "draft": true,
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "海湾公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
-      "color": "#6a6e58",
+      "color": "#5d7a88",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "骑楼旧街",
       "x": -70,
       "z": 8,
       "w": 100,
@@ -44,10 +46,10 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "所城与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
       "color": "#0f766e",
       "quotas": {
@@ -57,7 +59,7 @@
       }
     },
     {
-      "id": "new_town",
+      "id": "modern",
       "name": "当代楼宇",
       "x": 78,
       "z": 12,
@@ -75,69 +77,69 @@
   ],
   "landmarks": [
     {
-      "id": "shenzhen-guard",
-      "name": "深圳市纪念空间（草稿）",
+      "id": "szn-guard",
+      "name": "深圳革命烈士纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-szn-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
     },
     {
-      "id": "shenzhen-visit-a",
-      "name": "深圳市文保剪影（草稿）",
-      "mesh": "city_god_temple",
+      "id": "szn-dapeng",
+      "name": "大鹏所城",
+      "mesh": "city_wall_gate",
       "interact": "visit",
       "x": -40,
       "z": 20,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "knowledgeCardId": "card-szn-dapeng",
+      "whyHere": "明清所城剪影。走近参观。",
+      "silhouette": "城门与城墙"
     },
     {
-      "id": "shenzhen-visit-b",
-      "name": "深圳市街道（草稿）",
-      "mesh": "central_street",
+      "id": "szn-tianhou",
+      "name": "赤湾天后宫",
+      "mesh": "city_god_temple",
       "interact": "visit",
       "x": -70,
       "z": -10,
-      "tier": 9,
+      "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
+      "knowledgeCardId": "card-szn-tianhou",
+      "whyHere": "天后宫外观只参观。",
+      "silhouette": "飞檐殿宇"
     },
     {
-      "id": "shenzhen-sky-a",
-      "name": "深圳市塔楼剪影（草稿）",
+      "id": "szn-qilou",
+      "name": "骑楼街廊",
+      "mesh": "qilou_arcade",
+      "interact": "visit",
+      "x": -64,
+      "z": 40,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-szn-qilou",
+      "whyHere": "底层走廊遮阳避雨。参观街区。",
+      "silhouette": "连排柱廊"
+    },
+    {
+      "id": "szn-sky",
+      "name": "口岸塔楼剪影",
       "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-szn-sez",
+      "whyHere": "可归档的当代公共建筑。不出现乐园商标。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "shenzhen-sky-b",
-      "name": "深圳市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }

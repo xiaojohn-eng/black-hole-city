@@ -5,29 +5,30 @@
     "spacing": 48,
     "width": 7
   },
-  "variants": [],
+  "variants": [
+    "oasis_canal"
+  ],
   "kitId": "oasis-flat",
-  "draft": true,
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "绿洲公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
       "color": "#c4a574",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "平顶庭院",
       "x": -70,
       "z": 8,
       "w": 100,
@@ -44,10 +45,10 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "鼓楼与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
       "color": "#0e7490",
       "quotas": {
@@ -57,13 +58,13 @@
       }
     },
     {
-      "id": "new_town",
+      "id": "modern",
       "name": "当代楼宇",
       "x": 78,
       "z": 12,
       "w": 84,
       "d": 110,
-      "color": "#4a5568",
+      "color": "#6b6358",
       "quotas": {
         "L4": 8,
         "L5": 6,
@@ -75,69 +76,69 @@
   ],
   "landmarks": [
     {
-      "id": "jiuquan-guard",
-      "name": "酒泉市纪念空间（草稿）",
+      "id": "jq-guard",
+      "name": "酒泉革命烈士纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-jq-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
     },
     {
-      "id": "jiuquan-visit-a",
-      "name": "酒泉市文保剪影（草稿）",
-      "mesh": "onion_dome",
+      "id": "jq-gulou",
+      "name": "酒泉鼓楼",
+      "mesh": "bell_tower",
       "interact": "visit",
-      "x": -40,
+      "x": -8,
       "z": 20,
       "tier": 10,
-      "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "zone": "civic",
+      "knowledgeCardId": "card-jq-gulou",
+      "whyHere": "绿洲城楼剪影。走近参观。",
+      "silhouette": "十字街心城楼"
     },
     {
-      "id": "jiuquan-visit-b",
-      "name": "酒泉市街道（草稿）",
-      "mesh": "central_street",
+      "id": "jq-mogao",
+      "name": "莫高窟剪影",
+      "mesh": "dayan_pagoda",
       "interact": "visit",
-      "x": -70,
-      "z": -10,
-      "tier": 9,
-      "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
+      "x": -48,
+      "z": 48,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-jq-mogao",
+      "whyHere": "敦煌石窟在酒泉市辖区内。只看剪影，走近参观，不崩塌。",
+      "silhouette": "崖壁窟檐轮廓"
     },
     {
-      "id": "jiuquan-sky-a",
-      "name": "酒泉市塔楼剪影（草稿）",
+      "id": "jq-court",
+      "name": "绿洲庭院",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-jq-oasis",
+      "whyHere": "平顶庭院参观，认识干旱区的生活尺度。",
+      "silhouette": "平顶院落"
+    },
+    {
+      "id": "jq-sky",
+      "name": "当代楼宇",
       "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-jq-space",
+      "whyHere": "可归档的当代公共建筑。发射场不做成关卡，只在知识卡里出现。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "jiuquan-sky-b",
-      "name": "酒泉市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }

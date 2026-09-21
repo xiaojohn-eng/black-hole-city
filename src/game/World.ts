@@ -127,6 +127,9 @@ export class World {
     if (this.hasVariant('two_rivers_confluence')) this.buildTwoRivers()
     if (this.hasVariant('pearl_river') || this.hasVariant('qilou_arcade')) this.buildPearlRiver()
     if (this.hasVariant('citywall_ring')) this.buildCityWallRing()
+    if (this.hasVariant('named_river')) this.buildRiverBand(0x4b9bb8, -40)
+    if (this.hasVariant('coastal_band')) this.buildRiverBand(0x2f6f8a, -56)
+    if (this.hasVariant('plateau_lake')) this.buildRiverBand(0x3b82a8, 52)
 
     const wallMat = new THREE.MeshLambertMaterial({ color: 0x1e293b })
     const wallH = 4
@@ -374,6 +377,9 @@ export class World {
     if (style === 'northeast_grid' && Math.abs(z + 70) < 14) return true
     if (this.hasVariant('two_rivers_confluence') && (Math.abs(z + 36) < 14 || Math.abs(x + 40) < 12)) return true
     if ((this.hasVariant('pearl_river') || this.hasVariant('qilou_arcade')) && Math.abs(z - 8) < 12) return true
+    if (this.hasVariant('named_river') && Math.abs(z + 40) < 14) return true
+    if (this.hasVariant('coastal_band') && Math.abs(z + 56) < 14) return true
+    if (this.hasVariant('plateau_lake') && Math.abs(z - 52) < 14) return true
     return false
   }
 

@@ -1,7 +1,7 @@
 {
   "name": "black-hole-city",
   "private": true,
-  "version": "0.4.0",
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,7 @@
     "validate:province-quiz": "node tools/validate-province-quiz.mjs",
     "validate:kits": "node tools/validate-kits.mjs",
     "validate:region7": "node tools/validate-region7.mjs",
+    "validate:m3a2": "node tools/validate-region7.mjs",
     "test:logic": "node tools/logic-selftest.mjs",
     "scaffold:city": "node tools/pack-scaffold.mjs",
     "scaffold:region": "node tools/scaffold-region-batch.mjs",
@@ -28,5 +29,5 @@
   "dependencies": {
     "three": "^0.186.0"
   },
-  "description": "记忆黑洞 · 中国城市博物馆 — M3a 七大区产能打穿（工厂复制，不是 333 完成）"
+  "description": "记忆黑洞 · 中国城市博物馆 — M3a2 七大区非省会可玩（工厂升 live，不是 333 完成）"
 }
