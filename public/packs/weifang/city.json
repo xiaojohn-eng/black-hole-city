@@ -1,0 +1,72 @@
+{
+  "adcode": "370700",
+  "packId": "weifang",
+  "name": "潍坊市",
+  "alias": [
+    "潍坊"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在潍河下游，莱州湾南岸。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "海湾"
+  ],
+  "riversLakes": [
+    "潍河",
+    "莱州湾"
+  ],
+  "neighbors": [
+    "青岛",
+    "淄博",
+    "烟台"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "莱州湾教学点"
+  ],
+  "storyTitle": "潍河记忆",
+  "storyLogline": "海风把十笏园前的路牌吹斜。你沿潍河把它们收回博物馆。",
+  "storyBeats": [
+    "从潍河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观十笏园",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "河声",
+    "海风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-wfg-river",
+    "card-wfg-short"
+  ],
+  "briefing": [
+    "我们在潍坊，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "十笏园只参观。本课讲潍河和莱州湾，对照青岛黄海、烟台黄渤海、东营黄河口、临沂沂河。"
+  ]
+}

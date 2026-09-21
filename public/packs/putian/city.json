@@ -1,0 +1,72 @@
+{
+  "adcode": "350300",
+  "packId": "putian",
+  "name": "莆田市",
+  "alias": [
+    "莆田"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在木兰溪下游，面向台湾海峡。福建省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河口",
+    "海岸"
+  ],
+  "riversLakes": [
+    "木兰溪",
+    "台湾海峡"
+  ],
+  "neighbors": [
+    "福州",
+    "泉州",
+    "泉港"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "木兰溪教学点"
+  ],
+  "storyTitle": "木兰溪记忆",
+  "storyLogline": "海风把木兰陂前的路牌吹斜。你沿木兰溪把它们收回博物馆。",
+  "storyBeats": [
+    "从溪岸公园起步",
+    "旧街骑楼收集市井记忆",
+    "参观木兰陂",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "溪声"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-ptn-river",
+    "card-ptn-short"
+  ],
+  "briefing": [
+    "我们在莆田，福建省的地级市，不是本省行政中心。福州才是福建省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "木兰陂只参观。本课讲木兰溪和海峡，对照南平闽江上游、漳州九龙江、宁德三都澳。"
+  ]
+}

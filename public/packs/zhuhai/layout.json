@@ -1,0 +1,145 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "qilou_street",
+    "spacing": 28,
+    "width": 8
+  },
+  "variants": [
+    "coastal_band",
+    "named_river"
+  ],
+  "kitId": "lingnan-qilou",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "港岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#6a6e58",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "旧街骑楼",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#c4a574",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "牌坊与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#8a7048",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "zhh-guard",
+      "name": "珠海革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-zhh-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "zhh-visit",
+      "name": "梅溪牌坊",
+      "mesh": "city_wall_gate",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-zhh-visit",
+      "whyHere": "石牌坊剪影。走近参观。",
+      "silhouette": "牌坊"
+    },
+    {
+      "id": "zhh-water",
+      "name": "珠江口岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-zhh-river",
+      "whyHere": "河口桥剪影。参观，认识珠江口西岸。",
+      "silhouette": "河口"
+    },
+    {
+      "id": "zhh-street",
+      "name": "珠海旧街",
+      "mesh": "qilou_arcade",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-zhh-place",
+      "whyHere": "骑楼店铺参观。",
+      "silhouette": "骑楼"
+    },
+    {
+      "id": "zhh-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-zhh-noncap",
+      "whyHere": "可归档的当代公共建筑。",
+      "silhouette": "高楼"
+    }
+  ]
+}

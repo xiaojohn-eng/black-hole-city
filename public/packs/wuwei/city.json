@@ -1,0 +1,71 @@
+{
+  "adcode": "620600",
+  "packId": "wuwei",
+  "name": "武威市",
+  "alias": [
+    "武威"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在石羊河流域，河西走廊东段。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "绿洲",
+    "走廊"
+  ],
+  "riversLakes": [
+    "石羊河"
+  ],
+  "neighbors": [
+    "金昌",
+    "张掖",
+    "兰州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "石羊河教学点"
+  ],
+  "storyTitle": "石羊河记忆",
+  "storyLogline": "干风把武威文庙前的路牌吹斜。你沿石羊河把它们收回博物馆。",
+  "storyBeats": [
+    "从石羊河岸公园起步",
+    "绿洲旧街收集市井记忆",
+    "参观武威文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "干风",
+    "渠水"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-wwe-river",
+    "card-wwe-short"
+  ],
+  "briefing": [
+    "我们在武威，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲石羊河和河西走廊，对照张掖黑河、酒泉疏勒河、天水渭河、庆阳马莲河。"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "adcode": "320300",
+  "packId": "xuzhou",
+  "name": "徐州市",
+  "alias": [
+    "徐州"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在故黄河与京杭运河交会的淮海平原。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "运河"
+  ],
+  "riversLakes": [
+    "故黄河",
+    "京杭运河"
+  ],
+  "neighbors": [
+    "宿迁",
+    "枣庄",
+    "商丘"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淮海平原教学点"
+  ],
+  "storyTitle": "淮海运河记忆",
+  "storyLogline": "运河风把戏马台前的路牌吹斜。你沿故黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观戏马台",
+    "环绕淮海战役纪念塔致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "平原风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-xuz-river",
+    "card-xuz-short"
+  ],
+  "briefing": [
+    "我们在徐州，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "淮海战役纪念塔是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "戏马台只参观。本课讲故黄河和京杭运河，对照扬州运河、南通长江口、连云港黄海。"
+  ]
+}

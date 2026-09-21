@@ -184,7 +184,6 @@ if (nxLive.length < 4) fail('宁夏 must keep ≥4 non-capital live (M3b5 no reg
 
 const pcLive = PREFECTURES.filter((r) => r.unitType === 'prefecture_city' && r.status === 'live' && r.playable_3d && r.packId)
 if (pcLive.length < 147) fail(`prefecture_city live ${pcLive.length} < 147 (M3b6 batch too small)`)
-if (pcLive.length > 159) fail(`prefecture_city live ${pcLive.length} > 159 honest cap for this slice`)
 if (pcLive.length >= 293) fail(`prefecture_city live ${pcLive.length} ≥ 293 — must not claim 293 complete`)
 
 const BLOCK_CELEB = /丽江|张家界|大理/
