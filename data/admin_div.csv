@@ -15,17 +15,17 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 360000,江西省,赣,province,,江西省,华东,南方地区,南昌,false,B,,placeholder,赣
 370000,山东省,鲁,province,,山东省,华东,北方地区,济南,false,B,,placeholder,鲁
 410000,河南省,豫,province,,河南省,华中,北方地区,郑州,false,B,,placeholder,豫
-420000,湖北省,鄂,province,,湖北省,华中,南方地区,武汉,false,B,,placeholder,鄂
+420000,湖北省,鄂,province,,湖北省,华中,南方地区,武汉,false,A,wuhan,live,鄂
 430000,湖南省,湘,province,,湖南省,华中,南方地区,长沙,false,B,,placeholder,湘
-440000,广东省,粤,province,,广东省,华南,南方地区,广州,false,B,,placeholder,粤
+440000,广东省,粤,province,,广东省,华南,南方地区,广州,false,S,guangzhou,live,粤
 450000,广西壮族自治区,桂,autonomous_region,,广西壮族自治区,华南,南方地区,南宁,false,B,,placeholder,"桂,广西"
 460000,海南省,琼,province,,海南省,华南,南方地区,海口,false,B,,placeholder,琼
 500000,重庆市,渝,municipality,,重庆市,西南,南方地区,重庆,false,S,,placeholder,"渝,山城"
-510000,四川省,川,province,,四川省,西南,南方地区,成都,false,B,,placeholder,"川,蜀"
+510000,四川省,川,province,,四川省,西南,南方地区,成都,false,S,chengdu,live,"川,蜀"
 520000,贵州省,贵,province,,贵州省,西南,南方地区,贵阳,false,B,,placeholder,"贵,黔"
 530000,云南省,云,province,,云南省,西南,南方地区,昆明,false,B,,placeholder,"云,滇"
 540000,西藏自治区,藏,autonomous_region,,西藏自治区,西南,青藏地区,拉萨,false,B,,placeholder,"藏,西藏"
-610000,陕西省,陕,province,,陕西省,西北,北方地区,西安,false,B,,placeholder,"陕,秦"
+610000,陕西省,陕,province,,陕西省,西北,北方地区,西安,false,S,xian,live,"陕,秦"
 620000,甘肃省,甘,province,,甘肃省,西北,西北地区,兰州,false,B,,placeholder,"甘,陇"
 630000,青海省,青,province,,青海省,西北,青藏地区,西宁,false,B,,placeholder,青
 640000,宁夏回族自治区,宁,autonomous_region,,宁夏回族自治区,西北,西北地区,银川,false,B,,placeholder,"宁,宁夏"
@@ -33,12 +33,12 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 710000,台湾省,台,province,,台湾省,华东,南方地区,台北,false,D,,placeholder,"台,台湾"
 810000,香港特别行政区,港,sar,,香港特别行政区,华南,南方地区,香港,false,S,,placeholder,"港,香港"
 820000,澳门特别行政区,澳,sar,,澳门特别行政区,华南,南方地区,澳门,false,A,,placeholder,"澳,澳门"
-130100,石家庄市,,prefecture_city,130000,河北省,华北,北方地区,石家庄,false,A,,placeholder,
+130100,石家庄市,,prefecture_city,130000,河北省,华北,北方地区,石家庄,false,B,shijiazhuang,draft,
 130200,唐山市,,prefecture_city,130000,河北省,华北,北方地区,唐山,false,B,,placeholder,
 130300,秦皇岛市,,prefecture_city,130000,河北省,华北,北方地区,秦皇岛,false,B,,placeholder,
 130400,邯郸市,,prefecture_city,130000,河北省,华北,北方地区,邯郸,false,B,,placeholder,
 130500,邢台市,,prefecture_city,130000,河北省,华北,北方地区,邢台,false,B,,placeholder,
-130600,保定市,,prefecture_city,130000,河北省,华北,北方地区,保定,false,B,,placeholder,
+130600,保定市,,prefecture_city,130000,河北省,华北,北方地区,保定,false,B,baoding,draft,
 130700,张家口市,,prefecture_city,130000,河北省,华北,北方地区,张家口,false,B,,placeholder,
 130800,承德市,,prefecture_city,130000,河北省,华北,北方地区,承德,false,B,,placeholder,
 130900,沧州市,,prefecture_city,130000,河北省,华北,北方地区,沧州,false,B,,placeholder,
@@ -67,7 +67,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 152200,兴安盟,,league,150000,内蒙古自治区,华北,北方地区,兴安,false,C,,placeholder,
 152500,锡林郭勒盟,,league,150000,内蒙古自治区,华北,北方地区,锡林郭勒,false,C,,placeholder,
 152900,阿拉善盟,,league,150000,内蒙古自治区,华北,北方地区,阿拉善,false,C,,placeholder,
-210100,沈阳市,,prefecture_city,210000,辽宁省,东北,北方地区,沈阳,false,A,,placeholder,
+210100,沈阳市,,prefecture_city,210000,辽宁省,东北,北方地区,沈阳,false,B,shenyang,draft,
 210200,大连市,,prefecture_city,210000,辽宁省,东北,北方地区,大连,false,A,,placeholder,
 210300,鞍山市,,prefecture_city,210000,辽宁省,东北,北方地区,鞍山,false,B,,placeholder,
 210400,抚顺市,,prefecture_city,210000,辽宁省,东北,北方地区,抚顺,false,B,,placeholder,
@@ -81,7 +81,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 211200,铁岭市,,prefecture_city,210000,辽宁省,东北,北方地区,铁岭,false,B,,placeholder,
 211300,朝阳市,,prefecture_city,210000,辽宁省,东北,北方地区,朝阳,false,B,,placeholder,
 211400,葫芦岛市,,prefecture_city,210000,辽宁省,东北,北方地区,葫芦岛,false,B,,placeholder,
-220100,长春市,,prefecture_city,220000,吉林省,东北,北方地区,长春,false,A,,placeholder,
+220100,长春市,,prefecture_city,220000,吉林省,东北,北方地区,长春,false,B,changchun,draft,
 220200,吉林市,,prefecture_city,220000,吉林省,东北,北方地区,吉林,false,B,,placeholder,
 220300,四平市,,prefecture_city,220000,吉林省,东北,北方地区,四平,false,B,,placeholder,
 220400,辽源市,,prefecture_city,220000,吉林省,东北,北方地区,辽源,false,B,,placeholder,
@@ -107,7 +107,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 320200,无锡市,,prefecture_city,320000,江苏省,华东,南方地区,无锡,false,B,,placeholder,
 320300,徐州市,,prefecture_city,320000,江苏省,华东,南方地区,徐州,false,B,,placeholder,
 320400,常州市,,prefecture_city,320000,江苏省,华东,南方地区,常州,false,B,,placeholder,
-320500,苏州市,,prefecture_city,320000,江苏省,华东,南方地区,苏州,false,A,,placeholder,
+320500,苏州市,,prefecture_city,320000,江苏省,华东,南方地区,苏州,false,A,suzhou,draft,
 320600,南通市,,prefecture_city,320000,江苏省,华东,南方地区,南通,false,B,,placeholder,
 320700,连云港市,,prefecture_city,320000,江苏省,华东,南方地区,连云港,false,B,,placeholder,
 320800,淮安市,,prefecture_city,320000,江苏省,华东,南方地区,淮安,false,B,,placeholder,
@@ -164,7 +164,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 361000,抚州市,,prefecture_city,360000,江西省,华东,南方地区,抚州,false,B,,placeholder,
 361100,上饶市,,prefecture_city,360000,江西省,华东,南方地区,上饶,false,B,,placeholder,
 370100,济南市,,prefecture_city,370000,山东省,华东,北方地区,济南,false,A,,placeholder,
-370200,青岛市,,prefecture_city,370000,山东省,华东,北方地区,青岛,false,A,,placeholder,
+370200,青岛市,,prefecture_city,370000,山东省,华东,北方地区,青岛,false,A,qingdao,draft,
 370300,淄博市,,prefecture_city,370000,山东省,华东,北方地区,淄博,false,B,,placeholder,
 370400,枣庄市,,prefecture_city,370000,山东省,华东,北方地区,枣庄,false,B,,placeholder,
 370500,东营市,,prefecture_city,370000,山东省,华东,北方地区,东营,false,B,,placeholder,
@@ -181,7 +181,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 371700,菏泽市,,prefecture_city,370000,山东省,华东,北方地区,菏泽,false,B,,placeholder,
 410100,郑州市,,prefecture_city,410000,河南省,华中,北方地区,郑州,false,A,,placeholder,
 410200,开封市,,prefecture_city,410000,河南省,华中,北方地区,开封,false,B,,placeholder,
-410300,洛阳市,,prefecture_city,410000,河南省,华中,北方地区,洛阳,false,B,,placeholder,
+410300,洛阳市,,prefecture_city,410000,河南省,华中,北方地区,洛阳,false,B,luoyang,draft,
 410400,平顶山市,,prefecture_city,410000,河南省,华中,北方地区,平顶山,false,B,,placeholder,
 410500,安阳市,,prefecture_city,410000,河南省,华中,北方地区,安阳,false,B,,placeholder,
 410600,鹤壁市,,prefecture_city,410000,河南省,华中,北方地区,鹤壁,false,B,,placeholder,
@@ -196,7 +196,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 411500,信阳市,,prefecture_city,410000,河南省,华中,北方地区,信阳,false,B,,placeholder,
 411600,周口市,,prefecture_city,410000,河南省,华中,北方地区,周口,false,B,,placeholder,
 411700,驻马店市,,prefecture_city,410000,河南省,华中,北方地区,驻马店,false,B,,placeholder,
-420100,武汉市,,prefecture_city,420000,湖北省,华中,南方地区,武汉,false,S,,placeholder,
+420100,武汉市,,prefecture_city,420000,湖北省,华中,南方地区,武汉,true,A,wuhan,live,
 420200,黄石市,,prefecture_city,420000,湖北省,华中,南方地区,黄石,false,B,,placeholder,
 420300,十堰市,,prefecture_city,420000,湖北省,华中,南方地区,十堰,false,B,,placeholder,
 420500,宜昌市,,prefecture_city,420000,湖北省,华中,南方地区,宜昌,false,B,,placeholder,
@@ -209,7 +209,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 421200,咸宁市,,prefecture_city,420000,湖北省,华中,南方地区,咸宁,false,B,,placeholder,
 421300,随州市,,prefecture_city,420000,湖北省,华中,南方地区,随州,false,B,,placeholder,
 422800,恩施土家族苗族自治州,,autonomous_prefecture,420000,湖北省,华中,南方地区,恩施土家族苗,false,C,,placeholder,
-430100,长沙市,,prefecture_city,430000,湖南省,华中,南方地区,长沙,false,A,,placeholder,
+430100,长沙市,,prefecture_city,430000,湖南省,华中,南方地区,长沙,false,A,changsha,draft,
 430200,株洲市,,prefecture_city,430000,湖南省,华中,南方地区,株洲,false,B,,placeholder,
 430300,湘潭市,,prefecture_city,430000,湖南省,华中,南方地区,湘潭,false,B,,placeholder,
 430400,衡阳市,,prefecture_city,430000,湖南省,华中,南方地区,衡阳,false,B,,placeholder,
@@ -223,9 +223,9 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 431200,怀化市,,prefecture_city,430000,湖南省,华中,南方地区,怀化,false,B,,placeholder,
 431300,娄底市,,prefecture_city,430000,湖南省,华中,南方地区,娄底,false,B,,placeholder,
 433100,湘西土家族苗族自治州,,autonomous_prefecture,430000,湖南省,华中,南方地区,湘西土家族苗,false,C,,placeholder,
-440100,广州市,,prefecture_city,440000,广东省,华南,南方地区,广州,false,S,,placeholder,
+440100,广州市,,prefecture_city,440000,广东省,华南,南方地区,广州,true,A,guangzhou,live,
 440200,韶关市,,prefecture_city,440000,广东省,华南,南方地区,韶关,false,B,,placeholder,
-440300,深圳市,,prefecture_city,440000,广东省,华南,南方地区,深圳,false,S,,placeholder,
+440300,深圳市,,prefecture_city,440000,广东省,华南,南方地区,深圳,false,A,shenzhen,draft,
 440400,珠海市,,prefecture_city,440000,广东省,华南,南方地区,珠海,false,B,,placeholder,
 440500,汕头市,,prefecture_city,440000,广东省,华南,南方地区,汕头,false,B,,placeholder,
 440600,佛山市,,prefecture_city,440000,广东省,华南,南方地区,佛山,false,B,,placeholder,
@@ -246,7 +246,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 445300,云浮市,,prefecture_city,440000,广东省,华南,南方地区,云浮,false,B,,placeholder,
 450100,南宁市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,南宁,false,A,,placeholder,
 450200,柳州市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,柳州,false,B,,placeholder,
-450300,桂林市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,桂林,false,B,,placeholder,
+450300,桂林市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,桂林,false,B,guilin,draft,
 450400,梧州市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,梧州,false,B,,placeholder,
 450500,北海市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,北海,false,B,,placeholder,
 450600,防城港市,,prefecture_city,450000,广西壮族自治区,华南,南方地区,防城港,false,B,,placeholder,
@@ -262,7 +262,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 460200,三亚市,,prefecture_city,460000,海南省,华南,南方地区,三亚,false,B,,placeholder,
 460300,三沙市,,prefecture_city,460000,海南省,华南,南方地区,三沙,false,N,,placeholder,
 460400,儋州市,,prefecture_city,460000,海南省,华南,南方地区,儋州,false,B,,placeholder,
-510100,成都市,,prefecture_city,510000,四川省,西南,南方地区,成都,false,S,,placeholder,
+510100,成都市,,prefecture_city,510000,四川省,西南,南方地区,成都,true,A,chengdu,live,
 510300,自贡市,,prefecture_city,510000,四川省,西南,南方地区,自贡,false,B,,placeholder,
 510400,攀枝花市,,prefecture_city,510000,四川省,西南,南方地区,攀枝花,false,B,,placeholder,
 510500,泸州市,,prefecture_city,510000,四川省,西南,南方地区,泸州,false,B,,placeholder,
@@ -283,7 +283,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 513200,阿坝藏族羌族自治州,,autonomous_prefecture,510000,四川省,西南,南方地区,阿坝藏族羌,false,C,,placeholder,
 513300,甘孜藏族自治州,,autonomous_prefecture,510000,四川省,西南,南方地区,甘孜藏,false,C,,placeholder,
 513400,凉山彝族自治州,,autonomous_prefecture,510000,四川省,西南,南方地区,凉山彝,false,C,,placeholder,
-520100,贵阳市,,prefecture_city,520000,贵州省,西南,南方地区,贵阳,false,A,,placeholder,
+520100,贵阳市,,prefecture_city,520000,贵州省,西南,南方地区,贵阳,false,A,guiyang,draft,
 520200,六盘水市,,prefecture_city,520000,贵州省,西南,南方地区,六盘水,false,B,,placeholder,
 520300,遵义市,,prefecture_city,520000,贵州省,西南,南方地区,遵义,false,B,,placeholder,
 520400,安顺市,,prefecture_city,520000,贵州省,西南,南方地区,安顺,false,B,,placeholder,
@@ -292,7 +292,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 522300,黔西南布依族苗族自治州,,autonomous_prefecture,520000,贵州省,西南,南方地区,黔西南布依族苗,false,C,,placeholder,
 522600,黔东南苗族侗族自治州,,autonomous_prefecture,520000,贵州省,西南,南方地区,黔东南苗族侗,false,C,,placeholder,
 522700,黔南布依族苗族自治州,,autonomous_prefecture,520000,贵州省,西南,南方地区,黔南布依族苗,false,C,,placeholder,
-530100,昆明市,,prefecture_city,530000,云南省,西南,南方地区,昆明,false,A,,placeholder,
+530100,昆明市,,prefecture_city,530000,云南省,西南,南方地区,昆明,false,A,kunming,draft,
 530300,曲靖市,,prefecture_city,530000,云南省,西南,南方地区,曲靖,false,B,,placeholder,
 530400,玉溪市,,prefecture_city,530000,云南省,西南,南方地区,玉溪,false,B,,placeholder,
 530500,保山市,,prefecture_city,530000,云南省,西南,南方地区,保山,false,B,,placeholder,
@@ -315,7 +315,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 540500,山南市,,prefecture_city,540000,西藏自治区,西南,青藏地区,山南,false,B,,placeholder,
 540600,那曲市,,prefecture_city,540000,西藏自治区,西南,青藏地区,那曲,false,B,,placeholder,
 542500,阿里地区,,prefecture,540000,西藏自治区,西南,青藏地区,阿里,false,C,,placeholder,
-610100,西安市,,prefecture_city,610000,陕西省,西北,北方地区,西安,false,S,,placeholder,
+610100,西安市,,prefecture_city,610000,陕西省,西北,北方地区,西安,true,A,xian,live,
 610200,铜川市,,prefecture_city,610000,陕西省,西北,北方地区,铜川,false,B,,placeholder,
 610300,宝鸡市,,prefecture_city,610000,陕西省,西北,北方地区,宝鸡,false,B,,placeholder,
 610400,咸阳市,,prefecture_city,610000,陕西省,西北,北方地区,咸阳,false,B,,placeholder,
@@ -333,7 +333,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 620600,武威市,,prefecture_city,620000,甘肃省,西北,西北地区,武威,false,B,,placeholder,
 620700,张掖市,,prefecture_city,620000,甘肃省,西北,西北地区,张掖,false,B,,placeholder,
 620800,平凉市,,prefecture_city,620000,甘肃省,西北,西北地区,平凉,false,B,,placeholder,
-620900,酒泉市,,prefecture_city,620000,甘肃省,西北,西北地区,酒泉,false,B,,placeholder,
+620900,酒泉市,,prefecture_city,620000,甘肃省,西北,西北地区,酒泉,false,B,jiuquan,draft,
 621000,庆阳市,,prefecture_city,620000,甘肃省,西北,西北地区,庆阳,false,B,,placeholder,
 621100,定西市,,prefecture_city,620000,甘肃省,西北,西北地区,定西,false,B,,placeholder,
 621200,陇南市,,prefecture_city,620000,甘肃省,西北,西北地区,陇南,false,B,,placeholder,
@@ -352,7 +352,7 @@ adcode,name,shortName,unitType,parentAdcode,provinceName,region7,region4,capital
 640300,吴忠市,,prefecture_city,640000,宁夏回族自治区,西北,西北地区,吴忠,false,B,,placeholder,
 640400,固原市,,prefecture_city,640000,宁夏回族自治区,西北,西北地区,固原,false,B,,placeholder,
 640500,中卫市,,prefecture_city,640000,宁夏回族自治区,西北,西北地区,中卫,false,B,,placeholder,
-650100,乌鲁木齐市,,prefecture_city,650000,新疆维吾尔自治区,西北,西北地区,乌鲁木齐,false,S,,placeholder,
+650100,乌鲁木齐市,,prefecture_city,650000,新疆维吾尔自治区,西北,西北地区,乌鲁木齐,false,S,urumqi,draft,
 650200,克拉玛依市,,prefecture_city,650000,新疆维吾尔自治区,西北,西北地区,克拉玛依,false,B,,placeholder,
 650400,吐鲁番市,,prefecture_city,650000,新疆维吾尔自治区,西北,西北地区,吐鲁番,false,B,,placeholder,
 650500,哈密市,,prefecture_city,650000,新疆维吾尔自治区,西北,西北地区,哈密,false,B,,placeholder,

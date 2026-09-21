@@ -38,6 +38,7 @@ export interface CityDef {
   kitId?: string
   startCards?: string[]
   briefing: string[]
+  draft?: boolean
 }
 
 export interface ZoneQuotas {
@@ -145,9 +146,11 @@ export interface AdminPrefecture {
   unitType: string
   parentAdcode: string
   provinceName: string
+  region7?: string
   status: string
   packId: string
   playable_3d: boolean
+  preview?: string
 }
 
 export interface AdminIndex {
@@ -162,4 +165,5 @@ export interface AdminIndex {
   }
   provinces: AdminProvince[]
   prefectures: AdminPrefecture[]
+  liveCityPacks?: string[]
 }

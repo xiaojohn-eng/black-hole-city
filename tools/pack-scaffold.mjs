@@ -1,15 +1,18 @@
 #!/usr/bin/env node
 /**
- * Editor v0.1: export a non-live B-grade city pack draft from CSV/kit.
+ * Editor v0.1: export a non-live B-grade city pack draft from CSV/kit,
+ * and upsert public/packs/manifest.json with status=draft.
  * Usage: npm run scaffold:city -- --adcode=320100 [--kit=jiangnan-water] [--force]
  */
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PROVINCES, PREFECTURES, EXTRAS, allRows } from './admin-div-data.mjs'
+import { DISCLAIMER, defaultKit, slugPack } from './region7.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
+const manifestPath = path.join(root, 'public', 'packs', 'manifest.json')
 
 function arg(name, fallback = '') {
   const hit = process.argv.find((a) => a.startsWith(`--${name}=`))
@@ -25,7 +28,7 @@ if (!/^\d{6}$/.test(adcode)) {
   process.exit(1)
 }
 
-const LIVE_BLOCK = new Set(['110100', '310100', '230100', '000000'])
+const LIVE_BLOCK = liveAdcodes()
 const row = allRows().find((r) => r.adcode === adcode) ?? PREFECTURES.concat(EXTRAS).find((r) => r.adcode === adcode)
 if (!row) {
   console.error(`scaffold: unknown adcode ${adcode}`)
@@ -48,9 +51,12 @@ const kit = JSON.parse(fs.readFileSync(kitPath, 'utf8'))
 
 const packId = slugPack(row.name, adcode)
 const outDir = path.join(root, 'public', 'packs', packId)
-if (fs.existsSync(path.join(outDir, 'city.json')) && !force) {
-  console.error(`scaffold: ${outDir} exists. Pass --force to overwrite a draft.`)
-  process.exit(1)
+const existingCity = path.join(outDir, 'city.json')
+if (fs.existsSync(existingCity) && !force) {
+  upsertManifestDraft({ id: packId, adcode, name: row.name.replace(/主城$/, ''), region7, kitId })
+  console.log(`scaffold:city skip — ${packId} exists (pass --force to overwrite a draft)`)
+  console.log(`  manifest upserted as draft`)
+  process.exit(0)
 }
 
 const shortName = parent?.shortName || row.shortName || row.name.slice(0, 1)
@@ -213,11 +219,12 @@ write('city.json', city)
 write('layout.json', layout)
 write('knowledge.json', knowledge)
 write('quiz.json', quiz)
+upsertManifestDraft({ id: packId, adcode, name: display, region7, kitId })
 
 console.log(`scaffold:city OK — draft pack ${packId}`)
 console.log(`  adcode ${adcode}  kit ${kitId}`)
 console.log(`  wrote ${path.relative(root, outDir)}/{city,layout,knowledge,quiz}.json`)
-console.log('  not live: 不会写入 manifest，也不会改 admin playable_3d')
+console.log('  manifest: status=draft（不进 liveCityPacks，不改 playable_3d）')
 
 function write(name, obj) {
   fs.writeFileSync(path.join(outDir, name), JSON.stringify(obj, null, 2) + '\n')
@@ -229,17 +236,51 @@ function zone(id, name, x, z, w, d, color, spawn, quotas) {
   return zdef
 }
 
-function slugPack(name, code) {
-  const map = { 南京市: 'nanjing', 杭州市: 'hangzhou', 广州市: 'guangzhou', 乌鲁木齐市: 'urumqi', 成都市: 'chengdu' }
-  if (map[name]) return map[name]
-  return `city-${code}`
+function liveAdcodes() {
+  const set = new Set(['110100', '310100', '230100', '000000'])
+  if (!fs.existsSync(manifestPath)) return set
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+  const liveIds = new Set(manifest.liveCityPacks ?? [])
+  for (const p of manifest.packs ?? []) {
+    if (p.status === 'live' || liveIds.has(p.id)) {
+      if (p.adcode) set.add(String(p.adcode))
+    }
+  }
+  return set
 }
 
-function defaultKit(r7) {
-  if (r7 === '华东' || r7 === '华中') return 'jiangnan-water'
-  if (r7 === '华南') return 'lingnan-qilou'
-  if (r7 === '西北') return 'oasis-flat'
-  return 'north-brick-hutong'
+function upsertManifestDraft({ id, adcode: code, name, region7: r7, kitId: kid }) {
+  const manifest = fs.existsSync(manifestPath)
+    ? JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+    : { version: 'm3a-seven-region', packs: [], liveCityPacks: [] }
+  manifest.version = manifest.version || 'm3a-seven-region'
+  manifest.disclaimer = manifest.disclaimer || DISCLAIMER
+  manifest.packs = manifest.packs ?? []
+  manifest.liveCityPacks = manifest.liveCityPacks ?? []
+  const entry = {
+    id,
+    kind: 'city',
+    adcode: code,
+    name,
+    fictional: false,
+    mode: 'career',
+    status: 'draft',
+    region7: r7,
+    kitId: kid,
+  }
+  const i = manifest.packs.findIndex((p) => p.id === id)
+  if (i >= 0) {
+    if (manifest.packs[i].status === 'live' || manifest.liveCityPacks.includes(id)) {
+      return
+    }
+    manifest.packs[i] = { ...manifest.packs[i], ...entry }
+  } else {
+    manifest.packs.push(entry)
+  }
+  manifest.draftCityPacks = manifest.packs
+    .filter((p) => p.kind === 'city' && p.status === 'draft' && !manifest.liveCityPacks.includes(p.id))
+    .map((p) => p.id)
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n')
 }
 
 function four(correct, pool) {

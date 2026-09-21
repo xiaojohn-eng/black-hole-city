@@ -25,6 +25,8 @@ export class UIManager {
   private admin: AdminIndex | null = null
   private searchQ = ''
   private openProvince: string | null = '110000'
+  private regionFilter = ''
+  private previewCity: AdminPrefecture | null = null
   private lastHud: HudSnapshot | null = null
 
   constructor(root: HTMLElement, game: Game) {
@@ -183,7 +185,7 @@ export class UIManager {
           <div class="hole-icon">●</div>
           <h1>记忆黑洞</h1>
           <p class="subtitle">中国城市博物馆</p>
-          <p class="version">M2 省级工厂起步 · 收回散落的城市记忆</p>
+          <p class="version">M3a 七大区产能打穿 · 收回散落的城市记忆</p>
         </div>
         <div class="btn-col wide">
           <button class="btn secondary" id="btn-train">训练场·星湾（虚构）</button>
@@ -192,7 +194,7 @@ export class UIManager {
           <button class="btn ghost" id="btn-howto">如何游玩</button>
         </div>
         <div class="stats-line">最高分：${high}　最大体型：L${maxLv}　身份：${p.nickname}</div>
-        <p class="footnote">不宣称全国地级已收录 · live：训练场 / 北京 / 上海 / 哈尔滨</p>
+        <p class="footnote">不宣称全国地级已收录 · live：训练场 + 七大区各 1 座真城 · 不是 333 完成</p>
       </div>`
     this.bind('btn-train', () => this.game.openBriefing('xingwan-training'))
     this.bind('btn-beijing', () => this.game.openBriefing('beijing'))
@@ -217,7 +219,7 @@ export class UIManager {
           <ol class="howto-list">
             <li>你是记忆守护员。吸入碎片 = 把记忆归档进博物馆。</li>
             <li>洞口够大、质量够沉，才能归档（双阈值）。</li>
-            <li>训练场·星湾是虚构练习；真城课请从大厅选北京、上海或哈尔滨。</li>
+            <li>训练场·星湾是虚构练习；真城课请从大厅选七大区代表城。未 live 城显示「记忆修复中」，不可进 3D。</li>
             <li>纪念空间不可归档，请绕行一周完成守护致敬。</li>
             <li>局后有 3 道小测验，可跳过，但跳过不会点亮「小博士」。</li>
           </ol>
@@ -351,7 +353,20 @@ export class UIManager {
       }
     }
     const q = this.searchQ
-    const list = filterProvinces(this.admin, q)
+    const cov = this.regionCoverage()
+    const liveRegions = cov.filter((c) => c.live > 0).length
+    const pipeline = cov.reduce((n, c) => n + c.pipeline, 0)
+    const chips = [
+      `<button class="r7-chip ${this.regionFilter === '' ? 'on' : ''}" data-region="">全部</button>`,
+      ...REGION_ORDER.map((r) => {
+        const slot = cov.find((c) => c.region === r)
+        const has = (slot?.live ?? 0) > 0
+        return `<button class="r7-chip ${this.regionFilter === r ? 'on' : ''} ${has ? 'has-live' : ''}" data-region="${r}">${r}${has ? ' · 可玩' : ' · 修复中'}</button>`
+      }),
+    ].join('')
+
+    let list = filterProvinces(this.admin, q)
+    if (this.regionFilter) list = list.filter((p) => p.region7 === this.regionFilter)
     const grouped = new Map<string, typeof list>()
     for (const p of list) {
       const g = grouped.get(p.region7) ?? []
@@ -363,12 +378,15 @@ export class UIManager {
         const cards = grouped.get(r)!
           .map((p) => {
             const n = this.liveCitiesOf(p.adcode).length
+            const d = this.draftCitiesOf(p.adcode).length
             const playable = n > 0 || p.playable
-            return `<button class="prov-card ${playable ? 'live' : 'repair'}" data-adcode="${p.adcode}">
+            const cls = playable ? 'live' : d > 0 ? 'draft' : 'repair'
+            const st = playable ? `可玩 · ${n} 座` : d > 0 ? `草稿 · ${d} 座 · 记忆修复中` : '记忆修复中'
+            return `<button class="prov-card ${cls}" data-adcode="${p.adcode}">
               <span class="prov-name">${p.name}</span>
               <span class="prov-short">${p.shortName}</span>
               <span class="prov-cap">行政中心 ${p.capital}</span>
-              <span class="prov-st">${playable ? `可玩 · ${n} 座` : '记忆修复中'}</span>
+              <span class="prov-st">${st}</span>
             </button>`
           })
           .join('')
@@ -383,12 +401,17 @@ export class UIManager {
       const children: AdminPrefecture[] = this.admin.prefectures.filter((c) => c.parentAdcode === open)
       if (prov) {
         const live = this.liveCitiesOf(open)
-        const rows = children
+        const drafts = this.draftCitiesOf(open)
+        const shown = [...live, ...drafts]
+        const rest = Math.max(0, children.length - shown.length)
+        const rows = shown
           .map((c) => {
             const openable = c.playable_3d && c.packId
-            return `<li class="${openable ? 'live' : ''}">
-              ${c.name}${openable ? ' · 可玩' : ' · 记忆修复中'}
+            const isDraft = c.status === 'draft' && !openable
+            return `<li class="${openable ? 'live' : isDraft ? 'draft' : ''}">
+              ${c.name}${openable ? ' · 可玩' : ' · 记忆修复中'}${isDraft ? '（草稿）' : ''}
               ${openable ? `<button class="btn tiny" data-pack="${c.packId}">进入</button>` : ''}
+              ${isDraft ? `<button class="btn tiny ghost" data-preview="${c.adcode}">预览说明</button>` : ''}
             </li>`
           })
           .join('')
@@ -399,8 +422,9 @@ export class UIManager {
         detail = `<div class="prov-detail">
           <h3>${prov.name}（${prov.shortName}）</h3>
           <p>${prov.region7} / ${prov.region4} · 行政中心 ${prov.capital}</p>
-          <p class="hint">${live.length ? '本省已开放行政中心或代表城 3D。未列城仍是灰壳。' : '本省入口可点，城包尚未制作，显示「记忆修复中」。不宣称全国地级已收录。'}</p>
+          <p class="hint">${live.length ? '本省已开放 live 真城 3D。草稿灰壳不可进游玩。' : drafts.length ? '本省有草稿进入管线，仍是「记忆修复中」，不可开 3D。' : '本省入口可点，城包尚未制作，显示「记忆修复中」。不宣称全国地级已收录。'}</p>
           ${rows ? `<ul class="city-mini">${rows}</ul>` : '<p class="hint">省级单位，见主城入口。</p>'}
+          ${rest ? `<p class="hint">另有 ${rest} 座地级名录占位，记忆修复中。不是 333 完成。</p>` : ''}
           <div class="btn-row wrap">
             ${enterBtns}
             ${first ? `<button class="btn secondary" id="btn-codex" data-pack="${first.packId}">本城图鉴</button>` : ''}
@@ -409,25 +433,46 @@ export class UIManager {
       }
     }
 
+    const preview = this.previewCity
+    const previewHtml = preview
+      ? `<div class="overlay modal-wrap preview-wrap" data-ui="1">
+          <div class="modal">
+            <h2>${preview.name} · 记忆修复中</h2>
+            <p class="hint">这是 B 级草稿预览，不是 live，不能进入 3D。</p>
+            <p class="brief-line">${preview.preview || '套件草稿已进管线，尚未四审。'}</p>
+            <button class="btn primary" id="btn-close-preview">知道了</button>
+          </div>
+        </div>`
+      : ''
+
     this.layer.innerHTML = `
       <div class="overlay lobby-screen" data-ui="1">
         <div class="lobby-head">
           <button class="icon-btn" id="btn-back" title="返回">←</button>
           <div>
             <h2>全国大厅</h2>
-            <p class="hint">34 省可点 · 省内仅行政中心与已做代表城可进 · 其余「记忆修复中」· 不上未审中国全图</p>
+            <p class="hint">34 省可点 · live 可进 3D · 草稿灰壳「记忆修复中」· 不上未审中国全图</p>
           </div>
         </div>
-        <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」「沪」「黑」）" value="${q}"/>
+        <div class="region-progress">
+          <p>七大区可玩 ${liveRegions}/7 · 管线 ${pipeline} 座 · <b>不是 333 完成</b></p>
+          <div class="r7-chips">${chips}</div>
+        </div>
+        <input class="search" id="lobby-search" placeholder="搜索省名 / 简称（试试「京」「沪」「粤」「川」）" value="${q}"/>
         <p class="footnote">${this.admin.disclaimer}</p>
         <div class="lobby-body">
           <div class="lobby-list">${sections || '<p>没有匹配的省。</p>'}</div>
           ${detail}
         </div>
         ${this.game.hasSharedQuiz() ? '<div class="btn-row" style="margin:0.8rem 1rem 1.2rem"><button class="btn secondary" id="btn-prov-quiz">抽 3 道 34 省简称题</button></div>' : ''}
+        ${previewHtml}
       </div>`
 
     this.bind('btn-back', () => this.game.goTitle())
+    this.bind('btn-close-preview', () => {
+      this.previewCity = null
+      void this.renderLobby()
+    })
     const search = document.getElementById('lobby-search') as HTMLInputElement | null
     search?.addEventListener('input', () => {
       this.searchQ = search.value
@@ -443,6 +488,12 @@ export class UIManager {
         void this.renderLobby()
       })
     })
+    this.layer.querySelectorAll<HTMLButtonElement>('.r7-chip').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        this.regionFilter = btn.dataset.region ?? ''
+        void this.renderLobby()
+      })
+    })
     this.layer.querySelectorAll<HTMLButtonElement>('[data-pack]').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation()
@@ -452,12 +503,37 @@ export class UIManager {
         else this.game.openBriefing(packId)
       })
     })
+    this.layer.querySelectorAll<HTMLButtonElement>('[data-preview]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation()
+        const code = btn.dataset.preview
+        this.previewCity = this.admin?.prefectures.find((c) => c.adcode === code) ?? null
+        void this.renderLobby()
+      })
+    })
     this.bind('btn-prov-quiz', () => this.game.beginProvinceQuiz())
   }
 
   private liveCitiesOf(provinceAdcode: string): AdminPrefecture[] {
     if (!this.admin) return []
     return this.admin.prefectures.filter((c) => c.parentAdcode === provinceAdcode && c.playable_3d && c.packId)
+  }
+
+  private draftCitiesOf(provinceAdcode: string): AdminPrefecture[] {
+    if (!this.admin) return []
+    return this.admin.prefectures.filter(
+      (c) => c.parentAdcode === provinceAdcode && c.status === 'draft' && c.packId && !c.playable_3d,
+    )
+  }
+
+  private regionCoverage(): { region: string; live: number; pipeline: number }[] {
+    if (!this.admin) return REGION_ORDER.map((region) => ({ region, live: 0, pipeline: 0 }))
+    return REGION_ORDER.map((region) => {
+      const cities = this.admin!.prefectures.filter((c) => c.region7 === region)
+      const live = cities.filter((c) => c.playable_3d && c.packId).length
+      const pipeline = cities.filter((c) => c.packId && (c.status === 'live' || c.status === 'draft' || c.playable_3d)).length
+      return { region, live, pipeline }
+    })
   }
 
   private renderCodex(): void {

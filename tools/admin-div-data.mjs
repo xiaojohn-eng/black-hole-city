@@ -66,17 +66,17 @@ export const PROVINCES = [
   r({ adcode: '360000', name: '江西省', shortName: '赣', unitType: 'province', region7: '华东', region4: '南方地区', capital: '南昌', aliases: '赣' }),
   r({ adcode: '370000', name: '山东省', shortName: '鲁', unitType: 'province', region7: '华东', region4: '北方地区', capital: '济南', aliases: '鲁' }),
   r({ adcode: '410000', name: '河南省', shortName: '豫', unitType: 'province', region7: '华中', region4: '北方地区', capital: '郑州', aliases: '豫' }),
-  r({ adcode: '420000', name: '湖北省', shortName: '鄂', unitType: 'province', region7: '华中', region4: '南方地区', capital: '武汉', aliases: '鄂' }),
+  r({ adcode: '420000', name: '湖北省', shortName: '鄂', unitType: 'province', region7: '华中', region4: '南方地区', capital: '武汉', contentTier: 'A', packId: 'wuhan', status: 'live', aliases: '鄂' }),
   r({ adcode: '430000', name: '湖南省', shortName: '湘', unitType: 'province', region7: '华中', region4: '南方地区', capital: '长沙', aliases: '湘' }),
-  r({ adcode: '440000', name: '广东省', shortName: '粤', unitType: 'province', region7: '华南', region4: '南方地区', capital: '广州', aliases: '粤' }),
+  r({ adcode: '440000', name: '广东省', shortName: '粤', unitType: 'province', region7: '华南', region4: '南方地区', capital: '广州', contentTier: 'S', packId: 'guangzhou', status: 'live', aliases: '粤' }),
   r({ adcode: '450000', name: '广西壮族自治区', shortName: '桂', unitType: 'autonomous_region', region7: '华南', region4: '南方地区', capital: '南宁', aliases: '桂,广西' }),
   r({ adcode: '460000', name: '海南省', shortName: '琼', unitType: 'province', region7: '华南', region4: '南方地区', capital: '海口', aliases: '琼' }),
   r({ adcode: '500000', name: '重庆市', shortName: '渝', unitType: 'municipality', region7: '西南', region4: '南方地区', capital: '重庆', contentTier: 'S', aliases: '渝,山城' }),
-  r({ adcode: '510000', name: '四川省', shortName: '川', unitType: 'province', region7: '西南', region4: '南方地区', capital: '成都', aliases: '川,蜀' }),
+  r({ adcode: '510000', name: '四川省', shortName: '川', unitType: 'province', region7: '西南', region4: '南方地区', capital: '成都', contentTier: 'S', packId: 'chengdu', status: 'live', aliases: '川,蜀' }),
   r({ adcode: '520000', name: '贵州省', shortName: '贵', unitType: 'province', region7: '西南', region4: '南方地区', capital: '贵阳', aliases: '贵,黔' }),
   r({ adcode: '530000', name: '云南省', shortName: '云', unitType: 'province', region7: '西南', region4: '南方地区', capital: '昆明', aliases: '云,滇' }),
   r({ adcode: '540000', name: '西藏自治区', shortName: '藏', unitType: 'autonomous_region', region7: '西南', region4: '青藏地区', capital: '拉萨', aliases: '藏,西藏' }),
-  r({ adcode: '610000', name: '陕西省', shortName: '陕', unitType: 'province', region7: '西北', region4: '北方地区', capital: '西安', aliases: '陕,秦' }),
+  r({ adcode: '610000', name: '陕西省', shortName: '陕', unitType: 'province', region7: '西北', region4: '北方地区', capital: '西安', contentTier: 'S', packId: 'xian', status: 'live', aliases: '陕,秦' }),
   r({ adcode: '620000', name: '甘肃省', shortName: '甘', unitType: 'province', region7: '西北', region4: '西北地区', capital: '兰州', aliases: '甘,陇' }),
   r({ adcode: '630000', name: '青海省', shortName: '青', unitType: 'province', region7: '西北', region4: '青藏地区', capital: '西宁', aliases: '青' }),
   r({ adcode: '640000', name: '宁夏回族自治区', shortName: '宁', unitType: 'autonomous_region', region7: '西北', region4: '西北地区', capital: '银川', aliases: '宁,宁夏' }),
@@ -484,7 +484,35 @@ function markLiveCity(adcode, packId, tier = 'A') {
   row.contentTier = tier
 }
 
+function markDraftCity(adcode, packId, tier = 'B') {
+  const row = PREFECTURES.find((x) => x.adcode === adcode)
+  if (!row) throw new Error(`missing prefecture ${adcode}`)
+  row.playable_3d = false
+  row.packId = packId
+  row.status = 'draft'
+  row.contentTier = tier
+}
+
 markLiveCity('230100', 'harbin', 'A')
+markLiveCity('420100', 'wuhan', 'A')
+markLiveCity('440100', 'guangzhou', 'A')
+markLiveCity('510100', 'chengdu', 'A')
+markLiveCity('610100', 'xian', 'A')
+
+markDraftCity('130100', 'shijiazhuang')
+markDraftCity('130600', 'baoding')
+markDraftCity('210100', 'shenyang')
+markDraftCity('220100', 'changchun')
+markDraftCity('320500', 'suzhou', 'A')
+markDraftCity('370200', 'qingdao', 'A')
+markDraftCity('410300', 'luoyang')
+markDraftCity('430100', 'changsha', 'A')
+markDraftCity('440300', 'shenzhen', 'A')
+markDraftCity('450300', 'guilin')
+markDraftCity('530100', 'kunming', 'A')
+markDraftCity('520100', 'guiyang', 'A')
+markDraftCity('650100', 'urumqi', 'S')
+markDraftCity('620900', 'jiuquan')
 
 /** Extra rows (not in 333). Beijing city pack uses 110100. */
 export const EXTRAS = [

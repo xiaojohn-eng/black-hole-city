@@ -1,0 +1,143 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "jiangnan_water",
+    "spacing": 32,
+    "width": 7
+  },
+  "variants": [],
+  "kitId": "jiangnan-water",
+  "draft": true,
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "南侧起步公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#6b7a68",
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      },
+      "spawn": true
+    },
+    {
+      "id": "old_town",
+      "name": "旧城民居",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#f4f1ea",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "纪念与参观",
+      "x": 0,
+      "z": 40,
+      "w": 48,
+      "d": 120,
+      "color": "#3b82a8",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "new_town",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "luoyang-guard",
+      "name": "洛阳市纪念空间（草稿）",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-draft-guard",
+      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
+      "silhouette": "方尖碑草稿"
+    },
+    {
+      "id": "luoyang-visit-a",
+      "name": "洛阳市文保剪影（草稿）",
+      "mesh": "bund_colonnade",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-draft-visit",
+      "whyHere": "占位 VISIT。宗教/文保只参观。",
+      "silhouette": "连排或殿宇草稿"
+    },
+    {
+      "id": "luoyang-visit-b",
+      "name": "洛阳市街道（草稿）",
+      "mesh": "central_street",
+      "interact": "visit",
+      "x": -70,
+      "z": -10,
+      "tier": 9,
+      "zone": "old_town",
+      "knowledgeCardId": "card-draft-place",
+      "whyHere": "占位街道参观。",
+      "silhouette": "长街"
+    },
+    {
+      "id": "luoyang-sky-a",
+      "name": "洛阳市塔楼剪影（草稿）",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "new_town",
+      "knowledgeCardId": "card-draft-sky",
+      "whyHere": "可归档当代天际线草稿。",
+      "silhouette": "高楼"
+    },
+    {
+      "id": "luoyang-sky-b",
+      "name": "洛阳市高塔（草稿）",
+      "mesh": "tv_tower",
+      "interact": "swallow",
+      "x": 96,
+      "z": -8,
+      "tier": 9,
+      "zone": "new_town",
+      "knowledgeCardId": "card-draft-sky",
+      "whyHere": "可归档高塔草稿。",
+      "silhouette": "细塔"
+    }
+  ]
+}

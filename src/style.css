@@ -366,6 +366,25 @@ h1 {
   min-height: 72px;
 }
 .prov-card.live { border-color: #fbbf24; background: rgba(120, 53, 15, 0.35); }
+.prov-card.draft { border-color: #64748b; background: rgba(30, 41, 59, 0.7); }
+.region-progress { margin: 0.4rem 0 0.6rem; }
+.region-progress p { margin: 0 0 0.45rem; color: var(--muted); font-size: 0.88rem; }
+.r7-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.r7-chip {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.r7-chip.has-live { border-color: rgba(251, 191, 36, 0.45); }
+.r7-chip.on { background: rgba(120, 53, 15, 0.55); border-color: #fbbf24; color: #fde68a; }
+.btn.tiny { padding: 0.15rem 0.45rem; font-size: 0.75rem; margin-left: 0.35rem; }
+.btn.tiny.ghost { background: transparent; border: 1px solid #64748b; }
+.city-mini .draft { color: #94a3b8; }
+.preview-wrap { z-index: 40; }
 .prov-name { display: block; font-weight: 700; }
 .prov-short { color: var(--teal); margin-right: 0.3rem; }
 .prov-cap, .prov-st { display: block; font-size: 0.75rem; color: var(--muted); }

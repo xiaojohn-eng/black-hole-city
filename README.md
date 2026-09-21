@@ -2,10 +2,10 @@
 
 操控地面上的记忆黑洞，把散落的城市记忆归档进博物馆。你是「记忆黑洞」的守护员，不是来拆城的。
 
-> **本切片范围（M2 省级工厂起步）：** 可玩 3D 只有 **训练场·星湾（虚构）**、**北京**、**上海**、**哈尔滨**。大厅 34 省可点，未做城为「记忆修复中」。**不宣称全国地级已收录，也没有 333 座城可玩。** 不上未审中国全图。
+> **本切片范围（M3a 七大区产能打穿）：** 可玩 3D = **训练场·星湾（虚构）** + 七大区各 1 座真城：**北京、上海、哈尔滨、武汉、广州、成都、西安**。大厅 34 省可点；同区另有草稿灰壳「记忆修复中」，**不可进 3D**。**不宣称全国地级已收录，也没有 333 座城可玩。** 不上未审中国全图。这是工厂复制，不是再堆一座网红城。
 
 旧方向见：[black-hole-devour](https://github.com/xiaojohn-eng/black-hole-devour)。  
-M1 合入笔记：`docs/M1-merge-main.md`。M2 交付：`docs/M2-省级工厂起步-交付说明.md`。
+M1：`docs/M1-首都课打穿-交付说明.md`。M2：`docs/M2-省级工厂起步-交付说明.md`。M3a：`docs/M3a-七大区产能打穿-交付说明.md`。
 
 ## 在线试玩
 
@@ -17,7 +17,7 @@ M1 合入笔记：`docs/M1-merge-main.md`。M2 交付：`docs/M2-省级工厂起
 
 ```bash
 npm install
-npm run validate   # 名录 + 三座真城包 + 词表 + 无经纬度 + 34 省题 + 套件
+npm run validate   # 名录 + live 真城包 + 词表 + 无经纬度 + 34 省题 + 套件 + 七大区覆盖
 npm run dev        # http://localhost:5173/black-hole-city/
 npm run build      # 产出 dist/
 npm run preview    # http://localhost:4173/black-hole-city/
@@ -32,14 +32,19 @@ npm run preview    # http://localhost:4173/black-hole-city/
 1. **训练场·星湾（虚构）** — 限时冲分，练习双阈值手感。星湾不是中国任何一座真城。
 2. **记忆博物馆·北京** — 首都课，生涯模式。天安门 **GUARD**；故宫 **VISIT**。
 
-**34 省大厅：** 搜索省名或简称（「京」「沪」「黑」）。省内仅开放行政中心与已做代表城：
+**34 省大厅：** 搜索省名或简称（「京」「沪」「粤」「川」）。七大区进度条可筛选。省内列出 live + 草稿：
 
-| 省 | 可进 3D |
-| --- | --- |
-| 北京市 | 北京 |
-| 上海市 | 上海（河口 / 亚热带对照） |
-| 黑龙江省 | 哈尔滨（冰雪江岸对照） |
-| 其余 31 省 | 灰壳「记忆修复中」 |
+| 七大区 | live 真城 | 同区草稿（灰壳） |
+| --- | --- | --- |
+| 华北 | 北京 | 石家庄、保定 |
+| 东北 | 哈尔滨 | 沈阳、长春 |
+| 华东 | 上海 | 苏州、青岛 |
+| 华中 | 武汉 | 洛阳、长沙 |
+| 华南 | 广州 | 深圳、桂林 |
+| 西南 | 成都 | 昆明、贵阳 |
+| 西北 | 西安 | 乌鲁木齐、酒泉 |
+
+草稿显示「记忆修复中」，可看预览说明，**不能开 3D**。其余 31 省入口仍可点，未做城同样灰壳。非省会起步：苏州、青岛、洛阳、桂林、深圳、保定、酒泉。
 
 大厅可 **抽 3 道 34 省简称题**。真城局后测验也会混入公共省级题。
 
@@ -64,19 +69,21 @@ npm run preview    # http://localhost:4173/black-hole-city/
 
 - 全国名录：`data/admin_div.csv`（34 省级 + 333 地级占位行）
 - 大厅用 `public/data/admin_index.json`（由校验脚本生成，**无 lat/lon**）
-- live 包：`public/packs/xingwan-training/`、`beijing/`、`shanghai/`、`harbin/`
+- live 包：`public/packs/{xingwan-training,beijing,shanghai,harbin,guangzhou,wuhan,chengdu,xian}/`
 - 公共题库：`public/packs/_shared/province-abbr-quiz.json`
 - 套件 0 号：`data/kits/`（北方砖+胡同、江南水岸、岭南骑楼、绿洲平顶）
 
 ```bash
 npm run validate:cities          # 计数门禁，并回写 CSV / 大厅索引
-npm run validate:packs           # 三座真城分区/地标/知识卡/测验最低集
+npm run validate:packs           # live 真城分区/地标/知识卡/测验最低集
 npm run validate:lexicon         # 破坏向词表
 npm run validate:coords          # 客户端无 lat/lon 字段
 npm run validate:province-quiz   # 34 省都有简称题
 npm run validate:kits            # 套件 0 号四套齐
+npm run validate:region7         # 七大区各 ≥1 live、管线 ≥3、非省会 ≥3
 npm run test:logic               # 双阈值 + GUARD 环绕纯逻辑
-npm run scaffold:city -- --adcode=320100   # 导出南京 B 级草稿（不 live）
+npm run scaffold:city -- --adcode=320500   # 导出苏州 B 级草稿并写入 manifest（不 live）
+npm run scaffold:region -- --region=华南   # 一次拉齐某区灰壳名单
 ```
 
 构建后再扫产物：`npm run build && npm run validate:coords -- --dist`
@@ -86,12 +93,17 @@ npm run scaffold:city -- --adcode=320100   # 导出南京 B 级草稿（不 live
 | 路径 | 怎么测 |
 | --- | --- |
 | 双入口 | 打开即见训练场（含「虚构」）与记忆博物馆·北京 |
-| 大厅 | 34 省可点；搜「沪」进上海；搜「黑」进哈尔滨；未做省灰壳 |
+| 大厅 | 34 省可点；七大区芯片可筛；搜「粤」进广州；草稿省显示灰壳 |
 | 北京 | 天安门不可吞，绕行致敬；故宫参观 |
-| 上海 | 看见江岸；纪念碑 GUARD；外滩/城隍庙 VISIT |
+| 上海 | 江岸；纪念碑 GUARD；外滩/城隍庙 VISIT |
 | 哈尔滨 | 松花江岸；防洪纪念塔 GUARD；教堂外观 VISIT |
+| 广州 | 珠江/骑楼；解放纪念像 GUARD；陈家祠 VISIT |
+| 武汉 | 两江；防汛纪念碑 GUARD；黄鹤楼 VISIT |
+| 成都 | 盆地雾、巷子，不是山城毁城；纪念碑 GUARD；武侯祠 VISIT |
+| 西安 | 城墙环；纪念空间 GUARD；雁塔/城墙 VISIT |
+| 草稿 | 苏州/桂林等可点预览，不能进 3D |
 | 省级题 | 大厅「抽 3 道 34 省简称题」能出题 |
-| 灰壳 | 不得出现「全国地级已收录」 |
+| 灰壳 | 不得出现「全国地级已收录」或「333 完成」 |
 
 ## 技术
 

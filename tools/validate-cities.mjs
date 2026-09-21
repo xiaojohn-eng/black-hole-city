@@ -7,6 +7,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { PROVINCES, PREFECTURES, EXTRAS, CSV_HEADER, allRows, toCsvLine } from './admin-div-data.mjs'
+import { DISCLAIMER, M3A_LIVE_PACKS, M3A_PIPELINE } from './region7.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
@@ -76,6 +77,21 @@ const harbin = allRows().find((r) => r.adcode === '230100')
 if (!harbin || harbin.status !== 'live' || harbin.packId !== 'harbin' || !harbin.playable_3d) {
   fail('230100 哈尔滨 must be live / packId=harbin / playable_3d')
 }
+for (const spec of M3A_PIPELINE) {
+  const row = allRows().find((r) => r.adcode === spec.adcode)
+  if (!row) {
+    fail(`pipeline adcode ${spec.adcode} (${spec.packId}) missing from admin table`)
+    continue
+  }
+  if (row.packId !== spec.packId) fail(`${spec.adcode} packId ${row.packId} ≠ ${spec.packId}`)
+  if (row.status !== spec.status) fail(`${spec.adcode} status ${row.status} ≠ ${spec.status}`)
+  if (spec.status === 'live' && !row.playable_3d) fail(`${spec.adcode} live must be playable_3d`)
+  if (spec.status === 'draft' && row.playable_3d) fail(`${spec.adcode} draft must not be playable_3d`)
+}
+for (const id of M3A_LIVE_PACKS) {
+  const row = allRows().find((r) => r.packId === id && r.status === 'live')
+  if (!row) fail(`admin table missing live pack ${id}`)
+}
 
 const sansha = prefectures.find((r) => r.adcode === '460300')
 if (!sansha || sansha.playable_3d) fail('三沙市 must exist and playable_3d=false')
@@ -108,10 +124,18 @@ if (csvPref.filter((r) => r.unitType === 'autonomous_prefecture').length !== 30)
 if (csvPref.filter((r) => r.unitType === 'prefecture').length !== 7) fail('CSV diqu count')
 if (csvPref.filter((r) => r.unitType === 'league').length !== 3) fail('CSV meng count')
 
+function packPreview(packId) {
+  if (!packId) return ''
+  const p = path.join(root, 'public', 'packs', packId, 'city.json')
+  if (!fs.existsSync(p)) return ''
+  const city = JSON.parse(fs.readFileSync(p, 'utf8'))
+  return city.storyLogline || city.briefing?.[0] || ''
+}
+
 const publicDir = path.join(root, 'public', 'data')
 fs.mkdirSync(publicDir, { recursive: true })
 const index = {
-  disclaimer: '本切片不宣称全国地级已收录可玩。live 3D：训练场、北京、上海、哈尔滨。其余为占位名录与灰壳。',
+  disclaimer: DISCLAIMER,
   counts: {
     provincial: 34,
     prefectureTotal: 333,
@@ -139,10 +163,13 @@ const index = {
     unitType: c.unitType,
     parentAdcode: c.parentAdcode,
     provinceName: c.provinceName,
+    region7: c.region7,
     status: c.status,
     packId: c.packId,
     playable_3d: c.playable_3d,
+    preview: packPreview(c.packId),
   })),
+  liveCityPacks: M3A_LIVE_PACKS,
 }
 
 const indexPath = path.join(publicDir, 'admin_index.json')

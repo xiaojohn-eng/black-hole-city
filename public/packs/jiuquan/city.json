@@ -1,0 +1,61 @@
+{
+  "adcode": "620900",
+  "packId": "jiuquan",
+  "name": "酒泉市",
+  "alias": [
+    "酒泉",
+    "甘"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "位于西北，行政关系见名录。草稿坐标是关卡网格，不是经纬度。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "待补"
+  ],
+  "riversLakes": [
+    "待补"
+  ],
+  "neighbors": [],
+  "cityFunction": [
+    "地级市"
+  ],
+  "storyTitle": "酒泉市记忆草稿",
+  "storyLogline": "B 级草稿：用套件「绿洲平顶」铺底，尚未四审，不可 live。",
+  "storyBeats": [
+    "从南侧公园起步",
+    "沿套件街道收集",
+    "参观一处文保剪影",
+    "环绕纪念空间致敬"
+  ],
+  "gameplayModifiers": [],
+  "bgmPalette": [
+    "程序音回退"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-draft-place"
+  ],
+  "briefing": [
+    "这是 酒泉市 的 B 级草稿，尚未标成 live。",
+    "纪念空间请绕行，文保建筑只参观。",
+    "请按 data/kits/README.md 补地标与审校后再申请入库。"
+  ],
+  "draft": true
+}

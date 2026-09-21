@@ -1,7 +1,7 @@
 {
   "name": "black-hole-city",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,9 +13,11 @@
     "validate:coords": "node tools/check-client-coords.mjs",
     "validate:province-quiz": "node tools/validate-province-quiz.mjs",
     "validate:kits": "node tools/validate-kits.mjs",
+    "validate:region7": "node tools/validate-region7.mjs",
     "test:logic": "node tools/logic-selftest.mjs",
     "scaffold:city": "node tools/pack-scaffold.mjs",
-    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run test:logic",
+    "scaffold:region": "node tools/scaffold-region-batch.mjs",
+    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run validate:region7 && npm run test:logic",
     "test": "npm run validate"
   },
   "devDependencies": {
@@ -26,5 +28,5 @@
   "dependencies": {
     "three": "^0.186.0"
   },
-  "description": "记忆黑洞 · 中国城市博物馆 — M2 省级工厂起步（训练场 + 北京/上海/哈尔滨）"
+  "description": "记忆黑洞 · 中国城市博物馆 — M3a 七大区产能打穿（工厂复制，不是 333 完成）"
 }

@@ -1,0 +1,96 @@
+{
+  "questions": [
+    {
+      "id": "q-cd-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "四川省的简称是？",
+      "choices": ["渝", "川", "黔", "滇"],
+      "answer": 1,
+      "explain": "四川简称「川」，行政中心是成都。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-cd-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "成都所在的地形更像？",
+      "choices": ["到处爬坡的悬崖城", "盆地里的平原", "海边沙滩", "冰原"],
+      "answer": 1,
+      "explain": "成都在四川盆地西部的平原上。"
+    },
+    {
+      "id": "q-cd-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "人民英雄纪念碑应该怎么对待？",
+      "choices": ["吸入归档", "绕着它走一圈，完成守护致敬", "推倒", "忽略"],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-cd-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "武侯祠在本课里应该？",
+      "choices": ["吸入", "参观外观", "改造成游乐场", "删除"],
+      "answer": 1,
+      "explain": "祠庙只参观。"
+    },
+    {
+      "id": "q-cd-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "都江堰主要说明了哪条地理道理？",
+      "choices": ["围海造田", "因地制宜改造自然", "冰川旅游", "极地科考"],
+      "answer": 1,
+      "explain": "都江堰分流岷江，让成都平原成为天府。",
+      "curriculumTag": "geo.2022.cn.adapt"
+    },
+    {
+      "id": "q-cd-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "成都在七大区中属于？",
+      "choices": ["华北", "西北", "西南", "东北"],
+      "answer": 2,
+      "explain": "四川在西南。"
+    },
+    {
+      "id": "q-cd-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "「天府之国」主要靠什么？",
+      "choices": ["沙漠石油", "都江堰灌溉的平原农业", "海边渔业", "火山灰"],
+      "answer": 1,
+      "explain": "灌溉平原养育了天府。"
+    },
+    {
+      "id": "q-cd-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "成都的雾主要来自？",
+      "choices": ["极地气团", "盆地地形与湿润气候", "火山喷发", "沙尘暴"],
+      "answer": 1,
+      "explain": "盆地云雾，不是把山城皮肤套过来。"
+    },
+    {
+      "id": "q-cd-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "为什么不能把重庆崖线当成全国默认皮肤？",
+      "choices": ["因为好看所以必须全国一样", "每座城要用自己的河、街、气候来认", "Three.js 不支持", "CSV 没有名字"],
+      "answer": 1,
+      "explain": "工厂用套件复制辨识度，禁止全国一张山城皮。"
+    },
+    {
+      "id": "q-cd-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "熊猫在本课里怎么对待？",
+      "choices": ["当障碍撞倒", "远景参观栖息地剪影", "当成怪兽", "忽略"],
+      "answer": 1,
+      "explain": "生态符号只参观。"
+    }
+  ]
+}
