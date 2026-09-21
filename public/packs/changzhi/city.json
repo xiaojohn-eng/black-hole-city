@@ -1,0 +1,70 @@
+{
+  "adcode": "140400",
+  "packId": "changzhi",
+  "name": "长治市",
+  "alias": [
+    "长治"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在上党盆地，浊漳河一带。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "浊漳河"
+  ],
+  "neighbors": [
+    "晋城",
+    "临汾",
+    "邯郸"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "上党盆地教学点"
+  ],
+  "storyTitle": "浊漳河记忆",
+  "storyLogline": "盆地里的风把潞安府城隍庙前的路牌吹斜。你沿浊漳河把它们收回博物馆。",
+  "storyBeats": [
+    "从浊漳河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观潞安府城隍庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-czh-river",
+    "card-czh-short"
+  ],
+  "briefing": [
+    "我们在长治，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "城隍庙只参观。本课讲上党盆地和浊漳河，对照汾河临汾、盐池运城。"
+  ]
+}

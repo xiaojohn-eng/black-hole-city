@@ -1,0 +1,72 @@
+{
+  "adcode": "150800",
+  "packId": "bayannur",
+  "name": "巴彦淖尔市",
+  "alias": [
+    "巴彦淖尔"
+  ],
+  "shortName": "内蒙古",
+  "unitType": "prefecture_city",
+  "parentProvince": "内蒙古自治区",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在河套平原，黄河灌区。内蒙古自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原",
+    "灌区"
+  ],
+  "riversLakes": [
+    "黄河",
+    "河套"
+  ],
+  "neighbors": [
+    "包头",
+    "鄂尔多斯",
+    "阿拉善"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "河套灌区教学点"
+  ],
+  "storyTitle": "河套记忆",
+  "storyLogline": "渠风把河套水闸前的路牌吹斜。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸公园起步",
+    "灌区旧街收集市井记忆",
+    "参观河套水闸剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "渠水",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-byn-river",
+    "card-byn-short"
+  ],
+  "briefing": [
+    "我们在巴彦淖尔，内蒙古自治区的地级市，不是自治区首府。呼和浩特才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "水闸剪影只参观。本课讲河套灌区，不用毡房默认皮。强调中华民族共同体。"
+  ]
+}

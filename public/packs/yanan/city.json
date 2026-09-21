@@ -1,0 +1,70 @@
+{
+  "adcode": "610600",
+  "packId": "yanan",
+  "name": "延安市",
+  "alias": [
+    "延安"
+  ],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在延河岸，陕北黄土高原。陕西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "延河"
+  ],
+  "neighbors": [
+    "榆林",
+    "铜川",
+    "吕梁"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "延河教学点"
+  ],
+  "storyTitle": "延河记忆",
+  "storyLogline": "黄土上的风把延安宝塔前的路牌吹斜。你沿延河把它们收回博物馆。",
+  "storyBeats": [
+    "从延河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观延安宝塔",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-yan-river",
+    "card-yan-short"
+  ],
+  "briefing": [
+    "我们在延安，陕西省的地级市，不是本省行政中心。西安才是陕西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "延安宝塔只参观。本课讲延河和黄土高原，对照关中宝鸡咸阳、汉中汉江谷地。"
+  ]
+}

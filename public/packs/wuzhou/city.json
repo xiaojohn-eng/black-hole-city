@@ -1,0 +1,72 @@
+{
+  "adcode": "450400",
+  "packId": "wuzhou",
+  "name": "梧州市",
+  "alias": [
+    "梧州"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在西江中游，浔江与桂江汇合处。广西壮族自治区的地级市，不是自治区首府。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "江岸"
+  ],
+  "riversLakes": [
+    "西江",
+    "桂江"
+  ],
+  "neighbors": [
+    "贺州",
+    "玉林",
+    "肇庆"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "西江中游教学点"
+  ],
+  "storyTitle": "西江记忆",
+  "storyLogline": "江风把骑楼城前的路牌吹斜。你沿西江把它们收回博物馆。",
+  "storyBeats": [
+    "从西江岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观龙母庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-wuz-river",
+    "card-wuz-short"
+  ],
+  "briefing": [
+    "我们在梧州，广西壮族自治区的地级市，不是自治区首府。南宁才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "龙母庙外观只参观。本课讲西江中游，对照桂林漓江、北海北部湾、柳州柳江。"
+  ]
+}

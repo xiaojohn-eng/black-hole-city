@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-bje-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "本省级行政区的简称是？",
+      "choices": [
+        "滇",
+        "贵",
+        "川",
+        "湘"
+      ],
+      "answer": 1,
+      "explain": "贵州简称「贵」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-bje-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "毕节附近著名的大河是？",
+      "choices": [
+        "珠江",
+        "乌江",
+        "长江干流",
+        "澜沧江"
+      ],
+      "answer": 1,
+      "explain": "乌江。"
+    },
+    {
+      "id": "q-bje-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "纪念空间应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-bje-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "七星关在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "文保只参观。"
+    },
+    {
+      "id": "q-bje-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "贵州省的行政中心是？",
+      "choices": [
+        "毕节",
+        "贵阳",
+        "遵义",
+        "昆明"
+      ],
+      "answer": 1,
+      "explain": "贵阳是行政中心，本城是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-bje-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "这座城在七大区中属于？",
+      "choices": [
+        "华南",
+        "西南",
+        "华北",
+        "西北"
+      ],
+      "answer": 1,
+      "explain": "七大区：西南。"
+    },
+    {
+      "id": "q-bje-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "毕节主要属于哪种气候？",
+      "choices": [
+        "温带大陆性",
+        "亚热带湿润",
+        "寒温带",
+        "热带沙漠"
+      ],
+      "answer": 1,
+      "explain": "亚热带湿润。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-bje-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本切片能不能宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能，不是 333 也不是 293 完成",
+        "做满每省四座就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "M3b5 只做非省会 ≥4 的省各 ≥4 座非省会地级市（豁免青海、海南与非省会总数 <4 的省），不是 293 / 333 完成。"
+    },
+    {
+      "id": "q-bje-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "客户端为什么不能写 lat/lon？",
+      "choices": [
+        "好看",
+        "审图与隐私：关卡只用局部网格",
+        "Three.js 不支持",
+        "CSV 没有名字"
+      ],
+      "answer": 1,
+      "explain": "网格坐标不是地理坐标。"
+    },
+    {
+      "id": "q-bje-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "毕节是不是贵州省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是贵阳",
+        "是首都北京",
+        "是训练场"
+      ],
+      "answer": 1,
+      "explain": "不是，行政中心是贵阳。"
+    }
+  ]
+}

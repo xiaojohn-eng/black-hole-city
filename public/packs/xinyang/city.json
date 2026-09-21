@@ -1,0 +1,71 @@
+{
+  "adcode": "411500",
+  "packId": "xinyang",
+  "name": "信阳市",
+  "alias": [
+    "信阳"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在淮河上游，大别山北麓。河南省的地级市，不是本省行政中心。气候比中原更湿润。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "淮河"
+  ],
+  "neighbors": [
+    "驻马店",
+    "南阳",
+    "六安"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淮河上游教学点"
+  ],
+  "storyTitle": "淮河上游记忆",
+  "storyLogline": "水汽把浉河岸文庙前的路牌藏起来。你沿淮河把它们收回博物馆。",
+  "storyBeats": [
+    "从浉河岸公园起步",
+    "旧街收集市井记忆",
+    "参观信阳文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xya-river",
+    "card-xya-short"
+  ],
+  "briefing": [
+    "我们在信阳，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲淮河上游亚热带谷地，对照洛阳开封安阳的温带中原。"
+  ]
+}

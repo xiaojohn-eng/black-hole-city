@@ -1,0 +1,73 @@
+{
+  "adcode": "320600",
+  "packId": "nantong",
+  "name": "南通市",
+  "alias": [
+    "南通"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江口北岸，东临黄海。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河口",
+    "平原"
+  ],
+  "riversLakes": [
+    "长江",
+    "黄海"
+  ],
+  "neighbors": [
+    "苏州",
+    "盐城",
+    "上海"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "长江口教学点"
+  ],
+  "storyTitle": "长江口记忆",
+  "storyLogline": "江风把天宁寺前的路牌藏起来。你沿濠河把它们收回博物馆。",
+  "storyBeats": [
+    "从濠河岸公园起步",
+    "水巷收集市井记忆",
+    "参观天宁寺",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "水巷",
+    "江风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-ntg-river",
+    "card-ntg-short"
+  ],
+  "briefing": [
+    "我们在南通，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "天宁寺只参观。本课讲长江口和黄海，对照苏州太湖、扬州运河。"
+  ]
+}

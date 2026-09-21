@@ -1,0 +1,70 @@
+{
+  "adcode": "231100",
+  "packId": "heihe",
+  "name": "黑河市",
+  "alias": [
+    "黑河"
+  ],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在黑龙江中游右岸。黑龙江省的地级市，不是本省行政中心。",
+  "climateBand": "寒温带大陆性",
+  "landform": [
+    "江岸",
+    "平原"
+  ],
+  "riversLakes": [
+    "黑龙江"
+  ],
+  "neighbors": [
+    "齐齐哈尔",
+    "伊春",
+    "大兴安岭"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黑龙江岸教学点"
+  ],
+  "storyTitle": "黑龙江记忆",
+  "storyLogline": "江风把瑷珲城墙前的路牌吹斜。你沿黑龙江把它们收回博物馆。",
+  "storyBeats": [
+    "从黑龙江岸公园起步",
+    "旧街收集市井记忆",
+    "参观瑷珲城墙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "寒风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hhe-river",
+    "card-hhe-short"
+  ],
+  "briefing": [
+    "我们在黑河，黑龙江省的地级市，不是本省行政中心。哈尔滨才是黑龙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "瑷珲城墙只参观。本课讲黑龙江，对照松花江佳木斯、嫩江齐齐哈尔。"
+  ]
+}

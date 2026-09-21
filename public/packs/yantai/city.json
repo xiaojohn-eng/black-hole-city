@@ -1,0 +1,72 @@
+{
+  "adcode": "370600",
+  "packId": "yantai",
+  "name": "烟台市",
+  "alias": [
+    "烟台"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在胶东半岛北岸，北临黄渤海。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "半岛",
+    "海岸"
+  ],
+  "riversLakes": [
+    "黄海",
+    "渤海"
+  ],
+  "neighbors": [
+    "青岛",
+    "威海",
+    "潍坊"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "胶东半岛教学点"
+  ],
+  "storyTitle": "黄渤海记忆",
+  "storyLogline": "海风把烟台山灯塔前的路牌吹斜。你沿岸把它们收回博物馆。",
+  "storyBeats": [
+    "从黄海岸公园起步",
+    "旧街收集市井记忆",
+    "参观烟台山灯塔",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "coastal_band",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "海风",
+    "港声"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-yta-river",
+    "card-yta-short"
+  ],
+  "briefing": [
+    "我们在烟台，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "烟台山灯塔只参观。本课讲胶东半岛和黄渤海，对照青岛黄海、东营黄河口。"
+  ]
+}

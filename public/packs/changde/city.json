@@ -1,0 +1,72 @@
+{
+  "adcode": "430700",
+  "packId": "changde",
+  "name": "常德市",
+  "alias": [
+    "常德"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在沅江下游，洞庭湖西岸。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "湖盆",
+    "江岸"
+  ],
+  "riversLakes": [
+    "沅江",
+    "洞庭湖"
+  ],
+  "neighbors": [
+    "岳阳",
+    "益阳",
+    "张家界"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沅江·洞庭西岸教学点"
+  ],
+  "storyTitle": "沅江记忆",
+  "storyLogline": "湖风把诗墙前的路牌藏起来。你沿沅江把它们收回博物馆。",
+  "storyBeats": [
+    "从沅江岸公园起步",
+    "水巷收集市井记忆",
+    "参观常德诗墙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "湖风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-cde-river",
+    "card-cde-short"
+  ],
+  "briefing": [
+    "我们在常德，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "诗墙只参观。本课讲沅江和洞庭西岸，对照岳阳洞庭、衡阳湘江。不拿张家界插队。"
+  ]
+}
