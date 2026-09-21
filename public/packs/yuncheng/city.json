@@ -1,0 +1,71 @@
+{
+  "adcode": "140800",
+  "packId": "yuncheng",
+  "name": "运城市",
+  "alias": [
+    "运城"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在运城盆地，涑水河与盐池一带。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "盐湖"
+  ],
+  "riversLakes": [
+    "涑水河",
+    "盐池"
+  ],
+  "neighbors": [
+    "临汾",
+    "渭南",
+    "三门峡"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "盐池教学点"
+  ],
+  "storyTitle": "盐池记忆",
+  "storyLogline": "干风把解州关帝庙前的路牌吹斜。你沿涑水把它们收回博物馆。",
+  "storyBeats": [
+    "从涑水岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观解州关帝庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "盆地风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-yc-river",
+    "card-yc-short"
+  ],
+  "briefing": [
+    "我们在运城，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "解州关帝庙只参观。本课讲盐池和涑水，不是网红打卡秀。"
+  ]
+}

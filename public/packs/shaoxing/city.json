@@ -1,0 +1,72 @@
+{
+  "adcode": "330600",
+  "packId": "shaoxing",
+  "name": "绍兴市",
+  "alias": [
+    "绍兴"
+  ],
+  "shortName": "浙",
+  "unitType": "prefecture_city",
+  "parentProvince": "浙江省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在浙东运河与鉴湖一带。浙江省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "水乡",
+    "平原"
+  ],
+  "riversLakes": [
+    "浙东运河",
+    "鉴湖"
+  ],
+  "neighbors": [
+    "杭州",
+    "宁波",
+    "金华"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "运河水乡教学点"
+  ],
+  "storyTitle": "鉴湖记忆",
+  "storyLogline": "水汽把兰亭前的路牌藏起来。你沿运河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸公园起步",
+    "水巷收集市井记忆",
+    "参观兰亭",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "水巷",
+    "竹笛"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-sx-river",
+    "card-sx-short"
+  ],
+  "briefing": [
+    "我们在绍兴，浙江省的地级市，不是本省行政中心。杭州才是浙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "兰亭只参观。本课讲运河水乡，不按网红度插队。"
+  ]
+}

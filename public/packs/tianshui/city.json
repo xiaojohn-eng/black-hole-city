@@ -1,0 +1,69 @@
+{
+  "adcode": "620500",
+  "packId": "tianshui",
+  "name": "天水市",
+  "alias": [
+    "天水"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在渭河上游谷地。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷"
+  ],
+  "riversLakes": [
+    "渭河"
+  ],
+  "neighbors": [
+    "宝鸡",
+    "定西",
+    "平凉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "渭河谷地教学点"
+  ],
+  "storyTitle": "渭河记忆",
+  "storyLogline": "谷地里的风把麦积山前的路牌吹斜。你沿渭河把它们收回博物馆。",
+  "storyBeats": [
+    "从渭河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观麦积山石窟剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "谷地风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-tsh-river",
+    "card-tsh-short"
+  ],
+  "briefing": [
+    "我们在天水，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "麦积山石窟剪影只参观。本课讲渭河，不是山城毁城秀。"
+  ]
+}

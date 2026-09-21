@@ -1,0 +1,70 @@
+{
+  "adcode": "150400",
+  "packId": "chifeng",
+  "name": "赤峰市",
+  "alias": [
+    "赤峰"
+  ],
+  "shortName": "内蒙古",
+  "unitType": "prefecture_city",
+  "parentProvince": "内蒙古自治区",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在西辽河上游，农牧交错带。内蒙古自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "丘陵",
+    "河谷"
+  ],
+  "riversLakes": [
+    "西辽河"
+  ],
+  "neighbors": [
+    "通辽",
+    "承德",
+    "朝阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "西辽河教学点"
+  ],
+  "storyTitle": "西辽河记忆",
+  "storyLogline": "河风把红山路牌吹斜。你沿西辽河把它们收回博物馆。",
+  "storyBeats": [
+    "从西辽河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观红山文化剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "平原鼓"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-cf-river",
+    "card-cf-short"
+  ],
+  "briefing": [
+    "我们在赤峰，内蒙古自治区的地级市，不是自治区首府。呼和浩特才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "红山文化剪影只参观。强调中华民族共同体。本课不用毡房默认皮。"
+  ]
+}

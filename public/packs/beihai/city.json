@@ -1,0 +1,69 @@
+{
+  "adcode": "450500",
+  "packId": "beihai",
+  "name": "北海市",
+  "alias": [
+    "北海"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在北部湾北岸。广西壮族自治区的地级市，不是自治区首府。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "海岸"
+  ],
+  "riversLakes": [
+    "北部湾"
+  ],
+  "neighbors": [
+    "钦州",
+    "湛江"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "北部湾港口城市"
+  ],
+  "storyTitle": "北部湾记忆",
+  "storyLogline": "海风把骑楼牌匾吹向北部湾。你沿岸把它们收回博物馆。",
+  "storyBeats": [
+    "从北部湾岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观北海老街骑楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "南音回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-bh-river",
+    "card-bh-short"
+  ],
+  "briefing": [
+    "我们在北海，广西壮族自治区的地级市，不是自治区首府。南宁才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "骑楼旧街只参观。本课讲北部湾，不是海滩打卡秀。"
+  ]
+}

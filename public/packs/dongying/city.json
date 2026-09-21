@@ -1,0 +1,72 @@
+{
+  "adcode": "370500",
+  "packId": "dongying",
+  "name": "东营市",
+  "alias": [
+    "东营"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在黄河入海口，北临渤海。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "三角洲",
+    "海岸"
+  ],
+  "riversLakes": [
+    "黄河",
+    "渤海"
+  ],
+  "neighbors": [
+    "滨州",
+    "潍坊",
+    "淄博"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黄河三角洲教学点"
+  ],
+  "storyTitle": "河口记忆",
+  "storyLogline": "海风把河口路牌吹向渤海。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸公园起步",
+    "旧街收集市井记忆",
+    "参观黄河口湿地剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "河风",
+    "海风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-dy-river",
+    "card-dy-short"
+  ],
+  "briefing": [
+    "我们在东营，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "黄河口湿地剪影只参观。本课讲三角洲和渤海，不是网红海滩秀。"
+  ]
+}

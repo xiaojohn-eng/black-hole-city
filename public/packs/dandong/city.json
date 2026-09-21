@@ -1,0 +1,72 @@
+{
+  "adcode": "210600",
+  "packId": "dandong",
+  "name": "丹东市",
+  "alias": [
+    "丹东"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在鸭绿江入海处，东临黄海。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河口",
+    "江岸"
+  ],
+  "riversLakes": [
+    "鸭绿江",
+    "黄海"
+  ],
+  "neighbors": [
+    "本溪",
+    "大连",
+    "鞍山"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "边境江口城市"
+  ],
+  "storyTitle": "鸭绿江记忆",
+  "storyLogline": "江风把断桥路牌吹斜。你沿鸭绿江把它们收回博物馆。",
+  "storyBeats": [
+    "从鸭绿江岸公园起步",
+    "旧街收集市井记忆",
+    "参观鸭绿江断桥",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "江声",
+    "海风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-dd-river",
+    "card-dd-short"
+  ],
+  "briefing": [
+    "我们在丹东，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "鸭绿江断桥只参观。本课讲江口和黄海，不是山城毁城秀。"
+  ]
+}

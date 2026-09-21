@@ -1,0 +1,72 @@
+{
+  "adcode": "360400",
+  "packId": "jiujiang",
+  "name": "九江市",
+  "alias": [
+    "九江"
+  ],
+  "shortName": "赣",
+  "unitType": "prefecture_city",
+  "parentProvince": "江西省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江南岸、鄱阳湖口。江西省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江岸",
+    "湖口"
+  ],
+  "riversLakes": [
+    "长江",
+    "鄱阳湖"
+  ],
+  "neighbors": [
+    "南昌",
+    "黄冈",
+    "安庆"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "长江湖口教学点"
+  ],
+  "storyTitle": "湖口记忆",
+  "storyLogline": "江雾把锁江楼的路牌藏起来。你沿长江把它们收回博物馆。",
+  "storyBeats": [
+    "从长江岸公园起步",
+    "旧街收集市井记忆",
+    "参观锁江楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "湖风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-jj-river",
+    "card-jj-short"
+  ],
+  "briefing": [
+    "我们在九江，江西省的地级市，不是本省行政中心。南昌才是江西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "锁江楼只参观。本课讲长江和鄱阳湖，不是山城毁城秀。"
+  ]
+}
