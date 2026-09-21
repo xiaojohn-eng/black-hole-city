@@ -1,0 +1,72 @@
+{
+  "adcode": "321000",
+  "packId": "yangzhou",
+  "name": "扬州市",
+  "alias": [
+    "扬州"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江与京杭运河交汇一带。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "水乡",
+    "江岸"
+  ],
+  "riversLakes": [
+    "长江",
+    "京杭运河"
+  ],
+  "neighbors": [
+    "南京",
+    "镇江",
+    "泰州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "运河城市"
+  ],
+  "storyTitle": "运河记忆",
+  "storyLogline": "水汽把个园前的路牌藏起来。你沿运河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸公园起步",
+    "水巷收集市井记忆",
+    "参观个园",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "水巷",
+    "竹笛"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-yz-river",
+    "card-yz-short"
+  ],
+  "briefing": [
+    "我们在扬州，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "个园只参观。本课讲长江和运河，不按网红度插队。"
+  ]
+}

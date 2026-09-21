@@ -1,0 +1,72 @@
+{
+  "adcode": "330400",
+  "packId": "jiaxing",
+  "name": "嘉兴市",
+  "alias": [
+    "嘉兴"
+  ],
+  "shortName": "浙",
+  "unitType": "prefecture_city",
+  "parentProvince": "浙江省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在杭嘉湖平原，京杭运河与南湖一带。浙江省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "水乡",
+    "平原"
+  ],
+  "riversLakes": [
+    "京杭运河",
+    "南湖"
+  ],
+  "neighbors": [
+    "杭州",
+    "上海",
+    "苏州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "南湖教学点"
+  ],
+  "storyTitle": "南湖记忆",
+  "storyLogline": "水汽把烟雨楼前的路牌藏起来。你沿运河把它们收回博物馆。",
+  "storyBeats": [
+    "从南湖岸公园起步",
+    "水巷收集市井记忆",
+    "参观烟雨楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "水巷",
+    "湖风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-jx-river",
+    "card-jx-short"
+  ],
+  "briefing": [
+    "我们在嘉兴，浙江省的地级市，不是本省行政中心。杭州才是浙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "烟雨楼只参观。本课讲运河和南湖，不按网红度插队。"
+  ]
+}

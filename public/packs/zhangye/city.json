@@ -1,0 +1,70 @@
+{
+  "adcode": "620700",
+  "packId": "zhangye",
+  "name": "张掖市",
+  "alias": [
+    "张掖"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在河西走廊中部，黑河绿洲。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "绿洲",
+    "走廊"
+  ],
+  "riversLakes": [
+    "黑河"
+  ],
+  "neighbors": [
+    "武威",
+    "酒泉",
+    "金昌"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "河西走廊教学点"
+  ],
+  "storyTitle": "黑河记忆",
+  "storyLogline": "干风把鼓楼前的路牌吹斜。你沿黑河把它们收回博物馆。",
+  "storyBeats": [
+    "从黑河岸公园起步",
+    "绿洲旧街收集市井记忆",
+    "参观张掖鼓楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
+  "bgmPalette": [
+    "干风",
+    "渠水"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-zye-river",
+    "card-zye-short"
+  ],
+  "briefing": [
+    "我们在张掖，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "鼓楼只参观。本课讲黑河绿洲和河西走廊，不是网红丹霞秀。"
+  ]
+}

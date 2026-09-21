@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 81/293（M3b3 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 105/293（M3b4 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -783,10 +783,10 @@
       "parentAdcode": "140000",
       "provinceName": "山西省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "linfen",
+      "playable_3d": true,
+      "preview": "河谷里的风把尧庙前的路牌吹斜。你沿汾河把它们收回博物馆。"
     },
     {
       "adcode": "141100",
@@ -855,10 +855,10 @@
       "parentAdcode": "150000",
       "provinceName": "内蒙古自治区",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "tongliao",
+      "playable_3d": true,
+      "preview": "平原上的风把文庙前的路牌吹斜。你沿西辽河把它们收回博物馆。"
     },
     {
       "adcode": "150600",
@@ -1071,10 +1071,10 @@
       "parentAdcode": "210000",
       "provinceName": "辽宁省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "panjin",
+      "playable_3d": true,
+      "preview": "湿地里的风把观鸟栈道的路牌吹斜。你沿辽河把它们收回博物馆。"
     },
     {
       "adcode": "211200",
@@ -1143,10 +1143,10 @@
       "parentAdcode": "220000",
       "provinceName": "吉林省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "siping",
+      "playable_3d": true,
+      "preview": "平原上的风把旧城路牌吹斜。你沿东辽河把它们收回博物馆。"
     },
     {
       "adcode": "220400",
@@ -1311,10 +1311,10 @@
       "parentAdcode": "230000",
       "provinceName": "黑龙江省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jiamusi",
+      "playable_3d": true,
+      "preview": "江风把沿江路牌吹斜。你沿松花江把它们收回博物馆。"
     },
     {
       "adcode": "230900",
@@ -1491,10 +1491,10 @@
       "parentAdcode": "320000",
       "provinceName": "江苏省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "yangzhou",
+      "playable_3d": true,
+      "preview": "水汽把个园前的路牌藏起来。你沿运河把它们收回博物馆。"
     },
     {
       "adcode": "321100",
@@ -1575,10 +1575,10 @@
       "parentAdcode": "330000",
       "provinceName": "浙江省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jiaxing",
+      "playable_3d": true,
+      "preview": "水汽把烟雨楼前的路牌藏起来。你沿运河把它们收回博物馆。"
     },
     {
       "adcode": "330500",
@@ -1755,10 +1755,10 @@
       "parentAdcode": "340000",
       "provinceName": "安徽省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "anqing",
+      "playable_3d": true,
+      "preview": "江雾把迎江寺前的路牌藏起来。你沿长江把它们收回博物馆。"
     },
     {
       "adcode": "341000",
@@ -1923,10 +1923,10 @@
       "parentAdcode": "350000",
       "provinceName": "福建省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhangzhou",
+      "playable_3d": true,
+      "preview": "海风把南山寺前的路牌吹斜。你沿九龙江把它们收回博物馆。"
     },
     {
       "adcode": "350700",
@@ -2043,10 +2043,10 @@
       "parentAdcode": "360000",
       "provinceName": "江西省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "ganzhou",
+      "playable_3d": true,
+      "preview": "江风把八境台前的路牌吹斜。你沿赣江把它们收回博物馆。"
     },
     {
       "adcode": "360800",
@@ -2187,10 +2187,10 @@
       "parentAdcode": "370000",
       "provinceName": "山东省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jining",
+      "playable_3d": true,
+      "preview": "湖风把孔庙前的路牌吹斜。你沿运河把它们收回博物馆。"
     },
     {
       "adcode": "370900",
@@ -2343,10 +2343,10 @@
       "parentAdcode": "410000",
       "provinceName": "河南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "anyang",
+      "playable_3d": true,
+      "preview": "干风把殷墟路牌吹斜。你沿洹河把它们收回博物馆。"
     },
     {
       "adcode": "410600",
@@ -2535,10 +2535,10 @@
       "parentAdcode": "420000",
       "provinceName": "湖北省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "yichang",
+      "playable_3d": true,
+      "preview": "江雾把镇江阁前的路牌藏起来。你沿长江把它们收回博物馆。"
     },
     {
       "adcode": "420600",
@@ -2691,10 +2691,10 @@
       "parentAdcode": "430000",
       "provinceName": "湖南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hengyang",
+      "playable_3d": true,
+      "preview": "江雾把石鼓书院前的路牌藏起来。你沿湘江把它们收回博物馆。"
     },
     {
       "adcode": "430500",
@@ -2907,10 +2907,10 @@
       "parentAdcode": "440000",
       "provinceName": "广东省",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhanjiang",
+      "playable_3d": true,
+      "preview": "海风把骑楼前的路牌吹斜。你沿岸把它们收回博物馆。"
     },
     {
       "adcode": "440900",
@@ -3087,10 +3087,10 @@
       "parentAdcode": "450000",
       "provinceName": "广西壮族自治区",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "liuzhou",
+      "playable_3d": true,
+      "preview": "江雾把东门城楼前的路牌藏起来。你沿柳江把它们收回博物馆。"
     },
     {
       "adcode": "450300",
@@ -3435,10 +3435,10 @@
       "parentAdcode": "510000",
       "provinceName": "四川省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "yibin",
+      "playable_3d": true,
+      "preview": "江雾把大观楼前的路牌藏起来。你沿江把它们收回博物馆。"
     },
     {
       "adcode": "511600",
@@ -3603,10 +3603,10 @@
       "parentAdcode": "520000",
       "provinceName": "贵州省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "tongren",
+      "playable_3d": true,
+      "preview": "细雨把东山寺前的路牌藏起来。你沿锦江把它们收回博物馆。"
     },
     {
       "adcode": "522300",
@@ -3699,10 +3699,10 @@
       "parentAdcode": "530000",
       "provinceName": "云南省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhaotong",
+      "playable_3d": true,
+      "preview": "河谷里的风把文庙前的路牌吹斜。你沿金沙江把它们收回博物馆。"
     },
     {
       "adcode": "530700",
@@ -3867,10 +3867,10 @@
       "parentAdcode": "540000",
       "provinceName": "西藏自治区",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "changdu",
+      "playable_3d": true,
+      "preview": "河谷里的风把寺院前的路牌吹斜。你沿澜沧江把它们收回博物馆。"
     },
     {
       "adcode": "540400",
@@ -3999,10 +3999,10 @@
       "parentAdcode": "610000",
       "provinceName": "陕西省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hanzhong",
+      "playable_3d": true,
+      "preview": "谷地里的水汽把古汉台前的路牌藏起来。你沿汉江把它们收回博物馆。"
     },
     {
       "adcode": "610800",
@@ -4119,10 +4119,10 @@
       "parentAdcode": "620000",
       "provinceName": "甘肃省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhangye",
+      "playable_3d": true,
+      "preview": "干风把鼓楼前的路牌吹斜。你沿黑河把它们收回博物馆。"
     },
     {
       "adcode": "620800",
@@ -4359,10 +4359,10 @@
       "parentAdcode": "640000",
       "provinceName": "宁夏回族自治区",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhongwei",
+      "playable_3d": true,
+      "preview": "河风把高庙前的路牌吹斜。你沿黄河把它们收回博物馆。"
     },
     {
       "adcode": "650100",
@@ -4407,10 +4407,10 @@
       "parentAdcode": "650000",
       "provinceName": "新疆维吾尔自治区",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hami",
+      "playable_3d": true,
+      "preview": "干风把回王陵前的路牌吹斜。你沿渠把它们收回博物馆。"
     },
     {
       "adcode": "652300",
@@ -4765,6 +4765,30 @@
     "shannan",
     "tianshui",
     "wuzhong",
-    "tulufan"
+    "tulufan",
+    "linfen",
+    "tongliao",
+    "panjin",
+    "siping",
+    "jiamusi",
+    "yangzhou",
+    "jiaxing",
+    "anqing",
+    "zhangzhou",
+    "ganzhou",
+    "jining",
+    "anyang",
+    "yichang",
+    "hengyang",
+    "zhanjiang",
+    "liuzhou",
+    "yibin",
+    "tongren",
+    "zhaotong",
+    "changdu",
+    "hanzhong",
+    "zhangye",
+    "zhongwei",
+    "hami"
   ]
 }
