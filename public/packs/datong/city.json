@@ -1,0 +1,71 @@
+{
+  "adcode": "140200",
+  "packId": "datong",
+  "name": "大同市",
+  "alias": [
+    "大同"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在大同盆地，御河穿过，北望长城。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "黄土高原北缘"
+  ],
+  "riversLakes": [
+    "御河"
+  ],
+  "neighbors": [
+    "朔州",
+    "张家口",
+    "乌兰察布"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "煤城教学点"
+  ],
+  "storyTitle": "云冈记忆",
+  "storyLogline": "塞外的风把云冈石窟前的路牌吹斜。你沿御河把它们收回博物馆。",
+  "storyBeats": [
+    "从御河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观云冈石窟与华严寺剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "hutong_maze"
+  ],
+  "bgmPalette": [
+    "塞上鼓",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-dt-river",
+    "card-dt-short"
+  ],
+  "briefing": [
+    "我们在大同，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "云冈石窟只参观外观。生涯模式看裂隙稳定度。"
+  ]
+}

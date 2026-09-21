@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 61/293（M3b2 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -687,10 +687,10 @@
       "parentAdcode": "140000",
       "provinceName": "山西省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "datong",
+      "playable_3d": true,
+      "preview": "塞外的风把云冈石窟前的路牌吹斜。你沿御河把它们收回博物馆。"
     },
     {
       "adcode": "140300",
@@ -819,10 +819,10 @@
       "parentAdcode": "150000",
       "provinceName": "内蒙古自治区",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "baotou",
+      "playable_3d": true,
+      "preview": "河风把厂区路牌吹向阴山。你沿黄河把它们收回博物馆。"
     },
     {
       "adcode": "150300",
@@ -1551,10 +1551,10 @@
       "parentAdcode": "330000",
       "provinceName": "浙江省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "ningbo",
+      "playable_3d": true,
+      "preview": "海风把天一阁的牌匾吹斜。你沿甬江把它们收回博物馆。"
     },
     {
       "adcode": "330300",
@@ -1683,10 +1683,10 @@
       "parentAdcode": "340000",
       "provinceName": "安徽省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "wuhu",
+      "playable_3d": true,
+      "preview": "江雾把鸠兹旧街的牌匾藏起来。你沿长江把它们收回博物馆。"
     },
     {
       "adcode": "340300",
@@ -1875,10 +1875,10 @@
       "parentAdcode": "350000",
       "provinceName": "福建省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xiamen",
+      "playable_3d": true,
+      "preview": "海风把骑楼的牌匾吹斜。你沿岸把它们收回博物馆。"
     },
     {
       "adcode": "350300",
@@ -1983,10 +1983,10 @@
       "parentAdcode": "360000",
       "provinceName": "江西省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jingdezhen",
+      "playable_3d": true,
+      "preview": "河风把窑址路牌吹斜。你沿昌江把它们收回博物馆。"
     },
     {
       "adcode": "360300",
@@ -2667,10 +2667,10 @@
       "parentAdcode": "430000",
       "provinceName": "湖南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhuzhou",
+      "playable_3d": true,
+      "preview": "江雾把神农广场的路牌藏起来。你沿湘江把它们收回博物馆。"
     },
     {
       "adcode": "430300",
@@ -3255,10 +3255,10 @@
       "parentAdcode": "460000",
       "provinceName": "海南省",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "sanya",
+      "playable_3d": true,
+      "preview": "海风把骑楼牌匾吹向南海。你沿岸把它们收回博物馆。"
     },
     {
       "adcode": "460300",
@@ -3663,10 +3663,10 @@
       "parentAdcode": "530000",
       "provinceName": "云南省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "qujing",
+      "playable_3d": true,
+      "preview": "高原上的风把珠江源路牌吹斜。你沿南盘江把它们收回博物馆。"
     },
     {
       "adcode": "530400",
@@ -3855,10 +3855,10 @@
       "parentAdcode": "540000",
       "provinceName": "西藏自治区",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "shigatse",
+      "playable_3d": true,
+      "preview": "河谷里的风把扎什伦布寺前的路牌吹斜。你沿年楚河把它们收回博物馆。"
     },
     {
       "adcode": "540300",
@@ -4227,10 +4227,10 @@
       "parentAdcode": "630000",
       "provinceName": "青海省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "haidong",
+      "playable_3d": true,
+      "preview": "谷地里的风把瞿昙寺前的路牌吹斜。你沿湟水把它们收回博物馆。"
     },
     {
       "adcode": "632200",
@@ -4323,10 +4323,10 @@
       "parentAdcode": "640000",
       "provinceName": "宁夏回族自治区",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "shizuishan",
+      "playable_3d": true,
+      "preview": "干风把渠边路牌吹向贺兰山。你沿黄河把它们收回博物馆。"
     },
     {
       "adcode": "640300",
@@ -4383,10 +4383,10 @@
       "parentAdcode": "650000",
       "provinceName": "新疆维吾尔自治区",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "kelamayi",
+      "playable_3d": true,
+      "preview": "干热风把厂区路牌吹向戈壁。你沿水渠把它们收回博物馆。"
     },
     {
       "adcode": "650400",
@@ -4732,6 +4732,19 @@
     "yinchuan",
     "taipei",
     "hongkong",
-    "macau"
+    "macau",
+    "datong",
+    "baotou",
+    "ningbo",
+    "wuhu",
+    "xiamen",
+    "jingdezhen",
+    "zhuzhou",
+    "sanya",
+    "qujing",
+    "shigatse",
+    "haidong",
+    "shizuishan",
+    "kelamayi"
   ]
 }

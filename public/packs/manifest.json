@@ -1,6 +1,6 @@
 {
-  "version": "m3b1-provincial-capitals",
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
+  "version": "m3b2-prefecture-batch",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 61/293（M3b2 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "liveCityPacks": [
     "beijing",
     "shijiazhuang",
@@ -56,7 +56,20 @@
     "yinchuan",
     "taipei",
     "hongkong",
-    "macau"
+    "macau",
+    "datong",
+    "baotou",
+    "ningbo",
+    "wuhu",
+    "xiamen",
+    "jingdezhen",
+    "zhuzhou",
+    "sanya",
+    "qujing",
+    "shigatse",
+    "haidong",
+    "shizuishan",
+    "kelamayi"
   ],
   "draftCityPacks": [],
   "sharedQuiz": "packs/_shared/province-abbr-quiz.json",
@@ -669,6 +682,149 @@
       "status": "live",
       "region7": "华南",
       "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "datong",
+      "kind": "city",
+      "adcode": "140200",
+      "name": "大同市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "baotou",
+      "kind": "city",
+      "adcode": "150200",
+      "name": "包头市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "ningbo",
+      "kind": "city",
+      "adcode": "330200",
+      "name": "宁波市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "wuhu",
+      "kind": "city",
+      "adcode": "340200",
+      "name": "芜湖市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "xiamen",
+      "kind": "city",
+      "adcode": "350200",
+      "name": "厦门市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "jingdezhen",
+      "kind": "city",
+      "adcode": "360200",
+      "name": "景德镇市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "zhuzhou",
+      "kind": "city",
+      "adcode": "430200",
+      "name": "株洲市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "sanya",
+      "kind": "city",
+      "adcode": "460200",
+      "name": "三亚市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华南",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "qujing",
+      "kind": "city",
+      "adcode": "530300",
+      "name": "曲靖市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "shigatse",
+      "kind": "city",
+      "adcode": "540200",
+      "name": "日喀则市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "haidong",
+      "kind": "city",
+      "adcode": "630200",
+      "name": "海东市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "shizuishan",
+      "kind": "city",
+      "adcode": "640200",
+      "name": "石嘴山市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "oasis-flat"
+    },
+    {
+      "id": "kelamayi",
+      "kind": "city",
+      "adcode": "650200",
+      "name": "克拉玛依市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "oasis-flat"
     }
   ]
 }

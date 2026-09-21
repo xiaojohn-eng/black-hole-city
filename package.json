@@ -1,7 +1,7 @@
 {
   "name": "black-hole-city",
   "private": true,
-  "version": "0.7.0",
+  "version": "0.8.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,10 +17,11 @@
     "validate:m3a2": "node tools/validate-region7.mjs",
     "validate:m3a3": "node tools/validate-region7.mjs",
     "validate:m3b1": "node tools/validate-m3b1.mjs",
+    "validate:m3b2": "node tools/validate-m3b2.mjs",
     "test:logic": "node tools/logic-selftest.mjs",
     "scaffold:city": "node tools/pack-scaffold.mjs",
     "scaffold:region": "node tools/scaffold-region-batch.mjs",
-    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run validate:region7 && npm run validate:m3b1 && npm run test:logic",
+    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run validate:region7 && npm run validate:m3b1 && npm run validate:m3b2 && npm run test:logic",
     "test": "npm run validate"
   },
   "devDependencies": {
@@ -31,5 +32,5 @@
   "dependencies": {
     "three": "^0.186.0"
   },
-  "description": "记忆黑洞 · 中国城市博物馆 — M3b1 34 省行政中心 live（不是 293 / 333 完成）"
+  "description": "记忆黑洞 · 中国城市博物馆 — M3b2 每省 ≥1 非省会地级市 live（不是 293 / 333 完成）"
 }

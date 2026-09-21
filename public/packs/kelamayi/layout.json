@@ -1,0 +1,144 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "oasis_court",
+    "spacing": 48,
+    "width": 7
+  },
+  "variants": [
+    "oasis_canal"
+  ],
+  "kitId": "oasis-flat",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "渠边公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#c4a574",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "绿洲庭院",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#d6c0a0",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "工业遗产与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#8a7048",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#6b6358",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "klmy-guard",
+      "name": "克拉玛依革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-klmy-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "klmy-visit",
+      "name": "石油工业遗产",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-klmy-visit",
+      "whyHere": "工业遗产剪影。走近参观，认识绿洲工业城。",
+      "silhouette": "井架轮廓"
+    },
+    {
+      "id": "klmy-water",
+      "name": "绿洲水渠",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-klmy-river",
+      "whyHere": "渠桥剪影。参观，认识盆地绿洲。",
+      "silhouette": "水渠"
+    },
+    {
+      "id": "klmy-street",
+      "name": "克拉玛依庭院街",
+      "mesh": "onion_dome",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-klmy-place",
+      "whyHere": "去商标化庭院街巷参观。",
+      "silhouette": "平顶庭院"
+    },
+    {
+      "id": "klmy-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-klmy-noncap",
+      "whyHere": "可归档的当代公共建筑。",
+      "silhouette": "高楼"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "adcode": "640200",
+  "packId": "shizuishan",
+  "name": "石嘴山市",
+  "alias": [
+    "石嘴山"
+  ],
+  "shortName": "宁",
+  "unitType": "prefecture_city",
+  "parentProvince": "宁夏回族自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在宁夏北部，黄河与贺兰山之间。宁夏回族自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河套平原",
+    "贺兰山北段"
+  ],
+  "riversLakes": [
+    "黄河"
+  ],
+  "neighbors": [
+    "银川",
+    "乌海",
+    "阿拉善"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黄河灌区城市"
+  ],
+  "storyTitle": "河套记忆",
+  "storyLogline": "干风把渠边路牌吹向贺兰山。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸公园起步",
+    "庭院街巷收集市井记忆",
+    "参观武当庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "渠水",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-szs-river",
+    "card-szs-short"
+  ],
+  "briefing": [
+    "我们在石嘴山，宁夏回族自治区的地级市，不是自治区首府。银川才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "武当庙外观只参观。强调中华民族共同体。"
+  ]
+}

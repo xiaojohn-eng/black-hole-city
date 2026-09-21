@@ -1,0 +1,70 @@
+{
+  "adcode": "630200",
+  "packId": "haidong",
+  "name": "海东市",
+  "alias": [
+    "海东"
+  ],
+  "shortName": "青",
+  "unitType": "prefecture_city",
+  "parentProvince": "青海省",
+  "region7": "西北",
+  "region4": "青藏地区",
+  "locationDesc": "在湟水谷地，西宁东侧。青海省目前仅有的另一座地级市，不是本省行政中心。",
+  "climateBand": "高原山地",
+  "landform": [
+    "河谷",
+    "高原"
+  ],
+  "riversLakes": [
+    "湟水"
+  ],
+  "neighbors": [
+    "西宁",
+    "海北",
+    "甘肃"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "湟水谷地城市"
+  ],
+  "storyTitle": "湟水记忆",
+  "storyLogline": "谷地里的风把瞿昙寺前的路牌吹斜。你沿湟水把它们收回博物馆。",
+  "storyBeats": [
+    "从湟水岸公园起步",
+    "旧街收集市井记忆",
+    "参观瞿昙寺外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "谷地风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#a8c4dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8578",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hd-river",
+    "card-hd-short"
+  ],
+  "briefing": [
+    "我们在海东，青海省的地级市，不是本省行政中心。西宁才是青海省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "瞿昙寺外观只参观。高原石套件未进 0 号，本课用北方砖剪影。"
+  ]
+}
