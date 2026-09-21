@@ -1,0 +1,70 @@
+{
+  "adcode": "140700",
+  "packId": "jinzhong",
+  "name": "晋中市",
+  "alias": [
+    "晋中"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在汾河中游，晋中盆地。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "汾河"
+  ],
+  "neighbors": [
+    "太原",
+    "吕梁",
+    "阳泉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "汾河中游教学点"
+  ],
+  "storyTitle": "汾河中游记忆",
+  "storyLogline": "盆地里的风把平遥城墙前的路牌吹斜。你沿汾河把它们收回博物馆。",
+  "storyBeats": [
+    "从汾河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观平遥城墙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-jiz-river",
+    "card-jiz-short"
+  ],
+  "briefing": [
+    "我们在晋中，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "平遥城墙只参观。本课讲汾河中游和晋中盆地，对照大同御河、运城盐池、长治浊漳河。"
+  ]
+}

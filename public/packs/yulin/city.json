@@ -1,0 +1,70 @@
+{
+  "adcode": "610800",
+  "packId": "yulin",
+  "name": "榆林市",
+  "alias": [
+    "榆林"
+  ],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在无定河岸，陕北黄土高原北缘。陕西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "无定河"
+  ],
+  "neighbors": [
+    "延安",
+    "鄂尔多斯",
+    "宁夏"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "无定河教学点"
+  ],
+  "storyTitle": "无定河记忆",
+  "storyLogline": "黄土上的风把镇北台前的路牌吹斜。你沿无定河把它们收回博物馆。",
+  "storyBeats": [
+    "从无定河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观镇北台",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-yul-river",
+    "card-yul-short"
+  ],
+  "briefing": [
+    "我们在榆林，陕西省的地级市，不是本省行政中心。西安才是陕西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "镇北台只参观。本课讲无定河和黄土高原北缘，对照关中宝鸡咸阳、延安延河、汉中汉江谷地。"
+  ]
+}

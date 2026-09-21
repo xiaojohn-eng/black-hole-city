@@ -1,0 +1,70 @@
+{
+  "adcode": "540400",
+  "packId": "linzhi",
+  "name": "林芝市",
+  "alias": [
+    "林芝"
+  ],
+  "shortName": "藏",
+  "unitType": "prefecture_city",
+  "parentProvince": "西藏自治区",
+  "region7": "西南",
+  "region4": "青藏地区",
+  "locationDesc": "在雅鲁藏布江中下游谷地。西藏自治区的地级市，不是自治区首府。",
+  "climateBand": "高原山地",
+  "landform": [
+    "河谷",
+    "高原"
+  ],
+  "riversLakes": [
+    "雅鲁藏布江"
+  ],
+  "neighbors": [
+    "山南",
+    "昌都",
+    "拉萨"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "雅鲁藏布中下游教学点"
+  ],
+  "storyTitle": "雅鲁藏布记忆",
+  "storyLogline": "江风把喇嘛林寺前的路牌吹斜。你沿雅鲁藏布把它们收回博物馆。",
+  "storyBeats": [
+    "从江岸公园起步",
+    "旧街收集市井记忆",
+    "参观喇嘛林寺外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "高原风"
+  ],
+  "colorPalette": {
+    "sky": "#a8c4dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8578",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-lnz-river",
+    "card-lnz-short"
+  ],
+  "briefing": [
+    "我们在林芝，西藏自治区的地级市，不是自治区首府。拉萨才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "喇嘛林寺外观只参观。强调中华民族共同体。本课讲雅鲁藏布中下游，对照日喀则山南上游、昌都澜沧江、那曲羌塘。不是山城毁城秀。"
+  ]
+}
