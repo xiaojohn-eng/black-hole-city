@@ -1,0 +1,68 @@
+{
+  "adcode": "140100",
+  "packId": "taiyuan",
+  "name": "太原市",
+  "alias": [
+    "太原"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在太原盆地，汾河穿过。山西省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "盆地",
+    "黄土高原东缘"
+  ],
+  "riversLakes": [
+    "汾河"
+  ],
+  "neighbors": [
+    "晋中",
+    "吕梁",
+    "阳泉"
+  ],
+  "cityFunction": [
+    "山西省行政中心"
+  ],
+  "storyTitle": "汾河记忆",
+  "storyLogline": "盆地里的风把晋祠的牌匾吹斜。你沿汾河把它们收回博物馆。",
+  "storyBeats": [
+    "从汾河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观晋祠",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "晋鼓",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-ty-river",
+    "card-ty-short"
+  ],
+  "briefing": [
+    "我们在太原，山西省的行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "晋祠只参观。生涯模式看裂隙稳定度。"
+  ]
+}

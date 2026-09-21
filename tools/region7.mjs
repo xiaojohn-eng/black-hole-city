@@ -1,6 +1,6 @@
 /**
- * M3a seven-region factory table.
- * Pipeline names are not a 333-complete claim.
+ * M3a seven-region factory table + M3b1 provincial capitals.
+ * Pipeline names are not a 333-complete or 293-complete claim.
  */
 
 export const REGION7 = ['华北', '东北', '华东', '华中', '华南', '西南', '西北']
@@ -9,29 +9,46 @@ export const REGION7 = ['华北', '东北', '华东', '华中', '华南', '西�
 export const PACK_SLUGS = {
   北京市: 'beijing',
   北京主城: 'beijing',
+  天津市: 'tianjin',
+  天津主城: 'tianjin',
   上海市: 'shanghai',
   上海主城: 'shanghai',
+  重庆市: 'chongqing',
+  重庆主城: 'chongqing',
   哈尔滨市: 'harbin',
   石家庄市: 'shijiazhuang',
   保定市: 'baoding',
+  太原市: 'taiyuan',
+  呼和浩特市: 'hohhot',
   沈阳市: 'shenyang',
   长春市: 'changchun',
   南京市: 'nanjing',
   杭州市: 'hangzhou',
+  合肥市: 'hefei',
+  福州市: 'fuzhou',
+  南昌市: 'nanchang',
+  济南市: 'jinan',
   大连市: 'dalian',
   苏州市: 'suzhou',
   青岛市: 'qingdao',
   武汉市: 'wuhan',
+  郑州市: 'zhengzhou',
   长沙市: 'changsha',
   洛阳市: 'luoyang',
   广州市: 'guangzhou',
+  南宁市: 'nanning',
+  海口市: 'haikou',
   深圳市: 'shenzhen',
   桂林市: 'guilin',
   成都市: 'chengdu',
   昆明市: 'kunming',
   贵阳市: 'guiyang',
+  拉萨市: 'lhasa',
   遵义市: 'zunyi',
   西安市: 'xian',
+  兰州市: 'lanzhou',
+  西宁市: 'xining',
+  银川市: 'yinchuan',
   乌鲁木齐市: 'urumqi',
   酒泉市: 'jiuquan',
   唐山市: 'tangshan',
@@ -46,24 +63,31 @@ export const PACK_SLUGS = {
   绵阳市: 'mianyang',
   宝鸡市: 'baoji',
   咸阳市: 'xianyang',
+  台北教学包: 'taipei',
+  台北市: 'taipei',
+  香港主城: 'hongkong',
+  香港特别行政区: 'hongkong',
+  澳门主城: 'macau',
+  澳门特别行政区: 'macau',
 }
 
 /**
- * M3a live representatives + M3a2/M3a3 promotions.
+ * M3a live representatives + M3a2/M3a3 promotions + M3b1 capitals.
  * 非省会 = 地级且不是本省行政中心（见 isProvincialCapital）。
  * 直辖市 / 自治区首府 / 本省行政中心都不算非省会。
  * M3a3：七大区各 ≥3 座真正非省会 live，全国 ≥21。不是 333 完成。
+ * M3b1：34 省各 ≥1 座行政中心 live。不是 293 / 333 完成。
  * @type {{ adcode: string, packId: string, region7: string, status: 'live'|'draft', kit: string }[]}
  */
 export const M3A_PIPELINE = [
   { adcode: '110100', packId: 'beijing', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
-  { adcode: '130100', packId: 'shijiazhuang', region7: '华北', status: 'draft', kit: 'north-brick-hutong' },
+  { adcode: '130100', packId: 'shijiazhuang', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '130600', packId: 'baoding', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '130200', packId: 'tangshan', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '130400', packId: 'handan', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '230100', packId: 'harbin', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '210100', packId: 'shenyang', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
-  { adcode: '220100', packId: 'changchun', region7: '东北', status: 'draft', kit: 'north-brick-hutong' },
+  { adcode: '220100', packId: 'changchun', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '210200', packId: 'dalian', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '220200', packId: 'jilin', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '230200', packId: 'qiqihar', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
@@ -73,7 +97,7 @@ export const M3A_PIPELINE = [
   { adcode: '320200', packId: 'wuxi', region7: '华东', status: 'live', kit: 'jiangnan-water' },
   { adcode: '420100', packId: 'wuhan', region7: '华中', status: 'live', kit: 'jiangnan-water' },
   { adcode: '410300', packId: 'luoyang', region7: '华中', status: 'live', kit: 'north-brick-hutong' },
-  { adcode: '430100', packId: 'changsha', region7: '华中', status: 'draft', kit: 'jiangnan-water' },
+  { adcode: '430100', packId: 'changsha', region7: '华中', status: 'live', kit: 'jiangnan-water' },
   { adcode: '410200', packId: 'kaifeng', region7: '华中', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '420600', packId: 'xiangyang', region7: '华中', status: 'live', kit: 'jiangnan-water' },
   { adcode: '440100', packId: 'guangzhou', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
@@ -82,15 +106,35 @@ export const M3A_PIPELINE = [
   { adcode: '440600', packId: 'foshan', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
   { adcode: '510100', packId: 'chengdu', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '530100', packId: 'kunming', region7: '西南', status: 'live', kit: 'jiangnan-water' },
-  { adcode: '520100', packId: 'guiyang', region7: '西南', status: 'draft', kit: 'north-brick-hutong' },
+  { adcode: '520100', packId: 'guiyang', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '520300', packId: 'zunyi', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '511100', packId: 'leshan', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '510700', packId: 'mianyang', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '610100', packId: 'xian', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
-  { adcode: '650100', packId: 'urumqi', region7: '西北', status: 'draft', kit: 'oasis-flat' },
+  { adcode: '650100', packId: 'urumqi', region7: '西北', status: 'live', kit: 'oasis-flat' },
   { adcode: '620900', packId: 'jiuquan', region7: '西北', status: 'live', kit: 'oasis-flat' },
   { adcode: '610300', packId: 'baoji', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '610400', packId: 'xianyang', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '120100', packId: 'tianjin', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '140100', packId: 'taiyuan', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '150100', packId: 'hohhot', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '320100', packId: 'nanjing', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '330100', packId: 'hangzhou', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '340100', packId: 'hefei', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '350100', packId: 'fuzhou', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '360100', packId: 'nanchang', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '370100', packId: 'jinan', region7: '华东', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '410100', packId: 'zhengzhou', region7: '华中', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '450100', packId: 'nanning', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '460100', packId: 'haikou', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '500100', packId: 'chongqing', region7: '西南', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '540100', packId: 'lhasa', region7: '西南', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '620100', packId: 'lanzhou', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '630100', packId: 'xining', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '640100', packId: 'yinchuan', region7: '西北', status: 'live', kit: 'oasis-flat' },
+  { adcode: '710100', packId: 'taipei', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '810100', packId: 'hongkong', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '820100', packId: 'macau', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
 ]
 
 /** Task-named promotions (沈阳/昆明 are provincial capitals of other provinces). */
@@ -129,6 +173,79 @@ export const M3A3_NONCAPITAL_LIVE = [
 
 export const M3A3_NEW_LIVE = M3A3_NONCAPITAL_LIVE.filter((id) => !M3A2_NONCAPITAL_LIVE.includes(id))
 
+/**
+ * M3b1: one administrative-center pack per provincial-level unit (34).
+ * 省=省会；自治区=首府；直辖市=主城包；特区=教学包行政中心；台湾省=台北教学包。
+ * 不是 293 地级市完成，更不是 333 完成。
+ */
+export const M3B1_CAPITALS = [
+  { provinceAdcode: '110000', province: '北京市', packId: 'beijing', adcode: '110100', name: '北京市', region7: '华北' },
+  { provinceAdcode: '120000', province: '天津市', packId: 'tianjin', adcode: '120100', name: '天津市', region7: '华北' },
+  { provinceAdcode: '130000', province: '河北省', packId: 'shijiazhuang', adcode: '130100', name: '石家庄市', region7: '华北' },
+  { provinceAdcode: '140000', province: '山西省', packId: 'taiyuan', adcode: '140100', name: '太原市', region7: '华北' },
+  { provinceAdcode: '150000', province: '内蒙古自治区', packId: 'hohhot', adcode: '150100', name: '呼和浩特市', region7: '华北' },
+  { provinceAdcode: '210000', province: '辽宁省', packId: 'shenyang', adcode: '210100', name: '沈阳市', region7: '东北' },
+  { provinceAdcode: '220000', province: '吉林省', packId: 'changchun', adcode: '220100', name: '长春市', region7: '东北' },
+  { provinceAdcode: '230000', province: '黑龙江省', packId: 'harbin', adcode: '230100', name: '哈尔滨市', region7: '东北' },
+  { provinceAdcode: '310000', province: '上海市', packId: 'shanghai', adcode: '310100', name: '上海市', region7: '华东' },
+  { provinceAdcode: '320000', province: '江苏省', packId: 'nanjing', adcode: '320100', name: '南京市', region7: '华东' },
+  { provinceAdcode: '330000', province: '浙江省', packId: 'hangzhou', adcode: '330100', name: '杭州市', region7: '华东' },
+  { provinceAdcode: '340000', province: '安徽省', packId: 'hefei', adcode: '340100', name: '合肥市', region7: '华东' },
+  { provinceAdcode: '350000', province: '福建省', packId: 'fuzhou', adcode: '350100', name: '福州市', region7: '华东' },
+  { provinceAdcode: '360000', province: '江西省', packId: 'nanchang', adcode: '360100', name: '南昌市', region7: '华东' },
+  { provinceAdcode: '370000', province: '山东省', packId: 'jinan', adcode: '370100', name: '济南市', region7: '华东' },
+  { provinceAdcode: '410000', province: '河南省', packId: 'zhengzhou', adcode: '410100', name: '郑州市', region7: '华中' },
+  { provinceAdcode: '420000', province: '湖北省', packId: 'wuhan', adcode: '420100', name: '武汉市', region7: '华中' },
+  { provinceAdcode: '430000', province: '湖南省', packId: 'changsha', adcode: '430100', name: '长沙市', region7: '华中' },
+  { provinceAdcode: '440000', province: '广东省', packId: 'guangzhou', adcode: '440100', name: '广州市', region7: '华南' },
+  { provinceAdcode: '450000', province: '广西壮族自治区', packId: 'nanning', adcode: '450100', name: '南宁市', region7: '华南' },
+  { provinceAdcode: '460000', province: '海南省', packId: 'haikou', adcode: '460100', name: '海口市', region7: '华南' },
+  { provinceAdcode: '500000', province: '重庆市', packId: 'chongqing', adcode: '500100', name: '重庆市', region7: '西南' },
+  { provinceAdcode: '510000', province: '四川省', packId: 'chengdu', adcode: '510100', name: '成都市', region7: '西南' },
+  { provinceAdcode: '520000', province: '贵州省', packId: 'guiyang', adcode: '520100', name: '贵阳市', region7: '西南' },
+  { provinceAdcode: '530000', province: '云南省', packId: 'kunming', adcode: '530100', name: '昆明市', region7: '西南' },
+  { provinceAdcode: '540000', province: '西藏自治区', packId: 'lhasa', adcode: '540100', name: '拉萨市', region7: '西南' },
+  { provinceAdcode: '610000', province: '陕西省', packId: 'xian', adcode: '610100', name: '西安市', region7: '西北' },
+  { provinceAdcode: '620000', province: '甘肃省', packId: 'lanzhou', adcode: '620100', name: '兰州市', region7: '西北' },
+  { provinceAdcode: '630000', province: '青海省', packId: 'xining', adcode: '630100', name: '西宁市', region7: '西北' },
+  { provinceAdcode: '640000', province: '宁夏回族自治区', packId: 'yinchuan', adcode: '640100', name: '银川市', region7: '西北' },
+  { provinceAdcode: '650000', province: '新疆维吾尔自治区', packId: 'urumqi', adcode: '650100', name: '乌鲁木齐市', region7: '西北' },
+  { provinceAdcode: '710000', province: '台湾省', packId: 'taipei', adcode: '710100', name: '台北教学包', region7: '华东' },
+  { provinceAdcode: '810000', province: '香港特别行政区', packId: 'hongkong', adcode: '810100', name: '香港主城', region7: '华南' },
+  { provinceAdcode: '820000', province: '澳门特别行政区', packId: 'macau', adcode: '820100', name: '澳门主城', region7: '华南' },
+]
+
+export const M3B1_CAPITAL_PACKS = M3B1_CAPITALS.map((c) => c.packId)
+
+/** This slice: 5 draft promotions + 20 newly scaffolded capitals. */
+export const M3B1_NEW_LIVE = [
+  'shijiazhuang',
+  'changchun',
+  'changsha',
+  'guiyang',
+  'urumqi',
+  'tianjin',
+  'taiyuan',
+  'hohhot',
+  'nanjing',
+  'hangzhou',
+  'hefei',
+  'fuzhou',
+  'nanchang',
+  'jinan',
+  'zhengzhou',
+  'nanning',
+  'haikou',
+  'chongqing',
+  'lhasa',
+  'lanzhou',
+  'xining',
+  'yinchuan',
+  'taipei',
+  'hongkong',
+  'macau',
+]
+
 export const M3A_LIVE_PACKS = M3A_PIPELINE.filter((p) => p.status === 'live').map((p) => p.packId)
 
 export const M3A_DRAFT_PACKS = M3A_PIPELINE.filter((p) => p.status === 'draft').map((p) => p.packId)
@@ -142,7 +259,7 @@ export function defaultKit(region7) {
 
 export function slugPack(name, adcode) {
   if (PACK_SLUGS[name]) return PACK_SLUGS[name]
-  const stripped = String(name || '').replace(/主城$/, '')
+  const stripped = String(name || '').replace(/主城$/, '').replace(/教学包$/, '')
   if (PACK_SLUGS[stripped]) return PACK_SLUGS[stripped]
   return `city-${adcode}`
 }
@@ -158,9 +275,9 @@ export function isProvincialCapital(row, provinces) {
   const parent = provinces.find((p) => p.adcode === row.parentAdcode)
   if (!parent) return false
   const cap = parent.capital
-  const name = String(row.name || '').replace(/主城$/, '')
+  const name = String(row.name || '').replace(/主城$/, '').replace(/教学包$/, '')
   return name === cap || name === `${cap}市` || name.startsWith(cap)
 }
 
 export const DISCLAIMER =
-  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余为草稿或名录灰壳。不是 333 完成。'
+  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。'

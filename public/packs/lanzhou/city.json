@@ -1,0 +1,68 @@
+{
+  "adcode": "620100",
+  "packId": "lanzhou",
+  "name": "兰州市",
+  "alias": [
+    "兰州"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在黄河上游谷地。甘肃省行政中心。酒泉是非省会 live。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷",
+    "黄土丘陵"
+  ],
+  "riversLakes": [
+    "黄河"
+  ],
+  "neighbors": [
+    "白银",
+    "定西",
+    "临夏"
+  ],
+  "cityFunction": [
+    "甘肃省行政中心"
+  ],
+  "storyTitle": "黄河记忆",
+  "storyLogline": "河风把铁桥的轮廓吹斜。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观中山铁桥",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "鼓"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-lz-river",
+    "card-lz-short"
+  ],
+  "briefing": [
+    "我们在兰州，甘肃省的行政中心。酒泉是本省非省会 live。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "黄河铁桥只参观。兰州在河谷，不用绿洲卡通套件。"
+  ]
+}

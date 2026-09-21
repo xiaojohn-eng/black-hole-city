@@ -2,10 +2,10 @@
 
 操控地面上的记忆黑洞，把散落的城市记忆归档进博物馆。你是「记忆黑洞」的守护员，不是来拆城的。
 
-> **本切片范围（M3a3 七大区非省会×3）：** 可玩 3D = **训练场·星湾（虚构）** + 七大区代表城 + **每区 ≥3 座非省会 live（全国 ≥21）**。大厅 34 省可点；未 live 城灰壳「记忆修复中」，**不可进 3D**。**不宣称全国地级已收录，也没有 333 座城可玩。** 不上未审中国全图。这是扩面，不是再堆一座网红城。
+> **本切片范围（M3b1 34 省行政中心）：** 可玩 3D = **训练场·星湾（虚构）** + **34 省各 ≥1 座行政中心 live** + 七大区各 ≥3 座非省会 live（全国 ≥21）。大厅 34 省可点；未 live 地级灰壳「记忆修复中」，**不可进 3D**。**不宣称全国地级已收录：不是 293 完成，更不是 333 完成。** 不上未审中国全图。这是省会/首府打穿，不是再堆一座网红城。
 
 旧方向见：[black-hole-devour](https://github.com/xiaojohn-eng/black-hole-devour)。  
-M1：`docs/M1-首都课打穿-交付说明.md`。M2：`docs/M2-省级工厂起步-交付说明.md`。M3a：`docs/M3a-七大区产能打穿-交付说明.md`。M3a2：`docs/M3a2-七大区非省会可玩-交付说明.md`。M3a3：`docs/M3a3-七大区非省会×3-交付说明.md`。
+M1：`docs/M1-首都课打穿-交付说明.md`。M2：`docs/M2-省级工厂起步-交付说明.md`。M3a：`docs/M3a-七大区产能打穿-交付说明.md`。M3a2：`docs/M3a2-七大区非省会可玩-交付说明.md`。M3a3：`docs/M3a3-七大区非省会×3-交付说明.md`。M3b1：`docs/M3b1-34省行政中心-交付说明.md`。
 
 ## 在线试玩
 
@@ -17,7 +17,7 @@ M1：`docs/M1-首都课打穿-交付说明.md`。M2：`docs/M2-省级工厂起�
 
 ```bash
 npm install
-npm run validate   # 名录 + live 真城包 + 词表 + 无经纬度 + 34 省题 + 套件 + 七大区/非省会覆盖
+npm run validate   # 名录 + live 真城包 + 词表 + 无经纬度 + 34 省题 + 套件 + 七大区/非省会 + 34 省行政中心
 npm run dev        # http://localhost:5173/black-hole-city/
 npm run build      # 产出 dist/
 npm run preview    # http://localhost:4173/black-hole-city/
@@ -32,19 +32,19 @@ npm run preview    # http://localhost:4173/black-hole-city/
 1. **训练场·星湾（虚构）** — 限时冲分，练习双阈值手感。星湾不是中国任何一座真城。
 2. **记忆博物馆·北京** — 首都课，生涯模式。天安门 **GUARD**；故宫 **VISIT**。
 
-**34 省大厅：** 搜索省名或简称（「京」「沪」「粤」「川」）。七大区进度条写清「七大区可玩 / 非省会 live≥21 / 管线」。省内列出 live + 草稿：
+**34 省大厅：** 搜索省名或简称（「京」「沪」「粤」「川」）。进度条写清「34 省行政中心可玩 / 非省会 live≥21 / 管线」。省内列出 live 行政中心 + 既有非省会；其余地级灰壳。
 
-| 七大区 | live 真城 | 非省会 live（≥3） | 同区草稿（灰壳） |
-| --- | --- | --- | --- |
-| 华北 | 北京、保定、唐山、邯郸 | 保定、唐山、邯郸 | 石家庄 |
-| 东北 | 哈尔滨、沈阳、大连、吉林市、齐齐哈尔 | 大连、吉林市、齐齐哈尔 | 长春 |
-| 华东 | 上海、苏州、青岛、无锡 | 苏州、青岛、无锡 | — |
-| 华中 | 武汉、洛阳、开封、襄阳 | 洛阳、开封、襄阳 | 长沙 |
-| 华南 | 广州、深圳、桂林、佛山 | 深圳、桂林、佛山 | — |
-| 西南 | 成都、昆明、遵义、乐山、绵阳 | 遵义、乐山、绵阳 | 贵阳 |
-| 西北 | 西安、酒泉、宝鸡、咸阳 | 酒泉、宝鸡、咸阳 | 乌鲁木齐 |
+| 七大区 | 行政中心 live | 非省会 live（≥3，不回退） |
+| --- | --- | --- |
+| 华北 | 北京、天津、石家庄、太原、呼和浩特 | 保定、唐山、邯郸 |
+| 东北 | 沈阳、长春、哈尔滨 | 大连、吉林市、齐齐哈尔 |
+| 华东 | 上海、南京、杭州、合肥、福州、南昌、济南、台北教学包 | 苏州、青岛、无锡 |
+| 华中 | 郑州、武汉、长沙 | 洛阳、开封、襄阳 |
+| 华南 | 广州、南宁、海口、香港、澳门 | 深圳、桂林、佛山 |
+| 西南 | 重庆、成都、贵阳、昆明、拉萨 | 遵义、乐山、绵阳 |
+| 西北 | 西安、兰州、西宁、银川、乌鲁木齐 | 酒泉、宝鸡、咸阳 |
 
-草稿显示「记忆修复中」，可看预览说明，**不能开 3D**。其余省入口仍可点，未做城同样灰壳。**不是 333 完成。**
+未做地级显示「记忆修复中」，**不能开 3D**。**不是 333 完成，也不是 293 完成。**
 
 大厅可 **抽 3 道 34 省简称题**。真城局后测验也会混入公共省级题。
 
@@ -69,7 +69,7 @@ npm run preview    # http://localhost:4173/black-hole-city/
 
 - 全国名录：`data/admin_div.csv`（34 省级 + 333 地级占位行）
 - 大厅用 `public/data/admin_index.json`（由校验脚本生成，**无 lat/lon**）
-- live 包：`public/packs/{xingwan-training,beijing,baoding,tangshan,handan,shanghai,suzhou,qingdao,wuxi,harbin,shenyang,dalian,jilin,qiqihar,guangzhou,shenzhen,guilin,foshan,wuhan,luoyang,kaifeng,xiangyang,chengdu,kunming,zunyi,leshan,mianyang,xian,jiuquan,baoji,xianyang}/`
+- live 包：训练场 + 34 省行政中心 + 21 座非省会（见 `public/packs/manifest.json` 的 `liveCityPacks`）
 - 公共题库：`public/packs/_shared/province-abbr-quiz.json`
 - 套件 0 号：`data/kits/`（北方砖+胡同、江南水岸、岭南骑楼、绿洲平顶）
 
@@ -82,6 +82,7 @@ npm run validate:province-quiz   # 34 省都有简称题
 npm run validate:kits            # 套件 0 号四套齐
 npm run validate:region7         # 七大区各 ≥1 live、各 ≥3 非省会 live、全国非省会 live ≥21
 npm run validate:m3a3            # 同上（M3a3 门禁别名）
+npm run validate:m3b1            # 34 省各 ≥1 行政中心 live（不是 293/333）
 npm run test:logic               # 双阈值 + GUARD 环绕纯逻辑
 npm run scaffold:city -- --adcode=330200   # 导出一座 B 级草稿并写入 manifest（不 live）
 npm run scaffold:region -- --region=华南   # 一次拉齐某区灰壳名单
@@ -123,9 +124,16 @@ npm run scaffold:region -- --region=华南   # 一次拉齐某区灰壳名单
 | 酒泉 | 河西绿洲；纪念碑 GUARD；鼓楼/莫高窟 VISIT |
 | 宝鸡 | 渭河；纪念碑 GUARD；金台观/青铜器博物院 VISIT（≠兰州） |
 | 咸阳 | 渭河；纪念碑 GUARD；城墙 VISIT（≠西安/乌鲁木齐） |
-| 草稿 | 石家庄/长春/长沙/贵阳/乌鲁木齐等可点预览，不能进 3D |
+| 行政中心 | 34 省均可进省会/首府/主城/教学包 3D |
+| 石家庄 | 滹沱河；纪念碑 GUARD；隆兴寺 VISIT |
+| 乌鲁木齐 | 天山绿洲；纪念碑 GUARD；红山亭/巴扎 VISIT |
+| 杭州 / 南京 | 西湖或长江；纪念碑 GUARD；断桥或夫子庙 VISIT |
+| 重庆 | 两江；解放纪念碑 GUARD；湖广会馆 VISIT（不是山城毁城秀） |
+| 呼和浩特 / 拉萨 | 首府课；纪念碑 GUARD；大召或布达拉外观 VISIT |
+| 台北教学包 | 淡水河；和平纪念 GUARD；北门/龙山寺 VISIT（不用首都符号） |
+| 未做地级 | 灰壳「记忆修复中」，不能进 3D |
 | 省级题 | 大厅「抽 3 道 34 省简称题」能出题 |
-| 灰壳 | 不得出现「全国地级已收录」或「333 完成」 |
+| 灰壳 | 不得出现「全国地级已收录」「293 完成」或「333 完成」 |
 
 ## 技术
 

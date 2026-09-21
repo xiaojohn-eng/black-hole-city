@@ -1,92 +1,122 @@
 {
-  "draft": true,
   "questions": [
     {
-      "id": "q-draft-01",
+      "id": "q-cs-01",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "长沙市属于哪个省级行政区？",
+      "prompt": "本省级行政区的简称是？",
       "choices": [
-        "湖南省",
-        "北京市",
-        "天津市",
-        "河北省"
-      ],
-      "answer": 0,
-      "explain": "长沙市属于湖南省。"
-    },
-    {
-      "id": "q-draft-02",
-      "ageBand": "6-8",
-      "type": "mc",
-      "prompt": "湖南省的简称是？",
-      "choices": [
+        "鄂",
         "湘",
-        "京",
-        "津",
-        "冀"
+        "赣",
+        "粤"
       ],
-      "answer": 0,
-      "explain": "简称「湘」。"
+      "answer": 1,
+      "explain": "湖南简称「湘」。",
+      "curriculumTag": "geo.2022.cn.province"
     },
     {
-      "id": "q-draft-03",
+      "id": "q-cs-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过长沙的著名江是？",
+      "choices": [
+        "珠江",
+        "湘江",
+        "松花江",
+        "黄河"
+      ],
+      "answer": 1,
+      "explain": "湘江。"
+    },
+    {
+      "id": "q-cs-03",
       "ageBand": "6-8",
       "type": "mc",
       "prompt": "纪念空间应该怎么对待？",
       "choices": [
         "吸入归档",
-        "绕行一周致敬",
+        "绕着它走一圈，完成守护致敬",
         "推倒",
         "忽略"
       ],
       "answer": 1,
-      "explain": "GUARD：绕行致敬。"
+      "explain": "纪念空间只可守护。"
     },
     {
-      "id": "q-draft-04",
+      "id": "q-cs-04",
       "ageBand": "6-8",
       "type": "mc",
-      "prompt": "文保建筑的正确交互是？",
+      "prompt": "岳麓书院在本课里应该？",
       "choices": [
         "吸入",
         "参观外观",
         "改造成游乐场",
-        "删除"
+        "搬走"
       ],
       "answer": 1,
-      "explain": "VISIT：只参观。"
+      "explain": "文保只参观。"
     },
     {
-      "id": "q-draft-05",
+      "id": "q-cs-05",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "长沙市在七大区中属于？",
+      "prompt": "湖南省的行政中心是？",
       "choices": [
+        "襄阳",
+        "长沙",
+        "武汉",
+        "南昌"
+      ],
+      "answer": 1,
+      "explain": "长沙。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-cs-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "这座城在七大区中属于？",
+      "choices": [
+        "华南",
         "华中",
         "华北",
-        "东北",
-        "华东"
+        "西北"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "七大区：华中。"
     },
     {
-      "id": "q-draft-06",
+      "id": "q-cs-07",
       "ageBand": "9-12",
       "type": "mc",
-      "prompt": "本草稿用的民居套件是？",
+      "prompt": "长沙主要属于哪种气候？",
       "choices": [
-        "江南水岸",
-        "北方砖 + 胡同",
-        "岭南骑楼",
-        "绿洲平顶"
+        "温带大陆性",
+        "亚热带季风",
+        "寒温带",
+        "热带沙漠"
       ],
-      "answer": 0,
-      "explain": "套件 jiangnan-water。"
+      "answer": 1,
+      "explain": "亚热带季风。",
+      "curriculumTag": "geo.2022.cn.climate"
     },
     {
-      "id": "q-draft-07",
+      "id": "q-cs-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本切片能不能宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能，不是 333 也不是 293 完成",
+        "做满省会就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "本刀只做 34 省行政中心。"
+    },
+    {
+      "id": "q-cs-09",
       "ageBand": "9-12",
       "type": "mc",
       "prompt": "客户端为什么不能写 lat/lon？",
@@ -100,32 +130,18 @@
       "explain": "网格坐标不是地理坐标。"
     },
     {
-      "id": "q-draft-08",
-      "ageBand": "9-12",
+      "id": "q-cs-10",
+      "ageBand": "6-8",
       "type": "mc",
-      "prompt": "草稿能否宣称全国地级已收录？",
+      "prompt": "长沙是不是湖南省的行政中心？",
       "choices": [
-        "能",
-        "不能",
-        "做满 10 座就能",
-        "看心情"
+        "不是",
+        "是，它是湖南省行政中心",
+        "是首都北京",
+        "是训练场"
       ],
       "answer": 1,
-      "explain": "B 级草稿不是 live，更不是 333。"
-    },
-    {
-      "id": "q-draft-09",
-      "ageBand": "9-12",
-      "type": "mc",
-      "prompt": "长沙是？",
-      "choices": [
-        "长沙",
-        "北京",
-        "上海",
-        "广州"
-      ],
-      "answer": 0,
-      "explain": "行政中心教学名：长沙。"
+      "explain": "是，它是湖南省行政中心。"
     }
   ]
 }

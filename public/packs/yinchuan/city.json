@@ -1,0 +1,67 @@
+{
+  "adcode": "640100",
+  "packId": "yinchuan",
+  "name": "银川市",
+  "alias": [
+    "银川"
+  ],
+  "shortName": "宁",
+  "unitType": "prefecture_city",
+  "parentProvince": "宁夏回族自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在黄河灌溉平原，贺兰山在西。宁夏回族自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河套平原",
+    "贺兰山前"
+  ],
+  "riversLakes": [
+    "黄河"
+  ],
+  "neighbors": [
+    "吴忠",
+    "石嘴山"
+  ],
+  "cityFunction": [
+    "自治区首府"
+  ],
+  "storyTitle": "河套记忆",
+  "storyLogline": "渠风把海宝塔的影子拉长。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从渠岸公园起步",
+    "庭院街巷收集市井记忆",
+    "参观海宝塔",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
+  "bgmPalette": [
+    "渠水",
+    "鼓"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-yc-river",
+    "card-yc-short"
+  ],
+  "briefing": [
+    "我们在银川，宁夏回族自治区的首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "海宝塔只参观。强调中华民族共同体。"
+  ]
+}

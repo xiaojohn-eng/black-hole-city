@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余为草稿或名录灰壳。不是 333 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -33,9 +33,9 @@
       "region7": "华北",
       "region4": "北方地区",
       "capital": "天津",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "tianjin",
+      "playable": true,
       "aliases": [
         "津"
       ]
@@ -48,9 +48,9 @@
       "region7": "华北",
       "region4": "北方地区",
       "capital": "石家庄",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "shijiazhuang",
+      "playable": true,
       "aliases": [
         "冀"
       ]
@@ -63,9 +63,9 @@
       "region7": "华北",
       "region4": "北方地区",
       "capital": "太原",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "taiyuan",
+      "playable": true,
       "aliases": [
         "晋"
       ]
@@ -78,9 +78,9 @@
       "region7": "华北",
       "region4": "北方地区",
       "capital": "呼和浩特",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "hohhot",
+      "playable": true,
       "aliases": [
         "内蒙古",
         "内蒙"
@@ -94,9 +94,9 @@
       "region7": "东北",
       "region4": "北方地区",
       "capital": "沈阳",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "shenyang",
+      "playable": true,
       "aliases": [
         "辽"
       ]
@@ -109,9 +109,9 @@
       "region7": "东北",
       "region4": "北方地区",
       "capital": "长春",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "changchun",
+      "playable": true,
       "aliases": [
         "吉"
       ]
@@ -155,9 +155,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "南京",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "nanjing",
+      "playable": true,
       "aliases": [
         "苏"
       ]
@@ -170,9 +170,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "杭州",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "hangzhou",
+      "playable": true,
       "aliases": [
         "浙"
       ]
@@ -185,9 +185,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "合肥",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "hefei",
+      "playable": true,
       "aliases": [
         "皖"
       ]
@@ -200,9 +200,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "福州",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "fuzhou",
+      "playable": true,
       "aliases": [
         "闽"
       ]
@@ -215,9 +215,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "南昌",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "nanchang",
+      "playable": true,
       "aliases": [
         "赣"
       ]
@@ -230,9 +230,9 @@
       "region7": "华东",
       "region4": "北方地区",
       "capital": "济南",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "jinan",
+      "playable": true,
       "aliases": [
         "鲁"
       ]
@@ -245,9 +245,9 @@
       "region7": "华中",
       "region4": "北方地区",
       "capital": "郑州",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "zhengzhou",
+      "playable": true,
       "aliases": [
         "豫"
       ]
@@ -275,9 +275,9 @@
       "region7": "华中",
       "region4": "南方地区",
       "capital": "长沙",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "changsha",
+      "playable": true,
       "aliases": [
         "湘"
       ]
@@ -305,9 +305,9 @@
       "region7": "华南",
       "region4": "南方地区",
       "capital": "南宁",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "nanning",
+      "playable": true,
       "aliases": [
         "桂",
         "广西"
@@ -321,9 +321,9 @@
       "region7": "华南",
       "region4": "南方地区",
       "capital": "海口",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "haikou",
+      "playable": true,
       "aliases": [
         "琼"
       ]
@@ -336,12 +336,11 @@
       "region7": "西南",
       "region4": "南方地区",
       "capital": "重庆",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "chongqing",
+      "playable": true,
       "aliases": [
-        "渝",
-        "山城"
+        "渝"
       ]
     },
     {
@@ -368,9 +367,9 @@
       "region7": "西南",
       "region4": "南方地区",
       "capital": "贵阳",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "guiyang",
+      "playable": true,
       "aliases": [
         "贵",
         "黔"
@@ -384,9 +383,9 @@
       "region7": "西南",
       "region4": "南方地区",
       "capital": "昆明",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "kunming",
+      "playable": true,
       "aliases": [
         "云",
         "滇"
@@ -400,9 +399,9 @@
       "region7": "西南",
       "region4": "青藏地区",
       "capital": "拉萨",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "lhasa",
+      "playable": true,
       "aliases": [
         "藏",
         "西藏"
@@ -432,9 +431,9 @@
       "region7": "西北",
       "region4": "西北地区",
       "capital": "兰州",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "lanzhou",
+      "playable": true,
       "aliases": [
         "甘",
         "陇"
@@ -448,9 +447,9 @@
       "region7": "西北",
       "region4": "青藏地区",
       "capital": "西宁",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "xining",
+      "playable": true,
       "aliases": [
         "青"
       ]
@@ -463,9 +462,9 @@
       "region7": "西北",
       "region4": "西北地区",
       "capital": "银川",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "yinchuan",
+      "playable": true,
       "aliases": [
         "宁",
         "宁夏"
@@ -479,9 +478,9 @@
       "region7": "西北",
       "region4": "西北地区",
       "capital": "乌鲁木齐",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "urumqi",
+      "playable": true,
       "aliases": [
         "新",
         "新疆"
@@ -495,9 +494,9 @@
       "region7": "华东",
       "region4": "南方地区",
       "capital": "台北",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "taipei",
+      "playable": true,
       "aliases": [
         "台",
         "台湾"
@@ -511,9 +510,9 @@
       "region7": "华南",
       "region4": "南方地区",
       "capital": "香港",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "hongkong",
+      "playable": true,
       "aliases": [
         "港",
         "香港"
@@ -527,9 +526,9 @@
       "region7": "华南",
       "region4": "南方地区",
       "capital": "澳门",
-      "status": "placeholder",
-      "packId": "",
-      "playable": false,
+      "status": "live",
+      "packId": "macau",
+      "playable": true,
       "aliases": [
         "澳",
         "澳门"
@@ -544,10 +543,10 @@
       "parentAdcode": "130000",
       "provinceName": "河北省",
       "region7": "华北",
-      "status": "draft",
+      "status": "live",
       "packId": "shijiazhuang",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「北方砖 + 胡同」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "平原上的风把省会路牌吹散。你沿滹沱河把它们收回博物馆。"
     },
     {
       "adcode": "130200",
@@ -676,10 +675,10 @@
       "parentAdcode": "140000",
       "provinceName": "山西省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "taiyuan",
+      "playable_3d": true,
+      "preview": "盆地里的风把晋祠的牌匾吹斜。你沿汾河把它们收回博物馆。"
     },
     {
       "adcode": "140200",
@@ -808,10 +807,10 @@
       "parentAdcode": "150000",
       "provinceName": "内蒙古自治区",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hohhot",
+      "playable_3d": true,
+      "preview": "平原上的风把大召的牌匾吹斜。你沿大黑河把它们收回博物馆。"
     },
     {
       "adcode": "150200",
@@ -1120,10 +1119,10 @@
       "parentAdcode": "220000",
       "provinceName": "吉林省",
       "region7": "东北",
-      "status": "draft",
+      "status": "live",
       "packId": "changchun",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「北方砖 + 胡同」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "冷风把南湖的牌匾吹斜。你沿伊通河把它们收回博物馆。"
     },
     {
       "adcode": "220200",
@@ -1384,10 +1383,10 @@
       "parentAdcode": "320000",
       "provinceName": "江苏省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "nanjing",
+      "playable_3d": true,
+      "preview": "江风把城墙垛口的记忆吹散。你沿秦淮河把它们收回博物馆。"
     },
     {
       "adcode": "320200",
@@ -1540,10 +1539,10 @@
       "parentAdcode": "330000",
       "provinceName": "浙江省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hangzhou",
+      "playable_3d": true,
+      "preview": "湖风把断桥的轮廓藏进雾里。你沿湖岸把它们收回博物馆。"
     },
     {
       "adcode": "330200",
@@ -1672,10 +1671,10 @@
       "parentAdcode": "340000",
       "provinceName": "安徽省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hefei",
+      "playable_3d": true,
+      "preview": "湖风把包公祠的牌匾吹斜。你沿南淝河把它们收回博物馆。"
     },
     {
       "adcode": "340200",
@@ -1864,10 +1863,10 @@
       "parentAdcode": "350000",
       "provinceName": "福建省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "fuzhou",
+      "playable_3d": true,
+      "preview": "湿热的风把三坊七巷的门牌吹斜。你沿闽江把它们收回博物馆。"
     },
     {
       "adcode": "350200",
@@ -1972,10 +1971,10 @@
       "parentAdcode": "360000",
       "provinceName": "江西省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "nanchang",
+      "playable_3d": true,
+      "preview": "江风把滕王阁的轮廓吹进雾里。你沿赣江把它们收回博物馆。"
     },
     {
       "adcode": "360200",
@@ -2104,10 +2103,10 @@
       "parentAdcode": "370000",
       "provinceName": "山东省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jinan",
+      "playable_3d": true,
+      "preview": "泉眼把牌匾润湿。你沿大明湖把它们收回博物馆。"
     },
     {
       "adcode": "370200",
@@ -2296,10 +2295,10 @@
       "parentAdcode": "410000",
       "provinceName": "河南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhengzhou",
+      "playable_3d": true,
+      "preview": "河风把商都的陶片记忆吹散。你沿黄河把它们收回博物馆。"
     },
     {
       "adcode": "410200",
@@ -2656,10 +2655,10 @@
       "parentAdcode": "430000",
       "provinceName": "湖南省",
       "region7": "华中",
-      "status": "draft",
+      "status": "live",
       "packId": "changsha",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「江南水岸」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "江雾把岳麓书院的牌匾藏起来。你沿湘江把它们收回博物馆。"
     },
     {
       "adcode": "430200",
@@ -3076,10 +3075,10 @@
       "parentAdcode": "450000",
       "provinceName": "广西壮族自治区",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "nanning",
+      "playable_3d": true,
+      "preview": "湿热的风把骑楼牌匾吹斜。你沿邕江把它们收回博物馆。"
     },
     {
       "adcode": "450200",
@@ -3244,10 +3243,10 @@
       "parentAdcode": "460000",
       "provinceName": "海南省",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "haikou",
+      "playable_3d": true,
+      "preview": "海风把骑楼牌匾吹斜。你沿海岸把它们收回博物馆。"
     },
     {
       "adcode": "460200",
@@ -3544,10 +3543,10 @@
       "parentAdcode": "520000",
       "provinceName": "贵州省",
       "region7": "西南",
-      "status": "draft",
+      "status": "live",
       "packId": "guiyang",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「北方砖 + 胡同」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "湿润的风把甲秀楼的轮廓藏进雾里。你沿南明河把它们收回博物馆。"
     },
     {
       "adcode": "520200",
@@ -3844,10 +3843,10 @@
       "parentAdcode": "540000",
       "provinceName": "西藏自治区",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "lhasa",
+      "playable_3d": true,
+      "preview": "河谷里的风把宫殿轮廓送到河岸。你沿拉萨河把它们收回博物馆。"
     },
     {
       "adcode": "540200",
@@ -4048,10 +4047,10 @@
       "parentAdcode": "620000",
       "provinceName": "甘肃省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "lanzhou",
+      "playable_3d": true,
+      "preview": "河风把铁桥的轮廓吹斜。你沿黄河把它们收回博物馆。"
     },
     {
       "adcode": "620200",
@@ -4216,10 +4215,10 @@
       "parentAdcode": "630000",
       "provinceName": "青海省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xining",
+      "playable_3d": true,
+      "preview": "河谷里的风把塔影吹斜。你沿湟水把它们收回博物馆。"
     },
     {
       "adcode": "630200",
@@ -4312,10 +4311,10 @@
       "parentAdcode": "640000",
       "provinceName": "宁夏回族自治区",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "yinchuan",
+      "playable_3d": true,
+      "preview": "渠风把海宝塔的影子拉长。你沿黄河把它们收回博物馆。"
     },
     {
       "adcode": "640200",
@@ -4372,10 +4371,10 @@
       "parentAdcode": "650000",
       "provinceName": "新疆维吾尔自治区",
       "region7": "西北",
-      "status": "draft",
+      "status": "live",
       "packId": "urumqi",
-      "playable_3d": false,
-      "preview": "B 级草稿：用套件「绿洲平顶」铺底，尚未四审，不可 live。"
+      "playable_3d": true,
+      "preview": "干热风把巴扎牌匾吹向戈壁。你沿水渠把它们收回博物馆。"
     },
     {
       "adcode": "650200",
@@ -4558,6 +4557,66 @@
       "preview": "河口的风把外滩和里弄的记忆吹散。你沿江把它们收回博物馆。"
     },
     {
+      "adcode": "120100",
+      "name": "天津主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "120000",
+      "provinceName": "天津市",
+      "region7": "华北",
+      "status": "live",
+      "packId": "tianjin",
+      "playable_3d": true,
+      "preview": "河口的风把五大道的门牌吹斜。你沿海河把它们收回博物馆。"
+    },
+    {
+      "adcode": "500100",
+      "name": "重庆主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "500000",
+      "provinceName": "重庆市",
+      "region7": "西南",
+      "status": "live",
+      "packId": "chongqing",
+      "playable_3d": true,
+      "preview": "江雾把解放碑的轮廓藏起来。你沿两江把它们收回博物馆。"
+    },
+    {
+      "adcode": "710100",
+      "name": "台北教学包",
+      "unitType": "province_directly",
+      "parentAdcode": "710000",
+      "provinceName": "台湾省",
+      "region7": "华东",
+      "status": "live",
+      "packId": "taipei",
+      "playable_3d": true,
+      "preview": "台风把夜市灯海的记忆吹散。你沿淡水河把它们收回博物馆。"
+    },
+    {
+      "adcode": "810100",
+      "name": "香港主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "810000",
+      "provinceName": "香港特别行政区",
+      "region7": "华南",
+      "status": "live",
+      "packId": "hongkong",
+      "playable_3d": true,
+      "preview": "台风把海港牌匾吹到半山。你沿港湾把它们收回博物馆。"
+    },
+    {
+      "adcode": "820100",
+      "name": "澳门主城",
+      "unitType": "municipality_city",
+      "parentAdcode": "820000",
+      "provinceName": "澳门特别行政区",
+      "region7": "华南",
+      "status": "live",
+      "packId": "macau",
+      "playable_3d": true,
+      "preview": "海风把连岛的记忆吹断。你沿半岛把它们收回博物馆。"
+    },
+    {
       "adcode": "419001",
       "name": "济源市",
       "unitType": "province_directly",
@@ -4620,11 +4679,13 @@
   ],
   "liveCityPacks": [
     "beijing",
+    "shijiazhuang",
     "baoding",
     "tangshan",
     "handan",
     "harbin",
     "shenyang",
+    "changchun",
     "dalian",
     "jilin",
     "qiqihar",
@@ -4634,6 +4695,7 @@
     "wuxi",
     "wuhan",
     "luoyang",
+    "changsha",
     "kaifeng",
     "xiangyang",
     "guangzhou",
@@ -4642,12 +4704,34 @@
     "foshan",
     "chengdu",
     "kunming",
+    "guiyang",
     "zunyi",
     "leshan",
     "mianyang",
     "xian",
+    "urumqi",
     "jiuquan",
     "baoji",
-    "xianyang"
+    "xianyang",
+    "tianjin",
+    "taiyuan",
+    "hohhot",
+    "nanjing",
+    "hangzhou",
+    "hefei",
+    "fuzhou",
+    "nanchang",
+    "jinan",
+    "zhengzhou",
+    "nanning",
+    "haikou",
+    "chongqing",
+    "lhasa",
+    "lanzhou",
+    "xining",
+    "yinchuan",
+    "taipei",
+    "hongkong",
+    "macau"
   ]
 }
