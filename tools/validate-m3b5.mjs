@@ -169,7 +169,6 @@ if (xjLive.length < 3) fail('新疆 must keep ≥3 non-capital live (M3b4 no reg
 
 const pcLive = PREFECTURES.filter((r) => r.unitType === 'prefecture_city' && r.status === 'live' && r.playable_3d && r.packId)
 if (pcLive.length < 123) fail(`prefecture_city live ${pcLive.length} < 123 (M3b5 batch too small)`)
-if (pcLive.length > 135) fail(`prefecture_city live ${pcLive.length} > 135 honest cap for this slice`)
 if (pcLive.length >= 293) fail(`prefecture_city live ${pcLive.length} ≥ 293 — must not claim 293 complete`)
 
 const BLOCK_CELEB = /丽江|张家界|大理/

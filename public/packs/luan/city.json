@@ -1,0 +1,71 @@
+{
+  "adcode": "341500",
+  "packId": "luan",
+  "name": "六安市",
+  "alias": [
+    "六安"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在江淮之间，淠河流过。安徽省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "丘陵",
+    "河谷"
+  ],
+  "riversLakes": [
+    "淠河"
+  ],
+  "neighbors": [
+    "合肥",
+    "信阳",
+    "安庆"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淠河教学点"
+  ],
+  "storyTitle": "淠河记忆",
+  "storyLogline": "水汽把皋陶祠前的路牌藏起来。你沿淠河把它们收回博物馆。",
+  "storyBeats": [
+    "从淠河岸公园起步",
+    "旧街收集市井记忆",
+    "参观皋陶祠",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "河声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-lua-river",
+    "card-lua-short"
+  ],
+  "briefing": [
+    "我们在六安，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "皋陶祠只参观。本课讲淠河和江淮，对照蚌埠淮河、阜阳颍河、芜湖安庆长江。不拿黄山插队。"
+  ]
+}

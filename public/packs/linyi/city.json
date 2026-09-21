@@ -1,0 +1,70 @@
+{
+  "adcode": "371300",
+  "packId": "linyi",
+  "name": "临沂市",
+  "alias": [
+    "临沂"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在沂河沿岸，鲁南。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "沂河"
+  ],
+  "neighbors": [
+    "日照",
+    "徐州",
+    "枣庄"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沂河教学点"
+  ],
+  "storyTitle": "沂河记忆",
+  "storyLogline": "河风把沂州文庙前的路牌吹斜。你沿沂河把它们收回博物馆。",
+  "storyBeats": [
+    "从沂河岸公园起步",
+    "旧街收集市井记忆",
+    "参观沂州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "平原风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-lny-river",
+    "card-lny-short"
+  ],
+  "briefing": [
+    "我们在临沂，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "沂州文庙只参观。本课讲沂河和鲁南，对照青岛黄海、烟台黄渤海、东营黄河口、济宁运河。"
+  ]
+}

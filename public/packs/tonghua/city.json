@@ -1,0 +1,69 @@
+{
+  "adcode": "220500",
+  "packId": "tonghua",
+  "name": "通化市",
+  "alias": [
+    "通化"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在浑江沿岸。吉林省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷"
+  ],
+  "riversLakes": [
+    "浑江"
+  ],
+  "neighbors": [
+    "白山",
+    "辽源",
+    "丹东"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "浑江教学点"
+  ],
+  "storyTitle": "浑江记忆",
+  "storyLogline": "河谷里的风把通化文庙前的路牌吹斜。你沿浑江把它们收回博物馆。",
+  "storyBeats": [
+    "从浑江岸公园起步",
+    "旧街收集市井记忆",
+    "参观通化文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "河谷风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-toh-river",
+    "card-toh-short"
+  ],
+  "briefing": [
+    "我们在通化，吉林省的地级市，不是本省行政中心。长春才是吉林省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲浑江河谷，对照吉林市松花江、四平辽河平原、白城嫩江。不是山城毁城秀。"
+  ]
+}

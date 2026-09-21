@@ -1,0 +1,70 @@
+{
+  "adcode": "621000",
+  "packId": "qingyang",
+  "name": "庆阳市",
+  "alias": [
+    "庆阳"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在陇东黄土高原，马莲河流过。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "马莲河"
+  ],
+  "neighbors": [
+    "延安",
+    "固原",
+    "平凉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "陇东黄土教学点"
+  ],
+  "storyTitle": "马莲河记忆",
+  "storyLogline": "黄土上的风把庆阳文庙前的路牌吹斜。你沿马莲河把它们收回博物馆。",
+  "storyBeats": [
+    "从马莲河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观庆阳文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-qgy-river",
+    "card-qgy-short"
+  ],
+  "briefing": [
+    "我们在庆阳，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲陇东黄土高原和马莲河，对照河西酒泉张掖绿洲、天水渭河、陇南嘉陵江亚热带谷地。"
+  ]
+}

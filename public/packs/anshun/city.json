@@ -1,0 +1,70 @@
+{
+  "adcode": "520400",
+  "packId": "anshun",
+  "name": "安顺市",
+  "alias": [
+    "安顺"
+  ],
+  "shortName": "贵",
+  "unitType": "prefecture_city",
+  "parentProvince": "贵州省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在北盘江流域，珠江上游。贵州省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带湿润",
+  "landform": [
+    "高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "北盘江"
+  ],
+  "neighbors": [
+    "贵阳",
+    "六盘水",
+    "黔南"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "珠江上游教学点"
+  ],
+  "storyTitle": "北盘江记忆",
+  "storyLogline": "河谷里的风把安顺文庙前的路牌吹斜。你沿北盘江把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "旧街收集市井记忆",
+    "参观安顺文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-ans-river",
+    "card-ans-short"
+  ],
+  "briefing": [
+    "我们在安顺，贵州省的地级市，不是本省行政中心。贵阳才是贵州省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲北盘江和珠江上游，对照遵义黔北、铜仁锦江、毕节乌江、六盘水北盘江。不是山城毁城秀。"
+  ]
+}

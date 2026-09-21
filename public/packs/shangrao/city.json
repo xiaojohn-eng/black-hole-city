@@ -1,0 +1,71 @@
+{
+  "adcode": "361100",
+  "packId": "shangrao",
+  "name": "上饶市",
+  "alias": [
+    "上饶"
+  ],
+  "shortName": "赣",
+  "unitType": "prefecture_city",
+  "parentProvince": "江西省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在信江沿岸，鄱阳湖东。江西省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "信江"
+  ],
+  "neighbors": [
+    "景德镇",
+    "衢州",
+    "南平"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "信江教学点"
+  ],
+  "storyTitle": "信江记忆",
+  "storyLogline": "江风把信江书院前的路牌吹斜。你沿信江把它们收回博物馆。",
+  "storyBeats": [
+    "从信江岸公园起步",
+    "水巷收集市井记忆",
+    "参观信江书院",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-sgr-river",
+    "card-sgr-short"
+  ],
+  "briefing": [
+    "我们在上饶，江西省的地级市，不是本省行政中心。南昌才是江西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "信江书院只参观。本课讲信江和鄱阳东，对照赣州上游、吉安中游、九江长江。"
+  ]
+}
