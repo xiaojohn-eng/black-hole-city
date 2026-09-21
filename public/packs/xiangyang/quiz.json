@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-xyg-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "湖北省的简称是？",
+      "choices": [
+        "湘",
+        "鄂",
+        "赣",
+        "豫"
+      ],
+      "answer": 1,
+      "explain": "湖北简称「鄂」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-xyg-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过襄阳的著名江是？",
+      "choices": [
+        "珠江",
+        "汉江",
+        "松花江",
+        "黄浦江"
+      ],
+      "answer": 1,
+      "explain": "汉江穿过襄阳。"
+    },
+    {
+      "id": "q-xyg-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-xyg-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "襄阳古城墙在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "城墙只参观。"
+    },
+    {
+      "id": "q-xyg-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "湖北省的行政中心是？",
+      "choices": [
+        "襄阳",
+        "武汉",
+        "长沙",
+        "宜昌"
+      ],
+      "answer": 1,
+      "explain": "行政中心是武汉，襄阳是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-xyg-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "襄阳在七大区中属于？",
+      "choices": [
+        "华北",
+        "华中",
+        "华南",
+        "西南"
+      ],
+      "answer": 1,
+      "explain": "湖北在华中。"
+    },
+    {
+      "id": "q-xyg-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "襄阳主要属于哪种气候？",
+      "choices": [
+        "温带季风",
+        "亚热带季风",
+        "温带大陆性",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "亚热带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-xyg-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "汉江最后汇入？",
+      "choices": [
+        "黄河",
+        "长江",
+        "珠江",
+        "淮河"
+      ],
+      "answer": 1,
+      "explain": "汉江在武汉汇入长江。"
+    },
+    {
+      "id": "q-xyg-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "长沙是？",
+      "choices": [
+        "湖北省行政中心",
+        "湖南省行政中心，不能拿来充华中非省会",
+        "襄阳的一个区",
+        "直辖市"
+      ],
+      "answer": 1,
+      "explain": "长沙是省会，本切片仍为草稿。"
+    },
+    {
+      "id": "q-xyg-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "襄阳是不是湖北省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是武汉",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "襄阳是非省会。"
+    }
+  ]
+}

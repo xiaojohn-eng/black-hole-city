@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-fs-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "广东省的简称是？",
+      "choices": [
+        "桂",
+        "粤",
+        "闽",
+        "琼"
+      ],
+      "answer": 1,
+      "explain": "广东简称「粤」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-fs-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "佛山所在的著名三角洲是？",
+      "choices": [
+        "长江三角洲",
+        "珠江三角洲",
+        "黄河三角洲",
+        "辽河三角洲"
+      ],
+      "answer": 1,
+      "explain": "佛山在珠江三角洲。"
+    },
+    {
+      "id": "q-fs-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-fs-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "佛山祖庙在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "祖庙只参观。"
+    },
+    {
+      "id": "q-fs-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广东省的行政中心是？",
+      "choices": [
+        "佛山",
+        "广州",
+        "深圳",
+        "珠海"
+      ],
+      "answer": 1,
+      "explain": "行政中心是广州，佛山是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-fs-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "佛山在七大区中属于？",
+      "choices": [
+        "华东",
+        "华南",
+        "西南",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "广东在华南。"
+    },
+    {
+      "id": "q-fs-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "佛山主要属于哪种气候？",
+      "choices": [
+        "温带季风",
+        "亚热带季风",
+        "温带大陆性",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "亚热带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-fs-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "骑楼主要是为了？",
+      "choices": [
+        "堆雪",
+        "遮阳避雨",
+        "防沙",
+        "看极光"
+      ],
+      "answer": 1,
+      "explain": "湿热气候的走廊。"
+    },
+    {
+      "id": "q-fs-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本课对祖庙和武术记忆的态度是？",
+      "choices": [
+        "做成对打游戏",
+        "博物馆参观",
+        "吸入归档",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "文保 VISIT。"
+    },
+    {
+      "id": "q-fs-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "佛山是不是广东省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是广州",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "佛山是非省会。"
+    }
+  ]
+}

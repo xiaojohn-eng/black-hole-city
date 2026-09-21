@@ -1,38 +1,39 @@
 {
   "mapSize": 240,
   "roads": {
-    "style": "jiangnan_water",
-    "spacing": 32,
-    "width": 7
+    "style": "northeast_grid",
+    "spacing": 40,
+    "width": 10
   },
-  "variants": [],
-  "kitId": "jiangnan-water",
-  "draft": true,
+  "variants": [
+    "coastal_band"
+  ],
+  "kitId": "north-brick-hutong",
   "zones": [
     {
       "id": "south_park",
-      "name": "南侧起步公园",
+      "name": "海滨公园",
       "x": 0,
       "z": -80,
       "w": 240,
       "d": 80,
-      "color": "#6b7a68",
+      "color": "#5d7a88",
+      "spawn": true,
       "quotas": {
         "L1": 16,
         "L2": 12,
         "L3": 8,
         "L4": 4
-      },
-      "spawn": true
+      }
     },
     {
       "id": "old_town",
-      "name": "旧城民居",
+      "name": "旧街街区",
       "x": -70,
       "z": 8,
       "w": 100,
       "d": 96,
-      "color": "#f4f1ea",
+      "color": "#8a8074",
       "quotas": {
         "L1": 8,
         "L2": 8,
@@ -44,12 +45,12 @@
     },
     {
       "id": "civic",
-      "name": "纪念与参观",
+      "name": "栈桥与纪念",
       "x": 0,
       "z": 40,
-      "w": 48,
+      "w": 56,
       "d": 120,
-      "color": "#3b82a8",
+      "color": "#c5d4e0",
       "quotas": {
         "L1": 4,
         "L2": 4,
@@ -57,8 +58,8 @@
       }
     },
     {
-      "id": "new_town",
-      "name": "当代楼宇",
+      "id": "modern",
+      "name": "港区楼宇",
       "x": 78,
       "z": 12,
       "w": 84,
@@ -75,69 +76,69 @@
   ],
   "landmarks": [
     {
-      "id": "qingdao-guard",
-      "name": "青岛市纪念空间（草稿）",
+      "id": "qd-guard",
+      "name": "青岛革命烈士纪念碑",
       "mesh": "monument_obelisk",
       "interact": "guard",
       "x": 0,
       "z": 32,
       "tier": 10,
       "zone": "civic",
-      "knowledgeCardId": "card-draft-guard",
-      "whyHere": "占位 GUARD。人工替换为该城真实纪念空间。",
-      "silhouette": "方尖碑草稿"
+      "knowledgeCardId": "card-qd-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "高耸方尖碑"
     },
     {
-      "id": "qingdao-visit-a",
-      "name": "青岛市文保剪影（草稿）",
-      "mesh": "bund_colonnade",
+      "id": "qd-pier",
+      "name": "栈桥",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-qd-pier",
+      "whyHere": "伸向海里的栈桥剪影。参观，认识半岛港城。",
+      "silhouette": "长堤伸入水面"
+    },
+    {
+      "id": "qd-church",
+      "name": "青岛天主教堂外观",
+      "mesh": "onion_dome",
       "interact": "visit",
       "x": -40,
-      "z": 20,
+      "z": 16,
       "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-visit",
-      "whyHere": "占位 VISIT。宗教/文保只参观。",
-      "silhouette": "连排或殿宇草稿"
+      "knowledgeCardId": "card-qd-church",
+      "whyHere": "教堂立面剪影。走近参观，不崩塌。",
+      "silhouette": "双塔与穹顶轮廓"
     },
     {
-      "id": "qingdao-visit-b",
-      "name": "青岛市街道（草稿）",
-      "mesh": "central_street",
+      "id": "qd-street",
+      "name": "海滨旧街",
+      "mesh": "bund_colonnade",
       "interact": "visit",
-      "x": -70,
-      "z": -10,
-      "tier": 9,
+      "x": -64,
+      "z": -8,
+      "tier": 10,
       "zone": "old_town",
-      "knowledgeCardId": "card-draft-place",
-      "whyHere": "占位街道参观。",
-      "silhouette": "长街"
+      "knowledgeCardId": "card-qd-sea",
+      "whyHere": "滨海立面参观。",
+      "silhouette": "柱廊与坡顶"
     },
     {
-      "id": "qingdao-sky-a",
-      "name": "青岛市塔楼剪影（草稿）",
+      "id": "qd-sky",
+      "name": "港区塔楼",
       "mesh": "cbd_tower",
       "interact": "swallow",
       "x": 88,
       "z": 40,
       "tier": 10,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档当代天际线草稿。",
+      "zone": "modern",
+      "knowledgeCardId": "card-qd-plain",
+      "whyHere": "可归档的当代港区公共建筑。",
       "silhouette": "高楼"
-    },
-    {
-      "id": "qingdao-sky-b",
-      "name": "青岛市高塔（草稿）",
-      "mesh": "tv_tower",
-      "interact": "swallow",
-      "x": 96,
-      "z": -8,
-      "tier": 9,
-      "zone": "new_town",
-      "knowledgeCardId": "card-draft-sky",
-      "whyHere": "可归档高塔草稿。",
-      "silhouette": "细塔"
     }
   ]
 }

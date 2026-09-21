@@ -1,0 +1,144 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "hutong_axis",
+    "spacing": 36,
+    "width": 8
+  },
+  "variants": [
+    "named_river"
+  ],
+  "kitId": "north-brick-hutong",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "汴河岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#b89b6a",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "旧城砖巷",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#a89070",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "铁塔与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#8a7048",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#6b6358",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "kf-guard",
+      "name": "开封革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-kf-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑与柏树"
+    },
+    {
+      "id": "kf-pagoda",
+      "name": "开封铁塔",
+      "mesh": "dayan_pagoda",
+      "interact": "visit",
+      "x": 18,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-kf-pagoda",
+      "whyHere": "琉璃砖塔剪影。走近参观，不崩塌。",
+      "silhouette": "瘦高砖塔"
+    },
+    {
+      "id": "kf-xiangguo",
+      "name": "相国寺",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-kf-xiangguo",
+      "whyHere": "寺庙外观只参观。",
+      "silhouette": "红墙飞檐"
+    },
+    {
+      "id": "kf-gate",
+      "name": "宋门剪影",
+      "mesh": "city_wall_gate",
+      "interact": "visit",
+      "x": -8,
+      "z": -10,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-kf-capital",
+      "whyHere": "城门剪影。参观，认识古都轴线。",
+      "silhouette": "城门楼"
+    },
+    {
+      "id": "kf-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 92,
+      "z": 36,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-kf-plain",
+      "whyHere": "可归档的当代公共建筑剪影。",
+      "silhouette": "高楼"
+    }
+  ]
+}

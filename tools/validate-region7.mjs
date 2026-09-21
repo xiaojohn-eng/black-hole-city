@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
- * M3a + M3a2: seven-region coverage gate.
+ * M3a + M3a2 + M3a3: seven-region coverage gate.
  * Each region ≥1 live real city + ≥3 names in pipeline (live|draft).
  * M3a2: each region ≥1 true non-capital live; national non-capital live ≥7.
+ * M3a3: each region ≥3 true non-capital live; national non-capital live ≥21.
  * Never claims 333 complete.
  */
 import fs from 'node:fs'
@@ -15,6 +16,7 @@ import {
   M3A_PIPELINE,
   M3A2_NAMED_LIVE,
   M3A2_NONCAPITAL_LIVE,
+  M3A3_NONCAPITAL_LIVE,
   REGION7,
   isProvincialCapital,
 } from './region7.mjs'
@@ -43,6 +45,9 @@ const disc = String(manifest.disclaimer || '')
 if (!disc.includes('不宣称') || !/不是 333|不宣称全国/.test(disc + JSON.stringify(manifest.version))) {
   fail('manifest disclaimer must state 不宣称全国收录 / 不是 333 完成')
 }
+if (!/≥21|各 ≥3/.test(disc)) {
+  fail('manifest disclaimer must state 七大区各 ≥3 / 全国非省会 live ≥21, not 333 complete')
+}
 
 const liveIds = [...new Set(manifest.liveCityPacks ?? [])]
 if (liveIds.length < 7) fail(`liveCityPacks ${liveIds.length} < 7`)
@@ -54,6 +59,10 @@ for (const id of M3A2_NAMED_LIVE) {
 }
 for (const id of M3A2_NONCAPITAL_LIVE) {
   if (!liveIds.includes(id)) fail(`M3a2 non-capital live missing ${id}`)
+}
+if (M3A3_NONCAPITAL_LIVE.length < 21) fail(`M3A3_NONCAPITAL_LIVE ${M3A3_NONCAPITAL_LIVE.length} < 21`)
+for (const id of M3A3_NONCAPITAL_LIVE) {
+  if (!liveIds.includes(id)) fail(`M3a3 non-capital live missing ${id}`)
 }
 
 const packById = new Map()
@@ -120,10 +129,22 @@ for (const id of [...liveIds, ...draftSet]) {
 }
 if (nonCap.length < 3) fail(`non-capital live|draft ${nonCap.length} < 3`)
 const nonCapLive = nonCap.filter((x) => x.status === 'live')
-if (nonCapLive.length < 7) fail(`non-capital live ${nonCapLive.length} < 7`)
+if (nonCapLive.length < 21) fail(`non-capital live ${nonCapLive.length} < 21`)
 for (const r of REGION7) {
   const ids = nonCapLiveByRegion.get(r)
-  if (!ids.length) fail(`region ${r} has no non-capital live city`)
+  if (ids.length < 3) fail(`region ${r} non-capital live ${ids.length} < 3 (${ids.join(',') || '—'})`)
+}
+
+for (const id of M3A3_NONCAPITAL_LIVE) {
+  const city = readJson(path.join(packDir(id), 'city.json'))
+  const row = rows.find((x) => x.adcode === city.adcode) || rows.find((x) => x.packId === id)
+  if (!row) {
+    fail(`M3a3 ${id} missing admin row`)
+    continue
+  }
+  if (isProvincialCapital(row, PROVINCES)) {
+    fail(`M3a3 ${id} is a provincial capital / municipality / SAR and cannot count as 非省会`)
+  }
 }
 
 for (const spec of M3A_PIPELINE) {
@@ -143,7 +164,7 @@ for (const id of M3A_LIVE_PACKS) {
 
 if (process.exitCode) process.exit(process.exitCode)
 
-console.log('validate:region7 OK — factory coverage, not 333 complete')
+console.log('validate:region7 OK — M3a3 each region ≥3 non-capital live, not 333 complete')
 console.log(`  disclaimer: ${DISCLAIMER.slice(0, 40)}…`)
 console.log('  live cities:')
 for (const id of liveIds) {

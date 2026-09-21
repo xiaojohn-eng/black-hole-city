@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-bj-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "陕西省的简称是？",
+      "choices": [
+        "晋",
+        "陕",
+        "甘",
+        "宁"
+      ],
+      "answer": 1,
+      "explain": "陕西简称「陕」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-bj-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过宝鸡的著名河是？",
+      "choices": [
+        "珠江",
+        "渭河",
+        "松花江",
+        "漓江"
+      ],
+      "answer": 1,
+      "explain": "渭河穿过宝鸡。"
+    },
+    {
+      "id": "q-bj-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-bj-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "金台观在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "观宇只参观。"
+    },
+    {
+      "id": "q-bj-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "陕西省的行政中心是？",
+      "choices": [
+        "宝鸡",
+        "西安",
+        "咸阳",
+        "兰州"
+      ],
+      "answer": 1,
+      "explain": "行政中心是西安，宝鸡是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-bj-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "宝鸡在七大区中属于？",
+      "choices": [
+        "华北",
+        "西南",
+        "西北",
+        "东北"
+      ],
+      "answer": 2,
+      "explain": "陕西在西北。"
+    },
+    {
+      "id": "q-bj-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "宝鸡主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风",
+        "热带雨林",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "温带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-bj-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "宝鸡为什么不用绿洲平顶套件？",
+      "choices": [
+        "因为它在海边",
+        "它在关中渭河平原，不是河西绿洲",
+        "因为没有砖",
+        "因为是首都"
+      ],
+      "answer": 1,
+      "explain": "套件匹配气候。"
+    },
+    {
+      "id": "q-bj-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "兰州是？",
+      "choices": [
+        "陕西省会",
+        "甘肃省行政中心，不能拿来充西北非省会",
+        "宝鸡的一个区",
+        "直辖市"
+      ],
+      "answer": 1,
+      "explain": "兰州是省会。"
+    },
+    {
+      "id": "q-bj-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "宝鸡是不是陕西省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是西安",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "宝鸡是非省会。"
+    }
+  ]
+}

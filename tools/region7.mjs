@@ -34,47 +34,100 @@ export const PACK_SLUGS = {
   西安市: 'xian',
   乌鲁木齐市: 'urumqi',
   酒泉市: 'jiuquan',
+  唐山市: 'tangshan',
+  邯郸市: 'handan',
+  吉林市: 'jilin',
+  齐齐哈尔市: 'qiqihar',
+  无锡市: 'wuxi',
+  开封市: 'kaifeng',
+  襄阳市: 'xiangyang',
+  佛山市: 'foshan',
+  乐山市: 'leshan',
+  绵阳市: 'mianyang',
+  宝鸡市: 'baoji',
+  咸阳市: 'xianyang',
 }
 
 /**
- * M3a live representatives + M3a2 promotions.
+ * M3a live representatives + M3a2/M3a3 promotions.
  * 非省会 = 地级且不是本省行政中心（见 isProvincialCapital）。
- * 任务点名升 live：保定/沈阳/苏州/洛阳/深圳/昆明/酒泉。
- * 沈阳是辽宁省会、昆明是云南省会，东北/西南另用工厂升大连、遵义，
- * 才能让七大区各有 ≥1 座真正的非省会 live。不是 333 完成。
+ * 直辖市 / 自治区首府 / 本省行政中心都不算非省会。
+ * M3a3：七大区各 ≥3 座真正非省会 live，全国 ≥21。不是 333 完成。
  * @type {{ adcode: string, packId: string, region7: string, status: 'live'|'draft', kit: string }[]}
  */
 export const M3A_PIPELINE = [
   { adcode: '110100', packId: 'beijing', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '130100', packId: 'shijiazhuang', region7: '华北', status: 'draft', kit: 'north-brick-hutong' },
   { adcode: '130600', packId: 'baoding', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '130200', packId: 'tangshan', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '130400', packId: 'handan', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '230100', packId: 'harbin', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '210100', packId: 'shenyang', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '220100', packId: 'changchun', region7: '东北', status: 'draft', kit: 'north-brick-hutong' },
   { adcode: '210200', packId: 'dalian', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '220200', packId: 'jilin', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '230200', packId: 'qiqihar', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '310100', packId: 'shanghai', region7: '华东', status: 'live', kit: 'jiangnan-water' },
   { adcode: '320500', packId: 'suzhou', region7: '华东', status: 'live', kit: 'jiangnan-water' },
-  { adcode: '370200', packId: 'qingdao', region7: '华东', status: 'draft', kit: 'jiangnan-water' },
+  { adcode: '370200', packId: 'qingdao', region7: '华东', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '320200', packId: 'wuxi', region7: '华东', status: 'live', kit: 'jiangnan-water' },
   { adcode: '420100', packId: 'wuhan', region7: '华中', status: 'live', kit: 'jiangnan-water' },
   { adcode: '410300', packId: 'luoyang', region7: '华中', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '430100', packId: 'changsha', region7: '华中', status: 'draft', kit: 'jiangnan-water' },
+  { adcode: '410200', packId: 'kaifeng', region7: '华中', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '420600', packId: 'xiangyang', region7: '华中', status: 'live', kit: 'jiangnan-water' },
   { adcode: '440100', packId: 'guangzhou', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
   { adcode: '440300', packId: 'shenzhen', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
-  { adcode: '450300', packId: 'guilin', region7: '华南', status: 'draft', kit: 'lingnan-qilou' },
+  { adcode: '450300', packId: 'guilin', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '440600', packId: 'foshan', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
   { adcode: '510100', packId: 'chengdu', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '530100', packId: 'kunming', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '520100', packId: 'guiyang', region7: '西南', status: 'draft', kit: 'north-brick-hutong' },
   { adcode: '520300', packId: 'zunyi', region7: '西南', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '511100', packId: 'leshan', region7: '西南', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '510700', packId: 'mianyang', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '610100', packId: 'xian', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
   { adcode: '650100', packId: 'urumqi', region7: '西北', status: 'draft', kit: 'oasis-flat' },
   { adcode: '620900', packId: 'jiuquan', region7: '西北', status: 'live', kit: 'oasis-flat' },
+  { adcode: '610300', packId: 'baoji', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '610400', packId: 'xianyang', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
 ]
 
 /** Task-named promotions (沈阳/昆明 are provincial capitals of other provinces). */
 export const M3A2_NAMED_LIVE = ['baoding', 'shenyang', 'suzhou', 'luoyang', 'shenzhen', 'kunming', 'jiuquan']
 
-/** True non-capitals: not the administrative center of their parent province. One per region. */
+/** True non-capitals: not the administrative center of their parent province. One per region (M3a2). */
 export const M3A2_NONCAPITAL_LIVE = ['baoding', 'dalian', 'suzhou', 'luoyang', 'shenzhen', 'zunyi', 'jiuquan']
+
+/**
+ * M3a3: three true non-capitals per region (21).
+ * 不含石家庄/长春/沈阳/长沙/郑州/广州/贵阳/昆明/乌鲁木齐/兰州等行政中心。
+ */
+export const M3A3_NONCAPITAL_LIVE = [
+  'baoding',
+  'tangshan',
+  'handan',
+  'dalian',
+  'jilin',
+  'qiqihar',
+  'suzhou',
+  'qingdao',
+  'wuxi',
+  'luoyang',
+  'kaifeng',
+  'xiangyang',
+  'shenzhen',
+  'guilin',
+  'foshan',
+  'zunyi',
+  'leshan',
+  'mianyang',
+  'jiuquan',
+  'baoji',
+  'xianyang',
+]
+
+export const M3A3_NEW_LIVE = M3A3_NONCAPITAL_LIVE.filter((id) => !M3A2_NONCAPITAL_LIVE.includes(id))
 
 export const M3A_LIVE_PACKS = M3A_PIPELINE.filter((p) => p.status === 'live').map((p) => p.packId)
 
@@ -110,4 +163,4 @@ export function isProvincialCapital(row, provinces) {
 }
 
 export const DISCLAIMER =
-  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区非省会可玩。其余为草稿或名录灰壳。不是 333 完成。'
+  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余为草稿或名录灰壳。不是 333 完成。'

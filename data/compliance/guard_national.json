@@ -14,6 +14,20 @@
     { "id": "szn-guard", "name": "深圳革命烈士纪念碑", "pack": "shenzhen", "required": true },
     { "id": "km-guard", "name": "昆明人民英雄纪念碑", "pack": "kunming", "required": true },
     { "id": "zy-guard", "name": "红军烈士纪念碑", "pack": "zunyi", "required": true },
-    { "id": "jq-guard", "name": "酒泉革命烈士纪念碑", "pack": "jiuquan", "required": true }
+    { "id": "jq-guard", "name": "酒泉革命烈士纪念碑", "pack": "jiuquan", "required": true },
+    { "id": "ts-guard", "name": "唐山抗震纪念碑", "pack": "tangshan", "required": true },
+    { "id": "hd-guard", "name": "邯郸革命烈士纪念碑", "pack": "handan", "required": true },
+    { "id": "jl-guard", "name": "吉林市革命烈士纪念碑", "pack": "jilin", "required": true },
+    { "id": "qq-guard", "name": "齐齐哈尔革命烈士纪念碑", "pack": "qiqihar", "required": true },
+    { "id": "qd-guard", "name": "青岛革命烈士纪念碑", "pack": "qingdao", "required": true },
+    { "id": "wx-guard", "name": "无锡革命烈士纪念碑", "pack": "wuxi", "required": true },
+    { "id": "kf-guard", "name": "开封革命烈士纪念碑", "pack": "kaifeng", "required": true },
+    { "id": "xyg-guard", "name": "襄阳革命烈士纪念碑", "pack": "xiangyang", "required": true },
+    { "id": "gl-guard", "name": "桂林革命烈士纪念碑", "pack": "guilin", "required": true },
+    { "id": "fs-guard", "name": "佛山革命烈士纪念碑", "pack": "foshan", "required": true },
+    { "id": "ls-guard", "name": "乐山革命烈士纪念碑", "pack": "leshan", "required": true },
+    { "id": "my-guard", "name": "绵阳革命烈士纪念碑", "pack": "mianyang", "required": true },
+    { "id": "bj-guard", "name": "宝鸡革命烈士纪念碑", "pack": "baoji", "required": true },
+    { "id": "xya-guard", "name": "咸阳革命烈士纪念碑", "pack": "xianyang", "required": true }
   ]
 }

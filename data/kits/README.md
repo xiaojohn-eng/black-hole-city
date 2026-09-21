@@ -9,7 +9,7 @@
 | `north-brick-hutong` | 北方砖 + 胡同 | `hutong_axis` | 北京 live；华北草稿 |
 | `jiangnan-water` | 江南水岸 | `jiangnan_water` | 上海 live；江浙沪草稿 |
 | `lingnan-qilou` | 岭南骑楼 | `qilou_street` | 广州 live；华南草稿 |
-| `oasis-flat` | 绿洲平顶 | `oasis_court` | 酒泉 live；乌鲁木齐草稿（西安 live 用北方砖+城墙，不是绿洲卡通） |
+| `oasis-flat` | 绿洲平顶 | `oasis_court` | 酒泉 live；乌鲁木齐草稿（西安 / 宝鸡 / 咸阳 live 用北方砖，不是绿洲卡通） |
 
 未进 0 号、登记给后续：东北厚墙、盆地吊脚、高原石、毡房、海岛坡。哈尔滨 live 暂用北方砖冷色 + `northeast_grid` 路网，不单开套件文件。
 

@@ -1,0 +1,70 @@
+{
+  "adcode": "420600",
+  "packId": "xiangyang",
+  "name": "襄阳市",
+  "alias": [
+    "襄阳"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湖北西北，汉江穿过。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "汉江谷地",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "汉江"
+  ],
+  "neighbors": [
+    "南阳",
+    "十堰",
+    "荆门"
+  ],
+  "cityFunction": [
+    "汉江城市",
+    "古城墙教学点",
+    "非省会"
+  ],
+  "storyTitle": "汉江记忆",
+  "storyLogline": "江风把城墙垛口的记忆吹散。你沿汉江把它们收回博物馆。",
+  "storyBeats": [
+    "从汉江岸公园起步",
+    "旧城巷收集市井记忆",
+    "参观襄阳古城墙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "鼓乐"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xyg-river",
+    "card-xyg-short"
+  ],
+  "briefing": [
+    "我们在襄阳，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "襄阳古城墙只参观。生涯模式看裂隙稳定度。"
+  ]
+}

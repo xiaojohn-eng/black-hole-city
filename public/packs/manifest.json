@@ -1,30 +1,42 @@
 {
-  "version": "m3a2-noncapital-live",
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区非省会可玩。其余为草稿或名录灰壳。不是 333 完成。",
+  "version": "m3a3-noncap3-per-region",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 七大区代表城 + 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。其余为草稿或名录灰壳。不是 333 完成。",
   "liveCityPacks": [
     "beijing",
-    "shanghai",
-    "harbin",
-    "guangzhou",
-    "wuhan",
-    "chengdu",
-    "xian",
     "baoding",
+    "tangshan",
+    "handan",
+    "harbin",
     "shenyang",
     "dalian",
+    "jilin",
+    "qiqihar",
+    "shanghai",
     "suzhou",
+    "qingdao",
+    "wuxi",
+    "wuhan",
     "luoyang",
+    "kaifeng",
+    "xiangyang",
+    "guangzhou",
     "shenzhen",
+    "guilin",
+    "foshan",
+    "chengdu",
     "kunming",
     "zunyi",
-    "jiuquan"
+    "leshan",
+    "mianyang",
+    "xian",
+    "jiuquan",
+    "baoji",
+    "xianyang"
   ],
   "draftCityPacks": [
     "shijiazhuang",
     "changchun",
-    "qingdao",
     "changsha",
-    "guilin",
     "guiyang",
     "urumqi"
   ],
@@ -173,9 +185,9 @@
       "name": "青岛市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "华东",
-      "kitId": "jiangnan-water"
+      "kitId": "north-brick-hutong"
     },
     {
       "id": "luoyang",
@@ -217,7 +229,7 @@
       "name": "桂林市",
       "fictional": false,
       "mode": "career",
-      "status": "draft",
+      "status": "live",
       "region7": "华南",
       "kitId": "lingnan-qilou"
     },
@@ -286,6 +298,138 @@
       "status": "live",
       "region7": "西南",
       "kitId": "jiangnan-water"
+    },
+    {
+      "id": "tangshan",
+      "kind": "city",
+      "adcode": "130200",
+      "name": "唐山市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "handan",
+      "kind": "city",
+      "adcode": "130400",
+      "name": "邯郸市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "jilin",
+      "kind": "city",
+      "adcode": "220200",
+      "name": "吉林市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "qiqihar",
+      "kind": "city",
+      "adcode": "230200",
+      "name": "齐齐哈尔市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "wuxi",
+      "kind": "city",
+      "adcode": "320200",
+      "name": "无锡市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "kaifeng",
+      "kind": "city",
+      "adcode": "410200",
+      "name": "开封市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "xiangyang",
+      "kind": "city",
+      "adcode": "420600",
+      "name": "襄阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "foshan",
+      "kind": "city",
+      "adcode": "440600",
+      "name": "佛山市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华南",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "leshan",
+      "kind": "city",
+      "adcode": "511100",
+      "name": "乐山市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "mianyang",
+      "kind": "city",
+      "adcode": "510700",
+      "name": "绵阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "baoji",
+      "kind": "city",
+      "adcode": "610300",
+      "name": "宝鸡市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "xianyang",
+      "kind": "city",
+      "adcode": "610400",
+      "name": "咸阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "north-brick-hutong"
     }
   ]
 }

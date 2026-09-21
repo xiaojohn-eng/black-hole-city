@@ -1,0 +1,70 @@
+{
+  "adcode": "130200",
+  "packId": "tangshan",
+  "name": "唐山市",
+  "alias": [
+    "唐山"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在华北平原东北部，南临渤海。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "华北平原",
+    "渤海岸"
+  ],
+  "riversLakes": [
+    "渤海",
+    "陡河"
+  ],
+  "neighbors": [
+    "天津",
+    "秦皇岛",
+    "承德"
+  ],
+  "cityFunction": [
+    "工业港口城市",
+    "非省会"
+  ],
+  "storyTitle": "渤海记忆",
+  "storyLogline": "海风把厂区路牌吹散。你沿陡河把它们收回博物馆。",
+  "storyBeats": [
+    "从渤海岸公园起步",
+    "旧街收集市井记忆",
+    "参观开滦矿山公园剪影",
+    "环绕抗震纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "汽笛回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-ts-sea",
+    "card-ts-short"
+  ],
+  "briefing": [
+    "我们在唐山，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "抗震纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "开滦矿山公园只参观。生涯模式看裂隙稳定度。"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-my-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "四川省的简称是？",
+      "choices": [
+        "云",
+        "川",
+        "贵",
+        "陕"
+      ],
+      "answer": 1,
+      "explain": "四川简称「川」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-my-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过绵阳的著名江是？",
+      "choices": [
+        "珠江",
+        "涪江",
+        "黄河",
+        "松花江"
+      ],
+      "answer": 1,
+      "explain": "涪江穿过绵阳。"
+    },
+    {
+      "id": "q-my-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-my-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "子云亭在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "亭台只参观。"
+    },
+    {
+      "id": "q-my-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "四川省的行政中心是？",
+      "choices": [
+        "绵阳",
+        "成都",
+        "乐山",
+        "重庆"
+      ],
+      "answer": 1,
+      "explain": "行政中心是成都，绵阳是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-my-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "绵阳在七大区中属于？",
+      "choices": [
+        "华南",
+        "西南",
+        "西北",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "四川在西南。"
+    },
+    {
+      "id": "q-my-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "绵阳主要属于哪种气候？",
+      "choices": [
+        "温带大陆性",
+        "亚热带湿润",
+        "寒温带",
+        "热带沙漠"
+      ],
+      "answer": 1,
+      "explain": "亚热带湿润。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-my-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "涪江最后汇入哪一条水系？",
+      "choices": [
+        "珠江",
+        "嘉陵江—长江",
+        "黄河",
+        "黑龙江"
+      ],
+      "answer": 1,
+      "explain": "涪江是嘉陵江支流。"
+    },
+    {
+      "id": "q-my-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "贵阳是？",
+      "choices": [
+        "绵阳的一个区",
+        "贵州省行政中心，不能拿来充西南非省会",
+        "四川省会",
+        "直辖市"
+      ],
+      "answer": 1,
+      "explain": "贵阳是省会，本切片仍为草稿。"
+    },
+    {
+      "id": "q-my-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "绵阳是不是四川省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是成都",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "绵阳是非省会。"
+    }
+  ]
+}

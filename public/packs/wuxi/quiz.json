@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-wx-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "江苏省的简称是？",
+      "choices": [
+        "浙",
+        "苏",
+        "皖",
+        "沪"
+      ],
+      "answer": 1,
+      "explain": "江苏简称「苏」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-wx-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "无锡南边著名的湖是？",
+      "choices": [
+        "鄱阳湖",
+        "太湖",
+        "滇池",
+        "白洋淀"
+      ],
+      "answer": 1,
+      "explain": "无锡在太湖北岸。"
+    },
+    {
+      "id": "q-wx-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-wx-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "寄畅园在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "园林只参观。"
+    },
+    {
+      "id": "q-wx-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "江苏省的行政中心是？",
+      "choices": [
+        "无锡",
+        "南京",
+        "苏州",
+        "上海"
+      ],
+      "answer": 1,
+      "explain": "行政中心是南京，无锡是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-wx-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "无锡在七大区中属于？",
+      "choices": [
+        "华北",
+        "华东",
+        "华南",
+        "西南"
+      ],
+      "answer": 1,
+      "explain": "江苏在华东。"
+    },
+    {
+      "id": "q-wx-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "穿过无锡的著名运河是？",
+      "choices": [
+        "灵渠",
+        "京杭大运河",
+        "郑国渠",
+        "都江堰"
+      ],
+      "answer": 1,
+      "explain": "京杭大运河穿过无锡。"
+    },
+    {
+      "id": "q-wx-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "无锡主要属于哪种气候？",
+      "choices": [
+        "温带季风",
+        "亚热带季风",
+        "温带大陆性",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "亚热带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-wx-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "南禅寺的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "寺庙 VISIT。"
+    },
+    {
+      "id": "q-wx-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "无锡是不是江苏省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是南京",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "无锡是非省会。"
+    }
+  ]
+}
