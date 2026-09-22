@@ -1,0 +1,71 @@
+{
+  "adcode": "530900",
+  "packId": "lincang",
+  "name": "临沧市",
+  "alias": [
+    "临沧"
+  ],
+  "shortName": "云",
+  "unitType": "prefecture_city",
+  "parentProvince": "云南省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在澜沧江与南汀河之间。云南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带",
+  "landform": [
+    "河谷",
+    "高原"
+  ],
+  "riversLakes": [
+    "澜沧江",
+    "南汀河"
+  ],
+  "neighbors": [
+    "普洱",
+    "保山",
+    "临沧边境"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "南汀河教学点"
+  ],
+  "storyTitle": "南汀河记忆",
+  "storyLogline": "河谷里的风把临沧文庙前的路牌吹斜。你沿南汀河把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "旧街收集市井记忆",
+    "参观临沧文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-lcg-river",
+    "card-lcg-short"
+  ],
+  "briefing": [
+    "我们在临沧，云南省的地级市，不是本省行政中心。昆明才是云南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲澜沧江与南汀河，对照普洱澜沧江中游、保山怒江、昭通金沙江。不拿丽江插队。"
+  ]
+}

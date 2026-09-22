@@ -1,0 +1,70 @@
+{
+  "adcode": "140600",
+  "packId": "shuozhou",
+  "name": "朔州市",
+  "alias": [
+    "朔州"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在桑干河上游，晋北盆地。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "桑干河"
+  ],
+  "neighbors": [
+    "大同",
+    "忻州",
+    "内蒙古"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "桑干河教学点"
+  ],
+  "storyTitle": "桑干河记忆",
+  "storyLogline": "河谷里的风把崇福寺前的路牌吹斜。你沿桑干河把它们收回博物馆。",
+  "storyBeats": [
+    "从桑干河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观崇福寺外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-szh-river",
+    "card-szh-short"
+  ],
+  "briefing": [
+    "我们在朔州，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "崇福寺只参观外观。本课讲桑干河，对照大同御河、晋中汾河、长治浊漳河。不拿五台山插队。"
+  ]
+}

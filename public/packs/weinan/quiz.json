@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-wna-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "本省级行政区的简称是？",
+      "choices": [
+        "晋",
+        "陕",
+        "豫",
+        "甘"
+      ],
+      "answer": 1,
+      "explain": "陕西简称「陕」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-wna-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过渭南的著名河是？",
+      "choices": [
+        "汉江",
+        "渭河",
+        "延河",
+        "无定河"
+      ],
+      "answer": 1,
+      "explain": "渭河。"
+    },
+    {
+      "id": "q-wna-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "纪念空间应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-wna-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "渭南文庙在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "文保只参观。"
+    },
+    {
+      "id": "q-wna-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "陕西省的行政中心是？",
+      "choices": [
+        "渭南",
+        "西安",
+        "宝鸡",
+        "兰州"
+      ],
+      "answer": 1,
+      "explain": "西安是行政中心，本城是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-wna-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "这座城在七大区中属于？",
+      "choices": [
+        "华北",
+        "西北",
+        "西南",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "七大区：西北。"
+    },
+    {
+      "id": "q-wna-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "渭南主要属于哪种气候？",
+      "choices": [
+        "热带雨林",
+        "温带季风",
+        "寒带冰原",
+        "热带沙漠"
+      ],
+      "answer": 1,
+      "explain": "温带季风。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-wna-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本切片能不能宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能，不是 333 也不是 293 完成",
+        "做满每省六座就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "M3b7 只做非省会 ≥6 的省各 ≥6 座非省会地级市（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省），不是 293 / 333 完成。"
+    },
+    {
+      "id": "q-wna-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "客户端为什么不能写 lat/lon？",
+      "choices": [
+        "好看",
+        "审图与隐私：关卡只用局部网格",
+        "Three.js 不支持",
+        "CSV 没有名字"
+      ],
+      "answer": 1,
+      "explain": "网格坐标不是地理坐标。"
+    },
+    {
+      "id": "q-wna-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "渭南是不是陕西省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是西安",
+        "是首都北京",
+        "是训练场"
+      ],
+      "answer": 1,
+      "explain": "不是，行政中心是西安。"
+    }
+  ]
+}
