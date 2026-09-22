@@ -1,0 +1,70 @@
+{
+  "adcode": "330700",
+  "packId": "jinhua",
+  "name": "金华市",
+  "alias": [
+    "金华"
+  ],
+  "shortName": "浙",
+  "unitType": "prefecture_city",
+  "parentProvince": "浙江省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在金衢盆地，婺江边。浙江省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "婺江"
+  ],
+  "neighbors": [
+    "杭州",
+    "衢州",
+    "丽水"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "婺江教学点"
+  ],
+  "storyTitle": "婺江记忆",
+  "storyLogline": "江风把文庙前的路牌吹斜。你沿婺江把它们收回博物馆。",
+  "storyBeats": [
+    "从婺江岸起步",
+    "旧街水巷收集市井记忆",
+    "参观金华文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "盆地"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-jhu-river",
+    "card-jhu-short"
+  ],
+  "briefing": [
+    "我们在金华，浙江省的地级市，不是本省行政中心。杭州才是浙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲婺江和金衢盆地，对照宁波海岸、舟山东海、绍兴运河。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "220600",
+  "packId": "baishan",
+  "name": "白山市",
+  "alias": [
+    "白山"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在浑江边。吉林省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "浑江"
+  ],
+  "neighbors": [
+    "通化",
+    "延边",
+    "辽宁"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "浑江教学点"
+  ],
+  "storyTitle": "浑江记忆",
+  "storyLogline": "江风把文庙前的路牌吹斜。你沿浑江把它们收回博物馆。",
+  "storyBeats": [
+    "从浑江岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观白山文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-bsh-river",
+    "card-bsh-short"
+  ],
+  "briefing": [
+    "我们在白山，吉林省的地级市，不是本省行政中心。长春才是吉林省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲浑江。吉林非省会地级市只剩这一座未做，所以补上。不拿长白山插队，不是山城毁城秀。"
+  ]
+}

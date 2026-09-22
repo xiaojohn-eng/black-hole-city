@@ -1,0 +1,70 @@
+{
+  "adcode": "420200",
+  "packId": "huangshi",
+  "name": "黄石市",
+  "alias": [
+    "黄石"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在长江中游南岸。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江岸",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "长江"
+  ],
+  "neighbors": [
+    "武汉",
+    "鄂州",
+    "咸宁"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "长江工业岸教学点"
+  ],
+  "storyTitle": "江岸记忆",
+  "storyLogline": "江风把文庙前的路牌吹斜。你沿长江把它们收回博物馆。",
+  "storyBeats": [
+    "从长江岸起步",
+    "旧街水巷收集市井记忆",
+    "参观黄石文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "港岸"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-hgs-river",
+    "card-hgs-short"
+  ],
+  "briefing": [
+    "我们在黄石，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲长江中游工业岸，对照宜昌长江、荆州荆江、襄阳汉江。不是山城毁城秀。"
+  ]
+}

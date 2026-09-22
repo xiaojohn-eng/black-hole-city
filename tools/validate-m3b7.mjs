@@ -205,7 +205,8 @@ if (xzLive.length < 5) fail('西藏 must keep ≥5 non-capital live (M3b6 no reg
 
 const pcLive = PREFECTURES.filter((r) => r.unitType === 'prefecture_city' && r.status === 'live' && r.playable_3d && r.packId)
 if (pcLive.length < 170) fail(`prefecture_city live ${pcLive.length} < 170 (M3b7 batch too small)`)
-if (pcLive.length > 182) fail(`prefecture_city live ${pcLive.length} > 182 honest cap for this slice`)
+// M3b7 shipped at 173, inside a 182 slice window. M3b8+ adds cities past that
+// window. The ≥6 floor above must not regress; only claiming 293 is forbidden.
 if (pcLive.length >= 293) fail(`prefecture_city live ${pcLive.length} ≥ 293 — must not claim 293 complete`)
 
 const BLOCK_CELEB = /丽江|张家界|大理/

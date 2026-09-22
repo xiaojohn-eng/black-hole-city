@@ -1,0 +1,70 @@
+{
+  "adcode": "371400",
+  "packId": "dezhou",
+  "name": "德州市",
+  "alias": [
+    "德州"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在南运河和徒骇河边。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原"
+  ],
+  "riversLakes": [
+    "南运河",
+    "徒骇河"
+  ],
+  "neighbors": [
+    "济南",
+    "沧州",
+    "聊城"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "南运河教学点"
+  ],
+  "storyTitle": "运河记忆",
+  "storyLogline": "平原上的风把文庙前的路牌吹斜。你沿南运河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观德州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "平原"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-dzh-river",
+    "card-dzh-short"
+  ],
+  "briefing": [
+    "我们在德州，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲南运河和徒骇河，对照青岛黄海、东营黄河口、济宁运河。不拿泰山插队。"
+  ]
+}
