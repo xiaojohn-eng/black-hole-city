@@ -1,0 +1,70 @@
+{
+  "adcode": "140500",
+  "packId": "jincheng",
+  "name": "晋城市",
+  "alias": [
+    "晋城"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在山西东南，沁河旁。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河谷",
+    "盆地"
+  ],
+  "riversLakes": [
+    "沁河"
+  ],
+  "neighbors": [
+    "长治",
+    "焦作",
+    "洛阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沁河教学点"
+  ],
+  "storyTitle": "沁河记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿沁河把它们收回博物馆。",
+  "storyBeats": [
+    "从沁河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观晋城文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "砖巷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-jcheng-river",
+    "card-jcheng-short"
+  ],
+  "briefing": [
+    "我们在晋城，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲沁河，它向南流入黄河。阳泉的桃河进海河，忻州的滹沱河石家庄已经讲过。不是山城毁城秀。"
+  ]
+}

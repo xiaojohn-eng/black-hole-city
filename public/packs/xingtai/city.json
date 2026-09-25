@@ -1,0 +1,70 @@
+{
+  "adcode": "130500",
+  "packId": "xingtai",
+  "name": "邢台市",
+  "alias": [
+    "邢台"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在太行山东麓平原，七里河边。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "山麓"
+  ],
+  "riversLakes": [
+    "七里河"
+  ],
+  "neighbors": [
+    "邯郸",
+    "石家庄",
+    "衡水"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "七里河教学点"
+  ],
+  "storyTitle": "七里河记忆",
+  "storyLogline": "平原的风把文庙前的路牌吹斜。你沿七里河把它们收回博物馆。",
+  "storyBeats": [
+    "从七里河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观邢台文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河岸"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-xtai-river",
+    "card-xtai-short"
+  ],
+  "briefing": [
+    "我们在邢台，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲七里河。邯郸讲滏阳河，廊坊讲永定河，承德的滦河这次不拿来插队。"
+  ]
+}

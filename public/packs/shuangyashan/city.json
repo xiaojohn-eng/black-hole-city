@@ -1,0 +1,70 @@
+{
+  "adcode": "230500",
+  "packId": "shuangyashan",
+  "name": "双鸭山市",
+  "alias": [
+    "双鸭山"
+  ],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在三江平原边缘，安邦河边。黑龙江省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "安邦河"
+  ],
+  "neighbors": [
+    "佳木斯",
+    "鹤岗",
+    "鸡西"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "安邦河教学点"
+  ],
+  "storyTitle": "安邦河记忆",
+  "storyLogline": "平原的风把文庙前的路牌吹斜。你沿安邦河把它们收回博物馆。",
+  "storyBeats": [
+    "从安邦河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观双鸭山文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河岸"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-syshan-river",
+    "card-syshan-short"
+  ],
+  "briefing": [
+    "我们在双鸭山，黑龙江省的地级市，不是本省行政中心。哈尔滨才是黑龙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲安邦河，它汇入松花江。佳木斯讲三江平原，鹤岗也在松花江下游。不拿伊春林海插队。"
+  ]
+}
