@@ -1,0 +1,71 @@
+{
+  "adcode": "130700",
+  "packId": "zhangjiakou",
+  "name": "张家口市",
+  "alias": [
+    "张家口"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在洋河上游、永定河上源。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地",
+    "坝上"
+  ],
+  "riversLakes": [
+    "洋河",
+    "永定河"
+  ],
+  "neighbors": [
+    "北京",
+    "承德",
+    "大同"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "洋河教学点"
+  ],
+  "storyTitle": "洋河记忆",
+  "storyLogline": "坝上的风把文庙前的路牌吹斜。你沿洋河把它们收回博物馆。",
+  "storyBeats": [
+    "从洋河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观张家口文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "坝上"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-zjk-river",
+    "card-zjk-short"
+  ],
+  "briefing": [
+    "我们在张家口，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲洋河和永定河上源，对照唐山渤海、秦皇岛海岸、衡水湖。不是山城毁城秀。"
+  ]
+}

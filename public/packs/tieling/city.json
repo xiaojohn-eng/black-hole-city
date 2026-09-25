@@ -1,0 +1,70 @@
+{
+  "adcode": "211200",
+  "packId": "tieling",
+  "name": "铁岭市",
+  "alias": [
+    "铁岭"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽河中上游。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "辽河"
+  ],
+  "neighbors": [
+    "沈阳",
+    "四平",
+    "抚顺"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "辽河教学点"
+  ],
+  "storyTitle": "辽河记忆",
+  "storyLogline": "河风把文庙前的路牌吹斜。你沿辽河把它们收回博物馆。",
+  "storyBeats": [
+    "从辽河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观铁岭文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "平原"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-tli-river",
+    "card-tli-short"
+  ],
+  "briefing": [
+    "我们在铁岭，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲辽河中上游，对照盘锦辽河三角洲、丹东鸭绿江、大连黄海。"
+  ]
+}

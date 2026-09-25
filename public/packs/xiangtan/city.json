@@ -1,0 +1,70 @@
+{
+  "adcode": "430300",
+  "packId": "xiangtan",
+  "name": "湘潭市",
+  "alias": [
+    "湘潭"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湘江中游。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "湘江"
+  ],
+  "neighbors": [
+    "长沙",
+    "株洲",
+    "衡阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "湘江教学点"
+  ],
+  "storyTitle": "湘江记忆",
+  "storyLogline": "江风把文庙前的路牌吹斜。你沿湘江把它们收回博物馆。",
+  "storyBeats": [
+    "从湘江岸起步",
+    "旧街水巷收集市井记忆",
+    "参观湘潭文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xtn-river",
+    "card-xtn-short"
+  ],
+  "briefing": [
+    "我们在湘潭，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲湘江中游，对照岳阳洞庭、益阳资江、常德沅江。不拿张家界插队。"
+  ]
+}

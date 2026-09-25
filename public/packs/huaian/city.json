@@ -1,0 +1,71 @@
+{
+  "adcode": "320800",
+  "packId": "huaian",
+  "name": "淮安市",
+  "alias": [
+    "淮安"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在淮河与京杭运河交汇处。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "水网"
+  ],
+  "riversLakes": [
+    "淮河",
+    "京杭运河"
+  ],
+  "neighbors": [
+    "扬州",
+    "宿迁",
+    "盐城"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淮河运河教学点"
+  ],
+  "storyTitle": "淮河记忆",
+  "storyLogline": "河风把文庙前的路牌吹斜。你沿淮河和运河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河口起步",
+    "旧街砖巷收集市井记忆",
+    "参观淮安文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "船闸"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hua-river",
+    "card-hua-short"
+  ],
+  "briefing": [
+    "我们在淮安，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲淮河与京杭运河交汇，对照苏州运河、徐州故黄河、连云港黄海。"
+  ]
+}
