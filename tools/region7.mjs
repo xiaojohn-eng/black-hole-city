@@ -215,6 +215,25 @@ export const PACK_SLUGS = {
   丽江市: 'lijiang',
   安康市: 'ankang',
   白银市: 'baiyin',
+  廊坊市: 'langfang',
+  阳泉市: 'yangquan',
+  乌海市: 'wuhai',
+  朝阳市: 'chaoyang',
+  鹤岗市: 'hegang',
+  盐城市: 'yancheng',
+  湖州市: 'huzhou',
+  亳州市: 'bozhou',
+  三明市: 'sanming',
+  萍乡市: 'pingxiang',
+  淄博市: 'zibo',
+  新乡市: 'xinxiang',
+  随州市: 'suizhou',
+  永州市: 'yongzhou',
+  梅州市: 'meizhou',
+  玉林市: 'yulingx',
+  自贡市: 'zigong',
+  商洛市: 'shangluo',
+  平凉市: 'pingliang',
 }
 
 /**
@@ -230,6 +249,7 @@ export const PACK_SLUGS = {
  * M3b6：非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）。
  * M3b7：非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）。本刀是 M3b 第六批，不是 293 / 333 完成。
  * M3b8：非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）。本刀是 M3b 第七批，不是 293 / 333 完成。
+ * M3b9：非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）。本刀是 M3b 第八批，不是 293 / 333 完成。
  * @type {{ adcode: string, packId: string, region7: string, status: 'live'|'draft', kit: string }[]}
  */
 export const M3A_PIPELINE = [
@@ -434,6 +454,25 @@ export const M3A_PIPELINE = [
   { adcode: '530700', packId: 'lijiang', region7: '西南', status: 'live', kit: 'jiangnan-water' },
   { adcode: '610900', packId: 'ankang', region7: '西北', status: 'live', kit: 'jiangnan-water' },
   { adcode: '620400', packId: 'baiyin', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '131000', packId: 'langfang', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '140300', packId: 'yangquan', region7: '华北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '150300', packId: 'wuhai', region7: '华北', status: 'live', kit: 'oasis-flat' },
+  { adcode: '211300', packId: 'chaoyang', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '230400', packId: 'hegang', region7: '东北', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '320900', packId: 'yancheng', region7: '华东', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '330500', packId: 'huzhou', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '341600', packId: 'bozhou', region7: '华东', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '350400', packId: 'sanming', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '360300', packId: 'pingxiang', region7: '华东', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '370300', packId: 'zibo', region7: '华东', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '410700', packId: 'xinxiang', region7: '华中', status: 'live', kit: 'north-brick-hutong' },
+  { adcode: '421300', packId: 'suizhou', region7: '华中', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '431100', packId: 'yongzhou', region7: '华中', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '441400', packId: 'meizhou', region7: '华南', status: 'live', kit: 'lingnan-qilou' },
+  { adcode: '450900', packId: 'yulingx', region7: '华南', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '510300', packId: 'zigong', region7: '西南', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '611000', packId: 'shangluo', region7: '西北', status: 'live', kit: 'jiangnan-water' },
+  { adcode: '620800', packId: 'pingliang', region7: '西北', status: 'live', kit: 'north-brick-hutong' },
 ]
 
 /** Task-named promotions (沈阳/昆明 are provincial capitals of other provinces). */
@@ -776,6 +815,42 @@ export const M3B8_NEW_LIVE = [
   'baiyin',
 ]
 
+/**
+ * M3b9: eighth prefecture-city expansion batch.
+ * Every province/AR with ≥8 non-capital prefecture_city rows gets ≥8 live.
+ * Qinghai exempt (only Haidong). Hainan exempt to ≥8: Sansha is never playable,
+ * so playable non-capital prefecture_city = Sanya + Danzhou = 2.
+ * Xinjiang exempt to ≥8: only 3 non-capital prefecture_city (keep ≥3).
+ * Ningxia exempt to ≥8: only 4 (keep ≥4).
+ * Guizhou / Tibet have 5 (keep ≥5, cannot reach 8).
+ * Jilin / Yunnan have 7 and are already all live (keep ≥7, cannot reach 8).
+ * Any province with <8 eligible non-cap is exempt to ≥8 but must not regress.
+ * Municipalities / SARs / Taiwan teaching packs are exempt.
+ * 18–22 new live this slice (honest cap 25) — not 293 complete, not 333 complete.
+ * 张家界 / 大理 / 黄山 stay grey. 玉林 packId is yulingx so it does not collide with 榆林.
+ */
+export const M3B9_NEW_LIVE = [
+  'langfang',
+  'yangquan',
+  'wuhai',
+  'chaoyang',
+  'hegang',
+  'yancheng',
+  'huzhou',
+  'bozhou',
+  'sanming',
+  'pingxiang',
+  'zibo',
+  'xinxiang',
+  'suizhou',
+  'yongzhou',
+  'meizhou',
+  'yulingx',
+  'zigong',
+  'shangluo',
+  'pingliang',
+]
+
 /** 三沙：永远不可玩，不能拿来充非省会 live。计「可玩非省会」时排除。 */
 export const NEVER_PLAYABLE_ADCODES = ['460300']
 
@@ -813,4 +888,4 @@ export function isProvincialCapital(row, provinces) {
 }
 
 export const DISCLAIMER =
-  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 194/293（M3b8 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。'
+  '本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 213/293（M3b9 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。'

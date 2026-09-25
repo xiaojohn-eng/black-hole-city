@@ -1,0 +1,70 @@
+{
+  "adcode": "370300",
+  "packId": "zibo",
+  "name": "淄博市",
+  "alias": [
+    "淄博"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在鲁中，淄河旁。山东省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河谷",
+    "平原"
+  ],
+  "riversLakes": [
+    "淄河"
+  ],
+  "neighbors": [
+    "济南",
+    "潍坊",
+    "东营"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淄河教学点"
+  ],
+  "storyTitle": "淄河记忆",
+  "storyLogline": "平原的风把文庙前的路牌吹斜。你沿淄河把它们收回博物馆。",
+  "storyBeats": [
+    "从淄河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观淄博文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-zibo-river",
+    "card-zibo-short"
+  ],
+  "briefing": [
+    "我们在淄博，山东省的地级市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲淄河，对照青岛黄海、东营黄河口、临沂沂河。不拿泰山插队。"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "adcode": "350400",
+  "packId": "sanming",
+  "name": "三明市",
+  "alias": [
+    "三明"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在闽江上游，沙溪旁。福建省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷"
+  ],
+  "riversLakes": [
+    "沙溪"
+  ],
+  "neighbors": [
+    "南平",
+    "龙岩",
+    "福州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沙溪教学点"
+  ],
+  "storyTitle": "沙溪记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿沙溪把它们收回博物馆。",
+  "storyBeats": [
+    "从沙溪岸起步",
+    "水巷收集市井记忆",
+    "参观三明文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷",
+    "溪声"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-sming-river",
+    "card-sming-short"
+  ],
+  "briefing": [
+    "我们在三明，福建省的地级市，不是本省行政中心。福州才是福建省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲沙溪，它是闽江上游。对照厦门海岸、龙岩汀江。不是山城毁城秀。"
+  ]
+}
