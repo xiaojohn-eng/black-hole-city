@@ -1,0 +1,69 @@
+{
+  "adcode": "451100",
+  "packId": "hezhou",
+  "name": "贺州市",
+  "alias": [
+    "贺州"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在广西东部，贺江边上。广西壮族自治区的地级市，不是本区行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "贺江"
+  ],
+  "neighbors": [
+    "梧州",
+    "桂林"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "贺江教学点"
+  ],
+  "storyTitle": "贺江记忆",
+  "storyLogline": "河谷的风把文庙前的路牌打湿。你沿贺江把它们收回博物馆。",
+  "storyBeats": [
+    "从贺江岸起步",
+    "水巷收集市井记忆",
+    "参观贺州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-hezh-river",
+    "card-hezh-short"
+  ],
+  "briefing": [
+    "我们在贺州，广西壮族自治区的地级市，不是本区行政中心。南宁才是广西壮族自治区行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。贺江向南进入广东，再汇入西江。梧州讲西江干流，桂林讲漓江。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "410600",
+  "packId": "hebi",
+  "name": "鹤壁市",
+  "alias": [
+    "鹤壁"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在河南北部，淇河边。河南省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "淇河"
+  ],
+  "neighbors": [
+    "安阳",
+    "新乡",
+    "濮阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淇河教学点"
+  ],
+  "storyTitle": "淇河记忆",
+  "storyLogline": "河风把文庙前的路牌吹斜。你沿淇河把它们收回博物馆。",
+  "storyBeats": [
+    "从淇河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观鹤壁文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "砖巷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hebi-river",
+    "card-hebi-short"
+  ],
+  "briefing": [
+    "我们在鹤壁，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。淇河向南汇入卫河。安阳讲洹河，新乡讲卫河。课认淇河，不拿山。"
+  ]
+}

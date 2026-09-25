@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 非省会 prefecture_city ≥9 的省各 ≥9 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建与非省会总数 <9 的省）+ 非省会 prefecture_city ≥10 的省各 ≥10 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西与非省会总数 <10 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 246/293（M3b11 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 非省会 prefecture_city ≥9 的省各 ≥9 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建与非省会总数 <9 的省）+ 非省会 prefecture_city ≥10 的省各 ≥10 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西与非省会总数 <10 的省）+ 非省会 prefecture_city ≥11 的省各 ≥11 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西、河北、山西、浙江、江西、黑龙江与非省会总数 <11 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 257/293（M3b12 批次管线，第十一批，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -987,10 +987,10 @@
       "parentAdcode": "210000",
       "provinceName": "辽宁省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "fushun",
+      "playable_3d": true,
+      "preview": "河谷的风把文庙前的路牌吹斜。你沿浑河上游把它们收回博物馆。"
     },
     {
       "adcode": "210500",
@@ -1503,10 +1503,10 @@
       "parentAdcode": "320000",
       "provinceName": "江苏省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "zhenjiang",
+      "playable_3d": true,
+      "preview": "江风把文庙前的路牌打湿。你在京口把运河过江的记忆收回博物馆。"
     },
     {
       "adcode": "321200",
@@ -1839,10 +1839,10 @@
       "parentAdcode": "340000",
       "provinceName": "安徽省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "chizhou",
+      "playable_3d": true,
+      "preview": "江风把文庙前的路牌打湿。你沿秋浦河把它们收回博物馆。"
     },
     {
       "adcode": "341800",
@@ -2271,10 +2271,10 @@
       "parentAdcode": "370000",
       "provinceName": "山东省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "binzhou",
+      "playable_3d": true,
+      "preview": "河风把文庙前的路牌吹斜。你沿入海前的黄河把它们收回博物馆。"
     },
     {
       "adcode": "371700",
@@ -2355,10 +2355,10 @@
       "parentAdcode": "410000",
       "provinceName": "河南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hebi",
+      "playable_3d": true,
+      "preview": "河风把文庙前的路牌吹斜。你沿淇河把它们收回博物馆。"
     },
     {
       "adcode": "410700",
@@ -2571,10 +2571,10 @@
       "parentAdcode": "420000",
       "provinceName": "湖北省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jingmen",
+      "playable_3d": true,
+      "preview": "平原的风把文庙前的路牌打湿。你沿漳河把它们收回博物馆。"
     },
     {
       "adcode": "420900",
@@ -2787,10 +2787,10 @@
       "parentAdcode": "430000",
       "provinceName": "湖南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "huaihua",
+      "playable_3d": true,
+      "preview": "河谷的雾把文庙前的路牌打湿。你沿沅江把它们收回博物馆。"
     },
     {
       "adcode": "431300",
@@ -2919,10 +2919,10 @@
       "parentAdcode": "440000",
       "provinceName": "广东省",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "maoming",
+      "playable_3d": true,
+      "preview": "海风把文庙前的路牌打湿。你沿鉴江把它们收回博物馆。"
     },
     {
       "adcode": "441200",
@@ -3195,10 +3195,10 @@
       "parentAdcode": "450000",
       "provinceName": "广西壮族自治区",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "hezhou",
+      "playable_3d": true,
+      "preview": "河谷的风把文庙前的路牌打湿。你沿贺江把它们收回博物馆。"
     },
     {
       "adcode": "451200",
@@ -3483,10 +3483,10 @@
       "parentAdcode": "510000",
       "provinceName": "四川省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "bazhong",
+      "playable_3d": true,
+      "preview": "盆地的雾把文庙前的路牌打湿。你沿巴河把它们收回博物馆。"
     },
     {
       "adcode": "512000",
@@ -4071,10 +4071,10 @@
       "parentAdcode": "620000",
       "provinceName": "甘肃省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jinchang",
+      "playable_3d": true,
+      "preview": "戈壁的风把文庙前的路牌吹斜。你沿金川河把它们收回博物馆。"
     },
     {
       "adcode": "620400",
@@ -4930,6 +4930,17 @@
     "yangjiang",
     "baise",
     "suining",
-    "jiayuguan"
+    "jiayuguan",
+    "fushun",
+    "zhenjiang",
+    "chizhou",
+    "binzhou",
+    "hebi",
+    "jingmen",
+    "huaihua",
+    "maoming",
+    "hezhou",
+    "bazhong",
+    "jinchang"
   ]
 }

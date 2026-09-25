@@ -1,0 +1,70 @@
+{
+  "adcode": "440900",
+  "packId": "maoming",
+  "name": "茂名市",
+  "alias": [
+    "茂名"
+  ],
+  "shortName": "粤",
+  "unitType": "prefecture_city",
+  "parentProvince": "广东省",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在粤西海岸，鉴江入南海的地方。广东省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "沿海平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "鉴江"
+  ],
+  "neighbors": [
+    "阳江",
+    "湛江",
+    "云浮"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "鉴江教学点"
+  ],
+  "storyTitle": "鉴江记忆",
+  "storyLogline": "海风把文庙前的路牌打湿。你沿鉴江把它们收回博物馆。",
+  "storyBeats": [
+    "从鉴江岸起步",
+    "骑楼街收集市井记忆",
+    "参观茂名文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "海风",
+    "骑楼"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-maom-river",
+    "card-maom-short"
+  ],
+  "briefing": [
+    "我们在茂名，广东省的地级市，不是本省行政中心。广州才是广东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。鉴江向南独自流入南海，不进珠江。阳江讲漠阳江，河源讲东江。"
+  ]
+}

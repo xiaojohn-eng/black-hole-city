@@ -1,19 +1,21 @@
 #!/usr/bin/env node
 /**
- * M3b11 gate: every province/AR with ≥10 eligible non-capital prefecture_city
- * rows must have ≥10 live non-capital prefecture_city.
+ * M3b12 gate: every province/AR with ≥11 eligible non-capital prefecture_city
+ * rows must have ≥11 live non-capital prefecture_city, except Heilongjiang.
  * Eligible excludes 三沙 (never playable). Qinghai exempt (only Haidong).
  * Hainan therefore has 2 playable non-caps (Sanya + Danzhou) and is exempt.
- * Xinjiang has 3 non-capital prefecture_city and is exempt to ≥10 (keep ≥3).
- * Ningxia has 4 and is exempt to ≥10 (keep ≥4).
- * Guizhou / Tibet have 5 and are exempt to ≥10 (keep ≥5).
- * Jilin / Yunnan have 7, already all live, and are exempt to ≥10 (keep ≥7).
- * Inner Mongolia / Fujian have 8, already all live, and are exempt to ≥10 (keep ≥8).
- * Shaanxi has 9, already all live, and is exempt to ≥10 (keep ≥9).
- * Any province with <10 eligible non-cap is exempt to ≥10 but must not regress.
+ * Xinjiang has 3 non-capital prefecture_city and is exempt to ≥11 (keep ≥3).
+ * Ningxia has 4 and is exempt to ≥11 (keep ≥4).
+ * Guizhou / Tibet have 5 and are exempt to ≥11 (keep ≥5).
+ * Jilin / Yunnan have 7, already all live, and are exempt to ≥11 (keep ≥7).
+ * Inner Mongolia / Fujian have 8, already all live, and are exempt to ≥11 (keep ≥8).
+ * Shaanxi has 9, already all live, and is exempt to ≥11 (keep ≥9).
+ * Hebei / Shanxi / Zhejiang / Jiangxi have 10, already all live, and are exempt to ≥11 (keep ≥10).
+ * Heilongjiang has 11 eligible but the only grey city is 伊春, so it is exempt to ≥11 (keep ≥10).
+ * Any province with <11 eligible non-cap is exempt to ≥11 but must not regress.
  * Municipalities / SARs / Taiwan teaching packs are exempt.
- * This slice is M3b's tenth batch — not 293 complete, not 333 complete.
- * 张家界 / 大理 / 黄山 / 泰安 stay grey. 伊春 stays grey.
+ * This slice is M3b's eleventh batch — not 293 complete, not 333 complete.
+ * 张家界 / 大理 / 黄山 / 泰安 stay grey. 伊春 / 本溪 stay grey.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -33,6 +35,7 @@ import {
   M3B9_NEW_LIVE,
   M3B10_NEW_LIVE,
   M3B11_NEW_LIVE,
+  M3B12_NEW_LIVE,
   NEVER_PLAYABLE_ADCODES,
   isProvincialCapital,
 } from './region7.mjs'
@@ -41,30 +44,26 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const SKIP_PARENT = new Set(['municipality', 'sar'])
 const NEVER = new Set(NEVER_PLAYABLE_ADCODES)
-const EXEMPT_PARENT = new Set(['630000', '460000', '650000', '640000', '520000', '540000', '220000', '530000', '150000', '350000', '610000'])
-const PREV = [M3B2_NEW_LIVE, M3B3_NEW_LIVE, M3B4_NEW_LIVE, M3B5_NEW_LIVE, M3B6_NEW_LIVE, M3B7_NEW_LIVE, M3B8_NEW_LIVE, M3B9_NEW_LIVE, M3B10_NEW_LIVE]
+const EXEMPT_PARENT = new Set(['630000', '460000', '650000', '640000', '520000', '540000', '220000', '530000', '150000', '350000', '610000', '130000', '140000', '330000', '360000', '230000'])
+const PREV = [M3B2_NEW_LIVE, M3B3_NEW_LIVE, M3B4_NEW_LIVE, M3B5_NEW_LIVE, M3B6_NEW_LIVE, M3B7_NEW_LIVE, M3B8_NEW_LIVE, M3B9_NEW_LIVE, M3B10_NEW_LIVE, M3B11_NEW_LIVE]
+const GAP_PARENTS = ['210000', '320000', '340000', '370000', '410000', '420000', '430000', '440000', '450000', '510000', '620000']
 
 const MUST_TEACH = {
-  chengde: ['滦河', '不是山城'],
-  xinzhou: ['汾河', '源头', '不是山城'],
-  huludao: ['六股河', '不拿本溪'],
-  qitaihe: ['倭肯河', '不拿伊春'],
-  taizhoujs: ['里下河'],
-  lishui: ['瓯江', '不是山城'],
-  huaibei: ['濉河', '不拿黄山'],
-  xinyu: ['袁河'],
-  rizhao: ['付疃河', '不拿泰山'],
-  luohe: ['沙河'],
-  xianning: ['陆水'],
-  shaoyang: ['资江', '不拿张家界'],
-  yangjiang: ['漠阳江'],
-  baise: ['右江', '不是山城'],
-  suining: ['涪江', '不是山城'],
-  jiayuguan: ['讨赖河', '不拿祁连山'],
+  fushun: ['浑河', '上游', '不拿本溪'],
+  zhenjiang: ['运河过江', '京口'],
+  chizhou: ['秋浦河', '不拿九华山', '不拿黄山', '不是山城'],
+  binzhou: ['黄河', '不拿泰山'],
+  hebi: ['淇河'],
+  jingmen: ['漳河'],
+  huaihua: ['沅江', '不拿张家界', '不是山城'],
+  maoming: ['鉴江'],
+  hezhou: ['贺江'],
+  bazhong: ['巴河', '不是山城'],
+  jinchang: ['金川河', '不拿祁连山'],
 }
 
 function fail(msg) {
-  console.error(`validate:m3b11 FAIL — ${msg}`)
+  console.error(`validate:m3b12 FAIL — ${msg}`)
   process.exitCode = 1
 }
 
@@ -80,19 +79,18 @@ function eligibleNonCap(cities) {
   return cities.filter((r) => !isProvincialCapital(r, PROVINCES) && !NEVER.has(r.adcode))
 }
 
-if (M3B11_NEW_LIVE.length < 15 || M3B11_NEW_LIVE.length > 20) {
-  fail(`M3B11_NEW_LIVE ${M3B11_NEW_LIVE.length} not in 15–20`)
+if (M3B12_NEW_LIVE.length < 11 || M3B12_NEW_LIVE.length > 15) {
+  fail(`M3B12_NEW_LIVE ${M3B12_NEW_LIVE.length} not in 11–15`)
 }
-if (M3B11_NEW_LIVE.length > 20) fail(`M3B11_NEW_LIVE ${M3B11_NEW_LIVE.length} > 20 honest cap`)
-if (new Set(M3B11_NEW_LIVE).size !== M3B11_NEW_LIVE.length) fail('duplicate M3B11 packId')
-for (const id of M3B11_NEW_LIVE) {
+if (new Set(M3B12_NEW_LIVE).size !== M3B12_NEW_LIVE.length) fail('duplicate M3B12 packId')
+for (const id of M3B12_NEW_LIVE) {
   for (const prev of PREV) {
-    if (prev.includes(id)) fail(`M3B11 pack ${id} already in an earlier batch`)
+    if (prev.includes(id)) fail(`M3B12 pack ${id} already in an earlier batch`)
   }
-  if (M3B1_CAPITAL_PACKS.includes(id)) fail(`M3B11 pack ${id} is an administrative center`)
+  if (M3B1_CAPITAL_PACKS.includes(id)) fail(`M3B12 pack ${id} is an administrative center`)
 }
 for (const banned of ['zhangjiajie', 'dali', 'huangshan', 'sansha', 'taian', 'yichunhlj', 'benxi']) {
-  if (M3B11_NEW_LIVE.includes(banned)) fail(`celebrity or never-playable id: ${banned}`)
+  if (M3B12_NEW_LIVE.includes(banned)) fail(`celebrity or never-playable id: ${banned}`)
 }
 
 const manifestPath = path.join(root, 'public', 'packs', 'manifest.json')
@@ -112,7 +110,10 @@ if (!/≥21|各 ≥3/.test(disc)) {
   fail('disclaimer must keep 非省会 live ≥21 / 各 ≥3')
 }
 if (!/≥10/.test(disc)) {
-  fail('disclaimer must state 非省会 ≥10 / 省')
+  fail('disclaimer must keep 非省会 ≥10 / 省')
+}
+if (!/≥11/.test(disc)) {
+  fail('disclaimer must state 非省会 ≥11 / 省')
 }
 if (!/豁免青海|青海/.test(disc)) fail('disclaimer must state 豁免青海')
 if (!/海南|三沙/.test(disc)) fail('disclaimer must state 豁免海南 / 三沙')
@@ -125,13 +126,19 @@ if (!/云南/.test(disc)) fail('disclaimer must state 豁免云南')
 if (!/内蒙古/.test(disc)) fail('disclaimer must state 豁免内蒙古')
 if (!/福建/.test(disc)) fail('disclaimer must state 豁免福建')
 if (!/陕西/.test(disc)) fail('disclaimer must state 豁免陕西')
-if (!/非省会总数 <10/.test(disc)) fail('disclaimer must state 豁免非省会总数 <10 的省')
-if (!/246\/293|约 246|prefecture_city live/.test(disc)) {
-  fail('disclaimer must state prefecture_city live progress, not 293 complete')
+if (!/河北/.test(disc)) fail('disclaimer must state 豁免河北')
+if (!/山西/.test(disc)) fail('disclaimer must state 豁免山西')
+if (!/浙江/.test(disc)) fail('disclaimer must state 豁免浙江')
+if (!/江西/.test(disc)) fail('disclaimer must state 豁免江西')
+if (!/黑龙江/.test(disc)) fail('disclaimer must state 豁免黑龙江')
+if (!/非省会总数 <10/.test(disc)) fail('disclaimer must keep 豁免非省会总数 <10 的省')
+if (!/非省会总数 <11/.test(disc)) fail('disclaimer must state 豁免非省会总数 <11 的省')
+if (!/257\/293|约 257/.test(disc)) {
+  fail('disclaimer must state prefecture_city live 约 257/293, not 293 complete')
 }
 if (!/非省会地级|每省/.test(disc)) fail('disclaimer must keep 非省会地级市')
-if (!/M3b11|第十批|批次管线/.test(disc + String(manifest.version || ''))) {
-  fail('disclaimer/version must keep M3b11 batch pipeline wording')
+if (!/M3b12|第十一批/.test(disc + String(manifest.version || ''))) {
+  fail('disclaimer/version must keep M3b12 / 第十一批 wording')
 }
 
 const liveIds = new Set(manifest.liveCityPacks ?? [])
@@ -147,7 +154,10 @@ for (const prev of PREV) {
   }
 }
 for (const id of M3B11_NEW_LIVE) {
-  if (!liveIds.has(id)) fail(`M3b11 new live missing ${id}`)
+  if (!liveIds.has(id)) fail(`M3b11 new live missing ${id} (regression)`)
+}
+for (const id of M3B12_NEW_LIVE) {
+  if (!liveIds.has(id)) fail(`M3b12 new live missing ${id}`)
 }
 
 const rows = allRows()
@@ -162,18 +172,18 @@ for (const prov of PROVINCES) {
   const nonCap = eligibleNonCap(cities)
   if (nonCap.length === 0) continue
   const liveNonCap = nonCap.filter((r) => r.status === 'live' && r.playable_3d && r.packId)
-  if (nonCap.length < 10) {
+  if (nonCap.length < 11 || EXEMPT_PARENT.has(prov.adcode)) {
     exempt.push(`${prov.shortName}:${liveNonCap.map((c) => c.packId).join('/') || 'none'}`)
     continue
   }
-  if (liveNonCap.length < 10) {
+  if (liveNonCap.length < 11) {
     gaps.push(`${prov.name}（${prov.adcode}） live=${liveNonCap.map((c) => c.packId).join('/') || '0'}`)
   } else {
     covered.push(`${prov.shortName}:${liveNonCap.map((c) => c.packId).join('/')}`)
   }
 }
 
-if (gaps.length) fail(`provinces with ≥10 eligible non-capital prefecture_city but <10 live: ${gaps.join(', ')}`)
+if (gaps.length) fail(`provinces with ≥11 eligible non-capital prefecture_city but <11 live: ${gaps.join(', ')}`)
 
 const qinghai = PROVINCES.find((p) => p.adcode === '630000')
 const qhNonCap = PREFECTURES.filter(
@@ -215,16 +225,20 @@ keepFloor('220000', '吉林', 7, 7, 'baishan')
 keepFloor('150000', '内蒙古', 8, 8, 'wuhai')
 keepFloor('350000', '福建', 8, 8, 'sanming')
 keepFloor('610000', '陕西', 9, 9, 'tongchuan')
+keepFloor('130000', '河北', 10, 10, 'chengde')
+keepFloor('140000', '山西', 10, 10, 'xinzhou')
+keepFloor('330000', '浙江', 10, 10, 'lishui')
+keepFloor('360000', '江西', 10, 10, 'xinyu')
+keepFloor('230000', '黑龙江', 11, 10, 'qitaihe')
 
 const pcLive = PREFECTURES.filter((r) => r.unitType === 'prefecture_city' && r.status === 'live' && r.playable_3d && r.packId)
-if (pcLive.length < 244) fail(`prefecture_city live ${pcLive.length} < 244 (M3b11 batch too small)`)
-// M3b11 shipped at 246, inside a 250 slice window. M3b12+ adds cities past that
-// window. The ≥10 floor above must not regress; only claiming 293 is forbidden.
+if (pcLive.length < 257) fail(`prefecture_city live ${pcLive.length} < 257 (M3b12 batch too small)`)
+if (pcLive.length > 261) fail(`prefecture_city live ${pcLive.length} > 261 honest window for this slice`)
 if (pcLive.length >= 293) fail(`prefecture_city live ${pcLive.length} ≥ 293 — must not claim 293 complete`)
 
 const BLOCK_QUEUE = /张家界|大理|黄山|三沙|泰山|伊春|本溪/
 const seenParent = new Map()
-for (const id of M3B11_NEW_LIVE) {
+for (const id of M3B12_NEW_LIVE) {
   const dir = packDir(id)
   for (const f of ['city.json', 'layout.json', 'knowledge.json', 'quiz.json']) {
     if (!fs.existsSync(path.join(dir, f))) fail(`${id} missing ${f}`)
@@ -251,7 +265,8 @@ for (const id of M3B11_NEW_LIVE) {
   seenParent.set(row.parentAdcode, id)
 
   const parentCities = PREFECTURES.filter((r) => r.parentAdcode === row.parentAdcode && r.unitType === 'prefecture_city')
-  if (eligibleNonCap(parentCities).length < 10) fail(`${id} parent has <10 eligible non-cap`)
+  if (eligibleNonCap(parentCities).length < 11) fail(`${id} parent has <11 eligible non-cap`)
+  if (!GAP_PARENTS.includes(row.parentAdcode)) fail(`${id} parent ${row.parentAdcode} is not a M3b12 gap province`)
 
   const zones = layout.zones ?? []
   if (zones.length < 3) fail(`${id} zones ${zones.length} < 3`)
@@ -279,7 +294,10 @@ for (const id of M3B11_NEW_LIVE) {
   }
 }
 
-if (seenParent.size !== M3B11_NEW_LIVE.length) fail('M3b11 packs must be one city per gap province')
+if (seenParent.size !== M3B12_NEW_LIVE.length) fail('M3b12 packs must be one city per gap province')
+for (const ad of GAP_PARENTS) {
+  if (!seenParent.has(ad)) fail(`gap province ${ad} missing a M3b12 pack`)
+}
 
 const sansha = PREFECTURES.find((r) => r.adcode === '460300')
 if (!sansha || sansha.playable_3d) fail('三沙市 must remain playable_3d=false')
@@ -300,9 +318,9 @@ if (!dali || dali.playable_3d || dali.status === 'live') fail('大理 must stay 
 
 if (process.exitCode) process.exit(process.exitCode)
 
-console.log('validate:m3b11 OK — provinces with ≥10 eligible non-capital prefecture_city have ≥10 live, not 293/333 complete')
-console.log(`  this-slice new live (${M3B11_NEW_LIVE.length}): ${M3B11_NEW_LIVE.join(', ')}`)
-console.log(`  provinces covered ≥10: ${covered.join(', ')}`)
-console.log(`  exempt (<10 eligible non-cap prefecture_city): ${exempt.join(', ')}`)
+console.log('validate:m3b12 OK — provinces with ≥11 eligible non-capital prefecture_city have ≥11 live, not 293/333 complete')
+console.log(`  this-slice new live (${M3B12_NEW_LIVE.length}): ${M3B12_NEW_LIVE.join(', ')}`)
+console.log(`  provinces covered ≥11: ${covered.join(', ')}`)
+console.log(`  exempt (<11 eligible, or named ceiling): ${exempt.join(', ')}`)
 console.log(`  prefecture_city live ${pcLive.length}/293`)
 console.log(`  M3b1 capitals still ${M3B1_CAPITAL_PACKS.length}; earlier batches kept; M3a3 non-capital still ${M3A3_NONCAPITAL_LIVE.length}`)

@@ -1,0 +1,70 @@
+{
+  "adcode": "210400",
+  "packId": "fushun",
+  "name": "抚顺市",
+  "alias": [
+    "抚顺"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽宁东部，浑河上游。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "浑河"
+  ],
+  "neighbors": [
+    "沈阳",
+    "铁岭",
+    "辽阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "浑河上游教学点"
+  ],
+  "storyTitle": "浑河上游记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿浑河上游把它们收回博物馆。",
+  "storyBeats": [
+    "从浑河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观抚顺文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "砖巷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-fsn-river",
+    "card-fsn-short"
+  ],
+  "briefing": [
+    "我们在抚顺，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。浑河上游从抚顺流向沈阳。沈阳认城区里的浑河。不拿本溪水洞，也不选辽阳重复太子河。"
+  ]
+}
