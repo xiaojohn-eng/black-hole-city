@@ -1,0 +1,70 @@
+{
+  "adcode": "321300",
+  "packId": "suqian",
+  "name": "宿迁市",
+  "alias": [
+    "宿迁"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在江苏北部，骆马湖边。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "湖泊"
+  ],
+  "riversLakes": [
+    "骆马湖"
+  ],
+  "neighbors": [
+    "徐州",
+    "淮安",
+    "连云港"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "骆马湖教学点"
+  ],
+  "storyTitle": "骆马湖记忆",
+  "storyLogline": "湖风把文庙前的路牌吹斜。你沿骆马湖把它们收回博物馆。",
+  "storyBeats": [
+    "从骆马湖岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观宿迁文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "湖风",
+    "平原"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-sqian-river",
+    "card-sqian-short"
+  ],
+  "briefing": [
+    "我们在宿迁，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲骆马湖。淮安讲淮河，徐州讲故黄河，盐城讲黄海，苏州讲太湖。宿迁讲苏北的湖。"
+  ]
+}

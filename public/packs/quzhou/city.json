@@ -1,0 +1,70 @@
+{
+  "adcode": "330800",
+  "packId": "quzhou",
+  "name": "衢州市",
+  "alias": [
+    "衢州"
+  ],
+  "shortName": "浙",
+  "unitType": "prefecture_city",
+  "parentProvince": "浙江省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在浙江西部盆地，衢江边。浙江省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "衢江"
+  ],
+  "neighbors": [
+    "金华",
+    "上饶",
+    "南平"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "衢江教学点"
+  ],
+  "storyTitle": "衢江记忆",
+  "storyLogline": "江风把文庙前的路牌打湿。你沿衢江把它们收回博物馆。",
+  "storyBeats": [
+    "从衢江岸起步",
+    "水巷收集市井记忆",
+    "参观衢州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-qzhou-river",
+    "card-qzhou-short"
+  ],
+  "briefing": [
+    "我们在衢州，浙江省的地级市，不是本省行政中心。杭州才是浙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲衢江，它是钱塘江上游。金华讲婺江，宁波舟山讲海。不拿丽水山城插队。"
+  ]
+}

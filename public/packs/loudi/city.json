@@ -1,0 +1,70 @@
+{
+  "adcode": "431300",
+  "packId": "loudi",
+  "name": "娄底市",
+  "alias": [
+    "娄底"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湖南中部，涟水边。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "涟水"
+  ],
+  "neighbors": [
+    "湘潭",
+    "邵阳",
+    "益阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "涟水教学点"
+  ],
+  "storyTitle": "涟水记忆",
+  "storyLogline": "江风把文庙前的路牌打湿。你沿涟水把它们收回博物馆。",
+  "storyBeats": [
+    "从涟水岸起步",
+    "水巷收集市井记忆",
+    "参观娄底文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-loudi-river",
+    "card-loudi-short"
+  ],
+  "briefing": [
+    "我们在娄底，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲涟水，它汇入湘江。益阳讲资江，常德讲沅江，永州讲潇水。不拿张家界插队。"
+  ]
+}

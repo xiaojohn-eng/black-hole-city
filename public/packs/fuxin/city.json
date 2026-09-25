@@ -1,0 +1,70 @@
+{
+  "adcode": "210900",
+  "packId": "fuxin",
+  "name": "阜新市",
+  "alias": [
+    "阜新"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽西，细河边。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "丘陵",
+    "河谷"
+  ],
+  "riversLakes": [
+    "细河"
+  ],
+  "neighbors": [
+    "锦州",
+    "朝阳",
+    "沈阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "细河教学点"
+  ],
+  "storyTitle": "细河记忆",
+  "storyLogline": "辽西的风把文庙前的路牌吹斜。你沿细河把它们收回博物馆。",
+  "storyBeats": [
+    "从细河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观阜新文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "辽西风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-fxin-river",
+    "card-fxin-short"
+  ],
+  "briefing": [
+    "我们在阜新，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲细河。沈阳讲浑河，鞍山讲太子河，朝阳讲大凌河。不拿本溪水洞插队。"
+  ]
+}

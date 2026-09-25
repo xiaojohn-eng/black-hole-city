@@ -1,0 +1,70 @@
+{
+  "adcode": "610200",
+  "packId": "tongchuan",
+  "name": "铜川市",
+  "alias": [
+    "铜川"
+  ],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在渭北旱原，漆水河边。陕西省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "黄土原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "漆水河"
+  ],
+  "neighbors": [
+    "渭南",
+    "延安",
+    "咸阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "漆水河教学点"
+  ],
+  "storyTitle": "漆水河记忆",
+  "storyLogline": "黄土风把文庙前的路牌吹斜。你沿漆水河把它们收回博物馆。",
+  "storyBeats": [
+    "从漆水河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观铜川文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "黄土风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-tchuan-river",
+    "card-tchuan-short"
+  ],
+  "briefing": [
+    "我们在铜川，陕西省的地级市，不是本省行政中心。西安才是陕西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲漆水河，在秦岭以北，水进渭河。商洛在秦岭以南讲丹江。不是山城毁城秀。"
+  ]
+}

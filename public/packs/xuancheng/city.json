@@ -1,0 +1,70 @@
+{
+  "adcode": "341800",
+  "packId": "xuancheng",
+  "name": "宣城市",
+  "alias": [
+    "宣城"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在安徽东南，水阳江边。安徽省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "平原"
+  ],
+  "riversLakes": [
+    "水阳江"
+  ],
+  "neighbors": [
+    "芜湖",
+    "湖州",
+    "杭州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "水阳江教学点"
+  ],
+  "storyTitle": "水阳江记忆",
+  "storyLogline": "江风把文庙前的路牌打湿。你沿水阳江把它们收回博物馆。",
+  "storyBeats": [
+    "从水阳江岸起步",
+    "水巷收集市井记忆",
+    "参观宣城文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xcheng-river",
+    "card-xcheng-short"
+  ],
+  "briefing": [
+    "我们在宣城，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲水阳江，它向北流。芜湖讲长江，蚌埠讲淮河，亳州讲涡河。不拿黄山插队。"
+  ]
+}

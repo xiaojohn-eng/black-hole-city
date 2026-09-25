@@ -1,0 +1,70 @@
+{
+  "adcode": "411700",
+  "packId": "zhumadian",
+  "name": "驻马店市",
+  "alias": [
+    "驻马店"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在河南南部，汝河边。河南省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "汝河"
+  ],
+  "neighbors": [
+    "信阳",
+    "周口",
+    "南阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "汝河教学点"
+  ],
+  "storyTitle": "汝河记忆",
+  "storyLogline": "平原的风把文庙前的路牌吹斜。你沿汝河把它们收回博物馆。",
+  "storyBeats": [
+    "从汝河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观驻马店文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河岸"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-zmd-river",
+    "card-zmd-short"
+  ],
+  "briefing": [
+    "我们在驻马店，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲汝河，它是淮河的支流。信阳更靠近淮河干流，周口讲沙颍河，南阳讲汉江水系。不拿三门峡峡谷插队。"
+  ]
+}
