@@ -1,0 +1,70 @@
+{
+  "adcode": "320900",
+  "packId": "yancheng",
+  "name": "盐城市",
+  "alias": [
+    "盐城"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在黄海西岸，滩涂湿地旁。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "沿海平原",
+    "滩涂"
+  ],
+  "riversLakes": [
+    "黄海"
+  ],
+  "neighbors": [
+    "淮安",
+    "南通",
+    "连云港"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黄海滩涂教学点"
+  ],
+  "storyTitle": "黄海滩涂记忆",
+  "storyLogline": "海风把文庙前的路牌吹斜。你沿黄海滩涂把它们收回博物馆。",
+  "storyBeats": [
+    "从滩涂岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观盐城文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "海风",
+    "滩涂"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-ycheng-river",
+    "card-ycheng-short"
+  ],
+  "briefing": [
+    "我们在盐城，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲黄海滩涂，对照连云港海岸、南通长江口、淮安淮河。不是江南园林秀。"
+  ]
+}

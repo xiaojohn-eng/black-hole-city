@@ -1,0 +1,70 @@
+{
+  "adcode": "450900",
+  "packId": "yulingx",
+  "name": "玉林市",
+  "alias": [
+    "玉林"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在桂东南，南流江旁。广西壮族自治区的地级市，不是自治区首府。packId 避让陕西榆林。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "南流江"
+  ],
+  "neighbors": [
+    "贵港",
+    "北海",
+    "梧州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "南流江教学点"
+  ],
+  "storyTitle": "南流江记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿南流江把它们收回博物馆。",
+  "storyBeats": [
+    "从南流江岸起步",
+    "水巷收集市井记忆",
+    "参观玉林文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-ylgx-river",
+    "card-ylgx-short"
+  ],
+  "briefing": [
+    "我们在玉林，广西壮族自治区的地级市，不是自治区首府。南宁才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲南流江，它独自流入北部湾，不进西江。对照来宾红水河、梧州西江、北海海岸。packId 是 yulingx，避免和陕西榆林冲突。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "620800",
+  "packId": "pingliang",
+  "name": "平凉市",
+  "alias": [
+    "平凉"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在黄土高原，泾河边。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "泾河"
+  ],
+  "neighbors": [
+    "庆阳",
+    "天水",
+    "固原"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "泾河教学点"
+  ],
+  "storyTitle": "泾河记忆",
+  "storyLogline": "黄土风把文庙前的路牌吹斜。你沿泾河把它们收回博物馆。",
+  "storyBeats": [
+    "从泾河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观平凉文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "黄土风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-pliang-river",
+    "card-pliang-short"
+  ],
+  "briefing": [
+    "我们在平凉，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲泾河和黄土高原，对照酒泉河西绿洲、白银黄河、陇南嘉陵江。不是山城毁城秀。"
+  ]
+}

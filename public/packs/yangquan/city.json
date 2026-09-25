@@ -1,0 +1,70 @@
+{
+  "adcode": "140300",
+  "packId": "yangquan",
+  "name": "阳泉市",
+  "alias": [
+    "阳泉"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在太行东麓，桃河旁。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷",
+    "盆地"
+  ],
+  "riversLakes": [
+    "桃河"
+  ],
+  "neighbors": [
+    "太原",
+    "石家庄",
+    "晋中"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "桃河教学点"
+  ],
+  "storyTitle": "桃河记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿桃河把它们收回博物馆。",
+  "storyBeats": [
+    "从桃河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观阳泉文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "太行东"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-yquan-river",
+    "card-yquan-short"
+  ],
+  "briefing": [
+    "我们在阳泉，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲桃河，它汇入滹沱河，属于海河水系。对照临汾汾河、运城黄河。不是山城毁城秀。"
+  ]
+}
