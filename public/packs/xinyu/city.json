@@ -1,0 +1,70 @@
+{
+  "adcode": "360500",
+  "packId": "xinyu",
+  "name": "新余市",
+  "alias": [
+    "新余"
+  ],
+  "shortName": "赣",
+  "unitType": "prefecture_city",
+  "parentProvince": "江西省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在赣西，袁河继续流向赣江的地方。江西省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "袁河"
+  ],
+  "neighbors": [
+    "宜春",
+    "吉安",
+    "萍乡"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "袁河教学点"
+  ],
+  "storyTitle": "袁河记忆",
+  "storyLogline": "水汽把文庙前的路牌打湿。你沿袁河把它们收回博物馆。",
+  "storyBeats": [
+    "从袁河岸起步",
+    "水巷收集市井记忆",
+    "参观新余文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "水巷",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xiny-river",
+    "card-xiny-short"
+  ],
+  "briefing": [
+    "我们在新余，江西省的地级市，不是本省行政中心。南昌才是江西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。宜春讲袁河上游，新余讲它继续向北汇入赣江之前的这一段。"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "jiangnan_water",
+    "spacing": 32,
+    "width": 7
+  },
+  "variants": [
+    "named_river"
+  ],
+  "kitId": "jiangnan-water",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "资江岸",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#6b7a68",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "水巷",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#8a9a88",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "文庙与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#5a7a72",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "syang-guard",
+      "name": "邵阳革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-syang-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "syang-visit",
+      "name": "邵阳文庙",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-syang-visit",
+      "whyHere": "文庙外观只参观。",
+      "silhouette": "飞檐殿宇"
+    },
+    {
+      "id": "syang-water",
+      "name": "资江岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": -28,
+      "tier": 10,
+      "zone": "south_park",
+      "knowledgeCardId": "card-syang-river",
+      "whyHere": "江桥剪影。参观，认识资江。",
+      "silhouette": "河桥"
+    },
+    {
+      "id": "syang-street",
+      "name": "邵阳旧街",
+      "mesh": "wide_alley",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-syang-place",
+      "whyHere": "旧街参观。",
+      "silhouette": "旧巷"
+    },
+    {
+      "id": "syang-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-syang-noncap",
+      "whyHere": "可归档的当代公共建筑。",
+      "silhouette": "高楼"
+    }
+  ]
+}

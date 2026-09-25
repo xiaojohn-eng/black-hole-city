@@ -1,0 +1,71 @@
+{
+  "adcode": "130800",
+  "packId": "chengde",
+  "name": "承德市",
+  "alias": [
+    "承德"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在燕山里，武烈河汇入滦河的地方。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "滦河",
+    "武烈河"
+  ],
+  "neighbors": [
+    "张家口",
+    "唐山",
+    "秦皇岛"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "滦河教学点"
+  ],
+  "storyTitle": "滦河记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿滦河把它们收回博物馆。",
+  "storyBeats": [
+    "从滦河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观承德文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "砖巷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-cde-river",
+    "card-cde-short"
+  ],
+  "briefing": [
+    "我们在承德，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲滦河。武烈河在城里汇进滦河，再向南流入渤海。不是山城毁城秀。"
+  ]
+}

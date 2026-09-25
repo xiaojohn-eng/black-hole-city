@@ -1,0 +1,70 @@
+{
+  "adcode": "140900",
+  "packId": "xinzhou",
+  "name": "忻州市",
+  "alias": [
+    "忻州"
+  ],
+  "shortName": "晋",
+  "unitType": "prefecture_city",
+  "parentProvince": "山西省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在晋北，汾河源头所在的地级市。山西省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "汾河"
+  ],
+  "neighbors": [
+    "太原",
+    "朔州",
+    "阳泉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "汾河源头教学点"
+  ],
+  "storyTitle": "汾河源头记忆",
+  "storyLogline": "黄土风把文庙前的路牌吹斜。你从汾河源头把它们收回博物馆。",
+  "storyBeats": [
+    "从汾河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观忻州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "黄土风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-xzh-river",
+    "card-xzh-short"
+  ],
+  "briefing": [
+    "我们在忻州，山西省的地级市，不是本省行政中心。太原才是山西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。汾河从本市宁武发源，向南经过太原。滹沱河石家庄已经讲过。不是山城毁城秀。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "510900",
+  "packId": "suining",
+  "name": "遂宁市",
+  "alias": [
+    "遂宁"
+  ],
+  "shortName": "川",
+  "unitType": "prefecture_city",
+  "parentProvince": "四川省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在四川盆地中部，涪江边上。四川省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带湿润",
+  "landform": [
+    "盆地",
+    "河谷"
+  ],
+  "riversLakes": [
+    "涪江"
+  ],
+  "neighbors": [
+    "绵阳",
+    "南充",
+    "德阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "涪江教学点"
+  ],
+  "storyTitle": "涪江记忆",
+  "storyLogline": "盆地的雾把文庙前的路牌打湿。你沿涪江把它们收回博物馆。",
+  "storyBeats": [
+    "从涪江岸起步",
+    "水巷收集市井记忆",
+    "参观遂宁文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "盆地雾",
+    "江岸"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-snin-river",
+    "card-snin-short"
+  ],
+  "briefing": [
+    "我们在遂宁，四川省的地级市，不是本省行政中心。成都才是四川省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。涪江从绵阳下来，经遂宁继续向东南。南充讲嘉陵江，广安讲渠江，泸州讲沱江。不是山城毁城秀。"
+  ]
+}

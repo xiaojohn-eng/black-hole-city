@@ -1,0 +1,70 @@
+{
+  "adcode": "411100",
+  "packId": "luohe",
+  "name": "漯河市",
+  "alias": [
+    "漯河"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在豫中，沙河边。河南省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "沙河"
+  ],
+  "neighbors": [
+    "驻马店",
+    "周口",
+    "许昌"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沙河教学点"
+  ],
+  "storyTitle": "沙河记忆",
+  "storyLogline": "平原的风把文庙前的路牌吹斜。你沿沙河把它们收回博物馆。",
+  "storyBeats": [
+    "从沙河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观漯河文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "砖巷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-lhe-river",
+    "card-lhe-short"
+  ],
+  "briefing": [
+    "我们在漯河，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。沙河向东，到周口一带与颍河汇合，再入淮河。驻马店讲汝河。不拿三门峡。"
+  ]
+}
