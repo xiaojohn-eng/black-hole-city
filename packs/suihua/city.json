@@ -1,0 +1,70 @@
+{
+  "adcode": "231200",
+  "packId": "suihua",
+  "name": "绥化市",
+  "alias": [
+    "绥化"
+  ],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在呼兰河流域，松嫩平原。黑龙江省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "呼兰河"
+  ],
+  "neighbors": [
+    "哈尔滨",
+    "大庆",
+    "伊春"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "呼兰河教学点"
+  ],
+  "storyTitle": "呼兰河记忆",
+  "storyLogline": "平原上的风把绥化文庙前的路牌吹斜。你沿呼兰河把它们收回博物馆。",
+  "storyBeats": [
+    "从呼兰河岸公园起步",
+    "旧街收集市井记忆",
+    "参观绥化文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-suh-river",
+    "card-suh-short"
+  ],
+  "briefing": [
+    "我们在绥化，黑龙江省的地级市，不是本省行政中心。哈尔滨才是黑龙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲呼兰河和松嫩平原，对照齐齐哈尔嫩江、大庆油田、佳木斯三江平原。"
+  ]
+}

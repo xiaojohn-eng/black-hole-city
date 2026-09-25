@@ -1,0 +1,71 @@
+{
+  "adcode": "131100",
+  "packId": "hengshui",
+  "name": "衡水市",
+  "alias": [
+    "衡水"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在河北东南，衡水湖旁。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原",
+    "湖泊"
+  ],
+  "riversLakes": [
+    "衡水湖",
+    "滏阳河"
+  ],
+  "neighbors": [
+    "沧州",
+    "邢台",
+    "德州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "衡水湖教学点"
+  ],
+  "storyTitle": "湖岸记忆",
+  "storyLogline": "湖风把衡水文庙前的路牌吹斜。你沿衡水湖把它们收回博物馆。",
+  "storyBeats": [
+    "从湖岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观衡水文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "湖声",
+    "平原风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hsh-river",
+    "card-hsh-short"
+  ],
+  "briefing": [
+    "我们在衡水，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲衡水湖，对照沧州大运河、唐山工业海岸、秦皇岛关城。"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "id": "q-sy-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "辽宁省的简称是？",
+      "choices": [
+        "吉",
+        "辽",
+        "黑",
+        "冀"
+      ],
+      "answer": 1,
+      "explain": "辽宁简称「辽」，行政中心是沈阳。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-sy-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过沈阳城区的著名河是？",
+      "choices": [
+        "松花江",
+        "浑河",
+        "珠江",
+        "黄浦江"
+      ],
+      "answer": 1,
+      "explain": "浑河穿过沈阳。"
+    },
+    {
+      "id": "q-sy-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "九一八纪念空间应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-sy-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "沈阳故宫在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "宫殿只参观。"
+    },
+    {
+      "id": "q-sy-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "沈阳主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风",
+        "热带雨林",
+        "高原山地"
+      ],
+      "answer": 1,
+      "explain": "沈阳是温带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-sy-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "沈阳在七大区中属于？",
+      "choices": [
+        "华北",
+        "东北",
+        "西北",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "辽宁在东北。"
+    },
+    {
+      "id": "q-sy-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "辽宁省的行政中心是？",
+      "choices": [
+        "大连",
+        "沈阳",
+        "长春",
+        "哈尔滨"
+      ],
+      "answer": 1,
+      "explain": "沈阳是辽宁省行政中心。"
+    },
+    {
+      "id": "q-sy-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "哈尔滨是哪一省的行政中心？",
+      "choices": [
+        "辽宁",
+        "吉林",
+        "黑龙江",
+        "河北"
+      ],
+      "answer": 2,
+      "explain": "哈尔滨是黑龙江省行政中心，不要和沈阳搞混。"
+    },
+    {
+      "id": "q-sy-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "沈阳故宫的正确交互是？",
+      "choices": [
+        "守护环绕",
+        "参观",
+        "吸入",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "文保宫殿 VISIT。"
+    },
+    {
+      "id": "q-sy-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "沈阳是不是虚构训练场？",
+      "choices": [
+        "是星湾",
+        "不是，这是辽宁的真城课",
+        "是首都",
+        "是沙漠绿洲"
+      ],
+      "answer": 1,
+      "explain": "沈阳是真城课。"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "510600",
+  "packId": "deyang",
+  "name": "德阳市",
+  "alias": [
+    "德阳"
+  ],
+  "shortName": "川",
+  "unitType": "prefecture_city",
+  "parentProvince": "四川省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在沱江中游，成都平原北缘。四川省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带湿润",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "沱江"
+  ],
+  "neighbors": [
+    "成都",
+    "绵阳",
+    "遂宁"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沱江教学点"
+  ],
+  "storyTitle": "沱江记忆",
+  "storyLogline": "河风把德阳文庙前的路牌吹斜。你沿沱江把它们收回博物馆。",
+  "storyBeats": [
+    "从沱江岸公园起步",
+    "旧街收集市井记忆",
+    "参观德阳文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "盆地雾"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-dey-river",
+    "card-dey-short"
+  ],
+  "briefing": [
+    "我们在德阳，四川省的地级市，不是本省行政中心。成都才是四川省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲沱江，对照泸州长江沱江汇合、绵阳涪江、南充嘉陵江、宜宾长江起点。不是山城毁城秀。"
+  ]
+}

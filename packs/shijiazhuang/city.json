@@ -1,0 +1,69 @@
+{
+  "adcode": "130100",
+  "packId": "shijiazhuang",
+  "name": "石家庄市",
+  "alias": [
+    "石家庄"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在华北平原中南部，滹沱河穿过。河北省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "华北平原",
+    "太行山前"
+  ],
+  "riversLakes": [
+    "滹沱河"
+  ],
+  "neighbors": [
+    "保定",
+    "邢台",
+    "阳泉"
+  ],
+  "cityFunction": [
+    "河北省行政中心"
+  ],
+  "storyTitle": "滹沱记忆",
+  "storyLogline": "平原上的风把省会路牌吹散。你沿滹沱河把它们收回博物馆。",
+  "storyBeats": [
+    "从滹沱河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观正定隆兴寺剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "hutong_maze",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原鼓",
+    "槐树风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-sjz-river",
+    "card-sjz-short"
+  ],
+  "briefing": [
+    "我们在石家庄，河北省的行政中心。保定、唐山、邯郸是本省非省会 live。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "正定隆兴寺只参观。生涯模式看裂隙稳定度。"
+  ]
+}

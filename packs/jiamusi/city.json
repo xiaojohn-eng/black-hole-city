@@ -1,0 +1,70 @@
+{
+  "adcode": "230800",
+  "packId": "jiamusi",
+  "name": "佳木斯市",
+  "alias": [
+    "佳木斯"
+  ],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在三江平原，松花江下游。黑龙江省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原"
+  ],
+  "riversLakes": [
+    "松花江",
+    "三江平原"
+  ],
+  "neighbors": [
+    "哈尔滨",
+    "双鸭山",
+    "鹤岗"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "三江平原教学点"
+  ],
+  "storyTitle": "三江平原记忆",
+  "storyLogline": "江风把沿江路牌吹斜。你沿松花江把它们收回博物馆。",
+  "storyBeats": [
+    "从松花江岸公园起步",
+    "旧街收集市井记忆",
+    "参观沿江古庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "平原风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-jms-river",
+    "card-jms-short"
+  ],
+  "briefing": [
+    "我们在佳木斯，黑龙江省的地级市，不是本省行政中心。哈尔滨才是黑龙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "沿江古庙外观只参观。本课讲三江平原，不是网红湖秀。"
+  ]
+}

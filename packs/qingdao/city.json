@@ -1,0 +1,71 @@
+{
+  "adcode": "370200",
+  "packId": "qingdao",
+  "name": "青岛市",
+  "alias": [
+    "青岛",
+    "岛城"
+  ],
+  "shortName": "鲁",
+  "unitType": "prefecture_city",
+  "parentProvince": "山东省",
+  "region7": "华东",
+  "region4": "北方地区",
+  "locationDesc": "在山东半岛南岸，黄海之滨。山东省的港口城市，不是本省行政中心。",
+  "climateBand": "温带季风（滨海）",
+  "landform": [
+    "半岛丘陵",
+    "港湾"
+  ],
+  "riversLakes": [
+    "黄海"
+  ],
+  "neighbors": [
+    "潍坊",
+    "烟台",
+    "日照"
+  ],
+  "cityFunction": [
+    "港口城市",
+    "滨海地级市",
+    "非省会"
+  ],
+  "storyTitle": "黄海记忆",
+  "storyLogline": "海风把栈桥牌匾吹散。你沿海湾把它们收回博物馆。",
+  "storyBeats": [
+    "从海滨公园起步，先看见海",
+    "旧街收集市井记忆",
+    "参观栈桥与教堂外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "号角"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-qd-sea",
+    "card-qd-short"
+  ],
+  "briefing": [
+    "我们在青岛，山东省的港口城市，不是本省行政中心。济南才是山东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "栈桥和教堂外观只参观。生涯模式看裂隙稳定度。"
+  ]
+}

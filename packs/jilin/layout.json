@@ -1,0 +1,145 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "northeast_grid",
+    "spacing": 44,
+    "width": 12
+  },
+  "variants": [
+    "named_river",
+    "cold_wide_street"
+  ],
+  "kitId": "north-brick-hutong",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "松花江岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#8aa0b0",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "旧街街区",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#9aa3ad",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "北山与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#c5d4e0",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#5b6573",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "jl-guard",
+      "name": "吉林市革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-jl-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "jl-beishan",
+      "name": "北山古庙",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-jl-beishan",
+      "whyHere": "江岸山寺外观只参观。",
+      "silhouette": "飞檐殿宇"
+    },
+    {
+      "id": "jl-bank",
+      "name": "松花江岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-jl-river",
+      "whyHere": "江桥剪影。参观，认识 S 形江城。",
+      "silhouette": "江桥与江面"
+    },
+    {
+      "id": "jl-street",
+      "name": "江城街道",
+      "mesh": "central_street",
+      "interact": "visit",
+      "x": -64,
+      "z": -8,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-jl-rime",
+      "whyHere": "旧街参观。",
+      "silhouette": "宽街店铺"
+    },
+    {
+      "id": "jl-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-jl-plain",
+      "whyHere": "可归档的当代公共建筑。",
+      "silhouette": "高楼"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "220400",
+  "packId": "liaoyuan",
+  "name": "辽源市",
+  "alias": [
+    "辽源"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在东辽河上游。吉林省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "东辽河"
+  ],
+  "neighbors": [
+    "四平",
+    "通化",
+    "梅河口"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "东辽河教学点"
+  ],
+  "storyTitle": "东辽河记忆",
+  "storyLogline": "河风把辽源文庙前的路牌吹斜。你沿东辽河把它们收回博物馆。",
+  "storyBeats": [
+    "从东辽河岸公园起步",
+    "旧街收集市井记忆",
+    "参观辽源文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "河谷风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-lya-river",
+    "card-lya-short"
+  ],
+  "briefing": [
+    "我们在辽源，吉林省的地级市，不是本省行政中心。长春才是吉林省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲东辽河，对照吉林市松花江、四平辽河平原、通化浑江。不是山城毁城秀。"
+  ]
+}

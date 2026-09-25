@@ -1,0 +1,71 @@
+{
+  "adcode": "320200",
+  "packId": "wuxi",
+  "name": "无锡市",
+  "alias": [
+    "无锡"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在太湖北岸，京杭大运河穿过。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "长江三角洲平原",
+    "水网"
+  ],
+  "riversLakes": [
+    "太湖",
+    "京杭大运河"
+  ],
+  "neighbors": [
+    "苏州",
+    "常州",
+    "湖州"
+  ],
+  "cityFunction": [
+    "太湖城市",
+    "运河城市",
+    "非省会"
+  ],
+  "storyTitle": "太湖记忆",
+  "storyLogline": "湖风把园林门匾冲散。你沿运河把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸公园起步",
+    "水巷收集市井记忆",
+    "参观寄畅园与南禅寺",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "river_front"
+  ],
+  "bgmPalette": [
+    "评弹回退",
+    "桨声"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 20,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-wx-lake",
+    "card-wx-short"
+  ],
+  "briefing": [
+    "我们在无锡，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "寄畅园和南禅寺只参观。生涯模式看裂隙稳定度。"
+  ]
+}

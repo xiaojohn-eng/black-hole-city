@@ -1,0 +1,71 @@
+{
+  "adcode": "150900",
+  "packId": "ulanqab",
+  "name": "乌兰察布市",
+  "alias": [
+    "乌兰察布"
+  ],
+  "shortName": "内蒙古",
+  "unitType": "prefecture_city",
+  "parentProvince": "内蒙古自治区",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在阴山南侧，岱海附近。内蒙古自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "高原",
+    "内陆湖"
+  ],
+  "riversLakes": [
+    "岱海"
+  ],
+  "neighbors": [
+    "呼和浩特",
+    "大同",
+    "张家口"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "岱海教学点"
+  ],
+  "storyTitle": "岱海记忆",
+  "storyLogline": "湖风把集宁文庙前的路牌吹斜。你沿岱海把它们收回博物馆。",
+  "storyBeats": [
+    "从岱海岸公园起步",
+    "灌区旧街收集市井记忆",
+    "参观集宁文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "湖风",
+    "高原风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-ulq-river",
+    "card-ulq-short"
+  ],
+  "briefing": [
+    "我们在乌兰察布，内蒙古自治区的地级市，不是自治区首府。呼和浩特才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲岱海内陆湖，对照包头黄河、鄂尔多斯几字弯、巴彦淖尔河套。不用毡房默认皮。强调中华民族共同体。"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "adcode": "530100",
+  "packId": "kunming",
+  "name": "昆明市",
+  "alias": [
+    "昆明",
+    "春城"
+  ],
+  "shortName": "云",
+  "unitType": "prefecture_city",
+  "parentProvince": "云南省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在云贵高原的坝子上，滇池在城南。云南省行政中心。",
+  "climateBand": "亚热带高原（四季如春）",
+  "landform": [
+    "云贵高原",
+    "坝子",
+    "滇池岸"
+  ],
+  "riversLakes": [
+    "滇池",
+    "盘龙江"
+  ],
+  "neighbors": [
+    "曲靖",
+    "玉溪"
+  ],
+  "cityFunction": [
+    "云南省行政中心",
+    "春城教学点"
+  ],
+  "storyTitle": "春城记忆",
+  "storyLogline": "高原风把金马牌坊的记忆吹散。你沿滇池把它们收回博物馆。",
+  "storyBeats": [
+    "从滇池岸公园起步",
+    "旧街收集市井记忆",
+    "参观金马碧鸡坊",
+    "环绕人民英雄纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "plateau_lake"
+  ],
+  "bgmPalette": [
+    "竹笛",
+    "湖风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6d7a62",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-km-lake",
+    "card-km-short"
+  ],
+  "briefing": [
+    "我们在昆明，云南省的行政中心。先看见滇池。这是高原上的坝子城市，不是山城毁城秀。",
+    "人民英雄纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "金马碧鸡坊只参观。生涯模式看裂隙稳定度。"
+  ]
+}

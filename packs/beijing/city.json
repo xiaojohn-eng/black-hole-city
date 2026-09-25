@@ -1,0 +1,44 @@
+{
+  "adcode": "110100",
+  "packId": "beijing",
+  "name": "北京市",
+  "alias": ["北京", "京", "首都"],
+  "shortName": "京",
+  "unitType": "municipality_city",
+  "parentProvince": "北京市",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在华北平原北缘，西边是太行山，北边是燕山，旁边是天津和河北。",
+  "climateBand": "温带季风",
+  "landform": ["平原", "山地"],
+  "riversLakes": ["永定河", "潮白河"],
+  "neighbors": ["天津市", "河北省"],
+  "cityFunction": ["首都", "政治中心", "文化中心"],
+  "storyTitle": "中轴记忆",
+  "storyLogline": "中轴线的风向偏了，城市记忆被吹散。你来把它们收回博物馆。",
+  "storyBeats": [
+    "南城公园起步，先认识我们在首都",
+    "胡同里收集市井记忆",
+    "向东看见当代楼宇",
+    "沿中轴环绕天安门致敬，再参观故宫"
+  ],
+  "gameplayModifiers": ["hutong_maze", "axis_guard"],
+  "bgmPalette": ["京胡", "庄重钟"],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": { "x": 0, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": ["card-bj-capital", "card-bj-short"],
+  "briefing": [
+    "我们在首都北京。南边是公园，中间是中轴线，西边是胡同。",
+    "天安门是国家象征，不能归档进洞。请绕着它走完一圈，完成守护致敬。",
+    "故宫可以走近参观，留下参观记忆。生涯模式不倒计时，看裂隙稳定度就好。"
+  ]
+}

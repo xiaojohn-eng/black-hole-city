@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-ts-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "河北省的简称是？",
+      "choices": [
+        "晋",
+        "冀",
+        "鲁",
+        "豫"
+      ],
+      "answer": 1,
+      "explain": "河北简称「冀」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-ts-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "唐山南边著名的海是？",
+      "choices": [
+        "南海",
+        "渤海",
+        "洱海",
+        "青海湖"
+      ],
+      "answer": 1,
+      "explain": "唐山南临渤海。"
+    },
+    {
+      "id": "q-ts-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "抗震纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-ts-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "开滦矿山公园在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "工业遗产只参观。"
+    },
+    {
+      "id": "q-ts-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "河北省的行政中心是？",
+      "choices": [
+        "唐山",
+        "石家庄",
+        "保定",
+        "邯郸"
+      ],
+      "answer": 1,
+      "explain": "行政中心是石家庄，唐山是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-ts-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "唐山在七大区中属于？",
+      "choices": [
+        "东北",
+        "华北",
+        "西北",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "河北在华北。"
+    },
+    {
+      "id": "q-ts-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "唐山主要属于哪种气候？",
+      "choices": [
+        "热带雨林",
+        "温带季风",
+        "高原山地",
+        "寒带冰原"
+      ],
+      "answer": 1,
+      "explain": "温带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-ts-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "穿过唐山城区的河是？",
+      "choices": [
+        "珠江",
+        "陡河",
+        "松花江",
+        "漓江"
+      ],
+      "answer": 1,
+      "explain": "陡河流向渤海。"
+    },
+    {
+      "id": "q-ts-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本课对抗震纪念空间的态度是？",
+      "choices": [
+        "做成灾难游戏",
+        "绕行致敬，记住重建",
+        "吸入归档",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "博物馆叙事。"
+    },
+    {
+      "id": "q-ts-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "唐山是不是河北省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是石家庄",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "唐山是非省会。"
+    }
+  ]
+}

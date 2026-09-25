@@ -1,0 +1,70 @@
+{
+  "adcode": "410200",
+  "packId": "kaifeng",
+  "name": "开封市",
+  "alias": [
+    "开封",
+    "汴梁"
+  ],
+  "shortName": "豫",
+  "unitType": "prefecture_city",
+  "parentProvince": "河南省",
+  "region7": "华中",
+  "region4": "北方地区",
+  "locationDesc": "在豫东平原，黄河在城北。河南省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "豫东平原",
+    "黄河岸"
+  ],
+  "riversLakes": [
+    "黄河",
+    "汴河"
+  ],
+  "neighbors": [
+    "郑州",
+    "商丘"
+  ],
+  "cityFunction": [
+    "宋都教学点",
+    "非省会"
+  ],
+  "storyTitle": "汴梁记忆",
+  "storyLogline": "河风把铁塔檐铃吹散。你沿汴河把古都记忆送回博物馆。",
+  "storyBeats": [
+    "从汴河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观铁塔与相国寺",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "中原鼓",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-kf-river",
+    "card-kf-short"
+  ],
+  "briefing": [
+    "我们在开封，河南省的地级市，不是本省行政中心。郑州才是河南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "铁塔和相国寺只参观。生涯模式看裂隙稳定度。"
+  ]
+}

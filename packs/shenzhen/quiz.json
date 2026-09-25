@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-szn-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "广东省的简称是？",
+      "choices": [
+        "桂",
+        "粤",
+        "闽",
+        "琼"
+      ],
+      "answer": 1,
+      "explain": "广东简称「粤」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-szn-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "深圳在哪条大口的东岸？",
+      "choices": [
+        "长江口",
+        "珠江口",
+        "黄河口",
+        "辽河口"
+      ],
+      "answer": 1,
+      "explain": "深圳在珠江口东岸。"
+    },
+    {
+      "id": "q-szn-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-szn-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "大鹏所城在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "所城只参观。"
+    },
+    {
+      "id": "q-szn-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广东省的行政中心是？",
+      "choices": [
+        "深圳",
+        "广州",
+        "珠海",
+        "香港"
+      ],
+      "answer": 1,
+      "explain": "行政中心是广州，深圳是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-szn-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "深圳在七大区中属于？",
+      "choices": [
+        "华东",
+        "华南",
+        "西南",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "广东在华南。"
+    },
+    {
+      "id": "q-szn-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "深圳主要属于哪种气候？",
+      "choices": [
+        "温带季风",
+        "亚热带季风",
+        "温带大陆性",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "亚热带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-szn-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "经济特区在本课里主要说的是？",
+      "choices": [
+        "深圳的教学职能",
+        "一座火山",
+        "一座沙漠",
+        "首都中轴"
+      ],
+      "answer": 0,
+      "explain": "深圳是经济特区教学点。"
+    },
+    {
+      "id": "q-szn-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "天后宫的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "寺庙 VISIT。"
+    },
+    {
+      "id": "q-szn-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "深圳是不是广东省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是广州",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "深圳是非省会。"
+    }
+  ]
+}

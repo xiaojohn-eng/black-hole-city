@@ -1,0 +1,72 @@
+{
+  "adcode": "211100",
+  "packId": "panjin",
+  "name": "盘锦市",
+  "alias": [
+    "盘锦"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽河三角洲，南临渤海。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "三角洲",
+    "湿地"
+  ],
+  "riversLakes": [
+    "辽河",
+    "渤海"
+  ],
+  "neighbors": [
+    "鞍山",
+    "锦州",
+    "营口"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "辽河三角洲教学点"
+  ],
+  "storyTitle": "辽河口记忆",
+  "storyLogline": "湿地里的风把观鸟栈道的路牌吹斜。你沿辽河把它们收回博物馆。",
+  "storyBeats": [
+    "从辽河湿地公园起步",
+    "旧街收集市井记忆",
+    "参观湿地观鸟剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "湿地风",
+    "海风"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-pj-river",
+    "card-pj-short"
+  ],
+  "briefing": [
+    "我们在盘锦，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "湿地只参观。本课讲辽河三角洲和渤海，不是山城毁城秀。"
+  ]
+}

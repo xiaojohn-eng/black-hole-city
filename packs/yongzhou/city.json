@@ -1,0 +1,70 @@
+{
+  "adcode": "431100",
+  "packId": "yongzhou",
+  "name": "永州市",
+  "alias": [
+    "永州"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湘江上游，潇水汇入处。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷"
+  ],
+  "riversLakes": [
+    "潇水",
+    "湘江"
+  ],
+  "neighbors": [
+    "衡阳",
+    "郴州",
+    "桂林"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "潇水教学点"
+  ],
+  "storyTitle": "潇水记忆",
+  "storyLogline": "江风把文庙前的路牌吹斜。你沿潇水把它们收回博物馆。",
+  "storyBeats": [
+    "从潇水岸起步",
+    "水巷收集市井记忆",
+    "参观永州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-yzhou-river",
+    "card-yzhou-short"
+  ],
+  "briefing": [
+    "我们在永州，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲潇水汇入湘江，对照岳阳洞庭湖、常德沅江、益阳资江。不拿张家界插队。"
+  ]
+}

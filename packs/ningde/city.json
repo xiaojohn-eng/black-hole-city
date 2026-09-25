@@ -1,0 +1,72 @@
+{
+  "adcode": "350900",
+  "packId": "ningde",
+  "name": "宁德市",
+  "alias": [
+    "宁德"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在闽东沿海，三都澳一带。福建省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "港湾",
+    "海岸"
+  ],
+  "riversLakes": [
+    "三都澳",
+    "东海"
+  ],
+  "neighbors": [
+    "福州",
+    "南平",
+    "温州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "闽东港湾教学点"
+  ],
+  "storyTitle": "三都澳记忆",
+  "storyLogline": "海风把骑楼前的路牌吹斜。你沿岸把它们收回博物馆。",
+  "storyBeats": [
+    "从三都澳岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观霍童古街庙宇",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "港湾"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-nde-river",
+    "card-nde-short"
+  ],
+  "briefing": [
+    "我们在宁德，福建省的地级市，不是本省行政中心。福州才是福建省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "霍童古街庙宇只参观。本课讲闽东港湾，对照厦漳泉河口，不是山城毁城秀。"
+  ]
+}

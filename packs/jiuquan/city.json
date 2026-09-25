@@ -1,0 +1,70 @@
+{
+  "adcode": "620900",
+  "packId": "jiuquan",
+  "name": "酒泉市",
+  "alias": [
+    "酒泉"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在河西走廊西段的绿洲上，讨赖河流过。甘肃省的地级市，不是本省行政中心。敦煌在本市辖区内。",
+  "climateBand": "温带大陆性（干旱）",
+  "landform": [
+    "河西走廊",
+    "绿洲"
+  ],
+  "riversLakes": [
+    "讨赖河",
+    "疏勒河"
+  ],
+  "neighbors": [
+    "嘉峪关",
+    "张掖"
+  ],
+  "cityFunction": [
+    "河西走廊绿洲城",
+    "丝路教学点",
+    "非省会"
+  ],
+  "storyTitle": "绿洲记忆",
+  "storyLogline": "风沙把鼓楼牌匾盖住。你沿灌溉渠把它们收回博物馆。",
+  "storyBeats": [
+    "从绿洲公园起步",
+    "平顶庭院收集市井记忆",
+    "参观鼓楼与莫高窟剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
+  "bgmPalette": [
+    "驼铃回退",
+    "渠水"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-jq-oasis",
+    "card-jq-short"
+  ],
+  "briefing": [
+    "我们在酒泉，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "鼓楼和莫高窟剪影只参观。生涯模式看裂隙稳定度。"
+  ]
+}

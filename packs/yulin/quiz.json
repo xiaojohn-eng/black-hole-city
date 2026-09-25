@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-yul-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "本省级行政区的简称是？",
+      "choices": [
+        "晋",
+        "陕",
+        "内蒙古",
+        "宁"
+      ],
+      "answer": 1,
+      "explain": "陕西简称「陕」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-yul-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过榆林的著名河是？",
+      "choices": [
+        "渭河",
+        "无定河",
+        "汉江",
+        "延河"
+      ],
+      "answer": 1,
+      "explain": "无定河。"
+    },
+    {
+      "id": "q-yul-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "纪念空间应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-yul-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "镇北台在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "文保只参观。"
+    },
+    {
+      "id": "q-yul-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "陕西省的行政中心是？",
+      "choices": [
+        "榆林",
+        "西安",
+        "延安",
+        "兰州"
+      ],
+      "answer": 1,
+      "explain": "西安是行政中心，本城是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-yul-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "这座城在七大区中属于？",
+      "choices": [
+        "华北",
+        "西北",
+        "华南",
+        "西南"
+      ],
+      "answer": 1,
+      "explain": "七大区：西北。"
+    },
+    {
+      "id": "q-yul-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "榆林主要属于哪种气候？",
+      "choices": [
+        "热带雨林",
+        "温带大陆性",
+        "亚热带季风",
+        "寒带冰原"
+      ],
+      "answer": 1,
+      "explain": "温带大陆性。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-yul-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本切片能不能宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能，不是 333 也不是 293 完成",
+        "做满每省五座就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "M3b6 只做非省会 ≥5 的省各 ≥5 座非省会地级市（豁免青海、海南、新疆与非省会总数 <5 的省），不是 293 / 333 完成。"
+    },
+    {
+      "id": "q-yul-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "客户端为什么不能写 lat/lon？",
+      "choices": [
+        "好看",
+        "审图与隐私：关卡只用局部网格",
+        "Three.js 不支持",
+        "CSV 没有名字"
+      ],
+      "answer": 1,
+      "explain": "网格坐标不是地理坐标。"
+    },
+    {
+      "id": "q-yul-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "榆林是不是陕西省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是西安",
+        "是首都北京",
+        "是训练场"
+      ],
+      "answer": 1,
+      "explain": "不是，行政中心是西安。"
+    }
+  ]
+}

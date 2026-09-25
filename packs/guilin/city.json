@@ -1,0 +1,70 @@
+{
+  "adcode": "450300",
+  "packId": "guilin",
+  "name": "桂林市",
+  "alias": [
+    "桂林"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在广西东北，漓江穿过喀斯特峰林。广西壮族自治区的地级市，不是本区行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "喀斯特峰林",
+    "河谷"
+  ],
+  "riversLakes": [
+    "漓江"
+  ],
+  "neighbors": [
+    "柳州",
+    "贺州"
+  ],
+  "cityFunction": [
+    "漓江城市",
+    "喀斯特教学点",
+    "非省会"
+  ],
+  "storyTitle": "漓江记忆",
+  "storyLogline": "江风把王城牌匾藏进峰林。你沿漓江把它们收回博物馆。",
+  "storyBeats": [
+    "从漓江岸公园起步",
+    "旧街收集市井记忆",
+    "参观靖江王城",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "qilou_arcade"
+  ],
+  "bgmPalette": [
+    "江声",
+    "南音回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-gl-river",
+    "card-gl-short"
+  ],
+  "briefing": [
+    "我们在桂林，广西壮族自治区的地级市，不是本区行政中心。南宁才是广西行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "靖江王城只参观。这是博物馆课，不是山水明信片关卡。生涯模式看裂隙稳定度。"
+  ]
+}

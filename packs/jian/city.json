@@ -1,0 +1,71 @@
+{
+  "adcode": "360800",
+  "packId": "jian",
+  "name": "吉安市",
+  "alias": [
+    "吉安"
+  ],
+  "shortName": "赣",
+  "unitType": "prefecture_city",
+  "parentProvince": "江西省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在赣江中游。江西省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "赣江"
+  ],
+  "neighbors": [
+    "赣州",
+    "宜春",
+    "抚州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "赣江中游教学点"
+  ],
+  "storyTitle": "赣江中游记忆",
+  "storyLogline": "江风把白鹭洲前的路牌吹斜。你沿赣江把它们收回博物馆。",
+  "storyBeats": [
+    "从赣江岸公园起步",
+    "水巷收集市井记忆",
+    "参观白鹭洲书院",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-jan-river",
+    "card-jan-short"
+  ],
+  "briefing": [
+    "我们在吉安，江西省的地级市，不是本省行政中心。南昌才是江西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "白鹭洲书院只参观。本课讲赣江中游，对照赣州上游、九江长江。"
+  ]
+}

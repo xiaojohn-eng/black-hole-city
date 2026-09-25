@@ -1,0 +1,69 @@
+{
+  "adcode": "430200",
+  "packId": "zhuzhou",
+  "name": "株洲市",
+  "alias": [
+    "株洲"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湘江下游，与长沙、湘潭相邻。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷丘陵"
+  ],
+  "riversLakes": [
+    "湘江"
+  ],
+  "neighbors": [
+    "长沙",
+    "湘潭",
+    "萍乡"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "交通工业城市"
+  ],
+  "storyTitle": "湘江记忆",
+  "storyLogline": "江雾把神农广场的路牌藏起来。你沿湘江把它们收回博物馆。",
+  "storyBeats": [
+    "从湘江岸公园起步",
+    "旧街收集市井记忆",
+    "参观神农城剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "湘水",
+    "汽笛回退"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-zz-river",
+    "card-zz-short"
+  ],
+  "briefing": [
+    "我们在株洲，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "神农城剪影只参观。生涯模式看裂隙稳定度。"
+  ]
+}

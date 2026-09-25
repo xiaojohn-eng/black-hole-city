@@ -1,0 +1,71 @@
+{
+  "adcode": "610700",
+  "packId": "hanzhong",
+  "name": "汉中市",
+  "alias": [
+    "汉中"
+  ],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在汉江上游谷地。陕西省的地级市，不是本省行政中心。气候比关中更湿润。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "谷地",
+    "江岸"
+  ],
+  "riversLakes": [
+    "汉江"
+  ],
+  "neighbors": [
+    "安康",
+    "广元",
+    "宝鸡"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "汉江上游教学点"
+  ],
+  "storyTitle": "汉江记忆",
+  "storyLogline": "谷地里的水汽把古汉台前的路牌藏起来。你沿汉江把它们收回博物馆。",
+  "storyBeats": [
+    "从汉江岸公园起步",
+    "旧街收集市井记忆",
+    "参观古汉台",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-hzh-river",
+    "card-hzh-short"
+  ],
+  "briefing": [
+    "我们在汉中，陕西省的地级市，不是本省行政中心。西安才是陕西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "古汉台只参观。本课讲汉江谷地，对照关中的宝鸡咸阳，不是山城毁城秀。"
+  ]
+}

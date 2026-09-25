@@ -1,0 +1,70 @@
+{
+  "adcode": "421300",
+  "packId": "suizhou",
+  "name": "随州市",
+  "alias": [
+    "随州"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在鄂北，涢水旁。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "岗地"
+  ],
+  "riversLakes": [
+    "涢水"
+  ],
+  "neighbors": [
+    "襄阳",
+    "孝感",
+    "信阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "涢水教学点"
+  ],
+  "storyTitle": "涢水记忆",
+  "storyLogline": "河谷的风把文庙前的路牌吹斜。你沿涢水把它们收回博物馆。",
+  "storyBeats": [
+    "从涢水岸起步",
+    "水巷收集市井记忆",
+    "参观随州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷",
+    "江风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-suiz-river",
+    "card-suiz-short"
+  ],
+  "briefing": [
+    "我们在随州，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲涢水，它汇入汉江。对照宜昌长江、襄阳汉江干流。"
+  ]
+}

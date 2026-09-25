@@ -1,0 +1,70 @@
+{
+  "adcode": "441600",
+  "packId": "heyuan",
+  "name": "河源市",
+  "alias": [
+    "河源"
+  ],
+  "shortName": "粤",
+  "unitType": "prefecture_city",
+  "parentProvince": "广东省",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在广东东北，东江边。广东省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "东江"
+  ],
+  "neighbors": [
+    "梅州",
+    "惠州",
+    "赣州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "东江教学点"
+  ],
+  "storyTitle": "东江记忆",
+  "storyLogline": "江风把骑楼前的路牌打湿。你沿东江把它们收回博物馆。",
+  "storyBeats": [
+    "从东江岸起步",
+    "骑楼街收集市井记忆",
+    "参观河源文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "骑楼"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-hyuan-river",
+    "card-hyuan-short"
+  ],
+  "briefing": [
+    "我们在河源，广东省的地级市，不是本省行政中心。广州才是广东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。课标把东江、北江、西江放在一起认。韶关讲北江，肇庆讲西江，河源讲东江。不拿丹霞做山城秀。"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "621100",
+  "packId": "dingxi",
+  "name": "定西市",
+  "alias": [
+    "定西"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在陇中黄土高原，祖厉河水系上。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "祖厉河"
+  ],
+  "neighbors": [
+    "兰州",
+    "天水",
+    "白银"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "祖厉河教学点"
+  ],
+  "storyTitle": "祖厉河记忆",
+  "storyLogline": "黄土风把文庙前的路牌吹斜。你沿祖厉河把它们收回博物馆。",
+  "storyBeats": [
+    "从祖厉河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观定西文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "黄土风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-dxsi-river",
+    "card-dxsi-short"
+  ],
+  "briefing": [
+    "我们在定西，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。城区的关川河汇入祖厉河，向北进黄河。天水讲向东的渭河，酒泉讲河西绿洲。不用绿洲平顶。"
+  ]
+}

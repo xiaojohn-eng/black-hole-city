@@ -1,0 +1,70 @@
+{
+  "adcode": "131000",
+  "packId": "langfang",
+  "name": "廊坊市",
+  "alias": [
+    "廊坊"
+  ],
+  "shortName": "冀",
+  "unitType": "prefecture_city",
+  "parentProvince": "河北省",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在京津之间，永定河与北运河附近。河北省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "平原"
+  ],
+  "riversLakes": [
+    "永定河",
+    "北运河"
+  ],
+  "neighbors": [
+    "北京",
+    "天津",
+    "保定"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "永定河下游教学点"
+  ],
+  "storyTitle": "永定河下游记忆",
+  "storyLogline": "平原的风把文庙前的路牌吹斜。你沿永定河下游把它们收回博物馆。",
+  "storyBeats": [
+    "从永定河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观廊坊文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "运河"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-lfang-river",
+    "card-lfang-short"
+  ],
+  "briefing": [
+    "我们在廊坊，河北省的地级市，不是本省行政中心。石家庄才是河北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲永定河下游和北运河，对照张家口上源、唐山渤海、衡水湖。不是山城毁城秀。"
+  ]
+}

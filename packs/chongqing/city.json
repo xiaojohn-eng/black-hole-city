@@ -1,0 +1,71 @@
+{
+  "adcode": "500100",
+  "packId": "chongqing",
+  "name": "重庆市",
+  "alias": [
+    "重庆",
+    "渝"
+  ],
+  "shortName": "渝",
+  "unitType": "municipality_city",
+  "parentProvince": "重庆市",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在长江与嘉陵江汇合处。直辖市主城包。本课是两江博物馆，不是山城毁城秀。",
+  "climateBand": "亚热带湿润",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "长江",
+    "嘉陵江"
+  ],
+  "neighbors": [
+    "四川",
+    "贵州",
+    "湖北"
+  ],
+  "cityFunction": [
+    "直辖市"
+  ],
+  "storyTitle": "两江记忆",
+  "storyLogline": "江雾把解放碑的轮廓藏起来。你沿两江把它们收回博物馆。",
+  "storyBeats": [
+    "从江岸公园起步",
+    "旧街收集市井记忆",
+    "参观湖广会馆",
+    "环绕人民解放纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "two_rivers_confluence",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江声",
+    "雾笛"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-cq-river",
+    "card-cq-short"
+  ],
+  "briefing": [
+    "我们在重庆，直辖市主城。本课用江南水岸讲两江汇合，不是山城毁城秀，也不把崖线写成全国默认皮肤。",
+    "人民解放纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "湖广会馆只参观。生涯模式看裂隙稳定度。"
+  ]
+}

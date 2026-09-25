@@ -1,0 +1,68 @@
+{
+  "adcode": "450100",
+  "packId": "nanning",
+  "name": "南宁市",
+  "alias": [
+    "南宁"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在邕江岸。广西壮族自治区首府。桂林是非省会 live。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "盆地丘陵"
+  ],
+  "riversLakes": [
+    "邕江"
+  ],
+  "neighbors": [
+    "崇左",
+    "贵港",
+    "钦州"
+  ],
+  "cityFunction": [
+    "自治区首府"
+  ],
+  "storyTitle": "邕江记忆",
+  "storyLogline": "湿热的风把骑楼牌匾吹斜。你沿邕江把它们收回博物馆。",
+  "storyBeats": [
+    "从邕江岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观旧骑楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "南音",
+    "江声"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-nn-river",
+    "card-nn-short"
+  ],
+  "briefing": [
+    "我们在南宁，广西壮族自治区的首府。桂林是非省会 live。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "骑楼旧街只参观。强调中华民族共同体。"
+  ]
+}

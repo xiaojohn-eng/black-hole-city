@@ -1,0 +1,69 @@
+{
+  "adcode": "220800",
+  "packId": "baicheng",
+  "name": "白城市",
+  "alias": [
+    "白城"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在嫩江平原西缘。吉林省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原"
+  ],
+  "riversLakes": [
+    "嫩江"
+  ],
+  "neighbors": [
+    "松原",
+    "齐齐哈尔",
+    "兴安"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "嫩江平原教学点"
+  ],
+  "storyTitle": "嫩江平原记忆",
+  "storyLogline": "平原上的风把沿江古庙前的路牌吹斜。你沿嫩江把它们收回博物馆。",
+  "storyBeats": [
+    "从嫩江岸公园起步",
+    "旧街收集市井记忆",
+    "参观沿江古庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-bch-river",
+    "card-bch-short"
+  ],
+  "briefing": [
+    "我们在白城，吉林省的地级市，不是本省行政中心。长春才是吉林省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "沿江古庙只参观。本课讲嫩江平原，对照松原松嫩平原、四平辽河平原。"
+  ]
+}

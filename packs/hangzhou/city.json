@@ -1,0 +1,69 @@
+{
+  "adcode": "330100",
+  "packId": "hangzhou",
+  "name": "杭州市",
+  "alias": [
+    "杭州"
+  ],
+  "shortName": "浙",
+  "unitType": "prefecture_city",
+  "parentProvince": "浙江省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在钱塘江下游、西湖东岸。浙江省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "丘陵",
+    "湖岸"
+  ],
+  "riversLakes": [
+    "西湖",
+    "钱塘江"
+  ],
+  "neighbors": [
+    "绍兴",
+    "嘉兴",
+    "湖州"
+  ],
+  "cityFunction": [
+    "浙江省行政中心"
+  ],
+  "storyTitle": "西湖记忆",
+  "storyLogline": "湖风把断桥的轮廓藏进雾里。你沿湖岸把它们收回博物馆。",
+  "storyBeats": [
+    "从湖岸公园起步",
+    "旧街收集市井记忆",
+    "参观断桥与灵隐外观",
+    "环绕浙江革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "river_front"
+  ],
+  "bgmPalette": [
+    "湖声",
+    "丝竹"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-hz-lake",
+    "card-hz-short"
+  ],
+  "briefing": [
+    "我们在杭州，浙江省的行政中心。",
+    "浙江革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "西湖断桥和灵隐寺外观只参观。生涯模式看裂隙稳定度。"
+  ]
+}

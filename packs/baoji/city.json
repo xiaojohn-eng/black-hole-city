@@ -1,0 +1,70 @@
+{
+  "adcode": "610300",
+  "packId": "baoji",
+  "name": "宝鸡市",
+  "alias": [
+    "宝鸡"
+  ],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在关中平原西端，渭河穿过。陕西省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "关中平原",
+    "渭河谷地"
+  ],
+  "riversLakes": [
+    "渭河"
+  ],
+  "neighbors": [
+    "西安",
+    "天水",
+    "汉中"
+  ],
+  "cityFunction": [
+    "关中西府",
+    "青铜器教学点",
+    "非省会"
+  ],
+  "storyTitle": "西府记忆",
+  "storyLogline": "河风把金台观的牌匾吹斜。你沿渭河把它们收回博物馆。",
+  "storyBeats": [
+    "从渭河岸公园起步",
+    "旧城砖巷收集市井记忆",
+    "参观金台观与青铜器博物院剪影",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "秦腔回退",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-bj-river",
+    "card-bj-short"
+  ],
+  "briefing": [
+    "我们在宝鸡，陕西省的地级市，不是本省行政中心。西安才是陕西省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "金台观和青铜器博物院只参观。生涯模式看裂隙稳定度。"
+  ]
+}

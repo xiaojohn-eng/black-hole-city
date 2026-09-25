@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-qd-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "山东省的简称是？",
+      "choices": [
+        "冀",
+        "鲁",
+        "豫",
+        "苏"
+      ],
+      "answer": 1,
+      "explain": "山东简称「鲁」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-qd-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "青岛旁边最大的海是？",
+      "choices": [
+        "黄海",
+        "南海",
+        "洱海",
+        "青海湖"
+      ],
+      "answer": 0,
+      "explain": "青岛在黄海之滨。"
+    },
+    {
+      "id": "q-qd-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-qd-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "栈桥在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "栈桥只参观。"
+    },
+    {
+      "id": "q-qd-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "山东省的行政中心是？",
+      "choices": [
+        "青岛",
+        "济南",
+        "烟台",
+        "上海"
+      ],
+      "answer": 1,
+      "explain": "行政中心是济南，青岛是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-qd-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青岛在七大区中属于？",
+      "choices": [
+        "华北",
+        "华东",
+        "华南",
+        "东北"
+      ],
+      "answer": 1,
+      "explain": "山东在华东。"
+    },
+    {
+      "id": "q-qd-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青岛主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风（滨海）",
+        "热带雨林",
+        "高原山地"
+      ],
+      "answer": 1,
+      "explain": "滨海温带季风，不是江南湿热。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-qd-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "天主教堂的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "宗教外观 VISIT。"
+    },
+    {
+      "id": "q-qd-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "青岛主要的城市职能教学点是？",
+      "choices": [
+        "沙漠绿洲",
+        "港口",
+        "都城中轴",
+        "火山监测"
+      ],
+      "answer": 1,
+      "explain": "青岛是港口城市。"
+    },
+    {
+      "id": "q-qd-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "青岛是不是山东省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是济南",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "青岛是非省会。"
+    }
+  ]
+}

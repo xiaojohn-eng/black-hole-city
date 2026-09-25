@@ -1,0 +1,145 @@
+{
+  "mapSize": 240,
+  "roads": {
+    "style": "qilou_street",
+    "spacing": 28,
+    "width": 8
+  },
+  "variants": [
+    "named_river",
+    "qilou_arcade"
+  ],
+  "kitId": "lingnan-qilou",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "漓江岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#5d7a88",
+      "spawn": true,
+      "quotas": {
+        "L1": 16,
+        "L2": 12,
+        "L3": 8,
+        "L4": 4
+      }
+    },
+    {
+      "id": "old_town",
+      "name": "骑楼旧街",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#e8d5b5",
+      "quotas": {
+        "L1": 8,
+        "L2": 8,
+        "L3": 8,
+        "L4": 6,
+        "L6": 6,
+        "L7": 2
+      }
+    },
+    {
+      "id": "civic",
+      "name": "王城与纪念",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#0f766e",
+      "quotas": {
+        "L1": 4,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": {
+        "L4": 8,
+        "L5": 6,
+        "L7": 4,
+        "L8": 2,
+        "L9": 1
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "gl-guard",
+      "name": "桂林革命烈士纪念碑",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-gl-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "纪念碑"
+    },
+    {
+      "id": "gl-wangcheng",
+      "name": "靖江王城",
+      "mesh": "city_wall_gate",
+      "interact": "visit",
+      "x": -8,
+      "z": 20,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-gl-wangcheng",
+      "whyHere": "王城城门剪影。走近参观。",
+      "silhouette": "城门与红墙"
+    },
+    {
+      "id": "gl-lijiang",
+      "name": "漓江岸",
+      "mesh": "yangtze_bridge",
+      "interact": "visit",
+      "x": 12,
+      "z": 56,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-gl-river",
+      "whyHere": "江岸栈桥剪影。参观，认识喀斯特河谷。",
+      "silhouette": "长堤与江面"
+    },
+    {
+      "id": "gl-qilou",
+      "name": "骑楼街廊",
+      "mesh": "qilou_arcade",
+      "interact": "visit",
+      "x": -64,
+      "z": 40,
+      "tier": 10,
+      "zone": "old_town",
+      "knowledgeCardId": "card-gl-qilou",
+      "whyHere": "底层走廊遮阳避雨。参观街区。",
+      "silhouette": "连排柱廊"
+    },
+    {
+      "id": "gl-sky",
+      "name": "当代楼宇",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "modern",
+      "knowledgeCardId": "card-gl-plain",
+      "whyHere": "可归档的当代公共建筑。峰林不是可吞物。",
+      "silhouette": "高楼"
+    }
+  ]
+}

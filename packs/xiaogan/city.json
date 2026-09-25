@@ -1,0 +1,70 @@
+{
+  "adcode": "420900",
+  "packId": "xiaogan",
+  "name": "孝感市",
+  "alias": [
+    "孝感"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在澴水流域，江汉平原。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "平原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "澴水"
+  ],
+  "neighbors": [
+    "武汉",
+    "随州",
+    "信阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "澴水教学点"
+  ],
+  "storyTitle": "澴水记忆",
+  "storyLogline": "河风把孝感文庙前的路牌吹斜。你沿澴水把它们收回博物馆。",
+  "storyBeats": [
+    "从澴水岸公园起步",
+    "旧街收集市井记忆",
+    "参观孝感文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "平原风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xog-river",
+    "card-xog-short"
+  ],
+  "briefing": [
+    "我们在孝感，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲澴水和江汉平原，对照荆州长江、宜昌三峡入口、黄冈鄂东、十堰汉江。"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "adcode": "450200",
+  "packId": "liuzhou",
+  "name": "柳州市",
+  "alias": [
+    "柳州"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在柳江岸。广西壮族自治区的地级市，不是自治区首府。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江岸",
+    "河谷"
+  ],
+  "riversLakes": [
+    "柳江"
+  ],
+  "neighbors": [
+    "桂林",
+    "来宾",
+    "河池"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "柳江工业城市"
+  ],
+  "storyTitle": "柳江记忆",
+  "storyLogline": "江雾把东门城楼前的路牌藏起来。你沿柳江把它们收回博物馆。",
+  "storyBeats": [
+    "从柳江岸公园起步",
+    "旧街收集市井记忆",
+    "参观东门城楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-lzh-river",
+    "card-lzh-short"
+  ],
+  "briefing": [
+    "我们在柳州，广西壮族自治区的地级市，不是自治区首府。南宁才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "东门城楼只参观。本课讲柳江，桂林讲漓江，北海讲海，不堆山城秀。"
+  ]
+}

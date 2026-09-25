@@ -1,0 +1,116 @@
+{
+  "mapSize": 240,
+  "roads": { "style": "jiangnan_water", "spacing": 32, "width": 7 },
+  "variants": ["two_rivers_confluence"],
+  "kitId": "jiangnan-water",
+  "zones": [
+    {
+      "id": "river_park",
+      "name": "两江岸公园",
+      "x": 10,
+      "z": -80,
+      "w": 200,
+      "d": 80,
+      "color": "#4d6a5a",
+      "spawn": true,
+      "quotas": { "L1": 16, "L2": 12, "L3": 8, "L4": 4 }
+    },
+    {
+      "id": "hankou",
+      "name": "汉口里分",
+      "x": -72,
+      "z": 12,
+      "w": 96,
+      "d": 100,
+      "color": "#8a8074",
+      "quotas": { "L1": 8, "L2": 8, "L3": 8, "L4": 6, "L6": 6, "L7": 2 }
+    },
+    {
+      "id": "wuchang",
+      "name": "武昌黄鹤",
+      "x": 8,
+      "z": 36,
+      "w": 56,
+      "d": 120,
+      "color": "#5d7a88",
+      "quotas": { "L1": 4, "L2": 4, "L3": 2 }
+    },
+    {
+      "id": "modern",
+      "name": "当代楼宇",
+      "x": 82,
+      "z": 16,
+      "w": 80,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": { "L4": 8, "L5": 6, "L7": 4, "L8": 2, "L9": 1 }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "wh-flood",
+      "name": "武汉防汛纪念碑",
+      "mesh": "flood_monument",
+      "interact": "guard",
+      "x": 0,
+      "z": -28,
+      "tier": 10,
+      "zone": "river_park",
+      "knowledgeCardId": "card-wh-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "江岸纪念碑、对称柱"
+    },
+    {
+      "id": "wh-crane",
+      "name": "黄鹤楼",
+      "mesh": "yellow_crane_tower",
+      "interact": "visit",
+      "x": 12,
+      "z": 48,
+      "tier": 10,
+      "zone": "wuchang",
+      "knowledgeCardId": "card-wh-crane",
+      "whyHere": "武昌名楼剪影。走近参观，不崩塌。",
+      "silhouette": "多层飞檐、金顶"
+    },
+    {
+      "id": "wh-guan",
+      "name": "江汉关大楼",
+      "mesh": "bund_colonnade",
+      "interact": "visit",
+      "x": -48,
+      "z": 8,
+      "tier": 9,
+      "zone": "hankou",
+      "knowledgeCardId": "card-wh-guan",
+      "whyHere": "汉口江岸关楼，认识码头城市的开埠立面。只参观。",
+      "silhouette": "钟楼与柱廊"
+    },
+    {
+      "id": "wh-bridge",
+      "name": "武汉长江大桥剪影",
+      "mesh": "yangtze_bridge",
+      "interact": "swallow",
+      "x": 40,
+      "z": -8,
+      "tier": 10,
+      "zone": "wuchang",
+      "knowledgeCardId": "card-wh-bridge",
+      "whyHere": "两江三镇靠桥连起来。可归档的是当代交通记忆，不是纪念碑。",
+      "silhouette": "双塔钢梁桥"
+    },
+    {
+      "id": "wh-sky",
+      "name": "江城塔楼",
+      "mesh": "cbd_tower",
+      "interact": "swallow",
+      "x": 92,
+      "z": 36,
+      "tier": 9,
+      "zone": "modern",
+      "knowledgeCardId": "card-wh-hub",
+      "whyHere": "当代天际线，对照黄鹤楼的旧轮廓。",
+      "silhouette": "高瘦塔"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "adcode": "230400",
+  "packId": "hegang",
+  "name": "鹤岗市",
+  "alias": [
+    "鹤岗"
+  ],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在松花江下游北岸。黑龙江省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原",
+    "江岸"
+  ],
+  "riversLakes": [
+    "松花江"
+  ],
+  "neighbors": [
+    "佳木斯",
+    "伊春",
+    "哈尔滨"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "松花江下游教学点"
+  ],
+  "storyTitle": "松花江下游记忆",
+  "storyLogline": "江风把文庙前的路牌吹斜。你沿松花江下游把它们收回博物馆。",
+  "storyBeats": [
+    "从松花江岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观鹤岗文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "平原"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hgang-river",
+    "card-hgang-short"
+  ],
+  "briefing": [
+    "我们在鹤岗，黑龙江省的地级市，不是本省行政中心。哈尔滨才是黑龙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲松花江下游北岸，对照齐齐哈尔嫩江、鸡西穆棱河、黑河黑龙江。不拿伊春林海插队。"
+  ]
+}

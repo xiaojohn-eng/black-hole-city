@@ -1,0 +1,70 @@
+{
+  "adcode": "340300",
+  "packId": "bengbu",
+  "name": "蚌埠市",
+  "alias": [
+    "蚌埠"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在淮河中游。安徽省的地级市，不是本省行政中心。课标常见的淮河教学点。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河岸",
+    "平原"
+  ],
+  "riversLakes": [
+    "淮河"
+  ],
+  "neighbors": [
+    "淮南",
+    "滁州",
+    "宿州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "淮河教学点"
+  ],
+  "storyTitle": "淮河记忆",
+  "storyLogline": "河雾把禹王宫前的路牌藏起来。你沿淮河把它们收回博物馆。",
+  "storyBeats": [
+    "从淮河岸公园起步",
+    "旧街收集市井记忆",
+    "参观禹王宫外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "平原风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-bb-river",
+    "card-bb-short"
+  ],
+  "briefing": [
+    "我们在蚌埠，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "禹王宫外观只参观。本课讲淮河，和长江岸的芜湖气候不同。"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "adcode": "310100",
+  "packId": "shanghai",
+  "name": "上海市",
+  "alias": ["上海", "沪", "申"],
+  "shortName": "沪",
+  "unitType": "municipality_city",
+  "parentProvince": "上海市",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江入海口南岸，东边是东海，城里有黄浦江和苏州河。",
+  "climateBand": "亚热带季风",
+  "landform": ["河口平原", "江岸"],
+  "riversLakes": ["黄浦江", "苏州河", "长江口"],
+  "neighbors": ["江苏省", "浙江省"],
+  "cityFunction": ["经济中心", "港口", "国际交往"],
+  "storyTitle": "江海记忆",
+  "storyLogline": "河口的风把外滩和里弄的记忆吹散。你沿江把它们收回博物馆。",
+  "storyBeats": [
+    "从浦江西岸公园起步，先看见一条江",
+    "石库门里弄收集市井记忆",
+    "沿江参观外滩楼群",
+    "环绕人民英雄纪念碑致敬，再看见浦东天际线"
+  ],
+  "gameplayModifiers": ["river_front"],
+  "bgmPalette": ["江潮", "里弄钢琴"],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": { "x": -40, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": ["card-sh-estuary", "card-sh-short"],
+  "briefing": [
+    "我们在上海。先看见黄浦江，西岸是里弄和外滩，东岸是当代天际线。",
+    "人民英雄纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "外滩楼群走近即可参观。生涯模式看裂隙稳定度。"
+  ]
+}

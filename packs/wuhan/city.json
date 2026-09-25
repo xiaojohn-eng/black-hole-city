@@ -1,0 +1,44 @@
+{
+  "adcode": "420100",
+  "packId": "wuhan",
+  "name": "武汉市",
+  "alias": ["武汉", "江城"],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在江汉平原东部，长江与汉江在这里交汇。湖北省行政中心，两江三镇。",
+  "climateBand": "亚热带季风",
+  "landform": ["江汉平原", "两江交汇", "湖泊"],
+  "riversLakes": ["长江", "汉江", "东湖"],
+  "neighbors": ["鄂州", "黄冈", "孝感"],
+  "cityFunction": ["湖北省行政中心", "交通枢纽", "九省通衢教学点"],
+  "storyTitle": "两江记忆",
+  "storyLogline": "两江水位把码头号子冲散。你过桥把它们收回博物馆。",
+  "storyBeats": [
+    "从江岸公园起步，先看见两条江",
+    "汉口里分收集市井记忆",
+    "参观黄鹤楼与江汉关",
+    "环绕防汛纪念碑致敬，再走过长江大桥剪影"
+  ],
+  "gameplayModifiers": ["two_rivers_confluence"],
+  "bgmPalette": ["码头号子", "江潮"],
+  "colorPalette": {
+    "sky": "#8eb8c8",
+    "fog": "#a9c6d0",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": { "x": 20, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": ["card-wh-rivers", "card-wh-short"],
+  "briefing": [
+    "我们在武汉，湖北省的行政中心。先看见长江和汉江，城被分成武昌、汉口、汉阳。",
+    "防汛纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "黄鹤楼走近即可参观。生涯模式看裂隙稳定度。"
+  ]
+}

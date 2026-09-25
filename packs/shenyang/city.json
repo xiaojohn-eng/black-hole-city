@@ -1,0 +1,70 @@
+{
+  "adcode": "210100",
+  "packId": "shenyang",
+  "name": "沈阳市",
+  "alias": [
+    "沈阳",
+    "盛京"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽河平原东部，浑河穿过城区。辽宁省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "辽河平原",
+    "浑河岸"
+  ],
+  "riversLakes": [
+    "浑河"
+  ],
+  "neighbors": [
+    "抚顺",
+    "鞍山",
+    "本溪"
+  ],
+  "cityFunction": [
+    "辽宁省行政中心",
+    "东北老工业基地教学点"
+  ],
+  "storyTitle": "盛京记忆",
+  "storyLogline": "浑河风把故宫屋脊的记忆吹散。你沿江岸把它们收回博物馆。",
+  "storyBeats": [
+    "从浑河南岸公园起步",
+    "旧城巷收集市井记忆",
+    "参观沈阳故宫",
+    "环绕九一八纪念空间致敬"
+  ],
+  "gameplayModifiers": [
+    "cold_wide_street"
+  ],
+  "bgmPalette": [
+    "东北鼓乐",
+    "江风"
+  ],
+  "colorPalette": {
+    "sky": "#b7c9dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8f86",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-sy-river",
+    "card-sy-short"
+  ],
+  "briefing": [
+    "我们在沈阳，辽宁省的行政中心。先看见浑河。东北另一座 live 城哈尔滨是黑龙江省行政中心。",
+    "九一八历史博物馆外的纪念空间不能归档进洞。请绕着它走完一圈。",
+    "沈阳故宫只参观外观。生涯模式看裂隙稳定度。"
+  ]
+}

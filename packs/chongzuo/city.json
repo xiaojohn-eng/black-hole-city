@@ -1,0 +1,70 @@
+{
+  "adcode": "451400",
+  "packId": "chongzuo",
+  "name": "崇左市",
+  "alias": [
+    "崇左"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在桂西南，左江边。广西壮族自治区的地级市，不是自治区首府。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "盆地"
+  ],
+  "riversLakes": [
+    "左江"
+  ],
+  "neighbors": [
+    "南宁",
+    "防城港",
+    "百色"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "左江教学点"
+  ],
+  "storyTitle": "左江记忆",
+  "storyLogline": "江风把文庙前的路牌打湿。你沿左江把它们收回博物馆。",
+  "storyBeats": [
+    "从左江岸起步",
+    "水巷收集市井记忆",
+    "参观崇左文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-czuo-river",
+    "card-czuo-short"
+  ],
+  "briefing": [
+    "我们在崇左，广西壮族自治区的地级市，不是自治区首府。南宁才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲左江。它和右江汇合后才到南宁一带。玉林讲南流江，来宾讲红水河，梧州讲西江。不是山城毁城秀。"
+  ]
+}

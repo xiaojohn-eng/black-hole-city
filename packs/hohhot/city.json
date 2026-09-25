@@ -1,0 +1,68 @@
+{
+  "adcode": "150100",
+  "packId": "hohhot",
+  "name": "呼和浩特市",
+  "alias": [
+    "呼和浩特"
+  ],
+  "shortName": "内蒙古",
+  "unitType": "prefecture_city",
+  "parentProvince": "内蒙古自治区",
+  "region7": "华北",
+  "region4": "北方地区",
+  "locationDesc": "在土默川平原，大黑河穿过。内蒙古自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原",
+    "阴山南麓"
+  ],
+  "riversLakes": [
+    "大黑河"
+  ],
+  "neighbors": [
+    "包头",
+    "乌兰察布"
+  ],
+  "cityFunction": [
+    "自治区首府"
+  ],
+  "storyTitle": "土默川记忆",
+  "storyLogline": "平原上的风把大召的牌匾吹斜。你沿大黑河把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观大召外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "hutong_maze",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原鼓",
+    "河风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-hh-river",
+    "card-hh-short"
+  ],
+  "briefing": [
+    "我们在呼和浩特，内蒙古自治区的首府。首府不算非省会。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "大召外观只参观。强调中华民族共同体。"
+  ]
+}

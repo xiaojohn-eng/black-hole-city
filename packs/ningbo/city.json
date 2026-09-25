@@ -1,0 +1,72 @@
+{
+  "adcode": "330200",
+  "packId": "ningbo",
+  "name": "宁波市",
+  "alias": [
+    "宁波"
+  ],
+  "shortName": "浙",
+  "unitType": "prefecture_city",
+  "parentProvince": "浙江省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在甬江入海处，东临东海。浙江省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河口",
+    "海岸"
+  ],
+  "riversLakes": [
+    "甬江",
+    "东海"
+  ],
+  "neighbors": [
+    "绍兴",
+    "台州",
+    "舟山"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "港口城市"
+  ],
+  "storyTitle": "甬江记忆",
+  "storyLogline": "海风把天一阁的牌匾吹斜。你沿甬江把它们收回博物馆。",
+  "storyBeats": [
+    "从甬江岸公园起步",
+    "旧街收集市井记忆",
+    "参观天一阁",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "river_front",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "江声",
+    "海风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-nb-river",
+    "card-nb-short"
+  ],
+  "briefing": [
+    "我们在宁波，浙江省的地级市，不是本省行政中心。杭州才是浙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "天一阁只参观。生涯模式看裂隙稳定度。"
+  ]
+}

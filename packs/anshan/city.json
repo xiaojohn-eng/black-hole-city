@@ -1,0 +1,70 @@
+{
+  "adcode": "210300",
+  "packId": "anshan",
+  "name": "鞍山市",
+  "alias": [
+    "鞍山"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在太子河中游。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河谷",
+    "平原"
+  ],
+  "riversLakes": [
+    "太子河"
+  ],
+  "neighbors": [
+    "辽阳",
+    "本溪",
+    "营口"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "太子河教学点"
+  ],
+  "storyTitle": "太子河记忆",
+  "storyLogline": "河风把鞍山文庙前的路牌吹斜。你沿太子河把它们收回博物馆。",
+  "storyBeats": [
+    "从太子河岸公园起步",
+    "旧街收集市井记忆",
+    "参观鞍山文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "工业风"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-ash-river",
+    "card-ash-short"
+  ],
+  "briefing": [
+    "我们在鞍山，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲太子河，对照营口辽河口、盘锦湿地、丹东鸭绿江。不是山城毁城秀。"
+  ]
+}

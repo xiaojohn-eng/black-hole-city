@@ -1,0 +1,71 @@
+{
+  "adcode": "430900",
+  "packId": "yiyang",
+  "name": "益阳市",
+  "alias": [
+    "益阳"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在资江下游，洞庭湖南岸。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河湖",
+    "平原"
+  ],
+  "riversLakes": [
+    "资江",
+    "洞庭湖"
+  ],
+  "neighbors": [
+    "常德",
+    "长沙",
+    "岳阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "资江教学点"
+  ],
+  "storyTitle": "资江记忆",
+  "storyLogline": "湖风把裴公亭前的路牌吹斜。你沿资江把它们收回博物馆。",
+  "storyBeats": [
+    "从资江岸公园起步",
+    "旧街收集市井记忆",
+    "参观裴公亭",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "湖风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-yiy-river",
+    "card-yiy-short"
+  ],
+  "briefing": [
+    "我们在益阳，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "裴公亭只参观。本课讲资江和洞庭南岸，对照岳阳洞庭、常德沅江、株洲湘江、郴州耒水。不拿张家界插队。"
+  ]
+}

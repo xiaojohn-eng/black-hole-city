@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-dl-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "大连属于哪个省？",
+      "choices": [
+        "吉林省",
+        "辽宁省",
+        "黑龙江省",
+        "山东省"
+      ],
+      "answer": 1,
+      "explain": "大连属于辽宁省。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-dl-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "大连旁边最大的海是？",
+      "choices": [
+        "黄海",
+        "南海",
+        "洱海",
+        "青海湖"
+      ],
+      "answer": 0,
+      "explain": "大连在黄海之滨，也靠近渤海。"
+    },
+    {
+      "id": "q-dl-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "人民英雄纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-dl-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "中山广场欧式建筑应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "立面只参观。"
+    },
+    {
+      "id": "q-dl-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "辽宁省的行政中心是？",
+      "choices": [
+        "大连",
+        "沈阳",
+        "鞍山",
+        "营口"
+      ],
+      "answer": 1,
+      "explain": "行政中心是沈阳，大连是非省会港口。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-dl-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "大连在七大区中属于？",
+      "choices": [
+        "华北",
+        "华东",
+        "东北",
+        "华南"
+      ],
+      "answer": 2,
+      "explain": "辽宁在东北。"
+    },
+    {
+      "id": "q-dl-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "大连主要的城市职能教学点是？",
+      "choices": [
+        "沙漠绿洲",
+        "港口",
+        "都城中轴",
+        "火山监测"
+      ],
+      "answer": 1,
+      "explain": "大连是港口城市。"
+    },
+    {
+      "id": "q-dl-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "黄海和渤海在本课里提醒我们？",
+      "choices": [
+        "大连在内陆盆地",
+        "大连在半岛、靠海",
+        "大连在赤道",
+        "大连没有水"
+      ],
+      "answer": 1,
+      "explain": "半岛港城先认海。"
+    },
+    {
+      "id": "q-dl-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "大连主要属于哪种气候？",
+      "choices": [
+        "热带雨林",
+        "温带季风（滨海）",
+        "寒带冰原",
+        "高原山地"
+      ],
+      "answer": 1,
+      "explain": "滨海温带季风。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-dl-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "大连是不是辽宁省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是沈阳",
+        "是首都",
+        "是自治区首府"
+      ],
+      "answer": 1,
+      "explain": "大连是非省会。"
+    }
+  ]
+}

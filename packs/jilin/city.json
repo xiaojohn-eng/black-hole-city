@@ -1,0 +1,72 @@
+{
+  "adcode": "220200",
+  "packId": "jilin",
+  "name": "吉林市",
+  "alias": [
+    "吉林市",
+    "江城"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在长白山西侧，松花江呈 S 形穿过城区。吉林省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风（偏冷）",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "松花江",
+    "松花湖"
+  ],
+  "neighbors": [
+    "长春",
+    "延边"
+  ],
+  "cityFunction": [
+    "江城",
+    "雾凇教学点",
+    "非省会"
+  ],
+  "storyTitle": "江城记忆",
+  "storyLogline": "江风把北山牌匾吹散。你沿松花江把它们收回博物馆。",
+  "storyBeats": [
+    "从松花江岸公园起步",
+    "旧街收集市井记忆",
+    "参观北山古庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "cold_wide_street"
+  ],
+  "bgmPalette": [
+    "江风",
+    "东北鼓乐"
+  ],
+  "colorPalette": {
+    "sky": "#b7c9dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8f86",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-jl-river",
+    "card-jl-short"
+  ],
+  "briefing": [
+    "我们在吉林市。注意：吉林市不是吉林省的行政中心。长春才是吉林省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "北山古庙只参观外观。生涯模式看裂隙稳定度。"
+  ]
+}

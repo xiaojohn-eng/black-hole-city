@@ -1,0 +1,68 @@
+{
+  "adcode": "650400",
+  "packId": "tulufan",
+  "name": "吐鲁番市",
+  "alias": [
+    "吐鲁番"
+  ],
+  "shortName": "新",
+  "unitType": "prefecture_city",
+  "parentProvince": "新疆维吾尔自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在吐鲁番盆地的绿洲。新疆维吾尔自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "盆地绿洲"
+  ],
+  "riversLakes": [
+    "坎儿井"
+  ],
+  "neighbors": [
+    "乌鲁木齐",
+    "哈密"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "盆地绿洲教学点"
+  ],
+  "storyTitle": "坎儿井记忆",
+  "storyLogline": "干热风把渠边路牌吹向戈壁。你沿坎儿井把它们收回博物馆。",
+  "storyBeats": [
+    "从渠边公园起步",
+    "庭院街巷收集市井记忆",
+    "参观苏公塔外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
+  "bgmPalette": [
+    "渠水",
+    "庭院"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-tlf-river",
+    "card-tlf-short"
+  ],
+  "briefing": [
+    "我们在吐鲁番，新疆维吾尔自治区的地级市，不是自治区首府。乌鲁木齐才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "苏公塔外观只参观。强调中华民族共同体，不把任何民族作成关卡障碍。"
+  ]
+}

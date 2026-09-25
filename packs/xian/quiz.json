@@ -1,0 +1,105 @@
+{
+  "questions": [
+    {
+      "id": "q-xa-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "陕西省的简称是？",
+      "choices": ["甘", "宁", "陕", "新"],
+      "answer": 2,
+      "explain": "陕西简称「陕」，行政中心是西安。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-xa-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "西安城外那条著名的河是？",
+      "choices": ["珠江", "松花江", "渭河", "黄浦江"],
+      "answer": 2,
+      "explain": "西安在渭河以南的关中平原。"
+    },
+    {
+      "id": "q-xa-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命公园纪念空间应该怎么对待？",
+      "choices": ["吸入归档", "绕着它走一圈，完成守护致敬", "推倒", "忽略"],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-xa-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "大雁塔在本课里应该？",
+      "choices": ["吸入", "参观外观", "改造成游乐场", "删除"],
+      "answer": 1,
+      "explain": "古塔只参观。"
+    },
+    {
+      "id": "q-xa-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "西安主要属于哪种气候？",
+      "choices": ["热带雨林", "温带季风", "寒带冰原", "海洋性气候"],
+      "answer": 1,
+      "explain": "关中是温带季风、半湿润。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-xa-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "西安在七大区中属于？",
+      "choices": ["华南", "东北", "西北", "华东"],
+      "answer": 2,
+      "explain": "陕西在西北。"
+    },
+    {
+      "id": "q-xa-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "秦岭对于西安意味着？",
+      "choices": ["城北的海", "城南的南北分界山脉", "城中的运河", "城东的沙漠"],
+      "answer": 1,
+      "explain": "西安在秦岭以北。"
+    },
+    {
+      "id": "q-xa-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "把西安当作丝路起点，主要连到？",
+      "choices": ["古都与东西交通", "港口集装箱", "冰雪运动", "红树林"],
+      "answer": 0,
+      "explain": "长安是丝绸之路起点教学点。"
+    },
+    {
+      "id": "q-xa-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "城墙永宁门的正确交互是？",
+      "choices": ["吸入归档", "参观外观", "推倒城砖", "改成滑梯"],
+      "answer": 1,
+      "explain": "城墙门楼只参观。"
+    },
+    {
+      "id": "q-xa-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "西安是一座？",
+      "choices": ["海边渔村", "关中平原上的古都", "热带海岛", "雪乡"],
+      "answer": 1,
+      "explain": "西安是渭河平原上的古都。"
+    },
+    {
+      "id": "q-xa-11",
+      "ageBand": "13+",
+      "type": "mc",
+      "prompt": "黄土台塬作为教学点，最适合连到？",
+      "choices": ["黄土地貌与旱作农业", "珊瑚礁", "苔原", "红树林"],
+      "answer": 0,
+      "explain": "关中黄土是北方旱作农业的舞台。"
+    }
+  ]
+}

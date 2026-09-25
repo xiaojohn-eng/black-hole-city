@@ -1,0 +1,72 @@
+{
+  "adcode": "441200",
+  "packId": "zhaoqing",
+  "name": "肇庆市",
+  "alias": [
+    "肇庆"
+  ],
+  "shortName": "粤",
+  "unitType": "prefecture_city",
+  "parentProvince": "广东省",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在西江下游北岸。广东省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "江岸"
+  ],
+  "riversLakes": [
+    "西江"
+  ],
+  "neighbors": [
+    "佛山",
+    "梧州",
+    "云浮"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "西江教学点"
+  ],
+  "storyTitle": "西江记忆",
+  "storyLogline": "江风把阅江楼前的路牌吹斜。你沿西江把它们收回博物馆。",
+  "storyBeats": [
+    "从西江岸公园起步",
+    "骑楼旧街收集市井记忆",
+    "参观阅江楼",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front",
+    "qilou_arcade"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-zhq-river",
+    "card-zhq-short"
+  ],
+  "briefing": [
+    "我们在肇庆，广东省的地级市，不是本省行政中心。广州才是广东省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "阅江楼只参观。本课讲西江，对照珠江口深圳佛山、韩江口汕头、雷州半岛湛江。"
+  ]
+}

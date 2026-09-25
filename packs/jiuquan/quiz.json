@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-jq-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "甘肃省的简称是？",
+      "choices": [
+        "新",
+        "甘",
+        "青",
+        "宁"
+      ],
+      "answer": 1,
+      "explain": "甘肃简称「甘」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-jq-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "酒泉所在的著名走廊是？",
+      "choices": [
+        "河西走廊",
+        "河套平原",
+        "江汉平原",
+        "珠江三角洲"
+      ],
+      "answer": 0,
+      "explain": "酒泉在河西走廊。"
+    },
+    {
+      "id": "q-jq-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-jq-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "莫高窟剪影在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "石窟只参观。"
+    },
+    {
+      "id": "q-jq-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "甘肃省的行政中心是？",
+      "choices": [
+        "酒泉",
+        "兰州",
+        "敦煌",
+        "乌鲁木齐"
+      ],
+      "answer": 1,
+      "explain": "行政中心是兰州，酒泉是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-jq-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "酒泉在七大区中属于？",
+      "choices": [
+        "华北",
+        "西南",
+        "西北",
+        "东北"
+      ],
+      "answer": 2,
+      "explain": "甘肃在西北。"
+    },
+    {
+      "id": "q-jq-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "酒泉主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带大陆性（干旱）",
+        "热带雨林",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "干旱的温带大陆性气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-jq-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "敦煌和酒泉的关系是？",
+      "choices": [
+        "敦煌是另一个省",
+        "敦煌是酒泉市辖的县级市",
+        "敦煌是首都",
+        "敦煌是海岛"
+      ],
+      "answer": 1,
+      "explain": "莫高窟在酒泉市的敦煌。"
+    },
+    {
+      "id": "q-jq-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "乌鲁木齐是？",
+      "choices": [
+        "甘肃省行政中心",
+        "新疆维吾尔自治区首府",
+        "酒泉的一个区",
+        "辽宁省会"
+      ],
+      "answer": 1,
+      "explain": "乌鲁木齐是自治区首府，不能算非省会。"
+    },
+    {
+      "id": "q-jq-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "酒泉是不是甘肃省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是兰州",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "酒泉是非省会。"
+    }
+  ]
+}

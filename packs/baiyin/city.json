@@ -1,0 +1,70 @@
+{
+  "adcode": "620400",
+  "packId": "baiyin",
+  "name": "白银市",
+  "alias": [
+    "白银"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在黄河上游。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "河谷",
+    "黄土"
+  ],
+  "riversLakes": [
+    "黄河"
+  ],
+  "neighbors": [
+    "兰州",
+    "中卫",
+    "平凉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "黄河上游教学点"
+  ],
+  "storyTitle": "黄河记忆",
+  "storyLogline": "河风把文庙前的路牌吹斜。你沿黄河把它们收回博物馆。",
+  "storyBeats": [
+    "从黄河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观白银文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河风",
+    "黄土"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-byn-river",
+    "card-byn-short"
+  ],
+  "briefing": [
+    "我们在白银，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲黄河上游，对照武威石羊河、张掖黑河、酒泉疏勒河。不是河西绿洲，也不是山城毁城秀。"
+  ]
+}

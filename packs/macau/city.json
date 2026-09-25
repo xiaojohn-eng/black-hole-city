@@ -1,0 +1,69 @@
+{
+  "adcode": "820100",
+  "packId": "macau",
+  "name": "澳门主城",
+  "alias": [
+    "澳门",
+    "澳"
+  ],
+  "shortName": "澳",
+  "unitType": "sar",
+  "parentProvince": "澳门特别行政区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在珠江口西侧，邻珠海。省级特别行政区教学包。品牌赌场建筑禁止出现。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "半岛",
+    "填海连岛"
+  ],
+  "riversLakes": [
+    "珠江口"
+  ],
+  "neighbors": [
+    "珠海",
+    "香港"
+  ],
+  "cityFunction": [
+    "特别行政区"
+  ],
+  "storyTitle": "莲花记忆",
+  "storyLogline": "海风把连岛的记忆吹断。你沿半岛把它们收回博物馆。",
+  "storyBeats": [
+    "从海岸公园起步",
+    "旧街收集市井记忆",
+    "参观大三巴与妈阁庙外观",
+    "环绕金莲花广场致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "南音"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-mo-place",
+    "card-mo-short"
+  ],
+  "briefing": [
+    "我们在澳门特别行政区。它是省级单位，不隶属广东。品牌赌场建筑禁止出现。",
+    "金莲花广场是回归教学纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "大三巴牌坊和妈阁庙外观只参观。生涯模式看裂隙稳定度。"
+  ]
+}

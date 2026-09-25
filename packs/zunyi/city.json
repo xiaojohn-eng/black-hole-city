@@ -1,0 +1,70 @@
+{
+  "adcode": "520300",
+  "packId": "zunyi",
+  "name": "遵义市",
+  "alias": [
+    "遵义"
+  ],
+  "shortName": "贵",
+  "unitType": "prefecture_city",
+  "parentProvince": "贵州省",
+  "region7": "西南",
+  "region4": "南方地区",
+  "locationDesc": "在贵州北部山地河谷，湘江（乌江支流）穿过城区。贵州省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带湿润",
+  "landform": [
+    "山地丘陵",
+    "河谷"
+  ],
+  "riversLakes": [
+    "湘江（遵义）",
+    "乌江"
+  ],
+  "neighbors": [
+    "贵阳",
+    "重庆"
+  ],
+  "cityFunction": [
+    "黔北重镇",
+    "会议会址教学点",
+    "非省会"
+  ],
+  "storyTitle": "黔北记忆",
+  "storyLogline": "河谷雾把会址门牌藏起来。你沿江岸把它们送回博物馆。",
+  "storyBeats": [
+    "从江岸公园起步",
+    "旧城坡巷收集市井记忆",
+    "参观遵义会议会址",
+    "环绕红军烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "竹笛",
+    "江声"
+  ],
+  "colorPalette": {
+    "sky": "#9aaeb8",
+    "fog": "#b7c4c8",
+    "ground": "#6d7a62",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-zy-place",
+    "card-zy-short"
+  ],
+  "briefing": [
+    "我们在遵义，贵州省的地级市，不是本省行政中心。贵阳才是贵州省行政中心。",
+    "红军烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "遵义会议会址只参观。这是博物馆课，不是战争游戏。生涯模式看裂隙稳定度。"
+  ]
+}

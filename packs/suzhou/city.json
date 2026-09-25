@@ -1,0 +1,72 @@
+{
+  "adcode": "320500",
+  "packId": "suzhou",
+  "name": "苏州市",
+  "alias": [
+    "苏州",
+    "姑苏"
+  ],
+  "shortName": "苏",
+  "unitType": "prefecture_city",
+  "parentProvince": "江苏省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江三角洲，太湖东岸，京杭大运河穿过。江苏省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "长江三角洲平原",
+    "水网"
+  ],
+  "riversLakes": [
+    "京杭大运河",
+    "太湖"
+  ],
+  "neighbors": [
+    "上海",
+    "无锡",
+    "嘉兴"
+  ],
+  "cityFunction": [
+    "园林城市",
+    "运河城市",
+    "非省会"
+  ],
+  "storyTitle": "水巷记忆",
+  "storyLogline": "运河把园林门匾冲散。你沿水巷把它们收回博物馆。",
+  "storyBeats": [
+    "从运河岸公园起步",
+    "水巷收集市井记忆",
+    "参观拙政园与寒山寺",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "river_front"
+  ],
+  "bgmPalette": [
+    "评弹",
+    "桨声"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 20,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-sz-canal",
+    "card-sz-short"
+  ],
+  "briefing": [
+    "我们在苏州，江苏省的地级市，不是本省行政中心。南京才是江苏省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "拙政园和寒山寺只参观。生涯模式看裂隙稳定度。"
+  ]
+}

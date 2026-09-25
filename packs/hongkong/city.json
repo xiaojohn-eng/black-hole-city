@@ -1,0 +1,69 @@
+{
+  "adcode": "810100",
+  "packId": "hongkong",
+  "name": "香港主城",
+  "alias": [
+    "香港",
+    "港"
+  ],
+  "shortName": "港",
+  "unitType": "sar",
+  "parentProvince": "香港特别行政区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在珠江口东侧、南海北岸。省级特别行政区教学包。不并入广东。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "山岛海"
+  ],
+  "riversLakes": [
+    "维多利亚港",
+    "珠江口"
+  ],
+  "neighbors": [
+    "深圳",
+    "澳门"
+  ],
+  "cityFunction": [
+    "特别行政区"
+  ],
+  "storyTitle": "海港记忆",
+  "storyLogline": "台风把海港牌匾吹到半山。你沿港湾把它们收回博物馆。",
+  "storyBeats": [
+    "从海岸公园起步",
+    "旧街收集市井记忆",
+    "参观太平山与大馆",
+    "环绕金紫荆广场致敬"
+  ],
+  "gameplayModifiers": [
+    "qilou_arcade",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海港",
+    "电车铃回退"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a6e58",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "lingnan-qilou",
+  "startCards": [
+    "card-hk-harbour",
+    "card-hk-short"
+  ],
+  "briefing": [
+    "我们在香港特别行政区。它是省级单位，不并入广东。",
+    "金紫荆广场是回归教学纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "太平山和大馆只参观。品牌乐园禁止出现。"
+  ]
+}

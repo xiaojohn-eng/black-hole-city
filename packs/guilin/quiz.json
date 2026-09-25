@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-gl-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "广西壮族自治区的简称是？",
+      "choices": [
+        "粤",
+        "桂",
+        "琼",
+        "云"
+      ],
+      "answer": 1,
+      "explain": "广西简称「桂」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-gl-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过桂林的著名江是？",
+      "choices": [
+        "珠江口",
+        "漓江",
+        "黄河",
+        "松花江"
+      ],
+      "answer": 1,
+      "explain": "漓江穿过桂林。"
+    },
+    {
+      "id": "q-gl-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-gl-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "靖江王城在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "王城只参观。"
+    },
+    {
+      "id": "q-gl-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "广西壮族自治区的行政中心是？",
+      "choices": [
+        "桂林",
+        "南宁",
+        "柳州",
+        "广州"
+      ],
+      "answer": 1,
+      "explain": "行政中心是南宁，桂林是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-gl-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "桂林在七大区中属于？",
+      "choices": [
+        "华东",
+        "华南",
+        "西南",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "广西在华南。"
+    },
+    {
+      "id": "q-gl-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "桂林附近著名的地貌是？",
+      "choices": [
+        "黄土高原",
+        "喀斯特峰林",
+        "冰川",
+        "沙漠沙丘"
+      ],
+      "answer": 1,
+      "explain": "喀斯特教学点。"
+    },
+    {
+      "id": "q-gl-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "桂林主要属于哪种气候？",
+      "choices": [
+        "温带季风",
+        "亚热带季风",
+        "温带大陆性",
+        "寒温带"
+      ],
+      "answer": 1,
+      "explain": "亚热带季风气候。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-gl-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本课对峰林的态度是？",
+      "choices": [
+        "做成可崩塌关卡",
+        "只讲地貌，山不是可吞物",
+        "吸入归档",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "博物馆叙事。"
+    },
+    {
+      "id": "q-gl-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "桂林是不是广西的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是南宁",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "桂林是非省会。"
+    }
+  ]
+}

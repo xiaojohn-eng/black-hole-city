@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-ls-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "四川省的简称是？",
+      "choices": [
+        "云",
+        "川",
+        "贵",
+        "渝"
+      ],
+      "answer": 1,
+      "explain": "四川简称「川」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-ls-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "乐山城里汇合的著名江包括？",
+      "choices": [
+        "珠江",
+        "岷江",
+        "松花江",
+        "黄河"
+      ],
+      "answer": 1,
+      "explain": "岷江、大渡河、青衣江在乐山汇合。"
+    },
+    {
+      "id": "q-ls-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-ls-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "乐山大佛在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "石刻只参观。"
+    },
+    {
+      "id": "q-ls-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "四川省的行政中心是？",
+      "choices": [
+        "乐山",
+        "成都",
+        "昆明",
+        "重庆"
+      ],
+      "answer": 1,
+      "explain": "行政中心是成都，乐山是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-ls-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "乐山在七大区中属于？",
+      "choices": [
+        "华南",
+        "西南",
+        "西北",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "四川在西南。"
+    },
+    {
+      "id": "q-ls-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "乐山主要属于哪种气候？",
+      "choices": [
+        "温带大陆性",
+        "亚热带湿润",
+        "寒温带",
+        "热带沙漠"
+      ],
+      "answer": 1,
+      "explain": "亚热带湿润。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-ls-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本课对乐山江岸的态度是？",
+      "choices": [
+        "做成山城毁城秀",
+        "江岸博物馆课，大佛只参观",
+        "吸入整座山",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "禁止山城毁城秀。"
+    },
+    {
+      "id": "q-ls-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "昆明是？",
+      "choices": [
+        "乐山的一个区",
+        "云南省行政中心，不能拿来充西南非省会",
+        "四川省会",
+        "甘肃绿洲"
+      ],
+      "answer": 1,
+      "explain": "昆明是省会。"
+    },
+    {
+      "id": "q-ls-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "乐山是不是四川省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是成都",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "乐山是非省会。"
+    }
+  ]
+}

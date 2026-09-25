@@ -1,0 +1,71 @@
+{
+  "adcode": "421000",
+  "packId": "jingzhou",
+  "name": "荆州市",
+  "alias": [
+    "荆州"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在长江中游荆江段。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江岸",
+    "平原"
+  ],
+  "riversLakes": [
+    "长江"
+  ],
+  "neighbors": [
+    "宜昌",
+    "岳阳",
+    "荆门"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "荆江古城教学点"
+  ],
+  "storyTitle": "荆江记忆",
+  "storyLogline": "江雾把古城墙的路牌藏起来。你沿长江把它们收回博物馆。",
+  "storyBeats": [
+    "从长江岸公园起步",
+    "旧街收集市井记忆",
+    "参观荆州古城墙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "城砖回退"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-jz-river",
+    "card-jz-short"
+  ],
+  "briefing": [
+    "我们在荆州，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "荆州古城墙只参观。本课讲长江中游，不是山城毁城秀。"
+  ]
+}

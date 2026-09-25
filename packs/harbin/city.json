@@ -1,0 +1,44 @@
+{
+  "adcode": "230100",
+  "packId": "harbin",
+  "name": "哈尔滨市",
+  "alias": ["哈尔滨", "哈市"],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在东北平原北端，松花江穿过城区，冬天很长、很冷。",
+  "climateBand": "温带大陆性（寒温带特征）",
+  "landform": ["平原", "江岸"],
+  "riversLakes": ["松花江"],
+  "neighbors": ["长春方向的吉林省", "大庆", "绥化"],
+  "cityFunction": ["黑龙江省行政中心", "冰雪旅游", "对俄交往口岸腹地教学"],
+  "storyTitle": "冰江记忆",
+  "storyLogline": "寒潮把松花江岸的记忆冻散。你把它们暖一暖，送回博物馆。",
+  "storyBeats": [
+    "从松花江南岸公园起步",
+    "中央大街收集市井记忆",
+    "参观教堂剪影与冰雪广场",
+    "环绕防洪纪念塔致敬"
+  ],
+  "gameplayModifiers": ["cold_wide_street"],
+  "bgmPalette": ["手风琴", "冰层轻叩"],
+  "colorPalette": {
+    "sky": "#b7c9dc",
+    "fog": "#c5d2e0",
+    "ground": "#d8dde3",
+    "road": "#6b7280"
+  },
+  "spawn": { "x": 0, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": ["card-hrb-river", "card-hrb-short"],
+  "briefing": [
+    "我们在哈尔滨，黑龙江省的行政中心。先看见松花江，冬天很长。",
+    "防洪纪念塔是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "圣索菲亚教堂只参观外观。生涯模式看裂隙稳定度。"
+  ]
+}

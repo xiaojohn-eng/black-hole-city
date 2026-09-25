@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-qq-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "黑龙江省的简称是？",
+      "choices": [
+        "辽",
+        "吉",
+        "黑",
+        "蒙"
+      ],
+      "answer": 2,
+      "explain": "黑龙江简称「黑」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-qq-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "穿过齐齐哈尔的著名江是？",
+      "choices": [
+        "珠江",
+        "嫩江",
+        "黄浦江",
+        "漓江"
+      ],
+      "answer": 1,
+      "explain": "嫩江穿过齐齐哈尔。"
+    },
+    {
+      "id": "q-qq-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "革命烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-qq-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "龙沙公园在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "公园只参观。"
+    },
+    {
+      "id": "q-qq-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "黑龙江省的行政中心是？",
+      "choices": [
+        "齐齐哈尔",
+        "哈尔滨",
+        "长春",
+        "沈阳"
+      ],
+      "answer": 1,
+      "explain": "行政中心是哈尔滨，齐齐哈尔是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-qq-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "齐齐哈尔在七大区中属于？",
+      "choices": [
+        "华北",
+        "东北",
+        "西北",
+        "华东"
+      ],
+      "answer": 1,
+      "explain": "黑龙江在东北。"
+    },
+    {
+      "id": "q-qq-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "扎龙在本课里主要说的是？",
+      "choices": [
+        "沙漠绿洲",
+        "湿地教学点",
+        "海岛火山",
+        "首都中轴"
+      ],
+      "answer": 1,
+      "explain": "扎龙湿地。"
+    },
+    {
+      "id": "q-qq-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "齐齐哈尔主要属于哪种气候？",
+      "choices": [
+        "亚热带季风",
+        "温带季风（偏冷）",
+        "热带雨林",
+        "温带大陆性干旱"
+      ],
+      "answer": 1,
+      "explain": "偏冷的温带季风。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-qq-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "嫩江最后汇入哪一条大河？",
+      "choices": [
+        "珠江",
+        "长江",
+        "松花江",
+        "黄河"
+      ],
+      "answer": 2,
+      "explain": "嫩江是松花江支流。"
+    },
+    {
+      "id": "q-qq-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "齐齐哈尔是不是黑龙江省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是哈尔滨",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "齐齐哈尔是非省会。"
+    }
+  ]
+}

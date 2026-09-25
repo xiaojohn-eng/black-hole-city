@@ -1,0 +1,70 @@
+{
+  "adcode": "230200",
+  "packId": "qiqihar",
+  "name": "齐齐哈尔市",
+  "alias": [
+    "齐齐哈尔"
+  ],
+  "shortName": "黑",
+  "unitType": "prefecture_city",
+  "parentProvince": "黑龙江省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在松嫩平原，嫩江穿过。黑龙江省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风（偏冷）",
+  "landform": [
+    "松嫩平原",
+    "湿地"
+  ],
+  "riversLakes": [
+    "嫩江"
+  ],
+  "neighbors": [
+    "大庆",
+    "白城"
+  ],
+  "cityFunction": [
+    "平原城市",
+    "扎龙湿地教学点",
+    "非省会"
+  ],
+  "storyTitle": "嫩江记忆",
+  "storyLogline": "江风把龙沙牌匾吹散。你沿嫩江把它们收回博物馆。",
+  "storyBeats": [
+    "从嫩江岸公园起步",
+    "旧街收集市井记忆",
+    "参观龙沙公园",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "cold_wide_street"
+  ],
+  "bgmPalette": [
+    "江风",
+    "鹤鸣回退"
+  ],
+  "colorPalette": {
+    "sky": "#b7c9dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8f86",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-qq-river",
+    "card-qq-short"
+  ],
+  "briefing": [
+    "我们在齐齐哈尔，黑龙江省的地级市，不是本省行政中心。哈尔滨才是黑龙江省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "龙沙公园只参观。生涯模式看裂隙稳定度。"
+  ]
+}

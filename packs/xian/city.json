@@ -1,0 +1,44 @@
+{
+  "adcode": "610100",
+  "packId": "xian",
+  "name": "西安市",
+  "alias": ["西安", "长安"],
+  "shortName": "陕",
+  "unitType": "prefecture_city",
+  "parentProvince": "陕西省",
+  "region7": "西北",
+  "region4": "北方地区",
+  "locationDesc": "在关中平原中部，渭河以南、秦岭以北。陕西省行政中心，黄土台塬上的古都。",
+  "climateBand": "温带季风（半湿润）",
+  "landform": ["渭河平原", "黄土台塬", "秦岭北麓"],
+  "riversLakes": ["渭河"],
+  "neighbors": ["咸阳", "渭南"],
+  "cityFunction": ["陕西省行政中心", "古都", "丝绸之路起点教学点"],
+  "storyTitle": "关中记忆",
+  "storyLogline": "城墙垛口的风把丝路记忆吹散。你沿着黄土砖城把它们收回博物馆。",
+  "storyBeats": [
+    "从南侧公园起步",
+    "沿城墙内侧收集市井记忆",
+    "参观大雁塔与永宁门",
+    "环绕革命公园纪念空间致敬"
+  ],
+  "gameplayModifiers": ["citywall_ring", "loess_dust"],
+  "bgmPalette": ["秦腔鼓点", "城墙风"],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": { "x": 0, "z": -96 },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": ["card-xa-guanzhong", "card-xa-short"],
+  "briefing": [
+    "我们在西安，陕西省的行政中心。先看见城墙和黄土台塬，南边是秦岭。",
+    "革命公园纪念空间不能归档进洞。请绕着它走完一圈。",
+    "大雁塔和城墙只参观。生涯模式看裂隙稳定度。"
+  ]
+}

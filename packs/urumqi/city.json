@@ -1,0 +1,67 @@
+{
+  "adcode": "650100",
+  "packId": "urumqi",
+  "name": "乌鲁木齐市",
+  "alias": [
+    "乌鲁木齐"
+  ],
+  "shortName": "新",
+  "unitType": "prefecture_city",
+  "parentProvince": "新疆维吾尔自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在天山北麓、准噶尔盆地南缘。新疆维吾尔自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "山麓绿洲",
+    "盆地边缘"
+  ],
+  "riversLakes": [
+    "乌鲁木齐河"
+  ],
+  "neighbors": [
+    "昌吉",
+    "吐鲁番"
+  ],
+  "cityFunction": [
+    "自治区首府"
+  ],
+  "storyTitle": "绿洲记忆",
+  "storyLogline": "干热风把巴扎牌匾吹向戈壁。你沿水渠把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "庭院街巷收集市井记忆",
+    "参观红山亭与巴扎外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "oasis_canal"
+  ],
+  "bgmPalette": [
+    "渠水",
+    "庭院"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-urc-river",
+    "card-urc-short"
+  ],
+  "briefing": [
+    "我们在乌鲁木齐，新疆维吾尔自治区的首府。首府不算非省会。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "红山亭和大巴扎外观只参观。强调中华民族共同体，不把任何民族作成关卡障碍。"
+  ]
+}

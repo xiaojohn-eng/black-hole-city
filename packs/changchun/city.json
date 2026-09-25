@@ -1,0 +1,69 @@
+{
+  "adcode": "220100",
+  "packId": "changchun",
+  "name": "长春市",
+  "alias": [
+    "长春"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在东北平原中部，伊通河穿过。吉林省行政中心。吉林市是另一座非省会。",
+  "climateBand": "温带季风",
+  "landform": [
+    "东北平原"
+  ],
+  "riversLakes": [
+    "伊通河",
+    "南湖"
+  ],
+  "neighbors": [
+    "吉林市",
+    "四平",
+    "松原"
+  ],
+  "cityFunction": [
+    "吉林省行政中心"
+  ],
+  "storyTitle": "伊通记忆",
+  "storyLogline": "冷风把南湖的牌匾吹斜。你沿伊通河把它们收回博物馆。",
+  "storyBeats": [
+    "从南湖岸公园起步",
+    "旧街收集市井记忆",
+    "参观长春文庙",
+    "环绕苏联红军烈士纪念塔致敬"
+  ],
+  "gameplayModifiers": [
+    "cold_wide_street",
+    "named_river"
+  ],
+  "bgmPalette": [
+    "东北鼓",
+    "湖面风"
+  ],
+  "colorPalette": {
+    "sky": "#b7c9dc",
+    "fog": "#c5d2e0",
+    "ground": "#8a8f86",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-cc-river",
+    "card-cc-short"
+  ],
+  "briefing": [
+    "我们在长春，吉林省的行政中心。名字容易和「吉林市」搞混：吉林市是非省会。",
+    "苏联红军烈士纪念塔是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "长春文庙只参观。生涯模式看裂隙稳定度。"
+  ]
+}

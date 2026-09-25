@@ -1,0 +1,116 @@
+{
+  "mapSize": 240,
+  "roads": { "style": "qilou_street", "spacing": 28, "width": 8 },
+  "variants": ["qilou_arcade", "pearl_river"],
+  "kitId": "lingnan-qilou",
+  "zones": [
+    {
+      "id": "south_park",
+      "name": "珠江南岸公园",
+      "x": 0,
+      "z": -80,
+      "w": 240,
+      "d": 80,
+      "color": "#5a6e58",
+      "spawn": true,
+      "quotas": { "L1": 16, "L2": 12, "L3": 8, "L4": 4 }
+    },
+    {
+      "id": "qilou",
+      "name": "骑楼旧街",
+      "x": -70,
+      "z": 8,
+      "w": 100,
+      "d": 96,
+      "color": "#c4a574",
+      "quotas": { "L1": 8, "L2": 8, "L3": 8, "L4": 6, "L6": 6, "L7": 2 }
+    },
+    {
+      "id": "civic",
+      "name": "纪念与祠堂",
+      "x": 0,
+      "z": 40,
+      "w": 56,
+      "d": 120,
+      "color": "#0f766e",
+      "quotas": { "L1": 4, "L2": 4, "L3": 2 }
+    },
+    {
+      "id": "new_town",
+      "name": "珠江新城剪影",
+      "x": 78,
+      "z": 12,
+      "w": 84,
+      "d": 110,
+      "color": "#4a5568",
+      "quotas": { "L4": 8, "L5": 6, "L7": 4, "L8": 2, "L9": 1 }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "gz-memorial",
+      "name": "广州解放纪念像",
+      "mesh": "monument_obelisk",
+      "interact": "guard",
+      "x": 0,
+      "z": 32,
+      "tier": 10,
+      "zone": "civic",
+      "knowledgeCardId": "card-gz-guard",
+      "whyHere": "纪念空间。环绕守护一周，不可归档进洞。",
+      "silhouette": "广场纪念像、庄重基座"
+    },
+    {
+      "id": "gz-chenjia",
+      "name": "陈家祠",
+      "mesh": "city_god_temple",
+      "interact": "visit",
+      "x": -40,
+      "z": 20,
+      "tier": 10,
+      "zone": "qilou",
+      "knowledgeCardId": "card-gz-chenjia",
+      "whyHere": "岭南祠堂与工艺，只参观外观。",
+      "silhouette": "灰瓦飞檐、砖雕屋脊"
+    },
+    {
+      "id": "gz-zhenhai",
+      "name": "镇海楼",
+      "mesh": "city_wall_gate",
+      "interact": "visit",
+      "x": -70,
+      "z": -10,
+      "tier": 9,
+      "zone": "qilou",
+      "knowledgeCardId": "card-gz-zhenhai",
+      "whyHere": "越秀山镇海楼剪影，认识古城门楼。参观，不崩塌。",
+      "silhouette": "多层城楼、红墙"
+    },
+    {
+      "id": "gz-qilou",
+      "name": "骑楼街廊",
+      "mesh": "qilou_arcade",
+      "interact": "visit",
+      "x": -72,
+      "z": 40,
+      "tier": 9,
+      "zone": "qilou",
+      "knowledgeCardId": "card-gz-qilou",
+      "whyHere": "底层连续走廊，湿热气候的遮阳避雨。",
+      "silhouette": "连排柱廊、二层外挑"
+    },
+    {
+      "id": "gz-tower",
+      "name": "广州塔剪影",
+      "mesh": "canton_tower",
+      "interact": "swallow",
+      "x": 88,
+      "z": 40,
+      "tier": 10,
+      "zone": "new_town",
+      "knowledgeCardId": "card-gz-tower",
+      "whyHere": "当代天际线符号，对照骑楼的旧街尺度。",
+      "silhouette": "细高塔、腰部收分"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-zy-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "贵州省的简称是？",
+      "choices": [
+        "云",
+        "贵",
+        "川",
+        "湘"
+      ],
+      "answer": 1,
+      "explain": "贵州简称「贵」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-zy-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "遵义属于哪个省？",
+      "choices": [
+        "云南省",
+        "贵州省",
+        "四川省",
+        "湖南省"
+      ],
+      "answer": 1,
+      "explain": "遵义属于贵州省。"
+    },
+    {
+      "id": "q-zy-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "红军烈士纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-zy-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "遵义会议会址在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "会址只参观。"
+    },
+    {
+      "id": "q-zy-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "贵州省的行政中心是？",
+      "choices": [
+        "遵义",
+        "贵阳",
+        "昆明",
+        "重庆"
+      ],
+      "answer": 1,
+      "explain": "行政中心是贵阳，遵义是非省会。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-zy-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "遵义在七大区中属于？",
+      "choices": [
+        "华南",
+        "西南",
+        "西北",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "贵州在西南。"
+    },
+    {
+      "id": "q-zy-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "遵义的湘江是？",
+      "choices": [
+        "湖南那条湘江本身",
+        "乌江的支流，不要和湖南湘江搞混",
+        "黄河支流",
+        "珠江干流"
+      ],
+      "answer": 1,
+      "explain": "同名不同河。"
+    },
+    {
+      "id": "q-zy-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本课对会址的正确态度是？",
+      "choices": [
+        "做成战争游戏",
+        "博物馆参观",
+        "吸入归档",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "文保 VISIT，博物馆叙事。"
+    },
+    {
+      "id": "q-zy-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "遵义主要属于哪种气候？",
+      "choices": [
+        "温带大陆性",
+        "亚热带湿润",
+        "寒温带",
+        "热带沙漠"
+      ],
+      "answer": 1,
+      "explain": "亚热带湿润。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-zy-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "遵义是不是贵州省的行政中心？",
+      "choices": [
+        "是",
+        "不是，行政中心是贵阳",
+        "是首都",
+        "是直辖市"
+      ],
+      "answer": 1,
+      "explain": "遵义是非省会。"
+    }
+  ]
+}

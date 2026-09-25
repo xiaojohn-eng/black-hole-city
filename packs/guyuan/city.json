@@ -1,0 +1,70 @@
+{
+  "adcode": "640400",
+  "packId": "guyuan",
+  "name": "固原市",
+  "alias": [
+    "固原"
+  ],
+  "shortName": "宁",
+  "unitType": "prefecture_city",
+  "parentProvince": "宁夏回族自治区",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在黄土高原西缘，清水河上游。宁夏回族自治区的地级市，不是自治区首府。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "黄土高原",
+    "河谷"
+  ],
+  "riversLakes": [
+    "清水河"
+  ],
+  "neighbors": [
+    "中卫",
+    "平凉",
+    "庆阳"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "清水河教学点"
+  ],
+  "storyTitle": "清水河记忆",
+  "storyLogline": "黄土上的风把固原文庙前的路牌吹斜。你沿清水河把它们收回博物馆。",
+  "storyBeats": [
+    "从清水河岸公园起步",
+    "旧街砖巷收集市井记忆",
+    "参观固原文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#a89070",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-gyu-river",
+    "card-gyu-short"
+  ],
+  "briefing": [
+    "我们在固原，宁夏回族自治区的地级市，不是自治区首府。银川才是首府。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲黄土高原和清水河，对照石嘴山吴忠中卫的黄河灌区。强调中华民族共同体。"
+  ]
+}

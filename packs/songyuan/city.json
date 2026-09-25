@@ -1,0 +1,70 @@
+{
+  "adcode": "220700",
+  "packId": "songyuan",
+  "name": "松原市",
+  "alias": [
+    "松原"
+  ],
+  "shortName": "吉",
+  "unitType": "prefecture_city",
+  "parentProvince": "吉林省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在松嫩平原，松花江与嫩江交汇一带。吉林省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性",
+  "landform": [
+    "平原"
+  ],
+  "riversLakes": [
+    "松花江",
+    "嫩江"
+  ],
+  "neighbors": [
+    "长春",
+    "白城",
+    "大庆"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "松嫩平原教学点"
+  ],
+  "storyTitle": "松嫩记忆",
+  "storyLogline": "平原上的风把江岸路牌吹斜。你沿松花江把它们收回博物馆。",
+  "storyBeats": [
+    "从松花江岸公园起步",
+    "旧街收集市井记忆",
+    "参观江岸古庙外观",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "江声"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-sgy-river",
+    "card-sgy-short"
+  ],
+  "briefing": [
+    "我们在松原，吉林省的地级市，不是本省行政中心。长春才是吉林省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "江岸古庙外观只参观。本课讲松嫩平原，不是网红湖秀。"
+  ]
+}

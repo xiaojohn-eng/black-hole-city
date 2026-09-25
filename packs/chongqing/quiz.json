@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "id": "q-cq-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "本省级行政区的简称是？",
+      "choices": [
+        "川",
+        "渝",
+        "贵",
+        "鄂"
+      ],
+      "answer": 1,
+      "explain": "重庆简称「渝」。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-cq-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "在重庆主城汇合的著名江包括？",
+      "choices": [
+        "珠江和东江",
+        "长江和嘉陵江",
+        "松花江和嫩江",
+        "黄河和渭河"
+      ],
+      "answer": 1,
+      "explain": "长江和嘉陵江。"
+    },
+    {
+      "id": "q-cq-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "纪念空间应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-cq-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "湖广会馆在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "文保只参观。"
+    },
+    {
+      "id": "q-cq-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本课对重庆地形的态度是？",
+      "choices": [
+        "做成崩塌展示片",
+        "两江博物馆课，不是山城毁城秀",
+        "当成全国默认皮肤",
+        "吸入整座山"
+      ],
+      "answer": 1,
+      "explain": "两江博物馆课，不是山城毁城秀。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-cq-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "这座城在七大区中属于？",
+      "choices": [
+        "华南",
+        "西南",
+        "华北",
+        "西北"
+      ],
+      "answer": 1,
+      "explain": "七大区：西南。"
+    },
+    {
+      "id": "q-cq-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "重庆主要属于哪种气候？",
+      "choices": [
+        "温带大陆性",
+        "亚热带湿润",
+        "寒温带",
+        "热带沙漠"
+      ],
+      "answer": 1,
+      "explain": "亚热带湿润。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-cq-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "本切片能不能宣称全国地级已收录？",
+      "choices": [
+        "能",
+        "不能，不是 333 也不是 293 完成",
+        "做满省会就能",
+        "看心情"
+      ],
+      "answer": 1,
+      "explain": "本刀只做 34 省行政中心。"
+    },
+    {
+      "id": "q-cq-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "客户端为什么不能写 lat/lon？",
+      "choices": [
+        "好看",
+        "审图与隐私：关卡只用局部网格",
+        "Three.js 不支持",
+        "CSV 没有名字"
+      ],
+      "answer": 1,
+      "explain": "网格坐标不是地理坐标。"
+    },
+    {
+      "id": "q-cq-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "重庆是不是直辖市？",
+      "choices": [
+        "不是",
+        "是，它是直辖市",
+        "是首都北京",
+        "是训练场"
+      ],
+      "answer": 1,
+      "explain": "是，它是直辖市。"
+    }
+  ]
+}

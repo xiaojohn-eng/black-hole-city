@@ -1,0 +1,146 @@
+{
+  "questions": [
+    {
+      "id": "q-km-01",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "云南省的简称是？",
+      "choices": [
+        "贵",
+        "云",
+        "川",
+        "藏"
+      ],
+      "answer": 1,
+      "explain": "云南简称「云」，行政中心是昆明。",
+      "curriculumTag": "geo.2022.cn.province"
+    },
+    {
+      "id": "q-km-02",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "昆明城南著名的湖是？",
+      "choices": [
+        "太湖",
+        "滇池",
+        "白洋淀",
+        "青海湖"
+      ],
+      "answer": 1,
+      "explain": "滇池在昆明城南。"
+    },
+    {
+      "id": "q-km-03",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "人民英雄纪念碑应该怎么对待？",
+      "choices": [
+        "吸入归档",
+        "绕着它走一圈，完成守护致敬",
+        "推倒",
+        "忽略"
+      ],
+      "answer": 1,
+      "explain": "纪念空间只可守护。"
+    },
+    {
+      "id": "q-km-04",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "金马碧鸡坊在本课里应该？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "改造成游乐场",
+        "搬走"
+      ],
+      "answer": 1,
+      "explain": "牌坊只参观。"
+    },
+    {
+      "id": "q-km-05",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "昆明为什么常被叫作春城？",
+      "choices": [
+        "因为它在海边",
+        "高原上四季比较温和",
+        "因为它下雪最多",
+        "因为它是沙漠"
+      ],
+      "answer": 1,
+      "explain": "亚热带高原、四季如春。",
+      "curriculumTag": "geo.2022.cn.climate"
+    },
+    {
+      "id": "q-km-06",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "昆明在七大区中属于？",
+      "choices": [
+        "华南",
+        "西南",
+        "西北",
+        "华中"
+      ],
+      "answer": 1,
+      "explain": "云南在西南。"
+    },
+    {
+      "id": "q-km-07",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "昆明主要的地形教学点是？",
+      "choices": [
+        "平原河口",
+        "云贵高原坝子",
+        "黄土台塬",
+        "辽东半岛"
+      ],
+      "answer": 1,
+      "explain": "高原坝子城市。"
+    },
+    {
+      "id": "q-km-08",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "四川省的行政中心是？",
+      "choices": [
+        "昆明",
+        "成都",
+        "贵阳",
+        "重庆"
+      ],
+      "answer": 1,
+      "explain": "成都是四川行政中心，对照昆明。"
+    },
+    {
+      "id": "q-km-09",
+      "ageBand": "9-12",
+      "type": "mc",
+      "prompt": "金殿的正确交互是？",
+      "choices": [
+        "吸入",
+        "参观外观",
+        "守护环绕",
+        "删除"
+      ],
+      "answer": 1,
+      "explain": "殿宇 VISIT。"
+    },
+    {
+      "id": "q-km-10",
+      "ageBand": "6-8",
+      "type": "mc",
+      "prompt": "昆明是不是虚构训练场？",
+      "choices": [
+        "是星湾",
+        "不是，这是云南的真城课",
+        "是首都",
+        "是港口岛"
+      ],
+      "answer": 1,
+      "explain": "昆明是真城课。"
+    }
+  ]
+}

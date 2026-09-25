@@ -1,0 +1,68 @@
+{
+  "adcode": "430100",
+  "packId": "changsha",
+  "name": "长沙市",
+  "alias": [
+    "长沙"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湘江下游，岳麓山隔江相望。湖南省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷丘陵"
+  ],
+  "riversLakes": [
+    "湘江",
+    "橘子洲"
+  ],
+  "neighbors": [
+    "株洲",
+    "湘潭",
+    "岳阳"
+  ],
+  "cityFunction": [
+    "湖南省行政中心"
+  ],
+  "storyTitle": "湘江记忆",
+  "storyLogline": "江雾把岳麓书院的牌匾藏起来。你沿湘江把它们收回博物馆。",
+  "storyBeats": [
+    "从湘江岸公园起步",
+    "旧街收集市井记忆",
+    "参观岳麓书院",
+    "环绕湖南烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "湘水",
+    "竹笛"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-cs-river",
+    "card-cs-short"
+  ],
+  "briefing": [
+    "我们在长沙，湖南省的行政中心。襄阳是湖北非省会，不能拿来充湖南。",
+    "湖南烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "岳麓书院只参观。生涯模式看裂隙稳定度。"
+  ]
+}

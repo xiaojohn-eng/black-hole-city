@@ -1,0 +1,70 @@
+{
+  "adcode": "341100",
+  "packId": "chuzhou",
+  "name": "滁州市",
+  "alias": [
+    "滁州"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在滁河流域，江淮之间。安徽省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "丘陵",
+    "河谷"
+  ],
+  "riversLakes": [
+    "滁河"
+  ],
+  "neighbors": [
+    "南京",
+    "合肥",
+    "扬州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "滁河教学点"
+  ],
+  "storyTitle": "滁河记忆",
+  "storyLogline": "河风把滁州文庙前的路牌吹斜。你沿滁河把它们收回博物馆。",
+  "storyBeats": [
+    "从滁河岸公园起步",
+    "旧街收集市井记忆",
+    "参观滁州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "江淮风"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-chz-river",
+    "card-chz-short"
+  ],
+  "briefing": [
+    "我们在滁州，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲滁河和江淮，对照芜湖长江、蚌埠淮河、六安淠河。不拿黄山插队。"
+  ]
+}

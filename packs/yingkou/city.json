@@ -1,0 +1,72 @@
+{
+  "adcode": "210800",
+  "packId": "yingkou",
+  "name": "营口市",
+  "alias": [
+    "营口"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽河口南岸，濒临渤海。辽宁省的地级市，不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河口",
+    "海岸"
+  ],
+  "riversLakes": [
+    "辽河",
+    "渤海"
+  ],
+  "neighbors": [
+    "盘锦",
+    "鞍山",
+    "大连"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "辽河口南岸教学点"
+  ],
+  "storyTitle": "辽河口记忆",
+  "storyLogline": "海风把西炮台前的路牌吹斜。你沿辽河把它们收回博物馆。",
+  "storyBeats": [
+    "从辽河岸公园起步",
+    "旧街收集市井记忆",
+    "参观西炮台",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "coastal_band"
+  ],
+  "bgmPalette": [
+    "海风",
+    "河声"
+  ],
+  "colorPalette": {
+    "sky": "#7eb8d4",
+    "fog": "#9cc9d6",
+    "ground": "#6a7a70",
+    "road": "#4a5560"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-yik-river",
+    "card-yik-short"
+  ],
+  "briefing": [
+    "我们在营口，辽宁省的地级市，不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "西炮台只参观。本课讲辽河口南岸，对照盘锦辽河口北岸、锦州辽西、丹东鸭绿江。"
+  ]
+}

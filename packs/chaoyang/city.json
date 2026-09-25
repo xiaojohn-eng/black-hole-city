@@ -1,0 +1,70 @@
+{
+  "adcode": "211300",
+  "packId": "chaoyang",
+  "name": "朝阳市",
+  "alias": [
+    "朝阳"
+  ],
+  "shortName": "辽",
+  "unitType": "prefecture_city",
+  "parentProvince": "辽宁省",
+  "region7": "东北",
+  "region4": "北方地区",
+  "locationDesc": "在辽西，大凌河旁。辽宁省的地级市，不是北京的朝阳区，也不是本省行政中心。",
+  "climateBand": "温带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "大凌河"
+  ],
+  "neighbors": [
+    "锦州",
+    "阜新",
+    "承德"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "大凌河教学点"
+  ],
+  "storyTitle": "大凌河记忆",
+  "storyLogline": "辽西的风把文庙前的路牌吹斜。你沿大凌河把它们收回博物馆。",
+  "storyBeats": [
+    "从大凌河岸起步",
+    "旧街砖巷收集市井记忆",
+    "参观朝阳文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "辽西风",
+    "河谷"
+  ],
+  "colorPalette": {
+    "sky": "#8ec0e0",
+    "fog": "#9ec6d8",
+    "ground": "#5c584e",
+    "road": "#4b4550"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "north-brick-hutong",
+  "startCards": [
+    "card-cyang-river",
+    "card-cyang-short"
+  ],
+  "briefing": [
+    "我们在辽宁省朝阳市，不是北京的朝阳区，也不是本省行政中心。沈阳才是辽宁省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。本课讲大凌河，对照铁岭辽河、大连黄海。不是山城毁城秀。"
+  ]
+}

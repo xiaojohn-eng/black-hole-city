@@ -1,0 +1,71 @@
+{
+  "adcode": "350700",
+  "packId": "nanping",
+  "name": "南平市",
+  "alias": [
+    "南平"
+  ],
+  "shortName": "闽",
+  "unitType": "prefecture_city",
+  "parentProvince": "福建省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在闽江上游。福建省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "闽江"
+  ],
+  "neighbors": [
+    "三明",
+    "宁德",
+    "上饶"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "闽江上游教学点"
+  ],
+  "storyTitle": "闽江上游记忆",
+  "storyLogline": "江风把延平文庙前的路牌藏起来。你沿闽江把它们收回博物馆。",
+  "storyBeats": [
+    "从闽江岸公园起步",
+    "水巷收集市井记忆",
+    "参观延平文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river",
+    "river_front"
+  ],
+  "bgmPalette": [
+    "江声",
+    "细雨"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-nap-river",
+    "card-nap-short"
+  ],
+  "briefing": [
+    "我们在南平，福建省的地级市，不是本省行政中心。福州才是福建省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "延平文庙只参观。本课讲闽江上游，对照厦漳泉河口、宁德三都澳。不拿武夷山插队。"
+  ]
+}

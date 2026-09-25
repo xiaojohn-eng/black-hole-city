@@ -1,0 +1,67 @@
+{
+  "adcode": "710100",
+  "packId": "taipei",
+  "name": "台北教学包",
+  "alias": [
+    "台北"
+  ],
+  "shortName": "台",
+  "unitType": "province_directly",
+  "parentProvince": "台湾省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在台湾岛北部、台北盆地，淡水河穿过。台湾省省级行政中心教学点。不用国名字体，不用首都符号。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "盆地",
+    "河口"
+  ],
+  "riversLakes": [
+    "淡水河"
+  ],
+  "neighbors": [
+    "新北",
+    "基隆"
+  ],
+  "cityFunction": [
+    "台湾省省级行政中心教学点"
+  ],
+  "storyTitle": "淡水记忆",
+  "storyLogline": "台风把夜市灯海的记忆吹散。你沿淡水河把它们收回博物馆。",
+  "storyBeats": [
+    "从河岸公园起步",
+    "旧街收集市井记忆",
+    "参观北门与龙山寺外观",
+    "环绕和平纪念空间致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河声",
+    "南音回退"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-tp-river",
+    "card-tp-short"
+  ],
+  "briefing": [
+    "这是台湾省教学包。台北按省级行政中心教学呈现，不用国名字体，不用首都符号。",
+    "和平纪念空间是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "北门、龙山寺外观和台北故宫博物院外观只参观。钓鱼岛、赤尾屿在图鉴里教学，不在 3D 标坐标。"
+  ]
+}
