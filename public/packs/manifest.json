@@ -1,6 +1,6 @@
 {
-  "version": "m3b10-noncap9-per-province",
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 非省会 prefecture_city ≥9 的省各 ≥9 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建与非省会总数 <9 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 230/293（M3b10 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
+  "version": "m3b11-noncap10-per-province",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 非省会 prefecture_city ≥9 的省各 ≥9 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建与非省会总数 <9 的省）+ 非省会 prefecture_city ≥10 的省各 ≥10 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西与非省会总数 <10 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 246/293（M3b11 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "liveCityPacks": [
     "beijing",
     "shijiazhuang",
@@ -238,7 +238,23 @@
     "chongzuo",
     "guangan",
     "tongchuan",
-    "dingxi"
+    "dingxi",
+    "chengde",
+    "xinzhou",
+    "huludao",
+    "qitaihe",
+    "taizhoujs",
+    "lishui",
+    "huaibei",
+    "xinyu",
+    "rizhao",
+    "luohe",
+    "xianning",
+    "shaoyang",
+    "yangjiang",
+    "baise",
+    "suining",
+    "jiayuguan"
   ],
   "draftCityPacks": [],
   "sharedQuiz": "packs/_shared/province-abbr-quiz.json",
@@ -2853,6 +2869,182 @@
       "status": "live",
       "region7": "西北",
       "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "chengde",
+      "kind": "city",
+      "adcode": "130800",
+      "name": "承德市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "xinzhou",
+      "kind": "city",
+      "adcode": "140900",
+      "name": "忻州市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "huludao",
+      "kind": "city",
+      "adcode": "211400",
+      "name": "葫芦岛市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "qitaihe",
+      "kind": "city",
+      "adcode": "230900",
+      "name": "七台河市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "东北",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "taizhoujs",
+      "kind": "city",
+      "adcode": "321200",
+      "name": "泰州市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "lishui",
+      "kind": "city",
+      "adcode": "331100",
+      "name": "丽水市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "huaibei",
+      "kind": "city",
+      "adcode": "340600",
+      "name": "淮北市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "xinyu",
+      "kind": "city",
+      "adcode": "360500",
+      "name": "新余市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "rizhao",
+      "kind": "city",
+      "adcode": "371100",
+      "name": "日照市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华东",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "luohe",
+      "kind": "city",
+      "adcode": "411100",
+      "name": "漯河市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "north-brick-hutong"
+    },
+    {
+      "id": "xianning",
+      "kind": "city",
+      "adcode": "421200",
+      "name": "咸宁市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "shaoyang",
+      "kind": "city",
+      "adcode": "430500",
+      "name": "邵阳市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华中",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "yangjiang",
+      "kind": "city",
+      "adcode": "441700",
+      "name": "阳江市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华南",
+      "kitId": "lingnan-qilou"
+    },
+    {
+      "id": "baise",
+      "kind": "city",
+      "adcode": "451000",
+      "name": "百色市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "华南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "suining",
+      "kind": "city",
+      "adcode": "510900",
+      "name": "遂宁市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西南",
+      "kitId": "jiangnan-water"
+    },
+    {
+      "id": "jiayuguan",
+      "kind": "city",
+      "adcode": "620200",
+      "name": "嘉峪关市",
+      "fictional": false,
+      "mode": "career",
+      "status": "live",
+      "region7": "西北",
+      "kitId": "oasis-flat"
     }
   ]
 }

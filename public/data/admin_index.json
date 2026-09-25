@@ -1,5 +1,5 @@
 {
-  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 非省会 prefecture_city ≥9 的省各 ≥9 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建与非省会总数 <9 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 230/293（M3b10 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
+  "disclaimer": "本切片不宣称全国地级已收录可玩。live 3D：训练场 + 34 省各 ≥1 座行政中心 + 凡有地级市的省各 ≥1 座非省会地级市 + 非省会 prefecture_city ≥2 的省各 ≥2 座非省会 live（豁免青海）+ 非省会 prefecture_city ≥3 的省各 ≥3 座非省会 live（豁免青海与非省会总数 <3 的省；海南三沙不可玩）+ 非省会 prefecture_city ≥4 的省各 ≥4 座非省会 live（豁免青海、海南与非省会总数 <4 的省）+ 非省会 prefecture_city ≥5 的省各 ≥5 座非省会 live（豁免青海、海南、新疆与非省会总数 <5 的省）+ 非省会 prefecture_city ≥6 的省各 ≥6 座非省会 live（豁免青海、海南、新疆、宁夏与非省会总数 <6 的省）+ 非省会 prefecture_city ≥7 的省各 ≥7 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏与非省会总数 <7 的省）+ 非省会 prefecture_city ≥8 的省各 ≥8 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南与非省会总数 <8 的省）+ 非省会 prefecture_city ≥9 的省各 ≥9 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建与非省会总数 <9 的省）+ 非省会 prefecture_city ≥10 的省各 ≥10 座非省会 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西与非省会总数 <10 的省）+ 七大区各 ≥3 座非省会 live（全国非省会 live ≥21）。prefecture_city live 约 246/293（M3b11 批次管线，不是 293 完成）。其余地级为草稿或名录灰壳。不是 333 完成，也不是 293 完成。",
   "counts": {
     "provincial": 34,
     "prefectureTotal": 333,
@@ -627,10 +627,10 @@
       "parentAdcode": "130000",
       "provinceName": "河北省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "chengde",
+      "playable_3d": true,
+      "preview": "河谷的风把文庙前的路牌吹斜。你沿滦河把它们收回博物馆。"
     },
     {
       "adcode": "130900",
@@ -771,10 +771,10 @@
       "parentAdcode": "140000",
       "provinceName": "山西省",
       "region7": "华北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xinzhou",
+      "playable_3d": true,
+      "preview": "黄土风把文庙前的路牌吹斜。你从汾河源头把它们收回博物馆。"
     },
     {
       "adcode": "141000",
@@ -1107,10 +1107,10 @@
       "parentAdcode": "210000",
       "provinceName": "辽宁省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "huludao",
+      "playable_3d": true,
+      "preview": "海风把文庙前的路牌吹斜。你沿六股河把它们收回博物馆。"
     },
     {
       "adcode": "220100",
@@ -1323,10 +1323,10 @@
       "parentAdcode": "230000",
       "provinceName": "黑龙江省",
       "region7": "东北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "qitaihe",
+      "playable_3d": true,
+      "preview": "冷风把文庙前的路牌吹斜。你沿倭肯河把它们收回博物馆。"
     },
     {
       "adcode": "231000",
@@ -1515,10 +1515,10 @@
       "parentAdcode": "320000",
       "provinceName": "江苏省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "taizhoujs",
+      "playable_3d": true,
+      "preview": "水汽把文庙前的路牌打湿。你在里下河把它们收回博物馆。"
     },
     {
       "adcode": "321300",
@@ -1659,10 +1659,10 @@
       "parentAdcode": "330000",
       "provinceName": "浙江省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "lishui",
+      "playable_3d": true,
+      "preview": "河谷的雾把文庙前的路牌打湿。你沿瓯江把它们收回博物馆。"
     },
     {
       "adcode": "340100",
@@ -1731,10 +1731,10 @@
       "parentAdcode": "340000",
       "provinceName": "安徽省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "huaibei",
+      "playable_3d": true,
+      "preview": "平原的风把文庙前的路牌吹斜。你沿濉河把它们收回博物馆。"
     },
     {
       "adcode": "340700",
@@ -2019,10 +2019,10 @@
       "parentAdcode": "360000",
       "provinceName": "江西省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xinyu",
+      "playable_3d": true,
+      "preview": "水汽把文庙前的路牌打湿。你沿袁河把它们收回博物馆。"
     },
     {
       "adcode": "360600",
@@ -2223,10 +2223,10 @@
       "parentAdcode": "370000",
       "provinceName": "山东省",
       "region7": "华东",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "rizhao",
+      "playable_3d": true,
+      "preview": "海风把文庙前的路牌吹斜。你沿付疃河把它们收回博物馆。"
     },
     {
       "adcode": "371300",
@@ -2415,10 +2415,10 @@
       "parentAdcode": "410000",
       "provinceName": "河南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "luohe",
+      "playable_3d": true,
+      "preview": "平原的风把文庙前的路牌吹斜。你沿沙河把它们收回博物馆。"
     },
     {
       "adcode": "411200",
@@ -2619,10 +2619,10 @@
       "parentAdcode": "420000",
       "provinceName": "湖北省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "xianning",
+      "playable_3d": true,
+      "preview": "江风把文庙前的路牌打湿。你沿陆水把它们收回博物馆。"
     },
     {
       "adcode": "421300",
@@ -2703,10 +2703,10 @@
       "parentAdcode": "430000",
       "provinceName": "湖南省",
       "region7": "华中",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "shaoyang",
+      "playable_3d": true,
+      "preview": "水汽把文庙前的路牌打湿。你沿资江把它们收回博物馆。"
     },
     {
       "adcode": "430600",
@@ -2991,10 +2991,10 @@
       "parentAdcode": "440000",
       "provinceName": "广东省",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "yangjiang",
+      "playable_3d": true,
+      "preview": "海风把文庙前的路牌打湿。你沿漠阳江把它们收回博物馆。"
     },
     {
       "adcode": "441800",
@@ -3183,10 +3183,10 @@
       "parentAdcode": "450000",
       "provinceName": "广西壮族自治区",
       "region7": "华南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "baise",
+      "playable_3d": true,
+      "preview": "河谷的雾把文庙前的路牌打湿。你沿右江把它们收回博物馆。"
     },
     {
       "adcode": "451100",
@@ -3375,10 +3375,10 @@
       "parentAdcode": "510000",
       "provinceName": "四川省",
       "region7": "西南",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "suining",
+      "playable_3d": true,
+      "preview": "盆地的雾把文庙前的路牌打湿。你沿涪江把它们收回博物馆。"
     },
     {
       "adcode": "511000",
@@ -4059,10 +4059,10 @@
       "parentAdcode": "620000",
       "provinceName": "甘肃省",
       "region7": "西北",
-      "status": "placeholder",
-      "packId": "",
-      "playable_3d": false,
-      "preview": ""
+      "status": "live",
+      "packId": "jiayuguan",
+      "playable_3d": true,
+      "preview": "戈壁的风把文庙前的路牌吹斜。你沿讨赖河把它们收回博物馆。"
     },
     {
       "adcode": "620300",
@@ -4914,6 +4914,22 @@
     "chongzuo",
     "guangan",
     "tongchuan",
-    "dingxi"
+    "dingxi",
+    "chengde",
+    "xinzhou",
+    "huludao",
+    "qitaihe",
+    "taizhoujs",
+    "lishui",
+    "huaibei",
+    "xinyu",
+    "rizhao",
+    "luohe",
+    "xianning",
+    "shaoyang",
+    "yangjiang",
+    "baise",
+    "suining",
+    "jiayuguan"
   ]
 }

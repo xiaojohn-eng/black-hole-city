@@ -1,0 +1,70 @@
+{
+  "adcode": "421200",
+  "packId": "xianning",
+  "name": "咸宁市",
+  "alias": [
+    "咸宁"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在长江南岸，陆水汇入长江的地方。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "丘陵"
+  ],
+  "riversLakes": [
+    "陆水"
+  ],
+  "neighbors": [
+    "武汉",
+    "黄石",
+    "荆州"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "陆水教学点"
+  ],
+  "storyTitle": "陆水记忆",
+  "storyLogline": "江风把文庙前的路牌打湿。你沿陆水把它们收回博物馆。",
+  "storyBeats": [
+    "从陆水岸起步",
+    "水巷收集市井记忆",
+    "参观咸宁文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-xnin-river",
+    "card-xnin-short"
+  ],
+  "briefing": [
+    "我们在咸宁，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。陆水在长江南岸汇入长江。武汉讲两江，鄂州讲梁子湖，襄阳讲汉江。"
+  ]
+}

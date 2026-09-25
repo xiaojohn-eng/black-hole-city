@@ -1,0 +1,68 @@
+{
+  "adcode": "620200",
+  "packId": "jiayuguan",
+  "name": "嘉峪关市",
+  "alias": [
+    "嘉峪关"
+  ],
+  "shortName": "甘",
+  "unitType": "prefecture_city",
+  "parentProvince": "甘肃省",
+  "region7": "西北",
+  "region4": "西北地区",
+  "locationDesc": "在河西走廊西端，讨赖河边。甘肃省的地级市，不是本省行政中心。",
+  "climateBand": "温带大陆性（干旱）",
+  "landform": [
+    "绿洲",
+    "戈壁"
+  ],
+  "riversLakes": [
+    "讨赖河"
+  ],
+  "neighbors": [
+    "酒泉"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "讨赖河教学点"
+  ],
+  "storyTitle": "讨赖河记忆",
+  "storyLogline": "戈壁的风把文庙前的路牌吹斜。你沿讨赖河把它们收回博物馆。",
+  "storyBeats": [
+    "从讨赖河岸起步",
+    "绿洲旧街收集市井记忆",
+    "参观嘉峪关文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "戈壁风",
+    "绿洲"
+  ],
+  "colorPalette": {
+    "sky": "#d4c4a8",
+    "fog": "#cbb892",
+    "ground": "#c4a574",
+    "road": "#8a7a62"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "oasis-flat",
+  "startCards": [
+    "card-jyg-river",
+    "card-jyg-short"
+  ],
+  "briefing": [
+    "我们在嘉峪关，甘肃省的地级市，不是本省行政中心。兰州才是甘肃省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。讨赖河出祁连山后先过嘉峪关，再到酒泉。酒泉还讲疏勒河。不拿祁连山做山城秀。"
+  ]
+}

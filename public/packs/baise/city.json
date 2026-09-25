@@ -1,0 +1,70 @@
+{
+  "adcode": "451000",
+  "packId": "baise",
+  "name": "百色市",
+  "alias": [
+    "百色"
+  ],
+  "shortName": "桂",
+  "unitType": "prefecture_city",
+  "parentProvince": "广西壮族自治区",
+  "region7": "华南",
+  "region4": "南方地区",
+  "locationDesc": "在桂西，右江边上。广西壮族自治区的地级市，不是本自治区行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "盆地"
+  ],
+  "riversLakes": [
+    "右江"
+  ],
+  "neighbors": [
+    "崇左",
+    "南宁",
+    "河池"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "右江教学点"
+  ],
+  "storyTitle": "右江记忆",
+  "storyLogline": "河谷的雾把文庙前的路牌打湿。你沿右江把它们收回博物馆。",
+  "storyBeats": [
+    "从右江岸起步",
+    "水巷收集市井记忆",
+    "参观百色文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷雾",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-bse-river",
+    "card-bse-short"
+  ],
+  "briefing": [
+    "我们在百色，广西壮族自治区的地级市，不是本自治区行政中心。南宁才是广西壮族自治区行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。右江向东流，与崇左的左江汇成邕江。不是山城毁城秀。"
+  ]
+}
