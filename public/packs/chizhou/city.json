@@ -1,0 +1,71 @@
+{
+  "adcode": "341700",
+  "packId": "chizhou",
+  "name": "池州市",
+  "alias": [
+    "池州"
+  ],
+  "shortName": "皖",
+  "unitType": "prefecture_city",
+  "parentProvince": "安徽省",
+  "region7": "华东",
+  "region4": "南方地区",
+  "locationDesc": "在长江南岸，秋浦河入江的地方。安徽省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "江岸",
+    "河谷"
+  ],
+  "riversLakes": [
+    "秋浦河",
+    "长江"
+  ],
+  "neighbors": [
+    "安庆",
+    "铜陵",
+    "芜湖"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "秋浦河教学点"
+  ],
+  "storyTitle": "秋浦河记忆",
+  "storyLogline": "江风把文庙前的路牌打湿。你沿秋浦河把它们收回博物馆。",
+  "storyBeats": [
+    "从秋浦河岸起步",
+    "水巷收集市井记忆",
+    "参观池州文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "江风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-chiz-river",
+    "card-chiz-short"
+  ],
+  "briefing": [
+    "我们在池州，安徽省的地级市，不是本省行政中心。合肥才是安徽省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。秋浦河向北流入长江。芜湖和安庆讲长江干流。不拿九华山，不拿黄山。"
+  ]
+}

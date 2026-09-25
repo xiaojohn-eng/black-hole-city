@@ -739,6 +739,17 @@ markLiveCity('441700', 'yangjiang', 'B')
 markLiveCity('451000', 'baise', 'B')
 markLiveCity('510900', 'suining', 'B')
 markLiveCity('620200', 'jiayuguan', 'B')
+markLiveCity('210400', 'fushun', 'B')
+markLiveCity('321100', 'zhenjiang', 'B')
+markLiveCity('341700', 'chizhou', 'B')
+markLiveCity('371600', 'binzhou', 'B')
+markLiveCity('410600', 'hebi', 'B')
+markLiveCity('420800', 'jingmen', 'B')
+markLiveCity('431200', 'huaihua', 'B')
+markLiveCity('440900', 'maoming', 'B')
+markLiveCity('451100', 'hezhou', 'B')
+markLiveCity('511900', 'bazhong', 'B')
+markLiveCity('620300', 'jinchang', 'B')
 
 /** Extra rows (not in 333). Beijing city pack uses 110100. */
 export const EXTRAS = [

@@ -1,0 +1,70 @@
+{
+  "adcode": "420800",
+  "packId": "jingmen",
+  "name": "荆门市",
+  "alias": [
+    "荆门"
+  ],
+  "shortName": "鄂",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖北省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在江汉平原中部，漳河边。湖北省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "平原",
+    "河岸"
+  ],
+  "riversLakes": [
+    "漳河"
+  ],
+  "neighbors": [
+    "襄阳",
+    "荆州",
+    "宜昌"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "漳河教学点"
+  ],
+  "storyTitle": "漳河记忆",
+  "storyLogline": "平原的风把文庙前的路牌打湿。你沿漳河把它们收回博物馆。",
+  "storyBeats": [
+    "从漳河岸起步",
+    "水巷收集市井记忆",
+    "参观荆门文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "平原风",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-jmen-river",
+    "card-jmen-short"
+  ],
+  "briefing": [
+    "我们在荆门，湖北省的地级市，不是本省行政中心。武汉才是湖北省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。漳河在荆门聚成水库，再向南汇入长江。襄阳讲汉江，荆州讲长江干流。"
+  ]
+}

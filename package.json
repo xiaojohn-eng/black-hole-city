@@ -27,10 +27,11 @@
     "validate:m3b9": "node tools/validate-m3b9.mjs",
     "validate:m3b10": "node tools/validate-m3b10.mjs",
     "validate:m3b11": "node tools/validate-m3b11.mjs",
+    "validate:m3b12": "node tools/validate-m3b12.mjs",
     "test:logic": "node tools/logic-selftest.mjs",
     "scaffold:city": "node tools/pack-scaffold.mjs",
     "scaffold:region": "node tools/scaffold-region-batch.mjs",
-    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run validate:region7 && npm run validate:m3b1 && npm run validate:m3b2 && npm run validate:m3b3 && npm run validate:m3b4 && npm run validate:m3b5 && npm run validate:m3b6 && npm run validate:m3b7 && npm run validate:m3b8 && npm run validate:m3b9 && npm run validate:m3b10 && npm run validate:m3b11 && npm run test:logic",
+    "validate": "npm run validate:cities && npm run validate:packs && npm run validate:lexicon && npm run validate:coords && npm run validate:province-quiz && npm run validate:kits && npm run validate:region7 && npm run validate:m3b1 && npm run validate:m3b2 && npm run validate:m3b3 && npm run validate:m3b4 && npm run validate:m3b5 && npm run validate:m3b6 && npm run validate:m3b7 && npm run validate:m3b8 && npm run validate:m3b9 && npm run validate:m3b10 && npm run validate:m3b11 && npm run validate:m3b12 && npm run test:logic",
     "test": "npm run validate"
   },
   "devDependencies": {
@@ -41,5 +42,5 @@
   "dependencies": {
     "three": "^0.186.0"
   },
-  "description": "记忆黑洞 · 中国城市博物馆 — M3b11 每省 ≥10 非省会地级市 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西与非省会总数 <10 的省；不是 293 / 333 完成）"
+  "description": "记忆黑洞 · 中国城市博物馆 — M3b12 每省 ≥11 非省会地级市 live（豁免青海、海南、新疆、宁夏、贵州、西藏、吉林、云南、内蒙古、福建、陕西、河北、山西、浙江、江西、黑龙江与非省会总数 <11 的省；不是 293 / 333 完成）"
 }

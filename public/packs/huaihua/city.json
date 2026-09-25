@@ -1,0 +1,71 @@
+{
+  "adcode": "431200",
+  "packId": "huaihua",
+  "name": "怀化市",
+  "alias": [
+    "怀化"
+  ],
+  "shortName": "湘",
+  "unitType": "prefecture_city",
+  "parentProvince": "湖南省",
+  "region7": "华中",
+  "region4": "南方地区",
+  "locationDesc": "在湖南西部，沅江中游。湖南省的地级市，不是本省行政中心。",
+  "climateBand": "亚热带季风",
+  "landform": [
+    "河谷",
+    "盆地"
+  ],
+  "riversLakes": [
+    "沅江",
+    "舞水"
+  ],
+  "neighbors": [
+    "邵阳",
+    "常德",
+    "娄底"
+  ],
+  "cityFunction": [
+    "地级市",
+    "非省会",
+    "沅江教学点"
+  ],
+  "storyTitle": "沅江记忆",
+  "storyLogline": "河谷的雾把文庙前的路牌打湿。你沿沅江把它们收回博物馆。",
+  "storyBeats": [
+    "从沅江岸起步",
+    "水巷收集市井记忆",
+    "参观怀化文庙",
+    "环绕革命烈士纪念碑致敬"
+  ],
+  "gameplayModifiers": [
+    "named_river"
+  ],
+  "bgmPalette": [
+    "河谷雾",
+    "水巷"
+  ],
+  "colorPalette": {
+    "sky": "#9ec9d8",
+    "fog": "#b7d4dc",
+    "ground": "#6b7a68",
+    "road": "#5b6570"
+  },
+  "spawn": {
+    "x": 0,
+    "z": -96
+  },
+  "mapSize": 240,
+  "mode": "career",
+  "fictional": false,
+  "kitId": "jiangnan-water",
+  "startCards": [
+    "card-huah-river",
+    "card-huah-short"
+  ],
+  "briefing": [
+    "我们在怀化，湖南省的地级市，不是本省行政中心。长沙才是湖南省行政中心。",
+    "革命烈士纪念碑是纪念空间，不能归档进洞。请绕着它走完一圈。",
+    "文庙只参观。沅江从怀化流向常德，再入洞庭。舞水在这里汇入沅江。不拿张家界。"
+  ]
+}
